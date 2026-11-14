@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>KYIV безпека</title>
+
+<link rel="manifest" href="manifest.json">
+
+<meta name="theme-color" content="#2e7d32">
+
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background: #f2f4f7;
+}
+
+.app {
+  max-width: 500px;
+  margin: auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.app-icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #2e7d32;
+  border-radius: 20px;
+
+  font-size: 38px;
+
+  box-shadow:
+    0 8px 20px rgba(46,125,50,0.25);
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.header p {
+  color: #777;
+}
+
+.card {
+  background: white;
+  border-radius: 22px;
+  padding: 22px;
+  margin-bottom: 16px;
+
+  box-shadow:
+    0 5px 20px rgba(0,0,0,0.07);
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.status-box {
+  padding: 24px 15px;
+  border-radius: 20px;
+
+  text-align: center;
+
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.timer {
+  text-align: center;
+  margin-top: 10px;
+
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.updated {
+  text-align: center;
+  color: #888;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="app">
+
+<div class="header">
+
+<div class="app-icon">
+🛡️
+</div>
+
+<h1>KYIV безпека</h1>
+
+<p>
+Важлива інформація в одному місці
+</p>
+
+</div>
+
+
+<!-- ПОВІТРЯНА ТРИВОГА В КИЄВІ -->
+
+<div class="card">
+
+<div class="card-title">
+🚨 Повітряна тривога
+</div>
+
+<div
+id="kyiv-alert"
+class="status-box"
+style="
+background:#e8f5e9;
+color:#1b5e20;
+">
+
+🔄 КИЇВ: ОТРИМУЄМО ДАНІ...
+
+</div>
+
+<div
+id="kyiv-timer"
+class="timer">
+</div>
+
+<div
+id="kyiv-updated"
+class="updated">
+
+Остання перевірка: —
+
+</div>
+
+</div>
+
+
+<!-- ЗАГРОЗИ В КИЇВСЬКІЙ ОБЛАСТІ -->
+
+<div class="card">
+
+<div class="card-title">
+⚠️ Загрози поруч
+</div>
+
+<div
+id="kyiv-region-threat"
+class="status-box"
+style="
+background:#e8f5e9;
+color:#1b5e20;
+">
+
+🔄 ОТРИМУЄМО ДАНІ...
+
+</div>
+
+<div
+id="kyiv-region-timer"
+class="timer">
+</div>
+
+<div
+id="kyiv-region-updated"
+class="updated">
+
+Остання перевірка: —
+
+</div>
+
+</div>
+
+
+<!-- ЕЛЕКТРИКА -->
+
+<div class="card">
+
+<div style="font-size:42px;">
+💡
+</div>
+
+<div
+style="
+font-size:18px;
+font-weight:bold;
+margin-top:10px;
+">
+
+Відключення світла
+
+</div>
+
+<div
+style="
+margin-top:8px;
+color:#777;
+">
+
+📍 Оноре де Бальзака, 63-Б
+
+</div>
+
+<a
+href="https://www.dtek-kem.com.ua/ua/shutdowns"
+target="_blank"
+style="
+display:block;
+margin-top:15px;
+padding:14px;
+background:#1976d2;
+color:white;
+text-decoration:none;
+text-align:center;
+border-radius:14px;
+font-weight:bold;
+">
+
+🔗 Перевірити актуальний графік
+
+</a>
+
+<div
+style="
+margin-top:10px;
+font-size:13px;
+color:#999;
+text-align:center;
+">
+
+Графік може змінюватися протягом дня
+
+</div>
+
+</div>
+
+
+<div
+style="
+text-align:center;
+color:#999;
+margin-top:30px;
+">
+
+KYIV безпека
+
+</div>
+
+</div>
+
+
+<script>
+
+const KYIV_ALERT_API =
+"https://tryvoha.online/api/v1/alerts/kyiv";
+
+const KYIV_REGION_API =
+"https://tryvoha.online/api/v1/alerts/kyivska";
+
+
+let kyivAlertStartedAt = null;
+let regionAlertStartedAt = null;
+
+
+/* =========================
+   ЧАС ТРИВОГИ
+========================= */
+
+function formatDuration(startTime) {
+
+  if (!startTime) {
+    return "";
+  }
+
+  const start = new Date(startTime);
+  const now = new Date();
+
+  if (isNaN(start.getTime())) {
+    return "";
+  }
+
+  const totalMinutes =
+    Math.max(
+      0,
+      Math.floor((now - start) / 60000)
+    );
+
+  const hours =
+    Math.floor(totalMinutes / 60);
+
+  const minutes =
+    totalMinutes % 60;
+
+
+  if (hours > 0) {
+
+    return (
+      "⏱️ Триває: " +
+      hours +
+      " год " +
+      minutes +
+      " хв"
+    );
+
+  }
+
+
+  return (
+    "⏱️ Триває: " +
+    minutes +
+    " хв"
+  );
+
+}
+
+
+/* =========================
+   КИЇВ
+========================= */
+
+async function updateKyivAlert() {
+
+  const box =
+    document.getElementById(
+      "kyiv-alert"
+    );
+    const timer =
+    document.getElementById(
+      "kyiv-timer"
+    );
+
+
+  try {
+
+    const response =
+      await fetch(
+        KYIV_ALERT_API
+      );
+
+
+    if (!response.ok) {
+      throw new Error(
+        "Помилка сервера"
+      );
+    }
+
+
+    const data =
+      await response.json();
+
+
+    document.getElementById(
+      "kyiv-updated"
+    ).textContent =
+      "Остання перевірка: " +
+      new Date().toLocaleTimeString(
+        "uk-UA",
+        {
+          hour: "2-digit",
+          minute: "2-digit"
+        }
+      );
+
+
+    /*
+       ВАЖЛИВО:
+       Для Києва беремо саме data.level
+    */
+
+    if (
+      data.active === true &&
+      data.level === "red"
+    ) {
+
+      box.textContent =
+        "🔴 КИЇВ: ЧЕРВОНА ТРИВОГА";
+
+      box.style.background =
+        "#ffebee";
+
+      box.style.color =
+        "#b71c1c";
+
+
+      kyivAlertStartedAt =
+        data.started_at;
+
+
+    } else if (
+      data.active === true &&
+      data.level === "yellow"
+    ) {
+
+      box.textContent =
+        "🟡 КИЇВ: ЖОВТА ЗАГРОЗА";
+
+      box.style.background =
+        "#fff8e1";
+
+      box.style.color =
+        "#f57f17";
+
+
+      kyivAlertStartedAt =
+        data.started_at;
+
+
+    } else {
+
+      box.textContent =
+        "🟢 КИЇВ: ЗАГРОЗ НЕМАЄ";
+
+      box.style.background =
+        "#e8f5e9";
+
+      box.style.color =
+        "#1b5e20";
+
+
+      kyivAlertStartedAt =
+        null;
+
+      timer.textContent =
+        "";
+
+    }
+
+
+  } catch (error) {
+
+    box.textContent =
+      "⚪️ КИЇВ: НЕ ВДАЛОСЯ ОТРИМАТИ ДАНІ";
+
+    box.style.background =
+      "#eeeeee";
+
+    box.style.color =
+      "#424242";
+
+    kyivAlertStartedAt =
+      null;
+
+    timer.textContent =
+      "";
+
+  }
+
+}
+
+
+/* =========================
+   КИЇВСЬКА ОБЛАСТЬ
+========================= */
+
+async function updateKyivRegionThreat() {
+
+  const box =
+    document.getElementById(
+      "kyiv-region-threat"
+    );
+
+  const timer =
+    document.getElementById(
+      "kyiv-region-timer"
+    );
+
+
+  try {
+
+    const response =
+      await fetch(
+        KYIV_REGION_API
+      );
+
+
+    if (!response.ok) {
+      throw new Error(
+        "Помилка сервера"
+      );
+    }
+
+
+    const data =
+      await response.json();
+
+
+    document.getElementById(
+      "kyiv-region-updated"
+    ).textContent =
+      "Остання перевірка: " +
+      new Date().toLocaleTimeString(
+        "uk-UA",
+        {
+          hour: "2-digit",
+          minute: "2-digit"
+        }
+      );
+
+
+    /*
+       Визначаємо найвищий рівень
+       серед області та її районів.
+    */
+
+    let highestLevel = null;
+    let highestStartedAt = null;
+
+
+    if (
+      data.active === true &&
+      data.level === "red"
+    ) {
+
+      highestLevel = "red";
+      highestStartedAt =
+        data.started_at;
+
+    } else if (
+      data.active === true &&
+      data.level === "yellow"
+    ) {
+
+      highestLevel = "yellow";
+      highestStartedAt =
+        data.started_at;
+
+    }
+
+
+    if (
+      Array.isArray(
+        data.districts_active
+      )
+    ) {
+
+      for (
+        const district
+        of data.districts_active
+      ) {
+
+        if (
+          district.level === "red"
+        ) {
+
+          highestLevel = "red";
+
+          if (
+            !highestStartedAt ||
+            new Date(
+              district.started_at
+            ) < new Date(
+              highestStartedAt
+            )
+          ) {
+
+            highestStartedAt =
+              district.started_at;
+
+          }
+
+        } else if (
+          district.level === "yellow" &&
+          highestLevel !== "red"
+        ) {
+
+          highestLevel = "yellow";
+
+          if (
+            !highestStartedAt ||
+            new Date(
+              district.started_at
+            ) < new Date(
+              highestStartedAt
+            )
+          ) {
+
+            highestStartedAt =
+              district.started_at;
+
+          }
+
+        }
+
+      }
+
+    }
+
+
+    if (
+      highestLevel === "red"
+    ) {
+
+      box.textContent =
+        "🔴 КИЇВСЬКА ОБЛАСТЬ: ЧЕРВОНА ЗАГРОЗА";
+
+      box.style.background =
+        "#ffebee";
+
+      box.style.color =
+        "#b71c1c";
+        regionAlertStartedAt =
+        highestStartedAt;
+
+
+    } else if (
+      highestLevel === "yellow"
+    ) {
+
+      box.textContent =
+        "🟡 КИЇВСЬКА ОБЛАСТЬ: ЖОВТА ЗАГРОЗА";
+
+      box.style.background =
+        "#fff8e1";
+
+      box.style.color =
+        "#f57f17";
+
+
+      regionAlertStartedAt =
+        highestStartedAt;
+
+
+    } else {
+
+      box.textContent =
+        "🟢 КИЇВСЬКА ОБЛАСТЬ: ЗАГРОЗ НЕМАЄ";
+
+      box.style.background =
+        "#e8f5e9";
+
+      box.style.color =
+        "#1b5e20";
+
+
+      regionAlertStartedAt =
+        null;
+
+      timer.textContent =
+        "";
+
+    }
+
+
+  } catch (error) {
+
+    box.textContent =
+      "⚪️ КИЇВСЬКА ОБЛАСТЬ: НЕ ВДАЛОСЯ ОТРИМАТИ ДАНІ";
+
+    box.style.background =
+      "#eeeeee";
+
+    box.style.color =
+      "#424242";
+
+    regionAlertStartedAt =
+      null;
+
+    timer.textContent =
+      "";
+
+  }
+
+}
+
+
+/* =========================
+   ОНОВЛЕННЯ ЧАСУ
+========================= */
+
+function updateTimers() {
+
+  const kyivTimer =
+    document.getElementById(
+      "kyiv-timer"
+    );
+
+  const regionTimer =
+    document.getElementById(
+      "kyiv-region-timer"
+    );
+
+
+  if (kyivAlertStartedAt) {
+
+    kyivTimer.textContent =
+      formatDuration(
+        kyivAlertStartedAt
+      );
+
+  }
+
+
+  if (regionAlertStartedAt) {
+
+    regionTimer.textContent =
+      formatDuration(
+        regionAlertStartedAt
+      );
+
+  }
+
+}
+
+
+/* =========================
+   ЗАПУСК
+========================= */
+
+updateKyivAlert();
+
+updateKyivRegionThreat();
+
+
+setInterval(
+  updateKyivAlert,
+  60000
+);
+
+
+setInterval(
+  updateKyivRegionThreat,
+  60000
+);
+
+
+setInterval(
+  updateTimers,
+  60000
+);
+
+</script>
+
+</body>
+
+</html>

@@ -2,7 +2,7 @@ import asyncio
 import json
 from datetime import datetime, timezone
 
-from curl_cffi.requests import AsyncSession
+import aiohttp
 from dtek_client import DtekClient
 from dtek_client.browser_auth import get_cleared_cookies
 
@@ -34,41 +34,42 @@ async def main():
     if csrf_token:
         headers["X-CSRF-Token"] = csrf_token
 
-    session = AsyncSession(
-        timeout=30.0,
+    timeout = aiohttp.ClientTimeout(total=30)
+
+    async with aiohttp.ClientSession(
         headers=headers,
         cookies=cookies,
-        impersonate="chrome120",
-    )
+        timeout=timeout,
+    ) as session:
+        async with DtekClient(
+            "kem",
+            ajax_url=f"{BASE_URL}/ua/ajax",
+            session=session,
+            timeout=30,
+            csrf_token=csrf_token,
+        ) as client:
+            response = await client.get_home_num(CITY, STREET)
 
-    async with DtekClient(
-        "kem",
-        ajax_url=f"{BASE_URL}/ua/ajax",
-        session=session,
-        timeout=30,
-    ) as client:
-        response = await client.get_home_num(CITY, STREET)
+            group = await client.get_group_by_address(
+                CITY,
+                STREET,
+                HOUSE,
+                response=response,
+            )
 
-        group = await client.get_group_by_address(
-            CITY,
-            STREET,
-            HOUSE,
-            response=response,
-        )
+            today = await client.get_today_schedule(
+                CITY,
+                STREET,
+                HOUSE,
+                response=response,
+            )
 
-        today = await client.get_today_schedule(
-            CITY,
-            STREET,
-            HOUSE,
-            response=response,
-        )
-
-        tomorrow = await client.get_tomorrow_schedule(
-            CITY,
-            STREET,
-            HOUSE,
-            response=response,
-        )
+            tomorrow = await client.get_tomorrow_schedule(
+                CITY,
+                STREET,
+                HOUSE,
+                response=response,
+            )
 
     result = {
         "ok": True,

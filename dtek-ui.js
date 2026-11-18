@@ -12,7 +12,7 @@ const DTEK_ADDRESS_KEY = "kyiv-bezpeka-dtek-address";
 
 const DEFAULT_DTEK_ADDRESS = {
   city: "м. Київ",
-  street: "вул. Оноре де Бальзака",
+  street: "вул. Бальзака Оноре",
   house: "63/Б",
   display: "Оноре де Бальзака 63Б, Київ"
 };

@@ -1,36 +1,162 @@
 const DTEK_DATA_URL =
   "https://raw.githubusercontent.com/7777127/-/main/dtek-data.json";
 
+/*
+  Після розгортання dtek-worker.js встав сюди адресу Worker.
+  Наприклад:
+  const DTEK_WORKER_URL = "https://kyiv-bezpeka-dtek.workers.dev/dtek";
+*/
+const DTEK_WORKER_URL = "";
+
+const DTEK_ADDRESS_KEY = "kyiv-bezpeka-dtek-address";
+
+const DEFAULT_DTEK_ADDRESS = {
+  city: "м. Київ",
+  street: "вул. Оноре де Бальзака",
+  house: "63/Б",
+  display: "Оноре де Бальзака 63Б, Київ"
+};
+
+function getDtekAddress() {
+  try {
+    const saved = localStorage.getItem(DTEK_ADDRESS_KEY);
+    if (saved) {
+      const parsed = JSON.parse(saved);
+      if (parsed && parsed.city && parsed.street && parsed.house) {
+        return {
+          city: parsed.city,
+          street: parsed.street,
+          house: parsed.house,
+          display: parsed.display || `${parsed.street}, ${parsed.house}, ${parsed.city}`
+        };
+      }
+    }
+  } catch (error) {
+    console.warn("DTEK address:", error);
+  }
+
+  return DEFAULT_DTEK_ADDRESS;
+}
+
+function saveDtekAddress(address) {
+  localStorage.setItem(DTEK_ADDRESS_KEY, JSON.stringify(address));
+}
+
+function updateDtekAddress() {
+  const element = document.getElementById("dtek-address");
+  if (!element) return;
+
+  element.textContent = getDtekAddress().display;
+}
+
+function openDtekAddressSettings() {
+  const current = getDtekAddress();
+
+  const city = window.prompt(
+    "Місто для ДТЕК:",
+    current.city
+  );
+
+  if (city === null) return;
+
+  const street = window.prompt(
+    "Вулиця для ДТЕК:",
+    current.street
+  );
+
+  if (street === null) return;
+
+  const house = window.prompt(
+    "Номер будинку:",
+    current.house
+  );
+
+  if (house === null) return;
+
+  const cleanCity = city.trim();
+  const cleanStreet = street.trim();
+  const cleanHouse = house.trim();
+
+  if (!cleanCity || !cleanStreet || !cleanHouse) {
+    alert("Будь ласка, заповни місто, вулицю та номер будинку.");
+    return;
+  }
+
+  const address = {
+    city: cleanCity,
+    street: cleanStreet,
+    house: cleanHouse,
+    display: `${cleanStreet.replace(/^вул\.\\s*/i, "")} ${cleanHouse}, ${cleanCity.replace(/^м\.\\s*/i, "")}`
+  };
+
+  saveDtekAddress(address);
+  updateDtekAddress();
+
+  loadDtekSchedule();
+}
+
+function setDtekLoading(text = "🔄 Оновлюємо графік...") {
+  const box = document.getElementById("dtek-schedule");
+  if (box) {
+    box.innerHTML = `<div class="dtek-loading">${text}</div>`;
+  }
+}
+
 async function loadDtekSchedule() {
   const box = document.getElementById("dtek-schedule");
   if (!box) return;
 
-  box.innerHTML = '<div class="dtek-loading">🔄 Оновлюємо графік...</div>';
+  setDtekLoading();
 
   try {
-    const response = await fetch(DTEK_DATA_URL + "?t=" + Date.now(), {
-      cache: "no-store"
-    });
+    const address = getDtekAddress();
 
-    if (!response.ok) {
-      throw new Error("HTTP " + response.status);
+    let data;
+
+    if (DTEK_WORKER_URL) {
+      const params = new URLSearchParams({
+        city: address.city,
+        street: address.street,
+        house: address.house
+      });
+
+      const response = await fetch(
+        DTEK_WORKER_URL + "?" + params.toString(),
+        { cache: "no-store" }
+      );
+
+      if (!response.ok) {
+        throw new Error("DTEK Worker HTTP " + response.status);
+      }
+
+      data = await response.json();
+    } else {
+      const response = await fetch(
+        DTEK_DATA_URL + "?t=" + Date.now(),
+        { cache: "no-store" }
+      );
+
+      if (!response.ok) {
+        throw new Error("HTTP " + response.status);
+      }
+
+      data = await response.json();
     }
-
-    const data = await response.json();
 
     if (!data.ok) {
       throw new Error(data.error || "Не вдалося отримати графік");
     }
 
-    renderDtekSchedule(data);
+    renderDtekSchedule(data, address);
   } catch (error) {
+    console.error("DTEK:", error);
+
     box.innerHTML =
       '<div class="dtek-loading">⚠️ Не вдалося завантажити графік.<br><small>Спробуємо ще раз автоматично.</small></div>';
-    console.error("DTEK:", error);
   }
 }
 
-function renderDtekSchedule(data) {
+function renderDtekSchedule(data, address) {
   const box = document.getElementById("dtek-schedule");
   if (!box) return;
 
@@ -73,13 +199,6 @@ function renderDtekSchedule(data) {
   `;
 }
 
-/*
-  DTEK повертає погодинну карту:
-  1..24 -> yes / no / first / second / ...
-  Важливо: "no" = гарантоване відключення,
-  "yes" = електроенергія гарантовано є,
-  "first"/"second" = часткове відключення в межах години.
-*/
 function normalizeSchedule(value) {
   if (!value) return [];
 
@@ -87,10 +206,7 @@ function normalizeSchedule(value) {
     return value
       .map(item => {
         if (typeof item === "string") {
-          return {
-            label: item,
-            type: "unknown"
-          };
+          return { label: item, type: "unknown" };
         }
 
         if (!item || typeof item !== "object") return null;
@@ -114,8 +230,12 @@ function normalizeSchedule(value) {
   }
 
   if (typeof value === "object") {
-    const possible = value.intervals || value.schedule || value.outages ||
-      value.data || value.items;
+    const possible =
+      value.intervals ||
+      value.schedule ||
+      value.outages ||
+      value.data ||
+      value.items;
 
     if (Array.isArray(possible)) {
       return normalizeSchedule(possible);
@@ -139,30 +259,55 @@ function normalizeSchedule(value) {
 function normalizeStatus(value) {
   const status = String(value ?? "").toLowerCase();
 
-  if (status === "no") return "outage";
-  if (status === "yes") return "normal";
-  if (status === "first") return "partial-first";
-  if (status === "second") return "partial-second";
-  if (status === "mfirst") return "partial-first";
-  if (status === "msecond") return "partial-second";
-  if (status === "maybe") return "maybe";
+  if (status === "no" || status === "off" || status === "outage") {
+    return "outage";
+  }
+
+  if (status === "yes" || status === "on" || status === "normal") {
+    return "normal";
+  }
+
+  if (
+    status === "first" ||
+    status === "mfirst" ||
+    status === "first-half" ||
+    status === "first_half"
+  ) {
+    return "partial-first";
+  }
+
+  if (
+    status === "second" ||
+    status === "msecond" ||
+    status === "second-half" ||
+    status === "second_half"
+  ) {
+    return "partial-second";
+  }
+
+  if (
+    status === "maybe" ||
+    status === "emergency" ||
+    status === "emergency-outage"
+  ) {
+    return "emergency";
+  }
 
   return "unknown";
 }
 
 function renderSummary(schedule) {
   if (!schedule.length) {
-    return '<span class="dtek-no-outage">ℹ️ Даних за цей день поки немає</span>';
+    return '<span class="dtek-no-outage">⚪ Даних за цей день поки немає</span>';
   }
 
-  if (!schedule[0].hour) {
-    return "";
-  }
+  if (!schedule[0].hour) return "";
 
   const outages = schedule.filter(item =>
     item.status === "outage" ||
     item.status === "partial-first" ||
-    item.status === "partial-second"
+    item.status === "partial-second" ||
+    item.status === "emergency"
   ).length;
 
   if (!outages) {
@@ -174,64 +319,64 @@ function renderSummary(schedule) {
 
 function renderIntervals(schedule) {
   if (!schedule.length) {
-    return '<span class="dtek-no-outage">ℹ️ Даних за цей день поки немає</span>';
+    return '<span class="dtek-no-outage">⚪ Даних за цей день поки немає</span>';
   }
 
   if (!schedule[0].hour) {
     return schedule
-      .map(item => `<span class="dtek-interval">⚡ ${escapeHtml(String(item.label))}</span>`)
+      .map(item =>
+        `<span class="dtek-interval">⚡ ${escapeHtml(String(item.label))}</span>`
+      )
       .join("");
   }
 
-  return schedule
-    .map(item => {
-      const hour = String(item.hour).padStart(2, "0");
-      const nextHour = String(item.hour === 24 ? 24 : item.hour + 1).padStart(2, "0");
+  return schedule.map(item => {
+    const hour = String(item.hour).padStart(2, "0");
+    const nextHour = String(item.hour === 24 ? 24 : item.hour + 1).padStart(2, "0");
 
-      if (item.status === "outage") {
-        return `
-          <div class="dtek-hour dtek-hour-outage">
-            <span class="dtek-hour-time">${hour}:00–${nextHour}:00</span>
-            <span class="dtek-hour-status">🔴 Відключення</span>
-          </div>
-        `;
-      }
-
-      if (item.status === "partial-first") {
-        return `
-          <div class="dtek-hour dtek-hour-partial">
-            <span class="dtek-hour-time">${hour}:00–${nextHour}:00</span>
-            <span class="dtek-hour-status">🟡 Часткове відключення — перша частина</span>
-          </div>
-        `;
-      }
-
-      if (item.status === "partial-second") {
-        return `
-          <div class="dtek-hour dtek-hour-partial">
-            <span class="dtek-hour-time">${hour}:00–${nextHour}:00</span>
-            <span class="dtek-hour-status">🟡 Часткове відключення — друга частина</span>
-          </div>
-        `;
-      }
-
-      if (item.status === "maybe") {
-        return `
-          <div class="dtek-hour dtek-hour-maybe">
-            <span class="dtek-hour-time">${hour}:00–${nextHour}:00</span>
-            <span class="dtek-hour-status">🟠 Можливе відключення</span>
-          </div>
-        `;
-      }
-
+    if (item.status === "outage") {
       return `
-        <div class="dtek-hour dtek-hour-normal">
+        <div class="dtek-hour dtek-hour-outage">
           <span class="dtek-hour-time">${hour}:00–${nextHour}:00</span>
-          <span class="dtek-hour-status">🟢 Світло є</span>
+          <span class="dtek-hour-status">⬛ Світла немає</span>
         </div>
       `;
-    })
-    .join("");
+    }
+
+    if (item.status === "partial-first") {
+      return `
+        <div class="dtek-hour dtek-hour-partial">
+          <span class="dtek-hour-time">${hour}:00–${nextHour}:00</span>
+          <span class="dtek-hour-status">🟡 Перша частина — відключення</span>
+        </div>
+      `;
+    }
+
+    if (item.status === "partial-second") {
+      return `
+        <div class="dtek-hour dtek-hour-partial">
+          <span class="dtek-hour-time">${hour}:00–${nextHour}:00</span>
+          <span class="dtek-hour-status">🟡 Друга частина — відключення</span>
+        </div>
+      `;
+    }
+
+    if (item.status === "emergency") {
+      return `
+        <div class="dtek-hour dtek-hour-emergency">
+          <span class="dtek-hour-time">${hour}:00–${nextHour}:00</span>
+          <span class="dtek-hour-status">🟡 Аварійне відключення</span>
+        </div>
+      `;
+    }
+
+    return `
+      <div class="dtek-hour dtek-hour-normal">
+        <span class="dtek-hour-time">${hour}:00–${nextHour}:00</span>
+        <span class="dtek-hour-status">🟢 Світло є</span>
+      </div>
+    `;
+  }).join("");
 }
 
 function extractGroup(value) {
@@ -280,6 +425,7 @@ function escapeHtml(value) {
     .replaceAll("'", "&#039;");
 }
 
+updateDtekAddress();
 loadDtekSchedule();
 
 setInterval(loadDtekSchedule, 10 * 60 * 1000);

@@ -6,17 +6,15 @@ from dtek_client import DtekClient
 
 SITE_KEY = "kem"
 CITY = "м. Київ"
-STREET = "вул. Оноре де Бальзака"
-HOUSE = "63Б"
+STREET = "вул. Бальзака Оноре"
+HOUSE = "63-B"
 
 
 async def main() -> None:
     # The library handles the DTEK Yii2 CSRF bootstrap itself.
     async with DtekClient(SITE_KEY) as client:
-        # Fetch the complete house/group/schedule response for the street.
         response = await client.get_home_num(CITY, STREET)
 
-        # Verify that the requested house exists before reading schedules.
         house = response.find_house(HOUSE)
         if house is None:
             raise RuntimeError(

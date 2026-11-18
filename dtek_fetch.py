@@ -6,8 +6,8 @@ from dtek_client import DtekClient
 
 SITE_KEY = "kem"
 CITY = "м. Київ"
-STREET = "вул. Хрещатик"
-HOUSE = "1"
+STREET = "вул. Оноре де Бальзака"
+HOUSE = "63Б"
 
 
 async def main() -> None:

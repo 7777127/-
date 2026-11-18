@@ -2002,6 +2002,238 @@ body.dark #kyiv-region-threat > div[style*="font-weight"] * {
   }
 }
 
+
+/* =================================
+   FINAL APP VISUAL SYSTEM
+================================= */
+
+html { scroll-behavior: smooth; }
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  background:
+    radial-gradient(circle at 50% -10%, color-mix(in srgb, var(--primary) 8%, transparent), transparent 34%),
+    radial-gradient(circle at 100% 70%, color-mix(in srgb, var(--primary) 5%, transparent), transparent 28%);
+}
+
+.app {
+  width: min(100%, 1050px);
+  padding-bottom: 8px;
+}
+
+.header {
+  padding-top: 4px;
+}
+
+.header h1 {
+  letter-spacing: -0.8px;
+}
+
+.header p {
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: inherit;
+  background: linear-gradient(135deg, rgba(255,255,255,.045), transparent 45%);
+  z-index: -1;
+}
+
+.hero-status-card {
+  padding: 21px;
+  border-width: 1px;
+  transition:
+    transform .3s ease,
+    box-shadow .3s ease,
+    border-color .3s ease,
+    background .3s ease;
+}
+
+.hero-status-card .status-box {
+  position: relative;
+  overflow: hidden;
+  min-height: 86px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 18px;
+  font-size: clamp(19px, 2.2vw, 23px);
+  letter-spacing: -.2px;
+}
+
+.hero-status-card .status-box::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(110deg, transparent 20%, rgba(255,255,255,.28), transparent 55%);
+  transform: translateX(-120%);
+  transition: transform .8s ease;
+}
+
+.hero-status-card:hover .status-box::after {
+  transform: translateX(120%);
+}
+
+.live-badge {
+  transition: transform .2s ease, background .2s ease;
+}
+
+body.alert-active-red .hero-status-card {
+  border-color: color-mix(in srgb, var(--red) 35%, var(--border));
+  box-shadow: 0 14px 42px color-mix(in srgb, var(--red) 16%, transparent);
+}
+
+body.alert-active-red .hero-status-card .live-badge {
+  color: var(--red);
+  border-color: color-mix(in srgb, var(--red) 28%, var(--border));
+  background: var(--red-soft);
+}
+
+body.alert-active-red .live-badge span {
+  animation: livePulse 1.25s ease-in-out infinite;
+  background: var(--red);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--red) 15%, transparent);
+}
+
+body.alert-active-yellow .hero-status-card {
+  border-color: color-mix(in srgb, var(--yellow) 32%, var(--border));
+  box-shadow: 0 14px 40px color-mix(in srgb, var(--yellow) 13%, transparent);
+}
+
+body.alert-active-yellow .hero-status-card .live-badge {
+  color: var(--yellow);
+  border-color: color-mix(in srgb, var(--yellow) 26%, var(--border));
+  background: var(--yellow-soft);
+}
+
+body.alert-active-yellow .live-badge span {
+  animation: livePulse 1.6s ease-in-out infinite;
+  background: var(--yellow);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--yellow) 14%, transparent);
+}
+
+body.alert-safe .hero-status-card {
+  border-color: color-mix(in srgb, var(--green) 18%, var(--border));
+}
+
+body.alert-safe .live-badge span {
+  background: var(--green);
+}
+
+@keyframes livePulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.55); opacity: .55; }
+}
+
+.location-panel,
+.quick-status,
+.bottom-nav {
+  transition: background .3s ease, border-color .3s ease, box-shadow .3s ease;
+}
+
+.quick-status {
+  min-height: 18px;
+}
+
+.quick-status .quick-dot {
+  transition: background .3s ease, box-shadow .3s ease;
+}
+
+body.alert-active-red .quick-status .quick-dot {
+  background: var(--red);
+  box-shadow: 0 0 0 4px var(--red-soft);
+  animation: livePulse 1.25s ease-in-out infinite;
+}
+
+body.alert-active-yellow .quick-status .quick-dot {
+  background: var(--yellow);
+  box-shadow: 0 0 0 4px var(--yellow-soft);
+}
+
+body.alert-safe .quick-status .quick-dot {
+  background: var(--green);
+  box-shadow: 0 0 0 4px var(--green-soft);
+}
+
+.section-chip {
+  white-space: nowrap;
+}
+
+#nearby-section,
+#power-section,
+#history-section,
+#news-section {
+  scroll-margin-top: 18px;
+}
+
+.dtek-card .dtek-schedule {
+  border-radius: 17px;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.035);
+}
+
+.news-card {
+  overflow: hidden;
+}
+
+.footer {
+  padding-bottom: 86px;
+}
+
+@media (max-width: 700px) {
+  body {
+    padding-bottom: 8px;
+  }
+
+  .hero-status-card {
+    padding: 17px;
+  }
+
+  .hero-status-card .status-box {
+    min-height: 78px;
+  }
+
+  .footer {
+    padding-bottom: 78px;
+  }
+
+  .bottom-nav {
+    box-shadow: 0 10px 30px rgba(15,23,42,.16);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+}
+
 </style>
 </head>
 
@@ -3092,6 +3324,11 @@ if (data.active && data.started_at) {
           district.level === "yellow"
 
       );
+
+      /* ВІЗУАЛЬНИЙ СТАН ДОДАТКУ — логіку даних не змінюємо */
+      document.body.classList.toggle("alert-active-red", hasRed);
+      document.body.classList.toggle("alert-active-yellow", !hasRed && hasYellow);
+      document.body.classList.toggle("alert-safe", !hasRed && !hasYellow);
 
       /* ІСТОРІЯ — СТАН МІСТА */
 

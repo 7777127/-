@@ -110,38 +110,22 @@ async function loadDtekSchedule() {
 
   try {
     const address = getDtekAddress();
+    const params = new URLSearchParams({
+      city: address.city,
+      street: address.street,
+      house: address.house
+    });
 
-    let data;
+    const response = await fetch(
+      DTEK_WORKER_URL + "?" + params.toString(),
+      { cache: "no-store" }
+    );
 
-    if (DTEK_WORKER_URL) {
-      const params = new URLSearchParams({
-        city: address.city,
-        street: address.street,
-        house: address.house
-      });
-
-      const response = await fetch(
-        DTEK_WORKER_URL + "?" + params.toString(),
-        { cache: "no-store" }
-      );
-
-      if (!response.ok) {
-        throw new Error("DTEK Worker HTTP " + response.status);
-      }
-
-      data = await response.json();
-    } else {
-      const response = await fetch(
-        DTEK_DATA_URL + "?t=" + Date.now(),
-        { cache: "no-store" }
-      );
-
-      if (!response.ok) {
-        throw new Error("HTTP " + response.status);
-      }
-
-      data = await response.json();
+    if (!response.ok) {
+      throw new Error("DTEK Worker HTTP " + response.status);
     }
+
+    const data = await response.json();
 
     if (!data.ok) {
       throw new Error(data.error || "Не вдалося отримати графік");
@@ -149,10 +133,26 @@ async function loadDtekSchedule() {
 
     renderDtekSchedule(data, address);
   } catch (error) {
-    console.error("DTEK:", error);
+    console.error("DTEK Worker:", error);
 
-    box.innerHTML =
-      '<div class="dtek-loading">⚠️ Не вдалося завантажити графік.<br><small>Спробуємо ще раз автоматично.</small></div>';
+    try {
+      const response = await fetch(
+        DTEK_DATA_URL + "?t=" + Date.now(),
+        { cache: "no-store" }
+      );
+
+      if (!response.ok) throw new Error("Static DTEK HTTP " + response.status);
+
+      const data = await response.json();
+
+      if (!data.ok) throw new Error(data.error || "Статичний графік недоступний");
+
+      renderDtekSchedule(data, getDtekAddress());
+    } catch (fallbackError) {
+      console.error("DTEK fallback:", fallbackError);
+      box.innerHTML =
+        '<div class="dtek-loading">⚠️ Не вдалося завантажити графік.<br><small>Спробуємо ще раз автоматично.</small></div>';
+    }
   }
 }
 

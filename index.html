@@ -2522,6 +2522,114 @@ body.alert-safe .quick-status .quick-dot {
   }
 }
 
+
+
+/* DTEK visual polish — keeps the existing hourly schedule */
+.dtek-head{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:12px;
+  margin-bottom:12px;
+}
+.dtek-subtitle{
+  margin-top:3px;
+  font-size:11px;
+  color:var(--muted);
+}
+.dtek-live{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  padding:6px 9px;
+  border-radius:999px;
+  background:rgba(34,197,94,.10);
+  border:1px solid rgba(34,197,94,.20);
+  color:#4ade80;
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:.06em;
+  white-space:nowrap;
+}
+.dtek-live span{
+  width:6px;
+  height:6px;
+  border-radius:50%;
+  background:#22c55e;
+  box-shadow:0 0 0 3px rgba(34,197,94,.10);
+}
+.dtek-location{
+  display:flex;
+  align-items:center;
+  gap:5px;
+  padding:9px 11px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:rgba(255,255,255,.025);
+}
+.dtek-address-button{
+  margin-top:7px;
+  padding:0;
+  border:0;
+  background:transparent;
+  color:var(--accent);
+  font:inherit;
+  font-size:11px;
+  font-weight:700;
+  cursor:pointer;
+}
+.dtek-result{display:flex;flex-direction:column;gap:12px}
+.dtek-status{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:8px;
+  padding:10px 11px;
+  border-radius:13px;
+  background:rgba(255,255,255,.025);
+  border:1px solid var(--border);
+}
+.dtek-status strong{font-size:12px}
+.dtek-status span{font-size:10px;color:var(--muted);font-weight:700}
+.dtek-day{
+  overflow:hidden;
+  border:1px solid var(--border);
+  border-radius:15px;
+  background:rgba(255,255,255,.018);
+}
+.dtek-day-title{
+  padding:10px 12px 7px;
+  font-size:13px;
+  font-weight:800;
+}
+.dtek-summary{padding:0 12px 9px;font-size:11px}
+.dtek-outage-count{color:#fbbf24;font-weight:700}
+.dtek-no-outage{color:#4ade80;font-weight:700}
+.dtek-intervals{padding:0 8px 8px;display:grid;gap:5px}
+.dtek-hour{
+  display:grid;
+  grid-template-columns:92px 1fr;
+  align-items:center;
+  gap:8px;
+  min-height:32px;
+  padding:0 9px;
+  border-radius:9px;
+  font-size:10px;
+}
+.dtek-hour-time{font-variant-numeric:tabular-nums;font-weight:800;color:var(--text)}
+.dtek-hour-status{color:var(--muted);font-weight:650}
+.dtek-hour-normal{background:rgba(34,197,94,.09);border:1px solid rgba(34,197,94,.10)}
+.dtek-hour-normal .dtek-hour-status{color:#4ade80}
+.dtek-hour-outage{background:rgba(148,163,184,.10);border:1px solid rgba(148,163,184,.12)}
+.dtek-hour-outage .dtek-hour-status{color:#cbd5e1}
+.dtek-hour-partial,.dtek-hour-emergency{background:rgba(245,158,11,.10);border:1px solid rgba(245,158,11,.13)}
+.dtek-hour-partial .dtek-hour-status,.dtek-hour-emergency .dtek-hour-status{color:#fbbf24}
+.dtek-updated{text-align:center;color:var(--muted);font-size:10px;padding-top:1px}
+@media (max-width:560px){
+  .dtek-hour{grid-template-columns:82px 1fr;font-size:9.5px}
+  .dtek-status span{font-size:9px}
+}
+
 </style>
 </head>
 
@@ -2781,8 +2889,12 @@ body.alert-safe .quick-status .quick-dot {
 
       <div class="card dtek-card" id="power-section">
 
-  <div class="card-title">
-    💡 Відключення світла
+  <div class="dtek-head">
+    <div>
+      <div class="card-title">💡 Відключення світла</div>
+      <div class="dtek-subtitle">Актуальний графік для вашої адреси</div>
+    </div>
+    <span class="dtek-live"><span></span> LIVE</span>
   </div>
 
   <div class="dtek-location">

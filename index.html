@@ -1692,6 +1692,201 @@ body.settings-open {
   }
 }
 
+
+/* =================================
+   🌆 ФОНИ КИЄВА
+================================= */
+
+body {
+  --kyiv-bg-a: rgba(37,99,235,.08);
+  --kyiv-bg-b: rgba(22,163,74,.055);
+}
+
+body::before {
+  transition: background .45s ease, opacity .45s ease;
+}
+
+body.background-night {
+  background:
+    radial-gradient(circle at 50% -12%, rgba(96,165,250,.18), transparent 36%),
+    linear-gradient(180deg, #101a31 0%, #0d1322 48%, #080c14 100%);
+}
+
+body.background-night::before {
+  background:
+    radial-gradient(circle at 18% 24%, rgba(255,255,255,.08) 0 1px, transparent 2px),
+    radial-gradient(circle at 74% 18%, rgba(255,255,255,.07) 0 1px, transparent 2px),
+    radial-gradient(circle at 58% 34%, rgba(255,255,255,.06) 0 1px, transparent 2px);
+  background-size: 150px 130px, 190px 160px, 230px 190px;
+  opacity: .8;
+}
+
+body.background-dnipro {
+  background:
+    radial-gradient(circle at 50% 10%, rgba(56,189,248,.18), transparent 34%),
+    linear-gradient(180deg, #122b43 0%, #0e3348 52%, #07151f 100%);
+}
+
+body.background-dnipro::before {
+  background:
+    linear-gradient(170deg, transparent 0 60%, rgba(56,189,248,.08) 61% 63%, transparent 64%),
+    radial-gradient(ellipse at 50% 100%, rgba(14,116,144,.24), transparent 52%);
+  opacity: 1;
+}
+
+body.background-sunset {
+  background:
+    radial-gradient(circle at 50% 18%, rgba(251,191,36,.28), transparent 28%),
+    linear-gradient(180deg, #30234b 0%, #6b3c48 45%, #17202f 100%);
+}
+
+body.background-sunset::before {
+  background:
+    radial-gradient(circle at 50% 30%, rgba(251,191,36,.22), transparent 14%),
+    linear-gradient(180deg, transparent 58%, rgba(15,23,42,.32) 100%);
+}
+
+body.background-lights {
+  background:
+    radial-gradient(circle at 18% 30%, rgba(59,130,246,.18), transparent 24%),
+    radial-gradient(circle at 82% 58%, rgba(168,85,247,.13), transparent 26%),
+    linear-gradient(145deg, #111827, #0b1220 55%, #111827);
+}
+
+body.background-lights::before {
+  background:
+    radial-gradient(circle at 15% 72%, rgba(250,204,21,.12), transparent 2%),
+    radial-gradient(circle at 28% 58%, rgba(250,204,21,.10), transparent 2%),
+    radial-gradient(circle at 72% 68%, rgba(59,130,246,.12), transparent 2%),
+    radial-gradient(circle at 86% 42%, rgba(250,204,21,.10), transparent 2%);
+  background-size: 110px 90px, 140px 120px, 170px 130px, 130px 110px;
+}
+
+body.background-minimal {
+  background:
+    radial-gradient(circle at 15% 0%, rgba(37,99,235,.10), transparent 32%),
+    radial-gradient(circle at 90% 100%, rgba(22,163,74,.07), transparent 30%),
+    var(--bg);
+}
+
+body.background-minimal::before {
+  background:
+    radial-gradient(circle at 50% -10%, color-mix(in srgb, var(--primary) 8%, transparent), transparent 34%),
+    radial-gradient(circle at 100% 70%, color-mix(in srgb, var(--primary) 5%, transparent), transparent 28%);
+}
+
+/* У темній темі фони залишаються атмосферними, але картки читаються чітко. */
+body.dark.background-night,
+body.dark.background-dnipro,
+body.dark.background-sunset,
+body.dark.background-lights {
+  --card: rgba(18,24,32,.92);
+  --card-soft: rgba(28,36,47,.78);
+}
+
+.background-settings {
+  margin: 8px 0 18px;
+  padding: 14px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: var(--card-soft);
+}
+
+.background-settings-head {
+  margin-bottom: 11px;
+}
+
+.background-options {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+}
+
+.background-option {
+  min-width: 0;
+  min-height: 82px;
+  padding: 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 5px;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  color: #fff;
+  font: inherit;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  isolation: isolate;
+  transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+}
+
+.background-option::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+.background-option span {
+  font-size: 22px;
+  line-height: 1;
+  text-shadow: 0 2px 8px rgba(0,0,0,.35);
+}
+
+.background-option small {
+  font-size: 9px;
+  font-weight: 850;
+  text-shadow: 0 1px 5px rgba(0,0,0,.5);
+}
+
+.background-option:hover {
+  transform: translateY(-2px);
+}
+
+.background-option.is-selected {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--primary) 16%, transparent);
+}
+
+.bg-preview-night::before {
+  background: linear-gradient(160deg, #172554, #0f172a 55%, #020617);
+}
+.bg-preview-dnipro::before {
+  background: linear-gradient(160deg, #0e7490, #164e63 50%, #082f49);
+}
+.bg-preview-sunset::before {
+  background: linear-gradient(160deg, #7c3aed, #c2410c 55%, #172033);
+}
+.bg-preview-lights::before {
+  background:
+    radial-gradient(circle at 25% 55%, #facc15 0 2px, transparent 3px),
+    radial-gradient(circle at 70% 30%, #60a5fa 0 2px, transparent 3px),
+    linear-gradient(160deg, #1e1b4b, #111827 55%, #020617);
+}
+.bg-preview-minimal::before {
+  background: linear-gradient(145deg, #f1f5f9, #dbeafe);
+}
+body.dark .bg-preview-minimal::before {
+  background: linear-gradient(145deg, #334155, #172554);
+}
+
+@media (max-width: 700px) {
+  .background-options {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .background-option {
+    min-height: 72px;
+  }
+
+  .background-option small {
+    font-size: 8.5px;
+  }
+}
+
+
 /* =================================
    KYIV БЕЗПЕКА — MODERN APP UI
    VISUAL LAYER ONLY
@@ -2817,6 +3012,33 @@ body.alert-safe .quick-status .quick-dot {
         <div class="notification-settings-intro">
           Обирай окремо, що саме має сповіщати тебе. Налаштування зберігаються на цьому пристрої.
         </div>
+        <div class="background-settings">
+          <div class="background-settings-head">
+            <div>
+              <div class="notification-setting-title">🌆 Фон Києва</div>
+              <div class="notification-setting-note">Обери атмосферу головного екрана. Працює окремо від світлої та темної теми.</div>
+            </div>
+          </div>
+
+          <div class="background-options" role="group" aria-label="Фон Києва">
+            <button type="button" class="background-option bg-preview-night" data-background="night">
+              <span>🌃</span><small>Нічний Київ</small>
+            </button>
+            <button type="button" class="background-option bg-preview-dnipro" data-background="dnipro">
+              <span>🌉</span><small>Дніпро</small>
+            </button>
+            <button type="button" class="background-option bg-preview-sunset" data-background="sunset">
+              <span>🌇</span><small>Захід сонця</small>
+            </button>
+            <button type="button" class="background-option bg-preview-lights" data-background="lights">
+              <span>✨</span><small>Київські вогні</small>
+            </button>
+            <button type="button" class="background-option bg-preview-minimal" data-background="minimal">
+              <span>◻️</span><small>Мінімалістичний</small>
+            </button>
+          </div>
+        </div>
+
 
         <div class="push-setup-box">
           <div class="push-setup-title">📲 Push-сповіщення</div>
@@ -3675,6 +3897,50 @@ function renderAlertHistory() {
 /* ПОКАЗАТИ ІСТОРІЮ */
 
 renderAlertHistory();
+
+
+/* 🌆 ФОН КИЄВА */
+
+const BACKGROUND_KEY = "kyiv-bezpeka-background";
+const DEFAULT_BACKGROUND = "minimal";
+
+function applyBackground(name) {
+  const allowed = ["night", "dnipro", "sunset", "lights", "minimal"];
+  const background = allowed.includes(name)
+    ? name
+    : DEFAULT_BACKGROUND;
+
+  document.body.classList.remove(
+    "background-night",
+    "background-dnipro",
+    "background-sunset",
+    "background-lights",
+    "background-minimal"
+  );
+
+  document.body.classList.add("background-" + background);
+
+  document.querySelectorAll("[data-background]").forEach(function (button) {
+    button.classList.toggle(
+      "is-selected",
+      button.dataset.background === background
+    );
+  });
+
+  localStorage.setItem(BACKGROUND_KEY, background);
+}
+
+const savedBackground =
+  localStorage.getItem(BACKGROUND_KEY) || DEFAULT_BACKGROUND;
+
+applyBackground(savedBackground);
+
+document.querySelectorAll("[data-background]").forEach(function (button) {
+  button.addEventListener("click", function () {
+    applyBackground(button.dataset.background);
+  });
+});
+
 
 /* ТЕМА + СПОВІЩЕННЯ + ЗВУК */
 

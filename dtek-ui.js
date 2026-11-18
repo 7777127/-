@@ -319,66 +319,71 @@ function renderSummary(schedule) {
 
 function renderIntervals(schedule) {
   if (!schedule.length) {
-    return '<span class="dtek-no-outage">⚪ Даних за цей день поки немає</span>';
+    return '<div class="dtek-graph-empty">⚪ Даних за цей день поки немає</div>';
   }
 
   if (!schedule[0].hour) {
-    return schedule
-      .map(item =>
-        `<span class="dtek-interval">⚡ ${escapeHtml(String(item.label))}</span>`
-      )
-      .join("");
-  }
-
-  return schedule.map(item => {
-    const hour = String(item.hour).padStart(2, "0");
-    const nextHour = String(item.hour === 24 ? 24 : item.hour + 1).padStart(2, "0");
-
-    if (item.status === "outage") {
-      return `
-        <div class="dtek-hour dtek-hour-outage">
-          <span class="dtek-hour-time">${hour}:00–${nextHour}:00</span>
-          <span class="dtek-hour-status">⬛ Світла немає</span>
-        </div>
-      `;
-    }
-
-    if (item.status === "partial-first") {
-      return `
-        <div class="dtek-hour dtek-hour-partial">
-          <span class="dtek-hour-time">${hour}:00–${nextHour}:00</span>
-          <span class="dtek-hour-status">🟡 Перша частина — відключення</span>
-        </div>
-      `;
-    }
-
-    if (item.status === "partial-second") {
-      return `
-        <div class="dtek-hour dtek-hour-partial">
-          <span class="dtek-hour-time">${hour}:00–${nextHour}:00</span>
-          <span class="dtek-hour-status">🟡 Друга частина — відключення</span>
-        </div>
-      `;
-    }
-
-    if (item.status === "emergency") {
-      return `
-        <div class="dtek-hour dtek-hour-emergency">
-          <span class="dtek-hour-time">${hour}:00–${nextHour}:00</span>
-          <span class="dtek-hour-status">🟡 Аварійне відключення</span>
-        </div>
-      `;
-    }
-
     return `
-      <div class="dtek-hour dtek-hour-normal">
-        <span class="dtek-hour-time">${hour}:00–${nextHour}:00</span>
-        <span class="dtek-hour-status">🟢 Світло є</span>
+      <div class="dtek-graph-legacy">
+        ${schedule.map(item =>
+          `<span class="dtek-interval">⚡ ${escapeHtml(String(item.label))}</span>`
+        ).join("")}
       </div>
     `;
-  }).join("");
-}
+  }
 
+  return `
+    <div class="dtek-graph">
+      <div class="dtek-graph-head">
+        <span>Час</span>
+        <span>Графік</span>
+      </div>
+      <div class="dtek-graph-list">
+        ${schedule.map(item => {
+          const hour = Number(item.hour);
+          const nextHour = hour === 24 ? 24 : hour + 1;
+          const label = String(hour).padStart(2, "0") + ":00";
+          const endLabel = String(nextHour).padStart(2, "0") + ":00";
+
+          let first = "on";
+          let second = "on";
+
+          if (item.status === "outage") {
+            first = second = "off";
+          } else if (item.status === "partial-first") {
+            first = "off";
+          } else if (item.status === "partial-second") {
+            second = "off";
+          } else if (item.status === "emergency") {
+            first = second = "emergency";
+          }
+
+          const firstText =
+            first === "off" ? "Немає" :
+            first === "emergency" ? "Аварія" : "Є";
+
+          const secondText =
+            second === "off" ? "Немає" :
+            second === "emergency" ? "Аварія" : "Є";
+
+          return `
+            <div class="dtek-graph-row">
+              <span class="dtek-graph-time">${label}–${endLabel}</span>
+              <div class="dtek-graph-track">
+                <span class="dtek-half dtek-half-${first}" title="${label}–${String(hour).padStart(2,"0")}:30">
+                  <b>${firstText}</b>
+                </span>
+                <span class="dtek-half dtek-half-${second}" title="${String(hour).padStart(2,"0")}:30–${endLabel}">
+                  <b>${secondText}</b>
+                </span>
+              </div>
+            </div>
+          `;
+        }).join("")}
+      </div>
+    </div>
+  `;
+}
 function extractGroup(value) {
   if (!value) return "";
 
@@ -429,3 +434,95 @@ updateDtekAddress();
 loadDtekSchedule();
 
 setInterval(loadDtekSchedule, 10 * 60 * 1000);
+
+
+/* === DTEK GRAPH — 30 MIN SEGMENTS === */
+.dtek-graph {
+  margin-top: 4px;
+  padding: 8px;
+  border-radius: 13px;
+  background: color-mix(in srgb, var(--card) 92%, #000 8%);
+  border: 1px solid var(--border);
+}
+.dtek-graph-head,
+.dtek-graph-row {
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1fr);
+  gap: 8px;
+  align-items: center;
+}
+.dtek-graph-head {
+  padding: 2px 7px 7px;
+  color: var(--muted);
+  font-size: 9px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+.dtek-graph-list {
+  display: grid;
+  gap: 4px;
+}
+.dtek-graph-row {
+  min-width: 0;
+}
+.dtek-graph-time {
+  color: var(--text);
+  font-size: 9px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.dtek-graph-track {
+  min-width: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  height: 26px;
+}
+.dtek-half {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  font-size: 8px;
+  font-weight: 850;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.dtek-half-on {
+  background: rgba(34,197,94,.16);
+  border-color: rgba(34,197,94,.20);
+  color: #22c55e;
+}
+.dtek-half-off {
+  background: rgba(100,116,139,.18);
+  border-color: rgba(100,116,139,.22);
+  color: var(--text-soft);
+}
+.dtek-half-emergency {
+  background: rgba(245,158,11,.20);
+  border-color: rgba(245,158,11,.28);
+  color: #f59e0b;
+}
+.dtek-graph-empty {
+  padding: 18px 8px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 11px;
+}
+.dtek-graph-legacy {
+  display: grid;
+  gap: 5px;
+}
+@media (max-width: 560px) {
+  .dtek-graph-head,
+  .dtek-graph-row {
+    grid-template-columns: 64px minmax(0, 1fr);
+    gap: 6px;
+  }
+  .dtek-graph-time { font-size: 8px; }
+  .dtek-half { font-size: 7px; }
+}

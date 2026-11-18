@@ -1404,6 +1404,386 @@ body.dark .dtek-loading {
 body.dark .dtek-note {
   color: #8f99a5;
 }
+
+/* =================================
+   KYIV БЕЗПЕКА — MODERN APP UI
+   VISUAL LAYER ONLY
+================================= */
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 12% 0%, rgba(37,99,235,.08), transparent 30%),
+    radial-gradient(circle at 88% 12%, rgba(22,163,74,.055), transparent 28%),
+    var(--bg);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body.dark {
+  background:
+    radial-gradient(circle at 12% 0%, rgba(96,165,250,.09), transparent 30%),
+    radial-gradient(circle at 88% 12%, rgba(74,222,128,.045), transparent 28%),
+    var(--bg);
+}
+
+.app {
+  max-width: 1120px;
+  padding: 6px 0 18px;
+}
+
+.header {
+  display: grid;
+  justify-items: center;
+  margin-bottom: 28px;
+}
+
+.app-icon {
+  width: 72px;
+  height: 72px;
+  margin-bottom: 13px;
+  border-radius: 22px;
+  background: linear-gradient(145deg,#2563eb 0%,#1d4ed8 55%,#1e40af 100%);
+  box-shadow:
+    0 14px 32px rgba(37,99,235,.24),
+    inset 0 1px 0 rgba(255,255,255,.28);
+}
+
+.header h1 {
+  font-size: clamp(27px, 4vw, 32px);
+  letter-spacing: -0.8px;
+  line-height: 1.05;
+}
+
+.header p {
+  max-width: 430px;
+  margin-top: 9px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.theme-button,
+#sound-button {
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,.78);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+body.dark .theme-button,
+body.dark #sound-button {
+  background: rgba(21,26,33,.82);
+}
+
+.content-grid {
+  gap: 20px;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  padding: 22px;
+  margin-bottom: 20px;
+  border-radius: 22px;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.96), rgba(255,255,255,.90)),
+    var(--card);
+  box-shadow:
+    0 10px 32px rgba(15,23,42,.065),
+    0 1px 2px rgba(15,23,42,.04);
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: inherit;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.55);
+}
+
+body.dark .card {
+  background:
+    linear-gradient(180deg, rgba(24,30,38,.98), rgba(19,24,31,.98)),
+    var(--card);
+  box-shadow:
+    0 14px 38px rgba(0,0,0,.22),
+    0 1px 2px rgba(0,0,0,.18);
+}
+
+.card-title {
+  position: relative;
+  z-index: 1;
+  gap: 9px;
+  margin-bottom: 17px;
+  font-size: 17px;
+  letter-spacing: -0.25px;
+}
+
+.card-title:first-letter {
+  font-size: 1.05em;
+}
+
+#city-select {
+  min-height: 50px;
+  border-radius: 16px;
+  background-color: var(--card-soft);
+  box-shadow: none;
+  border-color: var(--border);
+}
+
+#city-select:hover {
+  transform: none;
+  background-color: var(--card-soft);
+}
+
+#city-select:focus {
+  transform: none;
+}
+
+.status-box {
+  min-height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 17px 18px;
+  border-radius: 18px;
+  font-size: 18px;
+  letter-spacing: -0.15px;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.5),
+    0 5px 16px rgba(15,23,42,.045);
+}
+
+.timer {
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 750;
+}
+
+.updated {
+  margin-top: 9px;
+  font-size: 11px;
+  letter-spacing: .1px;
+}
+
+#kyiv-region-threat {
+  margin-top: 10px;
+}
+
+#kyiv-region-threat > div[style*="font-weight"] {
+  padding: 5px 2px !important;
+  min-height: 32px !important;
+  margin-top: 18px !important;
+  margin-bottom: 8px !important;
+  font-size: 12px !important;
+  text-transform: uppercase;
+  letter-spacing: .55px;
+  color: var(--muted) !important;
+}
+
+body.dark #kyiv-region-threat > div[style*="font-weight"],
+body.dark #kyiv-region-threat > div[style*="font-weight"] * {
+  color: var(--muted) !important;
+  text-shadow: none;
+}
+
+.district-item {
+  min-height: 48px;
+  margin-bottom: 8px;
+  padding: 12px 14px;
+  border-radius: 15px;
+  box-shadow: none;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.district-item:hover {
+  transform: none;
+  box-shadow: var(--shadow-small);
+}
+
+.news-card {
+  min-height: 0;
+}
+
+.news-title {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.news-item {
+  padding: 14px 2px;
+}
+
+.news-time {
+  font-size: 11px;
+  margin-bottom: 6px;
+}
+
+.news-text {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.alert-history {
+  margin-top: 14px;
+}
+
+.history-item {
+  background:
+    linear-gradient(135deg, var(--card-soft), var(--card));
+  border-radius: 17px;
+  box-shadow: none;
+}
+
+.history-item:hover {
+  transform: translateY(-1px);
+}
+
+.dtek-card {
+  text-align: left;
+}
+
+.dtek-card .card-title {
+  margin-bottom: 5px;
+}
+
+.dtek-location {
+  margin-top: 3px;
+  font-size: 12px;
+}
+
+.dtek-schedule {
+  margin-top: 14px;
+  padding: 12px;
+  border-radius: 17px;
+  background: var(--card-soft);
+  border-color: var(--border);
+  overflow: hidden;
+}
+
+.dtek-button {
+  min-height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12px;
+  border-radius: 15px;
+  font-size: 14px;
+  box-shadow: 0 8px 20px rgba(37,99,235,.18);
+}
+
+.footer {
+  margin-top: 20px;
+  padding: 6px 0 16px;
+  font-size: 11px;
+  opacity: .78;
+}
+
+@media (max-width: 700px) {
+  body {
+    padding: 10px;
+  }
+
+  .app {
+    padding: 3px 0 12px;
+  }
+
+  .header {
+    margin-bottom: 18px;
+    padding: 0 2px;
+  }
+
+  .app-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 18px;
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .header h1 {
+    font-size: 25px;
+  }
+
+  .header p {
+    font-size: 12px;
+    margin-top: 7px;
+  }
+
+  .theme-button,
+  #sound-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 13px;
+  }
+
+  .content-grid {
+    gap: 0;
+  }
+
+  .card {
+    padding: 16px;
+    margin-bottom: 13px;
+    border-radius: 19px;
+  }
+
+  .card-title {
+    margin-bottom: 14px;
+    font-size: 16px;
+  }
+
+  #city-select {
+    min-height: 48px;
+    padding: 12px 42px 12px 14px;
+    border-radius: 15px;
+  }
+
+  .status-box {
+    min-height: 60px;
+    padding: 15px 12px;
+    border-radius: 16px;
+    font-size: 16px;
+  }
+
+  .timer {
+    font-size: 13px;
+  }
+
+  .district-item {
+    min-height: 45px;
+    padding: 11px 12px;
+    border-radius: 14px;
+    font-size: 12.5px;
+  }
+
+  .dtek-schedule {
+    padding: 9px;
+    border-radius: 15px;
+  }
+
+  .dtek-button {
+    min-height: 45px;
+    border-radius: 14px;
+  }
+
+  .footer {
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 380px) {
+  .card {
+    padding: 14px;
+    border-radius: 17px;
+  }
+
+  .status-box {
+    font-size: 15px;
+  }
+}
+
 </style>
 </head>
 

@@ -3369,6 +3369,8 @@ if (data.active && data.started_at) {
         const apiStartedAt =
           data.started_at || null;
 
+        let isNewAlert = false;
+
         /*
           Якщо поточна тривога вже є — оновлюємо її,
           але НЕ створюємо новий запис.
@@ -3395,6 +3397,7 @@ if (data.active && data.started_at) {
             apiStartedAt &&
             currentItem.startedAt !== apiStartedAt
           ) {
+            isNewAlert = true;
             /*
               API повідомив про нову тривогу.
               Замінюємо старий незавершений запис.
@@ -3413,6 +3416,8 @@ if (data.active && data.started_at) {
           }
 
         } else {
+
+          isNewAlert = true;
 
           /*
             Якщо застосунок відкрили вже під час тривоги,
@@ -3487,6 +3492,8 @@ if (data.active && data.started_at) {
 
         saveAlertHistory(history);
         renderAlertHistory();
+
+        if (isNewAlert) notifyNewAlert(currentItem);
 
       } else {
 
@@ -4139,6 +4146,10 @@ updateDtekAddress();
 
 updateAllData();
 
+setTimeout(function () {
+  requestNotificationPermission();
+}, 1200);
+
 
 /* АВТОМАТИЧНЕ ОНОВЛЕННЯ */
 
@@ -4204,6 +4215,56 @@ citySelect.addEventListener(
 
   }
 );
+
+/* 📳 ВІБРАЦІЯ + ЛОКАЛЬНЕ СПОВІЩЕННЯ */
+
+let lastAlertNotificationId =
+  localStorage.getItem("kyiv-bezpeka-last-alert-notification") || "";
+
+function notifyNewAlert(item) {
+  if (!item || !item.id || item.id === lastAlertNotificationId) return;
+
+  lastAlertNotificationId = item.id;
+  localStorage.setItem("kyiv-bezpeka-last-alert-notification", item.id);
+
+  const vibration =
+    item.level === "red"
+      ? [220, 120, 220, 120, 420]
+      : [180, 100, 180];
+
+  if ("vibrate" in navigator) {
+    try { navigator.vibrate(vibration); } catch (error) {}
+  }
+
+  if ("Notification" in window && Notification.permission === "granted") {
+    const title =
+      item.level === "red"
+        ? "🔴 Ракетна небезпека"
+        : "🟡 Загроза БПЛА";
+
+    const body =
+      item.cityName + ": перевірте статус повітряної тривоги.";
+
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.ready.then(function (registration) {
+        registration.showNotification(title, {
+          body: body,
+          tag: "kyiv-bezpeka-alert",
+          renotify: true,
+          vibrate: vibration,
+          data: { url: window.location.href }
+        });
+      }).catch(function () {});
+    }
+  }
+}
+
+function requestNotificationPermission() {
+  if ("Notification" in window && Notification.permission === "default") {
+    Notification.requestPermission().catch(function () {});
+  }
+}
+
 </script>
 
 

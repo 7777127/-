@@ -28,6 +28,9 @@ jobs:
       - name: Install DTEK client
         run: pip install -r requirements-dtek.txt
 
+      - name: Install Chromium
+        run: python -m playwright install --with-deps chromium
+
       - name: Fetch DTEK schedule
         run: python dtek_fetch.py
 

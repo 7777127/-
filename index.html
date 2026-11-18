@@ -1405,6 +1405,176 @@ body.dark .dtek-note {
   color: #8f99a5;
 }
 
+
+/* =================================
+   ⚙️ НАЛАШТУВАННЯ СПОВІЩЕНЬ
+================================= */
+
+.notification-settings-card {
+  scroll-margin-top: 18px;
+}
+
+.notification-settings-intro {
+  margin: -5px 0 16px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.notification-setting {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 0;
+  border-top: 1px solid var(--border);
+}
+
+.notification-setting:first-of-type {
+  border-top: 0;
+}
+
+.notification-setting-icon {
+  width: 38px;
+  height: 38px;
+  flex: 0 0 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: var(--card-soft);
+  border: 1px solid var(--border);
+  font-size: 18px;
+}
+
+.notification-setting-main {
+  min-width: 0;
+  flex: 1;
+}
+
+.notification-setting-title {
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+.notification-setting-note {
+  margin-top: 3px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.35;
+}
+
+.notification-switch {
+  position: relative;
+  width: 48px;
+  height: 28px;
+  flex: 0 0 48px;
+}
+
+.notification-switch input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.notification-switch span {
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  cursor: pointer;
+  transition: .2s ease;
+}
+
+.notification-switch span::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  background: var(--card);
+  box-shadow: var(--shadow-small);
+  transition: .2s ease;
+}
+
+.notification-switch input:checked + span {
+  background: var(--primary);
+  border-color: var(--primary);
+}
+
+.notification-switch input:checked + span::after {
+  transform: translateX(20px);
+}
+
+.notification-region {
+  margin-top: 6px;
+  padding: 12px 13px;
+  border-radius: 15px;
+  background: var(--card-soft);
+  border: 1px solid var(--border);
+}
+
+.notification-region label {
+  display: block;
+  margin-bottom: 7px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 800;
+}
+
+#vibration-region-select {
+  width: 100%;
+  padding: 11px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--text);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  outline: none;
+}
+
+.notification-test-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.notification-test-button {
+  min-height: 42px;
+  border: 1px solid var(--border);
+  border-radius: 13px;
+  background: var(--card-soft);
+  color: var(--text);
+  font: inherit;
+  font-size: 11px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.notification-test-button:active {
+  transform: scale(.98);
+}
+
+.notification-settings-footer {
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 10.5px;
+  line-height: 1.45;
+}
+
+@media (max-width: 700px) {
+  .notification-test-row {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* =================================
    KYIV БЕЗПЕКА — MODERN APP UI
    VISUAL LAYER ONLY
@@ -2184,7 +2354,8 @@ body.alert-safe .quick-status .quick-dot {
 #nearby-section,
 #power-section,
 #history-section,
-#news-section {
+#news-section,
+#settings-section {
   scroll-margin-top: 18px;
 }
 
@@ -2349,6 +2520,131 @@ body.alert-safe .quick-status .quick-dot {
         </div>
       </div>
 
+
+      <div class="card notification-settings-card" id="settings-section">
+
+        <div class="card-topline">
+          <div class="card-title">⚙️ Сповіщення</div>
+          <span class="section-chip">НАЛАШТУВАННЯ</span>
+        </div>
+
+        <div class="notification-settings-intro">
+          Обирай окремо, що саме має сповіщати тебе. Налаштування зберігаються на цьому пристрої.
+        </div>
+
+        <div class="notification-setting">
+          <div class="notification-setting-icon">🔴</div>
+          <div class="notification-setting-main">
+            <div class="notification-setting-title">Ракетна небезпека</div>
+            <div class="notification-setting-note">Звук і сповіщення при початку червоної тривоги</div>
+          </div>
+          <label class="notification-switch">
+            <input id="notify-red" type="checkbox">
+            <span></span>
+          </label>
+        </div>
+
+        <div class="notification-setting">
+          <div class="notification-setting-icon">🟡</div>
+          <div class="notification-setting-main">
+            <div class="notification-setting-title">Загроза БПЛА</div>
+            <div class="notification-setting-note">Окремий сигнал для жовтої тривоги</div>
+          </div>
+          <label class="notification-switch">
+            <input id="notify-yellow" type="checkbox">
+            <span></span>
+          </label>
+        </div>
+
+        <div class="notification-setting">
+          <div class="notification-setting-icon">🟢</div>
+          <div class="notification-setting-main">
+            <div class="notification-setting-title">Відбій</div>
+            <div class="notification-setting-note">Окремий короткий сигнал після завершення тривоги</div>
+          </div>
+          <label class="notification-switch">
+            <input id="notify-end" type="checkbox">
+            <span></span>
+          </label>
+        </div>
+
+        <div class="notification-setting">
+          <div class="notification-setting-icon">📳</div>
+          <div class="notification-setting-main">
+            <div class="notification-setting-title">Вібрація</div>
+            <div class="notification-setting-note">Працює лише для вибраної нижче області</div>
+          </div>
+          <label class="notification-switch">
+            <input id="notify-vibration" type="checkbox">
+            <span></span>
+          </label>
+        </div>
+
+        <div class="notification-region">
+          <label for="vibration-region-select">ОБЛАСТЬ ДЛЯ ВІБРАЦІЇ</label>
+          <select id="vibration-region-select"></select>
+        </div>
+
+        <div class="notification-setting">
+          <div class="notification-setting-icon">🔊</div>
+          <div class="notification-setting-main">
+            <div class="notification-setting-title">Звукові сповіщення</div>
+            <div class="notification-setting-note">Сигнали тривоги та відбою</div>
+          </div>
+          <label class="notification-switch">
+            <input id="notify-sound" type="checkbox">
+            <span></span>
+          </label>
+        </div>
+
+        <div class="notification-setting">
+          <div class="notification-setting-icon">💡</div>
+          <div class="notification-setting-main">
+            <div class="notification-setting-title">Зміни ДТЕК</div>
+            <div class="notification-setting-note">Підготовлено для сповіщень про зміни графіка</div>
+          </div>
+          <label class="notification-switch">
+            <input id="notify-power" type="checkbox">
+            <span></span>
+          </label>
+        </div>
+
+        <div class="notification-setting">
+          <div class="notification-setting-icon">📰</div>
+          <div class="notification-setting-main">
+            <div class="notification-setting-title">Важливі новини</div>
+            <div class="notification-setting-note">Підготовлено для важливих повідомлень стрічки</div>
+          </div>
+          <label class="notification-switch">
+            <input id="notify-news" type="checkbox">
+            <span></span>
+          </label>
+        </div>
+
+        <div class="notification-setting">
+          <div class="notification-setting-icon">🌙</div>
+          <div class="notification-setting-main">
+            <div class="notification-setting-title">Тихий режим</div>
+            <div class="notification-setting-note">Прибирає звук і вібрацію, але не вимикає критичні сповіщення</div>
+          </div>
+          <label class="notification-switch">
+            <input id="notify-quiet" type="checkbox">
+            <span></span>
+          </label>
+        </div>
+
+        <div class="notification-test-row">
+          <button class="notification-test-button" type="button" data-test-sound="yellow">🟡 Тест БПЛА</button>
+          <button class="notification-test-button" type="button" data-test-sound="red">🔴 Тест ракети</button>
+          <button class="notification-test-button" type="button" data-test-sound="end">🟢 Тест відбою</button>
+        </div>
+
+        <div class="notification-settings-footer">
+          Для реального push у фоні/при закритому PWA потрібен окремий push-сервер. Цей екран уже зберігає твої вибрані параметри.
+        </div>
+
+      </div>
+
       <div class="card dtek-card" id="power-section">
 
   <div class="card-title">
@@ -2441,6 +2737,7 @@ body.alert-safe .quick-status .quick-dot {
     <a href="#nearby-section" class="nav-item"><span>⚠️</span><small>Поруч</small></a>
     <a href="#power-section" class="nav-item"><span>💡</span><small>Світло</small></a>
     <a href="#history-section" class="nav-item"><span>📋</span><small>Історія</small></a>
+    <a href="#settings-section" class="nav-item"><span>⚙️</span><small>Налашт.</small></a>
   </nav>
 
   <div class="footer">
@@ -3075,7 +3372,7 @@ function renderAlertHistory() {
 
 renderAlertHistory();
 
-/* Тема + Звук */
+/* ТЕМА + СПОВІЩЕННЯ + ЗВУК */
 
 const themeButton =
 document.getElementById("theme-button");
@@ -3083,119 +3380,292 @@ document.getElementById("theme-button");
 const soundButton =
 document.getElementById("sound-button");
 
+const NOTIFICATION_SETTINGS_KEY =
+  "kyiv-bezpeka-notification-settings";
+
+const DEFAULT_NOTIFICATION_SETTINGS = {
+  red: true,
+  yellow: true,
+  end: true,
+  vibration: true,
+  sound: true,
+  power: false,
+  news: false,
+  quiet: false,
+  vibrationRegion: "kyiv"
+};
+
+function getNotificationSettings() {
+  try {
+    const saved = JSON.parse(
+      localStorage.getItem(NOTIFICATION_SETTINGS_KEY)
+    );
+
+    return Object.assign(
+      {},
+      DEFAULT_NOTIFICATION_SETTINGS,
+      saved || {}
+    );
+  } catch (error) {
+    return Object.assign({}, DEFAULT_NOTIFICATION_SETTINGS);
+  }
+}
+
+let notificationSettings =
+  getNotificationSettings();
+
+const legacySound =
+  localStorage.getItem("kyiv-bezpeka-sound");
+
+if (legacySound === "on") {
+  notificationSettings.sound = true;
+} else if (legacySound === "off") {
+  notificationSettings.sound = false;
+}
+
+saveNotificationSettings();
+
+function saveNotificationSettings() {
+  localStorage.setItem(
+    NOTIFICATION_SETTINGS_KEY,
+    JSON.stringify(notificationSettings)
+  );
+}
+
+function setupNotificationSettings() {
+  const ids = [
+    "notify-red",
+    "notify-yellow",
+    "notify-end",
+    "notify-vibration",
+    "notify-sound",
+    "notify-power",
+    "notify-news",
+    "notify-quiet"
+  ];
+
+  ids.forEach(function (id) {
+    const input = document.getElementById(id);
+    if (!input) return;
+
+    const key = id.replace("notify-", "");
+    input.checked = !!notificationSettings[key];
+
+    input.addEventListener("change", function () {
+      notificationSettings[key] = input.checked;
+      saveNotificationSettings();
+
+      if (key === "sound" && input.checked) {
+        ensureAudio();
+        playAlertSound("end");
+      }
+    });
+  });
+
+  const regionSelect =
+    document.getElementById("vibration-region-select");
+
+  if (regionSelect) {
+    Object.keys(CITY_REGIONS).forEach(function (key) {
+      const option = document.createElement("option");
+      option.value = key;
+      option.textContent = CITY_REGIONS[key].regionName;
+      regionSelect.appendChild(option);
+    });
+
+    regionSelect.value =
+      notificationSettings.vibrationRegion ||
+      getSelectedCity();
+
+    regionSelect.addEventListener("change", function () {
+      notificationSettings.vibrationRegion =
+        regionSelect.value;
+      saveNotificationSettings();
+    });
+  }
+
+  document.querySelectorAll("[data-test-sound]").forEach(function (button) {
+    button.addEventListener("click", function () {
+      ensureAudio();
+      playAlertSound(button.dataset.testSound);
+
+      if (
+        button.dataset.testSound !== "end" &&
+        notificationSettings.vibration &&
+        notificationSettings.vibrationRegion === getSelectedCity() &&
+        !notificationSettings.quiet
+      ) {
+        vibrateForLevel(button.dataset.testSound);
+      }
+    });
+  });
+}
+
 let soundEnabled =
-localStorage.getItem("kyiv-bezpeka-sound") === "on";
+  notificationSettings.sound;
+
 let audioContext = null;
+
+function ensureAudio() {
+  if (!audioContext) {
+    audioContext =
+      new (window.AudioContext ||
+        window.webkitAudioContext)();
+  }
+
+  if (audioContext.state === "suspended") {
+    audioContext.resume().catch(function () {});
+  }
+
+  return audioContext;
+}
+
+function updateSoundButton() {
+  soundButton.textContent =
+    notificationSettings.sound ? "🔔" : "🔕";
+}
+
+function playTone(frequency, start, duration, volume) {
+  if (!notificationSettings.sound || notificationSettings.quiet) {
+    return;
+  }
+
+  const ctx = ensureAudio();
+  if (!ctx) return;
+
+  const oscillator = ctx.createOscillator();
+  const gain = ctx.createGain();
+
+  oscillator.type = "sine";
+  oscillator.frequency.setValueAtTime(
+    frequency,
+    ctx.currentTime + start
+  );
+
+  gain.gain.setValueAtTime(
+    0.001,
+    ctx.currentTime + start
+  );
+
+  gain.gain.exponentialRampToValueAtTime(
+    volume,
+    ctx.currentTime + start + 0.025
+  );
+
+  gain.gain.exponentialRampToValueAtTime(
+    0.001,
+    ctx.currentTime + start + duration
+  );
+
+  oscillator.connect(gain);
+  gain.connect(ctx.destination);
+
+  oscillator.start(ctx.currentTime + start);
+  oscillator.stop(ctx.currentTime + start + duration + 0.03);
+}
+
+function playAlertSound(type) {
+  if (!notificationSettings.sound || notificationSettings.quiet) {
+    return;
+  }
+
+  ensureAudio();
+
+  if (type === "red") {
+    // Різкий повторюваний сигнал — окремо від жовтого.
+    playTone(880, 0.00, 0.42, 0.24);
+    playTone(660, 0.48, 0.42, 0.24);
+    playTone(880, 0.96, 0.42, 0.24);
+    playTone(660, 1.44, 0.42, 0.24);
+    playTone(880, 1.92, 0.62, 0.24);
+    return;
+  }
+
+  if (type === "yellow") {
+    // М'якший двотоновий сигнал для БПЛА.
+    playTone(740, 0.00, 0.28, 0.18);
+    playTone(560, 0.34, 0.28, 0.18);
+    playTone(740, 0.68, 0.28, 0.18);
+    return;
+  }
+
+  // Відбій — короткий висхідний тритоновий сигнал.
+  playTone(520, 0.00, 0.24, 0.16);
+  playTone(660, 0.28, 0.24, 0.16);
+  playTone(820, 0.56, 0.42, 0.18);
+}
+
+function vibrateForLevel(level) {
+  if (
+    !notificationSettings.vibration ||
+    notificationSettings.quiet ||
+    notificationSettings.vibrationRegion !== getSelectedCity()
+  ) {
+    return;
+  }
+
+  if (!("vibrate" in navigator)) return;
+
+  const pattern =
+    level === "red"
+      ? [220, 120, 220, 120, 420]
+      : [180, 100, 180];
+
+  try {
+    navigator.vibrate(pattern);
+  } catch (error) {}
+}
 
 /* ТЕМА */
 
 function updateThemeButton() {
-themeButton.textContent =
-document.body.classList.contains("dark")
-? "☀️"
-: "🌙";
+  themeButton.textContent =
+    document.body.classList.contains("dark")
+      ? "☀️"
+      : "🌙";
 }
 
 const savedTheme =
-localStorage.getItem("kyiv-bezpeka-theme");
+  localStorage.getItem("kyiv-bezpeka-theme");
 
 if (savedTheme === "dark") {
-document.body.classList.add("dark");
+  document.body.classList.add("dark");
 }
 
 updateThemeButton();
 
 themeButton.addEventListener("click", function () {
+  document.body.classList.toggle("dark");
 
-document.body.classList.toggle("dark");
+  localStorage.setItem(
+    "kyiv-bezpeka-theme",
+    document.body.classList.contains("dark")
+      ? "dark"
+      : "light"
+  );
 
-localStorage.setItem(
-"kyiv-bezpeka-theme",
-document.body.classList.contains("dark")
-? "dark"
-: "light"
-);
-
-updateThemeButton();
+  updateThemeButton();
 });
-
-/* ЗВУК */
-
-function updateSoundButton() {
-
-soundButton.textContent =
-soundEnabled ? "🔔" : "🔕";
-}
-
-updateSoundButton();
 
 soundButton.addEventListener("click", function () {
+  ensureAudio();
 
-if (!audioContext) {
+  notificationSettings.sound =
+    !notificationSettings.sound;
 
-audioContext =
-  new (window.AudioContext ||
-    window.webkitAudioContext)();
-}
+  soundEnabled =
+    notificationSettings.sound;
 
-if (audioContext.state === "suspended") {
-audioContext.resume();
-}
+  saveNotificationSettings();
+  updateSoundButton();
 
-soundEnabled = !soundEnabled;
-localStorage.setItem(
-  "kyiv-bezpeka-sound",
-  soundEnabled ? "on" : "off"
-);
-
-updateSoundButton();
-
-if (soundEnabled) {
-playTestSound();
-}
+  if (notificationSettings.sound) {
+    playAlertSound("end");
+  }
 });
 
-function playTestSound() {
-
-if (!audioContext) return;
-
-const oscillator =
-audioContext.createOscillator();
-
-const gain =
-audioContext.createGain();
-
-oscillator.connect(gain);
-
-gain.connect(
-audioContext.destination
-);
-
-oscillator.frequency.value = 700;
-
-gain.gain.setValueAtTime(
-0.001,
-audioContext.currentTime
-);
-
-gain.gain.exponentialRampToValueAtTime(
-0.25,
-audioContext.currentTime + 0.03
-);
-
-gain.gain.exponentialRampToValueAtTime(
-0.001,
-audioContext.currentTime + 0.35
-);
-
-oscillator.start();
-
-oscillator.stop(
-audioContext.currentTime + 0.35
-);
-}
-
-
+setupNotificationSettings();
+updateSoundButton();
 
 /* ЧАС ТРИВОГИ */
 
@@ -3529,6 +3999,8 @@ if (data.active && data.started_at) {
 
             saveAlertHistory(history);
           }
+
+          notifyAlertEnd(currentItem);
 
           localStorage.removeItem(
             currentKey
@@ -4199,6 +4671,21 @@ citySelect.addEventListener(
       citySelect.value
     );
 
+    if (
+      !notificationSettings.vibrationRegion ||
+      notificationSettings.vibrationRegion === getSelectedCity()
+    ) {
+      notificationSettings.vibrationRegion = citySelect.value;
+      saveNotificationSettings();
+
+      const vibrationRegionSelect =
+        document.getElementById("vibration-region-select");
+
+      if (vibrationRegionSelect) {
+        vibrationRegionSelect.value = citySelect.value;
+      }
+    }
+
     /* Скидаємо старі таймери */
 
     kyivAlertStartedAt = null;
@@ -4216,51 +4703,139 @@ citySelect.addEventListener(
   }
 );
 
-/* 📳 ВІБРАЦІЯ + ЛОКАЛЬНЕ СПОВІЩЕННЯ */
+/* 🔔 СПОВІЩЕННЯ */
 
 let lastAlertNotificationId =
-  localStorage.getItem("kyiv-bezpeka-last-alert-notification") || "";
+  localStorage.getItem(
+    "kyiv-bezpeka-last-alert-notification"
+  ) || "";
+
+let lastEndedAlertId =
+  localStorage.getItem(
+    "kyiv-bezpeka-last-ended-alert"
+  ) || "";
+
+function showBrowserNotification(title, body, vibration) {
+  if (
+    !("Notification" in window) ||
+    Notification.permission !== "granted"
+  ) {
+    return;
+  }
+
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.ready.then(function (registration) {
+      registration.showNotification(title, {
+        body: body,
+        tag: "kyiv-bezpeka-alert",
+        renotify: true,
+        vibrate: vibration || undefined,
+        data: { url: window.location.href }
+      });
+    }).catch(function () {});
+  }
+}
 
 function notifyNewAlert(item) {
-  if (!item || !item.id || item.id === lastAlertNotificationId) return;
+  if (!item || !item.id || item.id === lastAlertNotificationId) {
+    return;
+  }
 
   lastAlertNotificationId = item.id;
-  localStorage.setItem("kyiv-bezpeka-last-alert-notification", item.id);
+  localStorage.setItem(
+    "kyiv-bezpeka-last-alert-notification",
+    item.id
+  );
+
+  const allowed =
+    item.level === "red"
+      ? notificationSettings.red
+      : notificationSettings.yellow;
+
+  if (!allowed) return;
+
+  const vibrationAllowed =
+    notificationSettings.vibration &&
+    !notificationSettings.quiet &&
+    notificationSettings.vibrationRegion === getSelectedCity();
 
   const vibration =
     item.level === "red"
       ? [220, 120, 220, 120, 420]
       : [180, 100, 180];
 
-  if ("vibrate" in navigator) {
-    try { navigator.vibrate(vibration); } catch (error) {}
+  if (vibrationAllowed) {
+    try {
+      navigator.vibrate(vibration);
+    } catch (error) {}
   }
 
-  if ("Notification" in window && Notification.permission === "granted") {
-    const title =
-      item.level === "red"
-        ? "🔴 Ракетна небезпека"
-        : "🟡 Загроза БПЛА";
-
-    const body =
-      item.cityName + ": перевірте статус повітряної тривоги.";
-
-    if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.ready.then(function (registration) {
-        registration.showNotification(title, {
-          body: body,
-          tag: "kyiv-bezpeka-alert",
-          renotify: true,
-          vibrate: vibration,
-          data: { url: window.location.href }
-        });
-      }).catch(function () {});
-    }
+  if (
+    notificationSettings.sound &&
+    !notificationSettings.quiet
+  ) {
+    playAlertSound(item.level);
   }
+
+  const title =
+    item.level === "red"
+      ? "🔴 Ракетна небезпека"
+      : "🟡 Загроза БПЛА";
+
+  showBrowserNotification(
+    title,
+    item.cityName + ": перевірте статус повітряної тривоги.",
+    vibrationAllowed ? vibration : undefined
+  );
+}
+
+function notifyAlertEnd(item) {
+  if (
+    !item ||
+    !item.id ||
+    item.id === lastEndedAlertId ||
+    !notificationSettings.end
+  ) {
+    return;
+  }
+
+  lastEndedAlertId = item.id;
+
+  localStorage.setItem(
+    "kyiv-bezpeka-last-ended-alert",
+    item.id
+  );
+
+  if (
+    notificationSettings.sound &&
+    !notificationSettings.quiet
+  ) {
+    playAlertSound("end");
+  }
+
+  const vibrationAllowed =
+    notificationSettings.vibration &&
+    !notificationSettings.quiet &&
+    notificationSettings.vibrationRegion === getSelectedCity();
+
+  if (vibrationAllowed && "vibrate" in navigator) {
+    try {
+      navigator.vibrate([100, 80, 100]);
+    } catch (error) {}
+  }
+
+  showBrowserNotification(
+    "🟢 Відбій",
+    item.cityName + ": повітряна тривога завершилась.",
+    vibrationAllowed ? [100, 80, 100] : undefined
+  );
 }
 
 function requestNotificationPermission() {
-  if ("Notification" in window && Notification.permission === "default") {
+  if (
+    "Notification" in window &&
+    Notification.permission === "default"
+  ) {
     Notification.requestPermission().catch(function () {});
   }
 }

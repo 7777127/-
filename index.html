@@ -2398,6 +2398,60 @@ body.dark #kyiv-region-threat > div[style*="font-weight"] * {
   font-weight:850;
 }
 
+.bottom-nav {
+  position:sticky;
+  bottom:12px;
+  z-index:20;
+  display:flex;
+  align-items:stretch;
+  justify-content:space-around;
+  gap:4px;
+  max-width:620px;
+  margin:8px auto 0;
+  padding:7px;
+  border:1px solid var(--border);
+  border-radius:20px;
+  background:color-mix(in srgb,var(--card) 88%,transparent);
+  backdrop-filter:blur(18px);
+  -webkit-backdrop-filter:blur(18px);
+  box-shadow:0 12px 32px rgba(15,23,42,.12);
+}
+
+.nav-item {
+  flex:1;
+  min-width:0;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:3px;
+  min-height:46px;
+  border-radius:14px;
+  color:var(--muted);
+  text-decoration:none;
+  transition:background .2s ease,color .2s ease,transform .2s ease;
+}
+
+.nav-item span {
+  font-size:17px;
+  line-height:1;
+}
+
+.nav-item small {
+  font-size:9px;
+  font-weight:800;
+}
+
+.nav-item:hover,
+.nav-item.active {
+  color:var(--text);
+  background:var(--card-soft);
+}
+
+.nav-item:active {
+  transform:scale(.97);
+}
+
 @media (max-width:700px) {
   .location-panel {
     padding:9px 9px 9px 12px;
@@ -2431,7 +2485,19 @@ body.dark #kyiv-region-threat > div[style*="font-weight"] * {
   .hero-status-card .status-box {
     min-height:72px;
     font-size:18px;
-  }}
+  }
+
+  .bottom-nav {
+    bottom:8px;
+    margin-top:5px;
+    border-radius:18px;
+    padding:6px;
+  }
+
+  .nav-item {
+    min-height:44px;
+  }
+}
 
 
 /* =================================
@@ -2832,6 +2898,184 @@ body.alert-safe .quick-status .quick-dot {
 }
 #sound-button:active{transform:scale(.94)}
 
+
+/* === DTEK GRAPH — 30 MIN SEGMENTS === */
+.dtek-graph {
+  margin-top: 4px;
+  padding: 8px;
+  border-radius: 13px;
+  background: color-mix(in srgb, var(--card) 92%, #000 8%);
+  border: 1px solid var(--border);
+}
+.dtek-graph-head,
+.dtek-graph-row {
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1fr);
+  gap: 8px;
+  align-items: center;
+}
+.dtek-graph-head {
+  padding: 2px 7px 7px;
+  color: var(--muted);
+  font-size: 9px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+.dtek-graph-list {
+  display: grid;
+  gap: 4px;
+}
+.dtek-graph-row {
+  min-width: 0;
+}
+.dtek-graph-time {
+  color: var(--text);
+  font-size: 9px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.dtek-graph-track {
+  min-width: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  height: 26px;
+}
+.dtek-half {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  font-size: 8px;
+  font-weight: 850;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.dtek-half-on {
+  background: rgba(34,197,94,.16);
+  border-color: rgba(34,197,94,.20);
+  color: #22c55e;
+}
+.dtek-half-off {
+  background: rgba(100,116,139,.18);
+  border-color: rgba(100,116,139,.22);
+  color: var(--text-soft);
+}
+.dtek-half-emergency {
+  background: rgba(245,158,11,.20);
+  border-color: rgba(245,158,11,.28);
+  color: #f59e0b;
+}
+.dtek-graph-empty {
+  padding: 18px 8px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 11px;
+}
+.dtek-graph-legacy {
+  display: grid;
+  gap: 5px;
+}
+@media (max-width: 560px) {
+  .dtek-graph-head,
+  .dtek-graph-row {
+    grid-template-columns: 64px minmax(0, 1fr);
+    gap: 6px;
+  }
+  .dtek-graph-time { font-size: 8px; }
+  .dtek-half { font-size: 7px; }
+}
+
+/* === FINAL FIXES: nearby + settings === */
+
+.nearby-card {
+  min-width: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.nearby-scroll {
+  width: 100%;
+  min-width: 0;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+#kyiv-region-threat {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  display: block;
+  overflow: hidden;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+#kyiv-region-threat > .district-item,
+#kyiv-region-threat .district-item {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  display: flex !important;
+  flex: 0 0 100% !important;
+  box-sizing: border-box !important;
+  overflow: hidden;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  white-space: normal;
+}
+
+#kyiv-region-threat .districts-list,
+#kyiv-region-threat > .districts-list {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 8px;
+}
+
+#kyiv-region-threat > div[style*="font-weight"] {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  display: block !important;
+  white-space: normal !important;
+  overflow-wrap: anywhere !important;
+  word-break: break-word !important;
+}
+
+@media (max-width: 700px) {
+  .nearby-card {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  #kyiv-region-threat > div[style*="font-weight"] {
+    white-space: normal !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  .settings-modal-head {
+    position: sticky;
+    top: 0;
+    margin: -18px -16px 14px;
+    padding: 14px 16px 12px;
+  }
+}
+
+@media (max-width: 380px) {
+  .nearby-card {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
 </style>
 </head>
 
@@ -3199,6 +3443,12 @@ body.alert-safe .quick-status .quick-dot {
 
   </div>
 
+  <nav class="bottom-nav" aria-label="Навігація">
+    <a href="#status-section" class="nav-item active"><span>🚨</span><small>Статус</small></a>
+    <a href="#nearby-section" class="nav-item"><span>⚠️</span><small>Поруч</small></a>
+    <a href="#power-section" class="nav-item"><span>💡</span><small>Світло</small></a>
+    <button type="button" class="nav-item nav-settings-button" id="settings-nav-button"><span>⚙️</span><small>Налашт.</small></button>
+  </nav>
 
   <div class="footer">
     KYIV безпека · актуальні дані
@@ -5469,67 +5719,3 @@ function requestNotificationPermission() {
 </body>
 
 </html>
-
-/* === FINAL FIXES: nearby + settings === */
-.nearby-card {
-  min-width: 0;
-}
-
-.nearby-scroll {
-  width: 100%;
-  min-width: 0;
-  overflow-x: hidden;
-  overflow-y: visible;
-}
-
-#kyiv-region-threat {
-  width: 100%;
-  max-width: 100%;
-  overflow: visible;
-  white-space: normal;
-  overflow-wrap: anywhere;
-  word-break: break-word;
-}
-
-#kyiv-region-threat .districts-list,
-#kyiv-region-threat > .districts-list {
-  width: 100%;
-  max-width: 100%;
-  display: grid !important;
-  grid-template-columns: minmax(0, 1fr);
-  gap: 8px;
-}
-
-#kyiv-region-threat .district-item {
-  width: 100%;
-  min-width: 0;
-  max-width: 100%;
-  overflow: hidden;
-  overflow-wrap: anywhere;
-}
-
-@media (max-width: 700px) {
-  .nearby-card {
-    padding-left: 14px;
-    padding-right: 14px;
-  }
-
-  #kyiv-region-threat > div[style*="font-weight"] {
-    white-space: normal !important;
-    overflow-wrap: anywhere !important;
-  }
-
-  .settings-modal-head {
-    position: sticky;
-    top: 0;
-    margin: -18px -16px 14px;
-    padding: 14px 16px 12px;
-  }
-}
-
-@media (max-width: 380px) {
-  .nearby-card {
-    padding-left: 12px;
-    padding-right: 12px;
-  }
-}

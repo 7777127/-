@@ -2630,6 +2630,64 @@ body.alert-safe .quick-status .quick-dot {
   .dtek-status span{font-size:9px}
 }
 
+
+/* Notification settings — final visual polish */
+.settings-modal-panel{
+  background:linear-gradient(180deg,var(--card),color-mix(in srgb,var(--card) 92%,#000 8%));
+}
+.settings-modal-head .card-title{font-size:18px;font-weight:850}
+.notification-settings-intro{
+  padding:11px 12px;
+  border-radius:13px;
+  background:rgba(37,99,235,.07);
+  border:1px solid rgba(37,99,235,.12);
+}
+.push-setup-box{
+  margin:0 0 8px;
+  padding:14px;
+  border-radius:17px;
+  background:linear-gradient(135deg,rgba(37,99,235,.10),rgba(37,99,235,.035));
+  border:1px solid rgba(37,99,235,.16);
+}
+.push-setup-title{font-weight:850;font-size:13px}
+.push-setup-status{margin:5px 0 10px;color:var(--muted);font-size:11px;line-height:1.4}
+.notification-setting{
+  margin-top:5px;
+  padding:12px;
+  border:1px solid var(--border);
+  border-radius:15px;
+  background:rgba(255,255,255,.018);
+}
+.notification-setting + .notification-setting{border-top:1px solid var(--border)}
+.notification-setting-icon{
+  width:40px;height:40px;flex-basis:40px;
+  background:linear-gradient(145deg,var(--card-soft),rgba(255,255,255,.025));
+}
+.notification-setting:has(#notify-red){border-left:3px solid #ef4444}
+.notification-setting:has(#notify-yellow){border-left:3px solid #f59e0b}
+.notification-setting:has(#notify-end){border-left:3px solid #22c55e}
+.notification-setting:has(#notify-vibration){border-left:3px solid #a855f7}
+.notification-setting:has(#notify-sound){border-left:3px solid #3b82f6}
+.notification-setting:has(#notify-power){border-left:3px solid #facc15}
+.notification-setting:has(#notify-news){border-left:3px solid #60a5fa}
+.notification-setting:has(#notify-quiet){border-left:3px solid #94a3b8}
+.notification-test-row{margin-top:16px}
+.notification-test-button{
+  background:var(--card);
+  box-shadow:var(--shadow-small);
+  transition:transform .15s ease,box-shadow .15s ease,border-color .15s ease;
+}
+.notification-test-button:hover{transform:translateY(-1px);box-shadow:var(--shadow)}
+.notification-test-button[data-test-sound="yellow"]{border-color:rgba(245,158,11,.35)}
+.notification-test-button[data-test-sound="red"]{border-color:rgba(239,68,68,.35)}
+.notification-test-button[data-test-sound="end"]{border-color:rgba(34,197,94,.35)}
+.settings-close{transition:transform .15s ease,background .15s ease}
+.settings-close:hover{background:var(--card-soft)}
+#sound-button{
+  transition:transform .15s ease,background .15s ease;
+}
+#sound-button:active{transform:scale(.94)}
+
 </style>
 </head>
 

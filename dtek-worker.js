@@ -2,6 +2,10 @@ const DTEK_BASE = "https://www.dtek-kem.com.ua";
 const DTEK_AJAX = DTEK_BASE + "/ua/ajax";
 const DTEK_PAGE = DTEK_BASE + "/ua/shutdowns";
 
+const HOUSE_QUEUE_OVERRIDES = {
+  "63/Б": "9.1"
+};
+
 export default {
   async fetch(request) {
     const url = new URL(request.url);
@@ -94,7 +98,16 @@ export default {
         ? houseData.sub_type_reason
         : [];
 
-      const primaryGroup = groups[0] || "";
+      const normalizedHouse = normalizeHouse(house);
+      const overrideQueue = HOUSE_QUEUE_OVERRIDES[house] ||
+        HOUSE_QUEUE_OVERRIDES[Object.keys(HOUSE_QUEUE_OVERRIDES).find(
+          key => normalizeHouse(key) === normalizedHouse
+        )];
+
+      const primaryGroup =
+        overrideQueue
+          ? findPresetGroup(raw?.preset?.sch_names, overrideQueue) || overrideQueue
+          : (groups[0] || "");
 
       const today = getScheduleForGroup(
         raw?.fact,
@@ -238,6 +251,18 @@ function normalizeHouse(value) {
     .replaceAll("-", "")
     .replaceAll("/", "")
     .replaceAll("Б", "B");
+}
+
+function findPresetGroup(names, queue) {
+  if (!names || typeof names !== "object") return queue;
+
+  for (const [id, name] of Object.entries(names)) {
+    if (String(name).includes(queue)) {
+      return id;
+    }
+  }
+
+  return queue;
 }
 
 function getScheduleForGroup(fact, groupId, isToday) {

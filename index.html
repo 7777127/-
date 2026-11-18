@@ -1412,6 +1412,123 @@ body.dark .dtek-note {
 
 .notification-settings-card {
   scroll-margin-top: 18px;
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  margin: 0;
+  padding: 18px;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.notification-settings-card.settings-modal-open {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(10,14,20,.58);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.settings-modal-panel {
+  width: min(620px,100%);
+  max-height: 88vh;
+  overflow: auto;
+  padding: 22px;
+  border: 1px solid var(--border);
+  border-radius: 26px;
+  background: var(--card);
+  box-shadow: 0 28px 80px rgba(0,0,0,.28);
+  transform: translateY(10px) scale(.98);
+  opacity: 0;
+  transition: transform .22s ease, opacity .22s ease;
+}
+
+.notification-settings-card.settings-modal-open .settings-modal-panel {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+}
+
+.settings-modal-head {
+  position: sticky;
+  top: -22px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: -22px -22px 16px;
+  padding: 18px 22px 14px;
+  background: color-mix(in srgb, var(--card) 94%, transparent);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+}
+
+.settings-close {
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--border);
+  border-radius: 13px;
+  background: var(--card-soft);
+  color: var(--text);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.settings-open-button {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--card);
+  color: var(--text);
+  font-size: 20px;
+  box-shadow: var(--shadow-small);
+  cursor: pointer;
+}
+
+.settings-open-button:active,
+.settings-close:active {
+  transform: scale(.95);
+}
+
+body.settings-open {
+  overflow: hidden;
+}
+
+.nav-settings-button {
+  border: 0;
+  font: inherit;
+  cursor: pointer;
+}
+
+@media (max-width:700px) {
+  .notification-settings-card.settings-modal-open {
+    align-items: flex-end;
+    padding: 0;
+  }
+
+  .settings-modal-panel {
+    max-height: 92vh;
+    border-radius: 25px 25px 0 0;
+    padding: 18px;
+  }
+
+  .settings-modal-head {
+    top: -18px;
+    margin: -18px -18px 14px;
+    padding: 15px 18px 12px;
+  }
 }
 
 .notification-settings-intro {
@@ -2413,6 +2530,12 @@ body.alert-safe .quick-status .quick-dot {
 
   <div class="header">
 
+    <button id="settings-open-button"
+            class="settings-open-button"
+            type="button"
+            aria-label="Відкрити налаштування"
+            title="Налаштування">⚙️</button>
+
     <button id="theme-button"
             class="theme-button"
             type="button"
@@ -2521,12 +2644,15 @@ body.alert-safe .quick-status .quick-dot {
       </div>
 
 
-      <div class="card notification-settings-card" id="settings-section">
-
-        <div class="card-topline">
-          <div class="card-title">⚙️ Сповіщення</div>
-          <span class="section-chip">НАЛАШТУВАННЯ</span>
-        </div>
+      <div class="card notification-settings-card" id="settings-section" aria-hidden="true">
+        <div class="settings-modal-panel" role="dialog" aria-modal="true" aria-labelledby="settings-modal-title">
+          <div class="settings-modal-head">
+            <div>
+              <div class="card-title" id="settings-modal-title" style="margin-bottom:3px;">⚙️ Сповіщення</div>
+              <div style="color:var(--muted);font-size:12px;">Керування звуком, вібрацією та push</div>
+            </div>
+            <button id="settings-close-button" class="settings-close" type="button" aria-label="Закрити">✕</button>
+          </div>
 
         <div class="notification-settings-intro">
           Обирай окремо, що саме має сповіщати тебе. Налаштування зберігаються на цьому пристрої.
@@ -2656,7 +2782,7 @@ body.alert-safe .quick-status .quick-dot {
         <div class="notification-settings-footer">
           Для реального push у фоні/при закритому PWA потрібен окремий push-сервер. Цей екран уже зберігає твої вибрані параметри.
         </div>
-
+        </div>
       </div>
 
       <div class="card dtek-card" id="power-section">
@@ -2751,7 +2877,7 @@ body.alert-safe .quick-status .quick-dot {
     <a href="#nearby-section" class="nav-item"><span>⚠️</span><small>Поруч</small></a>
     <a href="#power-section" class="nav-item"><span>💡</span><small>Світло</small></a>
     <a href="#history-section" class="nav-item"><span>📋</span><small>Історія</small></a>
-    <a href="#settings-section" class="nav-item"><span>⚙️</span><small>Налашт.</small></a>
+    <button type="button" class="nav-item nav-settings-button" id="settings-nav-button"><span>⚙️</span><small>Налашт.</small></button>
   </nav>
 
   <div class="footer">
@@ -3539,74 +3665,48 @@ function updateSoundButton() {
     notificationSettings.sound ? "🔔" : "🔕";
 }
 
-function playTone(frequency, start, duration, volume) {
-  if (!notificationSettings.sound || notificationSettings.quiet) {
-    return;
-  }
+function playSirenSegment(ctx, start, duration, from, to, volume, type) {
+  const oscillator = ctx.createOscillator();
+  const gain = ctx.createGain();
+
+  oscillator.type = type || "sine";
+  oscillator.frequency.setValueAtTime(from, ctx.currentTime + start);
+  oscillator.frequency.exponentialRampToValueAtTime(to, ctx.currentTime + start + duration);
+
+  gain.gain.setValueAtTime(0.001, ctx.currentTime + start);
+  gain.gain.exponentialRampToValueAtTime(volume, ctx.currentTime + start + 0.04);
+  gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + start + duration);
+
+  oscillator.connect(gain);
+  gain.connect(ctx.destination);
+  oscillator.start(ctx.currentTime + start);
+  oscillator.stop(ctx.currentTime + start + duration + 0.04);
+}
+
+function playAlertSound(type) {
+  if (!notificationSettings.sound || notificationSettings.quiet) return;
 
   const ctx = ensureAudio();
   if (!ctx) return;
 
-  const oscillator = ctx.createOscillator();
-  const gain = ctx.createGain();
-
-  oscillator.type = "sine";
-  oscillator.frequency.setValueAtTime(
-    frequency,
-    ctx.currentTime + start
-  );
-
-  gain.gain.setValueAtTime(
-    0.001,
-    ctx.currentTime + start
-  );
-
-  gain.gain.exponentialRampToValueAtTime(
-    volume,
-    ctx.currentTime + start + 0.025
-  );
-
-  gain.gain.exponentialRampToValueAtTime(
-    0.001,
-    ctx.currentTime + start + duration
-  );
-
-  oscillator.connect(gain);
-  gain.connect(ctx.destination);
-
-  oscillator.start(ctx.currentTime + start);
-  oscillator.stop(ctx.currentTime + start + duration + 0.03);
-}
-
-function playAlertSound(type) {
-  if (!notificationSettings.sound || notificationSettings.quiet) {
-    return;
-  }
-
-  ensureAudio();
-
   if (type === "red") {
-    // Різкий повторюваний сигнал — окремо від жовтого.
-    playTone(880, 0.00, 0.42, 0.24);
-    playTone(660, 0.48, 0.42, 0.24);
-    playTone(880, 0.96, 0.42, 0.24);
-    playTone(660, 1.44, 0.42, 0.24);
-    playTone(880, 1.92, 0.62, 0.24);
+    playSirenSegment(ctx, 0.00, 0.72, 520, 980, 0.20, "sawtooth");
+    playSirenSegment(ctx, 0.78, 0.72, 980, 520, 0.20, "sawtooth");
+    playSirenSegment(ctx, 1.56, 0.72, 520, 980, 0.20, "sawtooth");
+    playSirenSegment(ctx, 2.34, 0.72, 980, 520, 0.20, "sawtooth");
     return;
   }
 
   if (type === "yellow") {
-    // М'якший двотоновий сигнал для БПЛА.
-    playTone(740, 0.00, 0.28, 0.18);
-    playTone(560, 0.34, 0.28, 0.18);
-    playTone(740, 0.68, 0.28, 0.18);
+    playSirenSegment(ctx, 0.00, 0.38, 610, 820, 0.15, "triangle");
+    playSirenSegment(ctx, 0.44, 0.38, 820, 610, 0.15, "triangle");
+    playSirenSegment(ctx, 0.88, 0.38, 610, 820, 0.15, "triangle");
     return;
   }
 
-  // Відбій — короткий висхідний тритоновий сигнал.
-  playTone(520, 0.00, 0.24, 0.16);
-  playTone(660, 0.28, 0.24, 0.16);
-  playTone(820, 0.56, 0.42, 0.18);
+  playSirenSegment(ctx, 0.00, 0.30, 560, 760, 0.14, "sine");
+  playSirenSegment(ctx, 0.34, 0.30, 760, 980, 0.14, "sine");
+  playSirenSegment(ctx, 0.68, 0.46, 980, 1220, 0.16, "sine");
 }
 
 function vibrateForLevel(level) {
@@ -3629,6 +3729,39 @@ function vibrateForLevel(level) {
     navigator.vibrate(pattern);
   } catch (error) {}
 }
+
+/* МОДАЛЬНІ НАЛАШТУВАННЯ */
+
+const settingsModal = document.getElementById("settings-section");
+const settingsOpenButton = document.getElementById("settings-open-button");
+const settingsCloseButton = document.getElementById("settings-close-button");
+const settingsNavButton = document.getElementById("settings-nav-button");
+
+function setSettingsModal(open) {
+  if (!settingsModal) return;
+  settingsModal.classList.toggle("settings-modal-open", open);
+  settingsModal.setAttribute("aria-hidden", open ? "false" : "true");
+  document.body.classList.toggle("settings-open", open);
+  if (open && settingsCloseButton) {
+    setTimeout(function () { settingsCloseButton.focus(); }, 40);
+  }
+}
+
+if (settingsOpenButton) settingsOpenButton.addEventListener("click", function () {
+  setSettingsModal(true);
+});
+if (settingsCloseButton) settingsCloseButton.addEventListener("click", function () {
+  setSettingsModal(false);
+});
+if (settingsNavButton) settingsNavButton.addEventListener("click", function () {
+  setSettingsModal(true);
+});
+if (settingsModal) settingsModal.addEventListener("click", function (event) {
+  if (event.target === settingsModal) setSettingsModal(false);
+});
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") setSettingsModal(false);
+});
 
 /* ТЕМА */
 

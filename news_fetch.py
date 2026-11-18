@@ -1,29 +1,27 @@
 import json
 import re
 from datetime import datetime, timezone
-from html import unescape
 from urllib.parse import urljoin, urlparse
 
 import requests
 from bs4 import BeautifulSoup
 
-
 HEADERS = {
-    "User-Agent": "KYIV-bezpeka-news-bot/1.0 (+https://github.com/7777127/-)"
+    "User-Agent": "KYIV-bezpeka-news-bot/1.0"
 }
 
 SOURCES = [
     {
         "name": "Київська ОВА",
         "region": "kyiv-region",
-        "url": "https://koda.gov.ua/news/",
+        "url": "https://koda.gov.ua/",
         "host": "koda.gov.ua",
     },
     {
-        "name": "Департамент муніципальної безпеки КМДА",
+        "name": "Київська міська рада",
         "region": "kyiv",
-        "url": "https://dmbk.kyivcity.gov.ua/",
-        "host": "dmbk.kyivcity.gov.ua",
+        "url": "https://kmr.gov.ua/",
+        "host": "kmr.gov.ua",
     },
 ]
 
@@ -31,10 +29,6 @@ DATE_RE = re.compile(
     r"(\d{1,2})\s+"
     r"(січня|лютого|березня|квітня|травня|червня|липня|серпня|вересня|жовтня|листопада|грудня)"
     r"(?:,)?\s+(\d{4})"
-    r"|"
-    r"(\d{1,2}):(\d{2}),?\s+(\d{1,2})\s+"
-    r"(січня|лютого|березня|квітня|травня|червня|липня|серпня|вересня|жовтня|листопада|грудня)"
-    r"\s+(\d{4})"
 )
 
 MONTHS = {
@@ -47,47 +41,37 @@ SKIP_WORDS = {
     "детальніше", "показати", "меню", "контакти", "пошук",
     "діяльність", "установи", "громадськості", "про департамент",
     "усі новини", "архів", "головна", "мапа порталу",
+    "нормативна база", "проєкти рішень",
 }
 
 
-def clean_text(value: str) -> str:
-    return re.sub(r"\s+", " ", unescape(value or "")).strip()
+def clean_text(value):
+    return re.sub(r"\s+", " ", value or "").strip()
 
 
-def parse_date(text: str):
-    match = DATE_RE.search(text)
+def parse_date(text):
+    match = DATE_RE.search(text or "")
     if not match:
         return None
 
-    if match.group(1):
-        day = int(match.group(1))
-        month = MONTHS[match.group(2)]
-        year = int(match.group(3))
-        return datetime(year, month, day, tzinfo=timezone.utc)
-
-    hour = int(match.group(4))
-    minute = int(match.group(5))
-    day = int(match.group(6))
-    month = MONTHS[match.group(7)]
-    year = int(match.group(8))
     return datetime(
-        year, month, day, hour, minute, tzinfo=timezone.utc
+        int(match.group(3)),
+        MONTHS[match.group(2)],
+        int(match.group(1)),
+        tzinfo=timezone.utc,
     )
 
 
 def is_candidate(anchor, source):
     title = clean_text(anchor.get_text(" ", strip=True))
     href = anchor.get("href", "")
-    if len(title) < 20 or len(title) > 220:
+
+    if len(title) < 20 or len(title) > 240:
         return False
 
     lowered = title.lower()
     if lowered in SKIP_WORDS:
         return False
-
-    if any(word in lowered for word in SKIP_WORDS):
-        if lowered.startswith(tuple(SKIP_WORDS)):
-            return False
 
     absolute = urljoin(source["url"], href)
     parsed = urlparse(absolute)
@@ -103,29 +87,24 @@ def is_candidate(anchor, source):
         "/category/", "/tag/", "/author/", "/page/",
         "/wp-admin", "/wp-json", "/feed",
     )
+
     if any(part in path for part in blocked):
         return False
 
     return True
 
 
-def classify(title: str) -> str:
+def classify(title):
     text = title.lower()
 
-    critical = (
-        "ата", "обстріл", "дрон", "бпла", "рак", "вибух",
-        "пожеж", "постраж", "загин", "руйнув", "укрит",
-        "тривог", "небезпек"
-    )
     important = (
-        "безпек", "світломаскування", "надзвичай", "рятув",
-        "захист", "пошкоджен", "відновлен"
+        "безпек", "надзвичай", "рятув", "захист",
+        "пошкоджен", "відновлен", "знеструм", "опален"
     )
 
-    if any(word in text for word in critical):
-        return "red"
     if any(word in text for word in important):
         return "orange"
+
     return "normal"
 
 
@@ -147,17 +126,17 @@ def fetch_source(source):
 
         title = clean_text(anchor.get_text(" ", strip=True))
         url = urljoin(source["url"], anchor["href"])
-        key = (title.lower(), url)
 
-        if key in seen:
+        if (title.lower(), url) in seen:
             continue
 
-        seen.add(key)
+        seen.add((title.lower(), url))
 
+        parent = anchor.parent
         parent_text = clean_text(
-            anchor.parent.get_text(" ", strip=True)
-            if anchor.parent else ""
+            parent.get_text(" ", strip=True) if parent else ""
         )
+
         published = parse_date(parent_text)
 
         items.append({
@@ -170,7 +149,7 @@ def fetch_source(source):
             "importance": classify(title),
         })
 
-        if len(items) >= 12:
+        if len(items) >= 15:
             break
 
     return items
@@ -185,7 +164,6 @@ def main():
         except Exception as error:
             print(f"News source failed: {source['name']}: {error}")
 
-    # Безпечна дедуплікація та стабільне сортування.
     unique = {}
     for item in all_items:
         unique[item["id"]] = item
@@ -199,16 +177,11 @@ def main():
     result = {
         "ok": bool(items),
         "fetchedAt": datetime.now(timezone.utc).isoformat(),
-        "items": items[:20],
+        "items": items[:30],
     }
 
     with open("news-data.json", "w", encoding="utf-8") as file:
-        json.dump(
-            result,
-            file,
-            ensure_ascii=False,
-            indent=2,
-        )
+        json.dump(result, file, ensure_ascii=False, indent=2)
 
     print(json.dumps(result, ensure_ascii=False, indent=2))
 

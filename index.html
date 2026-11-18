@@ -2532,6 +2532,20 @@ body.alert-safe .quick-status .quick-dot {
           Обирай окремо, що саме має сповіщати тебе. Налаштування зберігаються на цьому пристрої.
         </div>
 
+        <div class="push-setup-box">
+          <div class="push-setup-title">📲 Push-сповіщення</div>
+          <div id="push-status" class="push-setup-status">
+            Перевіряємо підтримку push…
+          </div>
+          <button
+            id="push-enable-button"
+            type="button"
+            class="notification-test-button"
+          >
+            🔔 Підключити push
+          </button>
+        </div>
+
         <div class="notification-setting">
           <div class="notification-setting-icon">🔴</div>
           <div class="notification-setting-main">
@@ -4618,9 +4632,8 @@ updateDtekAddress();
 
 updateAllData();
 
-setTimeout(function () {
-  requestNotificationPermission();
-}, 1200);
+/* Автоматично просимо дозвіл лише після дії користувача.
+   Для push користувач натискає кнопку «Підключити push». */
 
 
 /* АВТОМАТИЧНЕ ОНОВЛЕННЯ */
@@ -4702,6 +4715,118 @@ citySelect.addEventListener(
 
   }
 );
+
+/* 📲 WEB PUSH */
+
+let pushRegistration = null;
+
+function setPushStatus(text) {
+  const element = document.getElementById("push-status");
+  if (element) {
+    element.textContent = text;
+  }
+}
+
+async function registerPushServiceWorker() {
+  if (!("serviceWorker" in navigator)) {
+    setPushStatus("Цей браузер не підтримує Service Worker.");
+    return null;
+  }
+
+  try {
+    pushRegistration = await navigator.serviceWorker.register(
+      "./servise-worker.js"
+    );
+
+    await navigator.serviceWorker.ready;
+
+    if ("PushManager" in window) {
+      const subscription =
+        await pushRegistration.pushManager.getSubscription();
+
+      if (subscription) {
+        setPushStatus("✅ Push уже підключений на цьому пристрої.");
+      } else {
+        setPushStatus(
+          "Готово до підключення push. Натисни кнопку нижче."
+        );
+      }
+    } else {
+      setPushStatus("Push API недоступний у цьому браузері.");
+    }
+
+    return pushRegistration;
+  } catch (error) {
+    console.error("Помилка Service Worker:", error);
+    setPushStatus("⚠️ Не вдалося підключити push-службу.");
+    return null;
+  }
+}
+
+async function enablePushNotifications() {
+  const button =
+    document.getElementById("push-enable-button");
+
+  if (button) {
+    button.disabled = true;
+    button.textContent = "⏳ Підключення…";
+  }
+
+  try {
+    if (!("Notification" in window)) {
+      throw new Error("Notification API недоступний.");
+    }
+
+    const permission =
+      await Notification.requestPermission();
+
+    if (permission !== "granted") {
+      setPushStatus(
+        "🔕 Дозвіл на системні сповіщення не надано."
+      );
+      return;
+    }
+
+    const registration =
+      await registerPushServiceWorker();
+
+    if (!registration || !("PushManager" in window)) {
+      return;
+    }
+
+    /*
+      Підписку створимо на наступному етапі,
+      коли підключимо VAPID-ключ сервера.
+      Service Worker уже готовий приймати push.
+    */
+    setPushStatus(
+      "✅ Сповіщення дозволені. Push-служба готова."
+    );
+
+  } catch (error) {
+    console.error("Помилка push:", error);
+    setPushStatus(
+      "⚠️ Не вдалося підключити push."
+    );
+  } finally {
+    if (button) {
+      button.disabled = false;
+      button.textContent = "🔔 Підключити push";
+    }
+  }
+}
+
+const pushEnableButton =
+  document.getElementById("push-enable-button");
+
+if (pushEnableButton) {
+  pushEnableButton.addEventListener(
+    "click",
+    enablePushNotifications
+  );
+}
+
+registerPushServiceWorker();
 
 /* 🔔 СПОВІЩЕННЯ */
 

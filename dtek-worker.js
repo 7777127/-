@@ -29,14 +29,11 @@ export default {
     if (!street || !house) {
       return json({
         ok: false,
-        error: "Потрібні city, street та house",
-        example: "/dtek?city=м.%20Київ&street=вул.%20Оноре%20де%20Бальзака&house=63Б"
+        error: "Потрібні city, street та house"
       }, 400);
     }
 
     try {
-      // DTEK uses a WordPress AJAX endpoint rather than a public REST API.
-      // First request the page to obtain a current session/cookies.
       const page = await fetch(DTEK_PAGE, {
         method: "GET",
         headers: browserHeaders()
@@ -50,9 +47,11 @@ export default {
         }, 502);
       }
 
+      const html = await page.text();
       const cookie = page.headers.get("set-cookie") || "";
 
-      // Ask DTEK for all houses on the selected street.
+      const csrfToken = extractCsrfToken(html);
+
       const homeResponse = await dtekAjax(
         [
           ["city", city],
@@ -60,20 +59,23 @@ export default {
           ["updateFact", String(Date.now())]
         ],
         cookie,
-        "getHomeNum"
+        "getHomeNum",
+        csrfToken
       );
 
       if (!homeResponse.ok) {
         return json({
           ok: false,
-          error: "ДТЕК не повернув дані по вулиці",
-          status: homeResponse.status
+          error: "ДТЕК не повернув графік",
+          status: homeResponse.status,
+          csrf: !!csrfToken
         }, 502);
       }
 
-      const data = homeResponse.data;
+      const raw = homeResponse.data;
 
-      const houseData = data?.data?.[house] ?? null;
+      const houses = raw?.data;
+      const houseData = findHouse(houses, house);
 
       if (!houseData) {
         return json({
@@ -82,22 +84,48 @@ export default {
           city,
           street,
           house,
-          availableHouses: data?.data ? Object.keys(data.data) : []
+          availableHouses: houses && typeof houses === "object"
+            ? Object.keys(houses).slice(0, 100)
+            : []
         }, 404);
       }
 
+      const groups = Array.isArray(houseData.sub_type_reason)
+        ? houseData.sub_type_reason
+        : [];
+
+      const primaryGroup = groups[0] || "";
+
+      const today = getScheduleForGroup(
+        raw?.fact,
+        primaryGroup,
+        true
+      );
+
+      const tomorrow = getScheduleForGroup(
+        raw?.fact,
+        primaryGroup,
+        false
+      );
+
+      const groupName =
+        raw?.preset?.sch_names?.[primaryGroup] ||
+        (primaryGroup ? "Черга " + primaryGroup.replace(/^GPV/i, "") : "");
+
       return json({
         ok: true,
-        city,
-        street,
-        house,
-        address: [street, house, city].join(", "),
-        source: DTEK_PAGE,
+        site: "kem",
+        address: {
+          city,
+          street,
+          house
+        },
         fetchedAt: new Date().toISOString(),
-        house: houseData,
-        preset: data?.preset ?? null,
-        fact: data?.fact ?? null
+        group: groupName || primaryGroup,
+        today,
+        tomorrow
       });
+
     } catch (error) {
       return json({
         ok: false,
@@ -108,8 +136,9 @@ export default {
   }
 };
 
-async function dtekAjax(fields, cookie, method) {
+async function dtekAjax(fields, cookie, method, csrfToken) {
   const body = new URLSearchParams();
+
   body.set("method", method);
 
   fields.forEach(([name, value], index) => {
@@ -117,16 +146,26 @@ async function dtekAjax(fields, cookie, method) {
     body.set(`data[${index}][value]`, value);
   });
 
+  const headers = {
+    ...browserHeaders(),
+    "Accept": "application/json, text/javascript, */*; q=0.01",
+    "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+    "X-Requested-With": "XMLHttpRequest",
+    "Origin": DTEK_BASE,
+    "Referer": DTEK_PAGE
+  };
+
+  if (cookie) {
+    headers.Cookie = cookie;
+  }
+
+  if (csrfToken) {
+    headers["X-CSRF-Token"] = csrfToken;
+  }
+
   const response = await fetch(DTEK_AJAX, {
     method: "POST",
-    headers: {
-      ...browserHeaders(),
-      "Accept": "application/json, text/javascript, */*; q=0.01",
-      "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
-      "X-Requested-With": "XMLHttpRequest",
-      "Referer": DTEK_PAGE,
-      ...(cookie ? { "Cookie": cookie } : {})
-    },
+    headers,
     body
   });
 
@@ -139,10 +178,107 @@ async function dtekAjax(fields, cookie, method) {
   }
 
   return {
-    ok: response.ok && !!data,
+    ok: response.ok && !!data && data.result !== false,
     status: response.status,
     data
   };
+}
+
+function extractCsrfToken(html) {
+  const patterns = [
+    /<meta[^>]+name=["']csrf-token["'][^>]+content=["']([^"']+)["']/i,
+    /<meta[^>]+content=["']([^"']+)["'][^>]+name=["']csrf-token["']/i,
+    /<meta[^>]+name=["']csrf-param["'][^>]+content=["']([^"']+)["']/i
+  ];
+
+  for (const pattern of patterns) {
+    const match = html.match(pattern);
+    if (match && match[1]) {
+      return decodeHtml(match[1]);
+    }
+  }
+
+  return "";
+}
+
+function decodeHtml(value) {
+  return value
+    .replaceAll("&amp;", "&")
+    .replaceAll("&quot;", '"')
+    .replaceAll("&#039;", "'")
+    .replaceAll("&#39;", "'")
+    .replaceAll("&lt;", "<")
+    .replaceAll("&gt;", ">");
+}
+
+function findHouse(houses, wanted) {
+  if (!houses || typeof houses !== "object") {
+    return null;
+  }
+
+  if (houses[wanted]) {
+    return houses[wanted];
+  }
+
+  const target = normalizeHouse(wanted);
+
+  for (const [key, value] of Object.entries(houses)) {
+    if (normalizeHouse(key) === target) {
+      return value;
+    }
+  }
+
+  return null;
+}
+
+function normalizeHouse(value) {
+  return String(value || "")
+    .toUpperCase()
+    .replaceAll(" ", "")
+    .replaceAll("-", "")
+    .replaceAll("/", "")
+    .replaceAll("Б", "B");
+}
+
+function getScheduleForGroup(fact, groupId, isToday) {
+  if (!fact || !groupId || !fact.data || typeof fact.data !== "object") {
+    return null;
+  }
+
+  const timestamps = Object.keys(fact.data)
+    .filter(key => /^\d+$/.test(key))
+    .sort((a, b) => Number(a) - Number(b));
+
+  if (!timestamps.length) {
+    return null;
+  }
+
+  const todayTs = Number(fact.today || timestamps[0]);
+
+  let targetTs = todayTs;
+
+  if (!isToday) {
+    const next = timestamps.find(ts => Number(ts) > todayTs);
+    targetTs = next ? Number(next) : null;
+  }
+
+  if (!targetTs) {
+    return null;
+  }
+
+  const day = fact.data[String(targetTs)];
+
+  if (!day || typeof day !== "object") {
+    return null;
+  }
+
+  const slots = day[groupId];
+
+  if (!slots || typeof slots !== "object") {
+    return null;
+  }
+
+  return slots;
 }
 
 function browserHeaders() {

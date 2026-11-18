@@ -6,7 +6,7 @@ const DTEK_DATA_URL =
   Наприклад:
   const DTEK_WORKER_URL = "https://kyiv-bezpeka-dtek.workers.dev/dtek";
 */
-const DTEK_WORKER_URL = "";
+const DTEK_WORKER_URL = "https://kyiv-bezpeka.pincukoleksandr42.workers.dev/dtek";
 
 const DTEK_ADDRESS_KEY = "kyiv-bezpeka-dtek-address";
 

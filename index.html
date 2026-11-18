@@ -2378,172 +2378,205 @@ if (data.active && data.started_at) {
 
       /* ІСТОРІЯ — СТАН МІСТА */
 
-const isActive =
-  hasRed || hasYellow;
+      const isActive =
+        hasRed || hasYellow;
 
-const currentLevel =
-  hasRed ? "red" :
-  hasYellow ? "yellow" :
-  null;
+      const currentLevel =
+        hasRed ? "red" :
+        hasYellow ? "yellow" :
+        null;
 
-const cityKey =
-  getSelectedCity();
+      const cityKey =
+        getSelectedCity();
 
-const stateKey =
-  "kyiv-bezpeka-history-state-" +
-  cityKey;
+      const currentKey =
+        "kyiv-bezpeka-current-history-" +
+        cityKey;
 
-let previousState = null;
+      /*
+        Для історії використовуємо реальний started_at
+        від API. Це важливо: перезавантаження сторінки
+        або чергова перевірка не створюють нову тривогу.
+      */
 
-try {
-  previousState =
-    JSON.parse(
-      localStorage.getItem(stateKey)
-    );
-} catch (error) {
-  previousState = null;
-}
+      let currentItem = null;
 
-if (!previousState) {
-
-  localStorage.setItem(
-    stateKey,
-    JSON.stringify({
-      active: isActive,
-      level: currentLevel
-    })
-  );
-
-} else {
-
-  /* НОВА ТРИВОГА */
-
-  if (
-    !previousState.active &&
-    isActive
-  ) {
-
-    const startedAt =
-      new Date().toISOString();
-
-    const historyItem = {
-      id:
-        cityKey +
-        "-" +
-        Date.now(),
-
-      cityName:
-        city.name,
-
-      regionName:
-        city.regionName,
-
-      level:
-        currentLevel,
-
-      startedAt:
-        startedAt,
-
-      endedAt:
-        null,
-
-      duration:
-        null,
-
-      districts:
-  districts.map(district => ({
-    name:
-      district.name_uk,
-
-    level:
-      district.level,
-
-    startedAt:
-      district.started_at
-  }))
-    };
-
-    localStorage.setItem(
-      "kyiv-bezpeka-current-history-" +
-      cityKey,
-      JSON.stringify(historyItem)
-    );
-
-    addHistoryItem(historyItem);
-  }
-
-  /* ВІДБІЙ */
-
-  if (
-    previousState.active &&
-    !isActive
-  ) {
-
-    const currentKey =
-      "kyiv-bezpeka-current-history-" +
-      cityKey;
-
-    let currentItem = null;
-
-    try {
-      currentItem =
-        JSON.parse(
-          localStorage.getItem(
-            currentKey
-          )
-        );
-    } catch (error) {
-      currentItem = null;
-    }
-
-    if (currentItem) {
-
-      currentItem.endedAt =
-        new Date().toISOString();
-
-      currentItem.duration =
-        formatHistoryDuration(
-          currentItem.startedAt,
-          currentItem.endedAt
-        );
-
-      const history =
-        getAlertHistory();
-
-      const index =
-        history.findIndex(
-          item =>
-            item.id === currentItem.id
-        );
-
-      if (index !== -1) {
-
-        history[index] =
-          currentItem;
-
-        saveAlertHistory(
-          history
-        );
-
-        renderAlertHistory();
+      try {
+        currentItem =
+          JSON.parse(
+            localStorage.getItem(currentKey)
+          );
+      } catch (error) {
+        currentItem = null;
       }
 
-      localStorage.removeItem(
-        currentKey
-      );
-    }
-  }
+      if (isActive) {
 
-  /* ЗАПАМ'ЯТОВУЄМО НОВИЙ СТАН */
+        const apiStartedAt =
+          data.started_at || null;
 
-  localStorage.setItem(
-    stateKey,
-    JSON.stringify({
-      active: isActive,
-      level: currentLevel
-    })
-  );
-}
+        /*
+          Якщо поточна тривога вже є — оновлюємо її,
+          але НЕ створюємо новий запис.
+        */
+
+        if (currentItem) {
+
+          currentItem.level =
+            currentLevel;
+
+          currentItem.districts =
+            districts.map(district => ({
+              name:
+                district.name_uk,
+
+              level:
+                district.level,
+
+              startedAt:
+                district.started_at
+            }));
+
+          if (
+            apiStartedAt &&
+            currentItem.startedAt !== apiStartedAt
+          ) {
+            /*
+              API повідомив про нову тривогу.
+              Замінюємо старий незавершений запис.
+            */
+            currentItem.id =
+              cityKey + "-" + apiStartedAt;
+
+            currentItem.startedAt =
+              apiStartedAt;
+
+            currentItem.endedAt =
+              null;
+
+            currentItem.duration =
+              null;
+          }
+
+        } else {
+
+          /*
+            Якщо застосунок відкрили вже під час тривоги,
+            беремо фактичний час початку з API.
+          */
+
+          const startedAt =
+            apiStartedAt ||
+            new Date().toISOString();
+
+          currentItem = {
+            id:
+              cityKey + "-" + startedAt,
+
+            cityName:
+              city.name,
+
+            regionName:
+              city.regionName,
+
+            level:
+              currentLevel,
+
+            startedAt:
+              startedAt,
+
+            endedAt:
+              null,
+
+            duration:
+              null,
+
+            districts:
+              districts.map(district => ({
+                name:
+                  district.name_uk,
+
+                level:
+                  district.level,
+
+                startedAt:
+                  district.started_at
+              }))
+          };
+        }
+
+        localStorage.setItem(
+          currentKey,
+          JSON.stringify(currentItem)
+        );
+
+        const history =
+          getAlertHistory();
+
+        const index =
+          history.findIndex(
+            item =>
+              item.id === currentItem.id
+          );
+
+        if (index === -1) {
+
+          history.unshift(
+            currentItem
+          );
+
+        } else {
+
+          history[index] =
+            currentItem;
+        }
+
+        saveAlertHistory(history);
+        renderAlertHistory();
+
+      } else {
+
+        /*
+          Відбій: завершуємо саме ту тривогу,
+          яка була записана як поточна.
+        */
+
+        if (currentItem) {
+
+          currentItem.endedAt =
+            new Date().toISOString();
+
+          currentItem.duration =
+            formatHistoryDuration(
+              currentItem.startedAt,
+              currentItem.endedAt
+            );
+
+          const history =
+            getAlertHistory();
+
+          const index =
+            history.findIndex(
+              item =>
+                item.id === currentItem.id
+            );
+
+          if (index !== -1) {
+
+            history[index] =
+              currentItem;
+
+            saveAlertHistory(history);
+          }
+
+          localStorage.removeItem(
+            currentKey
+          );
+
+          renderAlertHistory();
+        }
+      }
+
       if (hasRed) {
 
       box.textContent =

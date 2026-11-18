@@ -1,6 +1,11 @@
 name: DTEK schedule update
 
 on:
+  push:
+    paths:
+      - "dtek_fetch.py"
+      - "requirements-dtek.txt"
+      - ".github/workflows/dtek-update.yml"
   workflow_dispatch:
   schedule:
     - cron: "0 */2 * * *"

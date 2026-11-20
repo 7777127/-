@@ -1,9 +1,39 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-20T12:12:12.369911+00:00",
+  "fetchedAt": "2026-11-20T12:38:59.586431+00:00",
   "retentionDays": 3,
-  "count": 43,
+  "count": 46,
   "items": [
+    {
+      "id": "kyivinfo-1a5ad010a8b8",
+      "title": "✅",
+      "text": "✅ Рух Подільським мостовим переходом відновлений , — поліція ✅ Рух вулицею Новокостянтинівською відновлений. 🇺🇦 Київ ІНФО | Надіслати новину",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108287",
+      "publishedAt": "2026-11-20T12:32:19+00:00",
+      "importance": "orange"
+    },
+    {
+      "id": "kyivinfo-98dcac1754e1",
+      "title": "❗️",
+      "text": "❗️ Взимку лівому берегу загрожують проблеми з опаленням, Правому – з водою, – голова Деснянської РДА Бахматов. ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108286",
+      "publishedAt": "2026-11-20T12:24:43+00:00",
+      "importance": "orange"
+    },
+    {
+      "id": "kyivinfo-c208ddbff9f3",
+      "title": "💡",
+      "text": "💡 Оновлений графік відключення світла для Київщини , — ДТЕК 🔜 Підписатись @kyivsvitlo_dtek",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108285",
+      "publishedAt": "2026-11-20T12:24:38+00:00",
+      "importance": "orange"
+    },
     {
       "id": "kyivinfo-1184d5c45c6f",
       "title": "🔴",

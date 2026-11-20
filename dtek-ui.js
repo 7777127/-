@@ -393,205 +393,204 @@ function getCurrentKyivHour() {
       }
     ).format(new Date());
 
+  const hour = Number(hourText);
 
-  let hour =
-    Number(hourText);
-
-
-  if (hour >= 24) {
-    hour = 0;
-  }
-
-  return hour;
-
+  return hour >= 24 ? 0 : hour;
 }
 
 
 function renderTable(schedule) {
 
-  if (
-    !schedule ||
-    schedule.length === 0
-  ) {
-
+  if (!schedule || schedule.length === 0) {
     return (
       '<div class="dtek-empty-day">' +
       '⚪ Даних за цей день поки немає' +
       '</div>'
     );
-
   }
-
 
   const hours = {};
 
+  schedule.forEach(item => {
+    const hour = Number(item.hour);
 
-  schedule.forEach(
-    item => {
-
-      const hour =
-        Number(item.hour);
-
-
-      if (
-        hour >= 1 &&
-        hour <= 24
-      ) {
-
-        hours[hour] =
-          item.status;
-
-      }
-
+    if (hour >= 1 && hour <= 24) {
+      hours[hour] = item.status;
     }
-  );
+  });
 
+  const currentHour = getCurrentKyivHour();
 
-  const currentHour =
-    getCurrentKyivHour();
+  // DTEK uses hour keys 1..24 for the intervals 00:00–01:00 ... 23:00–24:00.
+  // "first-half" means the first 30 minutes are without power.
+  // "second-half" means the second 30 minutes are without power.
+  const slots = [];
 
+  for (let hour = 1; hour <= 24; hour++) {
 
-  let cells = "";
+    const status = hours[hour] || "unknown";
 
+    if (status === "first-half") {
+      slots.push({ hour: hour - 1, minute: 0, status: "outage" });
+      slots.push({ hour: hour - 1, minute: 30, status: "normal" });
+    } else if (status === "second-half") {
+      slots.push({ hour: hour - 1, minute: 0, status: "normal" });
+      slots.push({ hour: hour - 1, minute: 30, status: "outage" });
+    } else {
+      slots.push({ hour: hour - 1, minute: 0, status });
+      slots.push({ hour: hour - 1, minute: 30, status });
+    }
+  }
 
-  for (
-    let hour = 1;
-    hour <= 24;
-    hour++
-  ) {
+  const statusLabel = status => {
+    if (status === "normal") return "Світло є";
+    if (status === "outage") return "Світла немає";
+    if (status === "emergency") return "Аварійне відключення";
+    return "Немає даних";
+  };
 
-    const status =
-      hours[hour] ||
-      "unknown";
+  const classForStatus = status => {
+    if (status === "normal") return "dtek-cell-green";
+    if (status === "outage") return "dtek-cell-dark";
+    if (status === "emergency") return "dtek-cell-yellow";
+    return "dtek-cell-empty";
+  };
 
+  // Build exact contiguous time intervals, just like the DTEK schedule:
+  // 00:00–01:00, 01:00–07:00, 07:00–08:00, etc.
+  const intervals = [];
 
-    let statusClass =
-      "dtek-cell-empty";
+  slots.forEach(slot => {
+    const current = slot.hour * 60 + slot.minute;
 
+    if (
+      intervals.length > 0 &&
+      intervals[intervals.length - 1].status === slot.status &&
+      intervals[intervals.length - 1].end === current
+    ) {
+      intervals[intervals.length - 1].end += 30;
+    } else {
+      intervals.push({
+        start: current,
+        end: current + 30,
+        status: slot.status
+      });
+    }
+  });
+
+  const formatTime = minutes => {
+    const h = Math.floor(minutes / 60) % 24;
+    const m = minutes % 60;
+
+    return (
+      String(h).padStart(2, "0") +
+      ":" +
+      String(m).padStart(2, "0")
+    );
+  };
+
+  let intervalRows = "";
+
+  intervals.forEach(interval => {
+    const isCurrent =
+      currentHour * 60 >= interval.start &&
+      currentHour * 60 < interval.end;
+
+    let rowClass =
+      classForStatus(interval.status);
+
+    if (isCurrent) {
+      rowClass += " dtek-current-hour";
+    }
 
     let title =
-      "Немає даних";
+      formatTime(interval.start) +
+      "–" +
+      formatTime(interval.end) +
+      " • " +
+      statusLabel(interval.status);
 
-
-    if (
-      status === "normal"
-    ) {
-
-      statusClass =
-        "dtek-cell-green";
-
-      title =
-        "Світло є";
-
+    if (isCurrent) {
+      title += " • Зараз";
     }
 
-
-    else if (
-      status === "outage"
-    ) {
-
-      statusClass =
-        "dtek-cell-dark";
-
-      title =
-        "Світла немає";
-
-    }
-
-
-    else if (
-      status === "first-half"
-    ) {
-
-      statusClass =
-        "dtek-cell-first-half";
-
-      title =
-        "Перші 30 хв. — світла немає";
-
-    }
-
-
-    else if (
-      status === "second-half"
-    ) {
-
-      statusClass =
-        "dtek-cell-second-half";
-
-      title =
-        "Другі 30 хв. — світла немає";
-
-    }
-
-
-    else if (
-      status === "emergency"
-    ) {
-
-      statusClass =
-        "dtek-cell-yellow";
-
-      title =
-        "Аварійне відключення";
-
-    }
-
-
-    if (
-      displayStartHour === currentHour
-    ) {
-
-      statusClass +=
-        " dtek-current-hour";
-
-      title +=
-        " • Зараз";
-
-    }
-
-
-    const displayStartHour = hour - 1;
-
-    const startText = String(displayStartHour).padStart(2, "0");
-    const endText = String(hour % 24).padStart(2, "0");
-
-
-    cells +=
-
-      '<div class="dtek-hour-cell ' +
-      statusClass +
+    intervalRows +=
+      '<div class="dtek-interval-row ' +
+      rowClass +
       '" title="' +
       escapeHtml(title) +
       '">' +
-
-        '<div class="dtek-hour-number">' +
-          hourText +
-        '</div>' +
-
-        '<div class="dtek-hour-block">' +
-        '</div>' +
-
+        '<span class="dtek-interval-time">' +
+          formatTime(interval.start) +
+          '–' +
+          formatTime(interval.end) +
+        '</span>' +
+        '<span class="dtek-interval-status">' +
+          statusLabel(interval.status) +
+        '</span>' +
       '</div>';
+  });
 
+  // Compact 24-hour timeline, visually similar to the DTEK schedule.
+  let timeline = "";
+
+  slots.forEach(slot => {
+    const isCurrent =
+      slot.hour === currentHour;
+
+    let slotClass =
+      classForStatus(slot.status);
+
+    if (isCurrent) {
+      slotClass += " dtek-current-hour";
+    }
+
+    timeline +=
+      '<div class="dtek-half-hour ' +
+      slotClass +
+      '" title="' +
+      escapeHtml(
+        formatTime(slot.hour * 60 + slot.minute) +
+        "–" +
+        formatTime(slot.hour * 60 + slot.minute + 30) +
+        " • " +
+        statusLabel(slot.status)
+      ) +
+      '"></div>';
+  });
+
+  let hourLabels = "";
+
+  for (let hour = 0; hour < 24; hour++) {
+    hourLabels +=
+      '<span>' +
+      String(hour).padStart(2, "0") +
+      ':00' +
+      '</span>';
   }
 
-
   return (
-
     '<div class="dtek-table-wrapper">' +
 
-      '<div class="dtek-table">' +
+      '<div class="dtek-intervals">' +
+        '<div class="dtek-interval-title">Часові проміжки</div>' +
+        intervalRows +
+      '</div>' +
 
-        cells +
+      '<div class="dtek-timeline-title">Графік на добу</div>' +
 
+      '<div class="dtek-timeline-labels">' +
+        hourLabels +
+      '</div>' +
+
+      '<div class="dtek-timeline">' +
+        timeline +
       '</div>' +
 
     '</div>'
-
   );
-
 }
+
 
 
 function extractGroup(value) {

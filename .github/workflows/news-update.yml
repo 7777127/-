@@ -3,7 +3,7 @@ name: KYIV news update
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/15 * * * *"
+    - cron: "*/5 * * * *"
   push:
     paths:
       - "news_fetch.py"

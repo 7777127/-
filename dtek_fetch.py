@@ -1,4 +1,4 @@
-import asyncio
+﻿import asyncio
 import json
 from datetime import datetime, timezone, timedelta
 
@@ -20,25 +20,25 @@ async def main() -> None:
         if house is None:
             raise RuntimeError(
                 f"Будинок {HOUSE!r} не знайдено на {STREET!r}. "
-                f"Доступні будинки: {list(response.houses)[:30]}"
+                f"Приклади доступних будинків: {list(response.houses)[:20]}"
             )
 
         group_id = house.primary_group
 
         if not group_id:
             raise RuntimeError(
-                f"DTEK не повернув групу для адреси "
-                f"{STREET}, {HOUSE}."
+                f"DTEK не повернув групу для будинку {HOUSE!r}."
             )
 
-        today = None
-        tomorrow = None
         group_name = ""
 
         if response.preset:
             group_name = str(
                 response.preset.sch_names.get(group_id, "")
             )
+
+        today = None
+        tomorrow = None
 
         if response.fact:
             today = response.fact.get_group_today(group_id)
@@ -52,12 +52,7 @@ async def main() -> None:
                 group_id,
             )
 
-        group = (
-            f"{CITY}, {STREET}, {HOUSE}"
-        )
-
-        if group_name:
-            group += f" -> {group_name}"
+        group = f"{CITY}, {STREET}, {HOUSE}"
 
     result = {
         "ok": True,

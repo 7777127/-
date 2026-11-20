@@ -1,18 +1,18 @@
-import asyncio
+﻿import asyncio
 import json
 from datetime import datetime, timezone, timedelta
 
 from dtek_client import DtekClient
 
 SITE_KEY = "kem"
-CITY = "м. Київ"
-STREET = "вул. Бальзака Оноре"
-HOUSE = "63/Б"
+CITY = "Рј. РљРёС—РІ"
+STREET = "РІСѓР». Р‘Р°Р»СЊР·Р°РєР° РћРЅРѕСЂРµ"
+HOUSE = "63/Р‘"
 
-# DTEK currently lists 63/Б separately from 63-В.
-# 63/Б belongs to queue 9.1, while 63-В belongs to queue 11.1.
+# DTEK currently lists 63/Р‘ separately from 63-Р’.
+# 63/Р‘ belongs to queue 9.1, while 63-Р’ belongs to queue 11.1.
 HOUSE_QUEUE_OVERRIDES = {
-    "63/Б": "9.1",
+    "63/Р‘": "9.1",
 }
 
 
@@ -28,7 +28,7 @@ async def main() -> None:
             )
 
         # Use the address-specific queue when DTEK's house entry incorrectly
-        # resolves 63/Б to the neighbouring 63-В entry.
+        # resolves 63/Р‘ to the neighbouring 63-Р’ entry.
         queue_override = HOUSE_QUEUE_OVERRIDES.get(HOUSE)
 
         if queue_override and response.preset:
@@ -37,7 +37,7 @@ async def main() -> None:
 
             for gid, name in response.preset.sch_names.items():
                 name_text = str(name)
-                if queue_override in name_text:
+                if queue_override == name_text.strip().replace("Черга ", ""):
                     group_id = gid
                     group_name = name_text
                     break
@@ -104,3 +104,4 @@ async def main() -> None:
 
 if __name__ == "__main__":
     asyncio.run(main())
+

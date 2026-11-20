@@ -1,212 +1,231 @@
+import hashlib
 import json
 import re
-from datetime import datetime, timezone
-from urllib.parse import urljoin, urlparse
+from datetime import datetime, timedelta, timezone
 
-import requests
 from bs4 import BeautifulSoup
+import requests
+
+OUTPUT_FILE = "news-data.json"
+RETENTION_DAYS = 3  # 2 або 3 дні — скільки тримати новини в стрічці
 
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (KYIV-bezpeka/1.0)"
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/124.0.0.0 Safari/537.36"
+    )
 }
 
 SOURCES = [
     {
-        "name": "Київська ОВА",
-        "region": "kyiv-region",
-        "url": "https://koda.gov.ua/",
-        "host": "koda.gov.ua",
+        "prefix": "kyivinfo",
+        "name": "Київ ІНФО",
+        "region": "kyiv",
+        "url": "https://t.me/kievinfo_kyiv",
+        "web_url": "https://t.me/s/kievinfo_kyiv",
     },
     {
-        "name": "Київська міська рада",
+        "prefix": "kyivnebo",
+        "name": "Київ Небо",
         "region": "kyiv",
-        "url": "https://kmr.gov.ua/",
-        "host": "kmr.gov.ua",
+        "url": "https://t.me/kyiv_nebo",
+        "web_url": "https://t.me/s/kyiv_nebo",
     },
 ]
 
-MONTHS = {
-    "січня": 1, "лютого": 2, "березня": 3, "квітня": 4,
-    "травня": 5, "червня": 6, "липня": 7, "серпня": 8,
-    "вересня": 9, "жовтня": 10, "листопада": 11, "грудня": 12,
-}
-
-DATE_RE = re.compile(
-    r"(\d{1,2})\s+"
-    r"(січня|лютого|березня|квітня|травня|червня|липня|серпня|"
-    r"вересня|жовтня|листопада|грудня)"
-    r"(?:,)?\s+(\d{4})"
+URGENT_WORDS = (
+    "ракет", "шахед", "дрон", "бпла", "обстріл",
+    "удар", "вибух", "атака", "тривог", "пуски", "балістик",
 )
 
-BAD_PATHS = (
-    "/category/", "/tag/", "/author/", "/page/", "/search",
-    "/wp-admin", "/wp-json", "/feed", "/contact", "/about",
+IMPORTANT_WORDS = (
+    "безпек", "надзвичай", "рятув", "захист",
+    "пошкоджен", "відновлен", "знеструм", "світл",
+    "опален", "укрит", "цивільн", "метро", "транспорт",
 )
-
-SKIP_TITLES = {
-    "детальніше", "показати", "меню", "контакти", "пошук",
-    "діяльність", "установи", "громадськості", "усі новини",
-    "архів", "головна", "мапа порталу", "нормативна база",
-    "проєкти рішень", "читати далі",
-}
 
 
 def clean_text(value):
     return re.sub(r"\s+", " ", value or "").strip()
 
 
-def parse_date(text):
-    match = DATE_RE.search(text or "")
-    if not match:
-        return None
-
-    return datetime(
-        int(match.group(3)),
-        MONTHS[match.group(2)],
-        int(match.group(1)),
-        tzinfo=timezone.utc,
-    )
-
-
-def importance(title):
-    text = title.lower()
-
-    urgent = (
-        "ракет", "шахед", "дрон", "бпла", "обстріл",
-        "удар", "вибух", "атака", "тривог"
-    )
-    important = (
-        "безпек", "надзвичай", "рятув", "захист",
-        "пошкоджен", "відновлен", "знеструм", "опален",
-        "укрит", "цивільн"
-    )
-
-    if any(word in text for word in urgent):
+def importance(title, full_text=""):
+    text = f"{title} {full_text}".lower()
+    if any(word in text for word in URGENT_WORDS):
         return "red"
-    if any(word in text for word in important):
+    if any(word in text for word in IMPORTANT_WORDS):
         return "orange"
     return "normal"
 
 
-def valid_link(anchor, source):
-    title = clean_text(anchor.get_text(" ", strip=True))
-    href = anchor.get("href", "")
-
-    if not 20 <= len(title) <= 240:
+def parse_published_dt(raw_dt):
+    if not raw_dt:
+        return None
+    try:
+        dt = datetime.fromisoformat(raw_dt.replace("Z", "+00:00"))
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        return dt.astimezone(timezone.utc)
+    except Exception:
         return None
 
-    if title.lower() in SKIP_TITLES:
-        return None
 
-    url = urljoin(source["url"], href)
-    parsed = urlparse(url)
-
-    if parsed.netloc.lower() != source["host"]:
-        return None
-
-    path = parsed.path.rstrip("/")
-    if not path or any(path.startswith(p) for p in BAD_PATHS):
-        return None
-
-    return title, url
+def make_id(prefix, key):
+    digest = hashlib.sha256(key.encode("utf-8")).hexdigest()[:12]
+    return f"{prefix}-{digest}"
 
 
-def fetch_source(source):
-    response = requests.get(
-        source["url"],
-        headers=HEADERS,
-        timeout=30,
-    )
-    response.raise_for_status()
+def load_existing_items(cutoff_dt):
+    """Завантажує попередні новини та залишає лише актуальні за RETENTION_DAYS."""
+    try:
+        with open(OUTPUT_FILE, "r", encoding="utf-8") as f:
+            data = json.load(f)
+    except FileNotFoundError:
+        return [], None
+    except json.JSONDecodeError as err:
+        msg = f"Пошкоджений {OUTPUT_FILE}: {err}"
+        print(f"ПОПЕРЕДЖЕННЯ: {msg}")
+        return [], msg
+    except OSError as err:
+        msg = f"Помилка читання {OUTPUT_FILE}: {err}"
+        print(f"ПОПЕРЕДЖЕННЯ: {msg}")
+        return [], msg
 
-    soup = BeautifulSoup(response.text, "html.parser")
-    items = []
-    seen_urls = set()
+    raw_items = data.get("items") if isinstance(data, dict) else []
+    if not isinstance(raw_items, list):
+        return [], None
 
-    # Prefer semantic article/news containers; fall back to all links.
-    anchors = soup.select(
-        "article a[href], .news a[href], .news-item a[href], "
-        ".post a[href], .article a[href], main a[href], a[href]"
-    )
-
-    for anchor in anchors:
-        candidate = valid_link(anchor, source)
-        if not candidate:
+    kept = []
+    for item in raw_items:
+        if not isinstance(item, dict):
             continue
+        dt = parse_published_dt(item.get("publishedAt"))
+        if dt and dt >= cutoff_dt:
+            kept.append(item)
 
-        title, url = candidate
-        if url in seen_urls:
-            continue
+    return kept, None
 
-        seen_urls.add(url)
 
-        container = anchor
-        for _ in range(4):
-            if container.parent is None:
-                break
-            container = container.parent
-
-            text = clean_text(container.get_text(" ", strip=True))
-            published = parse_date(text)
-
-            if published:
-                break
-        else:
-            published = None
-
-        # Keep only links that look like actual news entries.
-        path = urlparse(url).path.lower()
-        looks_like_news = (
-            published is not None
-            or any(token in path for token in ("/news/", "/novyny/", "/2026/"))
+def fetch_source(source, cutoff_dt):
+    """Отримує пости з публічної веб-сторінки каналу та повертає (items, error_str)."""
+    try:
+        response = requests.get(
+            source["web_url"],
+            headers=HEADERS,
+            timeout=25,
         )
+        response.raise_for_status()
+    except requests.Timeout:
+        err = f"{source['name']}: таймаут запиту"
+        print(f"News source failed: {err}")
+        return [], err
+    except requests.HTTPError as exc:
+        code = exc.response.status_code if exc.response is not None else "unknown"
+        err = f"{source['name']}: HTTP {code}"
+        print(f"News source failed: {err}")
+        return [], err
+    except requests.RequestException as exc:
+        err = f"{source['name']}: помилка мережі ({exc})"
+        print(f"News source failed: {err}")
+        return [], err
 
-        if not looks_like_news:
+    try:
+        soup = BeautifulSoup(response.text, "html.parser")
+        messages = soup.select(".tgme_widget_message_wrap")
+    except Exception as exc:
+        err = f"{source['name']}: помилка парсингу HTML ({exc})"
+        print(f"News source failed: {err}")
+        return [], err
+
+    items = []
+    for msg in messages[-20:]:
+        try:
+            text_el = msg.select_one(".tgme_widget_message_text")
+            time_el = msg.select_one("time.time")
+            link_el = msg.select_one(".tgme_widget_message_date")
+
+            raw_multiline = text_el.get_text("\n", strip=True) if text_el else ""
+            full_text = clean_text(raw_multiline)
+            if not full_text:
+                continue
+
+            first_line = raw_multiline.split("\n")[0].strip() if raw_multiline else full_text
+            title = first_line[:120] + "..." if len(first_line) > 120 else first_line
+
+            dt = parse_published_dt(time_el.get("datetime") if time_el else None) or datetime.now(timezone.utc)
+            if dt < cutoff_dt:
+                continue
+
+            post_url = (link_el.get("href") if link_el else "") or source["url"]
+            dedup_key = post_url.strip() if post_url.strip() != source["url"] else f"{source['name']}::{full_text}"
+
+            items.append({
+                "id": make_id(source["prefix"], dedup_key),
+                "title": title,
+                "text": full_text,
+                "source": source["name"],
+                "region": source["region"],
+                "url": post_url,
+                "publishedAt": dt.isoformat(),
+                "importance": importance(title, full_text),
+            })
+        except Exception as exc:
+            print(f"ПОПЕРЕДЖЕННЯ ({source['name']}): пропущено пост через помилку: {exc}")
             continue
 
-        items.append({
-            "id": f"{source['region']}:{url}",
-            "title": title,
-            "source": source["name"],
-            "region": source["region"],
-            "url": url,
-            "publishedAt": published.isoformat() if published else None,
-            "importance": importance(title),
-        })
-
-        if len(items) >= 20:
-            break
-
-    return items
+    print(f"{source['name']}: {len(items)} items")
+    return items, None
 
 
 def main():
-    all_items = []
+    now_dt = datetime.now(timezone.utc)
+    cutoff_dt = now_dt - timedelta(days=RETENTION_DAYS)
+
+    existing_items, load_err = load_existing_items(cutoff_dt)
+    fetched_items = []
+    errors = []
+
+    if load_err:
+        errors.append(load_err)
 
     for source in SOURCES:
-        try:
-            source_items = fetch_source(source)
-            print(f"{source['name']}: {len(source_items)} items")
-            all_items.extend(source_items)
-        except Exception as error:
-            print(f"News source failed: {source['name']}: {error}")
+        source_items, err = fetch_source(source, cutoff_dt)
+        if err:
+            errors.append(err)
+        fetched_items.extend(source_items)
 
-    unique = {item["id"]: item for item in all_items}
-    items = list(unique.values())
+    # Об'єднуємо старі (за останні RETENTION_DAYS днів) та нові записи без дублікатів
+    merged = {}
+    for item in existing_items:
+        item_id = item.get("id") or make_id(item.get("source", "src"), item.get("url") or item.get("text", ""))
+        merged[item_id] = item
 
+    for item in fetched_items:
+        merged[item["id"]] = item
+
+    items = list(merged.values())
     items.sort(
-        key=lambda item: item["publishedAt"] or "",
+        key=lambda x: parse_published_dt(x.get("publishedAt")) or datetime.min.replace(tzinfo=timezone.utc),
         reverse=True,
     )
 
     result = {
-        "ok": bool(items),
-        "fetchedAt": datetime.now(timezone.utc).isoformat(),
-        "items": items[:40],
+        "ok": len(items) > 0 or len(errors) < len(SOURCES),
+        "fetchedAt": now_dt.isoformat(),
+        "retentionDays": RETENTION_DAYS,
+        "count": len(items),
+        "items": items,
     }
+    if errors:
+        result["errors"] = errors
 
-    with open("news-data.json", "w", encoding="utf-8") as file:
-        json.dump(result, file, ensure_ascii=False, indent=2)
+    try:
+        with open(OUTPUT_FILE, "w", encoding="utf-8") as file:
+            json.dump(result, file, ensure_ascii=False, indent=2)
+    except OSError as exc:
+        print(f"КРИТИЧНА ПОМИЛКА запису {OUTPUT_FILE}: {exc}")
+        raise SystemExit(1)
 
     print(json.dumps(result, ensure_ascii=False, indent=2))
 

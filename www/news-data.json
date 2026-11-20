@@ -1,0 +1,348 @@
+{
+  "ok": true,
+  "fetchedAt": "2026-11-20T10:20:42.348204+00:00",
+  "retentionDays": 3,
+  "count": 34,
+  "items": [
+    {
+      "id": "kyivinfo-fc53da9ed793",
+      "title": "😕",
+      "text": "😕 Проспект Воскресенський , Троєщина, Лівобережна, міст Метро вже стабільна ситуація…. ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108274",
+      "publishedAt": "2026-11-20T10:08:55+00:00",
+      "importance": "orange"
+    },
+    {
+      "id": "kyivinfo-a1476fffc678",
+      "title": "❗️",
+      "text": "❗️ У Подільському районі вибухотехніки вилучили бойову частину російського БПЛА, який вчора вдарив по житловому будинку. Боєприпас вагою близько 50 кг не здетонував. У разі його вибуху було зруйновано всі п'ять поверхів будівлі. ❗️ Уламок російського безпілотника пробив житловий будинок у селищі Мироцьке Бучанського району, поранене подружжя , – повідомив міський голова Бучі 🇺🇦 Київ ІНФО | Надіслати новину",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108268",
+      "publishedAt": "2026-11-20T09:22:59+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-9fa0d5ba086d",
+      "title": "😵",
+      "text": "😵 ❗️ Шалена нічна ПОЖЕЖА 💥 у Чернівцях після влучання Ситуація з Буковини 👉🏽 СТЕЖИТИ 🇺🇦 Київ ІНФО | Надіслати новину",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108267",
+      "publishedAt": "2026-11-20T09:00:04+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-119f789e9190",
+      "title": "🛡",
+      "text": "🛡 ❗️ ППО знищила 462 повітряні цілі під час масованої атаки РФ, — Повітряні сили Серед них — 79 із 84 крилатих ракет, 3 балістичні ракети та 380 із 404 БпЛА, зокрема 102 реактивні. Влучання зафіксували на 23 локаціях, падіння уламків — ще на 10.",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108266",
+      "publishedAt": "2026-11-20T08:54:12+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-efd8152b1787",
+      "title": "✅",
+      "text": "✅ ВІДБІЙ ПОВІТРЯНОЇ ТРИВОГИ ✅",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108265",
+      "publishedAt": "2026-11-20T08:53:22+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-8514e93ce513",
+      "title": "Один із ударів влучив у підстанцію поблизу Трипільської ТЕС,",
+      "text": "Один із ударів влучив у підстанцію поблизу Трипільської ТЕС, — енергетичний експерт Станіслав Ігнатьєв 🇺🇦 Київ ІНФО | Надіслати новину",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108264",
+      "publishedAt": "2026-11-20T08:51:02+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-64154adbc30c",
+      "title": "😰",
+      "text": "😰 ❗️ 6 людей загинули через атаку ворога на Київ, ще 15 — поранені, уточнив премʼєр-міністр Корецький. ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108263",
+      "publishedAt": "2026-11-20T08:44:21+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-0fa4e7f6e548",
+      "title": "РБПЛА на Центр Києва, лунають вибухи",
+      "text": "РБПЛА на Центр Києва, лунають вибухи 💥",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108262",
+      "publishedAt": "2026-11-20T08:43:34+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-bde390f24a8b",
+      "title": "РБПЛА на Центр Києва, лунають вибухи",
+      "text": "РБПЛА на Центр Києва, лунають вибухи 💥",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108261",
+      "publishedAt": "2026-11-20T08:41:33+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-05f025af2ca0",
+      "title": "🤯",
+      "text": "🤯 рф знищила кондитерський цех «milfey» у Києві, - повідомили читачі ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108260",
+      "publishedAt": "2026-11-20T08:36:58+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-00fde90212c2",
+      "title": "2х РБПЛА Вишгород, Буча",
+      "text": "2х РБПЛА Вишгород, Буча",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108259",
+      "publishedAt": "2026-11-20T08:36:49+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-f26328efdc05",
+      "title": "🟡",
+      "text": "🟡 м. Київ — повітряна тривога, жовтий рівень: Дронова загроза (жовтий рівень)",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108258",
+      "publishedAt": "2026-11-20T08:34:13+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-e2f959004b51",
+      "title": "🟡",
+      "text": "🟡 Жовтий рівень тривоги • Бориспільський район (Київська обл.) • Обухівський район (Київська обл.) • Фастівський район (Київська обл.) Детальний радар 👉🏽 @kievinform_ua1",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108257",
+      "publishedAt": "2026-11-20T08:31:34+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-8073b60b2434",
+      "title": "✅",
+      "text": "✅ 🌉 Мости у Києві. Які обмеження діють і хто як працює • Північний міст — повністю перекритий, рух дозволено лише громадському транспорту. • Подільсько-Воскресенський — з правого на лівий берег рух перекрито через атаку. У зворотному напрямку, ймовірно, відкрито. • Міст Метро — рух без обмежень, але червона гілка метро мостом не курсує. • Міст Патона — без обмежень. До 16:00 діє реверс: три з п’яти смуг у напрямку правого берега. • Дарницький — рух без обмежень. • Південний — рух перекрито в обох напрямках через пошкодження. Зелена гілка метро мостом не курсує. ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108255",
+      "publishedAt": "2026-11-20T08:00:39+00:00",
+      "importance": "orange"
+    },
+    {
+      "id": "kyivnebo-fdf08fec2ce4",
+      "title": "Вилетіли на Житомирщину",
+      "text": "Вилетіли на Житомирщину",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34153",
+      "publishedAt": "2026-11-20T07:43:30+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-63577300fa5c",
+      "title": "Крилаті ракети з Чернігівщини на водосховище",
+      "text": "Крилаті ракети з Чернігівщини на водосховище",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34152",
+      "publishedAt": "2026-11-20T07:38:40+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivnebo-1e4351a18131",
+      "title": "Відбій",
+      "text": "Відбій",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34151",
+      "publishedAt": "2026-11-20T05:53:33+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-dc83d95d9639",
+      "title": "На Київ наразі нічого не летить",
+      "text": "На Київ наразі нічого не летить",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34150",
+      "publishedAt": "2026-11-20T05:31:46+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-d3243ffbbd02",
+      "title": "Поки всі пролетіли Київ, у наш бік наразі нічого немає",
+      "text": "Поки всі пролетіли Київ, у наш бік наразі нічого немає",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34149",
+      "publishedAt": "2026-11-20T05:25:11+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-80ca7a8f7a2f",
+      "title": "Близько до Києва, проходять наче",
+      "text": "Близько до Києва, проходять наче",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34148",
+      "publishedAt": "2026-11-20T05:15:54+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-f7f754545893",
+      "title": "Є крилаті у наш бік, Бровари, Вишгород, Київ - увага",
+      "text": "Є крилаті у наш бік, Бровари, Вишгород, Київ - увага",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34147",
+      "publishedAt": "2026-11-20T05:14:08+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-0902d0274e96",
+      "title": "Крилаті поки на Захід летять",
+      "text": "Крилаті поки на Захід летять",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34146",
+      "publishedAt": "2026-11-20T05:11:23+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-1b452983e913",
+      "title": "Реактивний біля Троєщини",
+      "text": "Реактивний біля Троєщини",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34145",
+      "publishedAt": "2026-11-20T05:08:08+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-6709930a2ab9",
+      "title": "Загроза балістики з Воронежа",
+      "text": "Загроза балістики з Воронежа",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34144",
+      "publishedAt": "2026-11-20T05:05:16+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivnebo-8ab6e001d58d",
+      "title": "Київ поки чисто",
+      "text": "Київ поки чисто",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34143",
+      "publishedAt": "2026-11-20T04:52:00+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-6bbcf57bd3a1",
+      "title": "Це крилата ракета на Чернігівщині",
+      "text": "Це крилата ракета на Чернігівщині",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34142",
+      "publishedAt": "2026-11-20T04:49:13+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivnebo-03e17d35a581",
+      "title": "Ще цілі",
+      "text": "Ще цілі",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34141",
+      "publishedAt": "2026-11-20T04:48:05+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-ae266ec17f87",
+      "title": "Наразі чисто",
+      "text": "Наразі чисто",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34140",
+      "publishedAt": "2026-11-20T04:46:12+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-aacb00a37e5c",
+      "title": "Ну на мости майже все",
+      "text": "Ну на мости майже все",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34139",
+      "publishedAt": "2026-11-20T04:45:47+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-b27b43441952",
+      "title": "2 підлітають",
+      "text": "2 підлітають",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34138",
+      "publishedAt": "2026-11-20T04:45:33+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-29d2c30976de",
+      "title": "Цілі на Київ",
+      "text": "Цілі на Київ",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34137",
+      "publishedAt": "2026-11-20T04:44:40+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-a3a2cd223913",
+      "title": "Крилаті з ТУшок залітають через Харківщину",
+      "text": "Крилаті з ТУшок залітають через Харківщину",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34136",
+      "publishedAt": "2026-11-20T04:43:44+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-50052e71cb01",
+      "title": "Ймовірно пуск з Брянська",
+      "text": "Ймовірно пуск з Брянська",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34135",
+      "publishedAt": "2026-11-20T04:41:32+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-55d87558750e",
+      "title": "Крилаті наразі на Вінниччину, далі побачимо куди",
+      "text": "Крилаті наразі на Вінниччину, далі побачимо куди",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34134",
+      "publishedAt": "2026-11-20T04:25:41+00:00",
+      "importance": "normal"
+    }
+  ]
+}

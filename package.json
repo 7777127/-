@@ -1,0 +1,9 @@
+{
+  "name": "my-security-news",
+  "version": "1.0.0",
+  "dependencies": {
+    "@capacitor/android": "^8.6.2",
+    "@capacitor/cli": "^8.6.2",
+    "cheerio": "^1.2.0"
+  }
+}

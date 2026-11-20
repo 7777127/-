@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "721748468476",
+    "project_id": "kievh-3081f",
+    "storage_bucket": "kievh-3081f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:721748468476:android:ff770ff9f6911b642bed79",
+        "android_client_info": {
+          "package_name": "com.kyiv.bezpeka"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-5jTS0c8zr9rOpBDO1e5BqW3O8d2jG8s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

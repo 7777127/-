@@ -1,0 +1,4695 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KYIV Р±РµР·РїРµРєР°</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#2e7d32">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #f4f6f9;
+  --card: #ffffff;
+  --card-soft: #f7f9fc;
+
+  --text: #18202a;
+  --text-soft: #3f4854;
+  --muted: #707986;
+
+  --border: rgba(20, 30, 40, 0.08);
+
+  --primary: #2563eb;
+  --primary-soft: #eff6ff;
+
+  --green: #16a34a;
+  --green-soft: #ecfdf3;
+
+  --red: #dc2626;
+  --red-soft: #fff1f2;
+
+  --yellow: #d97706;
+  --yellow-soft: #fffbeb;
+
+  --shadow:
+    0 8px 30px rgba(15, 23, 42, 0.07);
+
+  --shadow-small:
+    0 3px 12px rgba(15, 23, 42, 0.06);
+
+  --radius: 20px;
+}
+
+
+/* =================================
+   РўР•РњРќРђ РўР•РњРђ
+================================= */
+
+body.dark {
+  --bg: #0c1016;
+  --card: #151a21;
+  --card-soft: #1b222b;
+
+  --text: #f3f4f6;
+  --text-soft: #d1d5db;
+  --muted: #9aa4b2;
+
+  --border: rgba(255, 255, 255, 0.08);
+
+  --primary: #60a5fa;
+  --primary-soft: #172554;
+
+  --green: #4ade80;
+  --green-soft: #10291b;
+
+  --red: #f87171;
+  --red-soft: #35181b;
+
+  --yellow: #fbbf24;
+  --yellow-soft: #332711;
+
+  --shadow:
+    0 10px 35px rgba(0, 0, 0, 0.28);
+
+  --shadow-small:
+    0 4px 14px rgba(0, 0, 0, 0.22);
+}
+
+
+/* =================================
+   РћРЎРќРћР’Рђ
+================================= */
+
+body {
+  margin: 0;
+  padding: 20px;
+
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
+
+  background: var(--bg);
+  color: var(--text);
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+.app {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+
+/* =================================
+   РЁРђРџРљРђ
+================================= */
+
+.header {
+  position: relative;
+
+  text-align: center;
+
+  margin-bottom: 25px;
+}
+
+.app-icon {
+  width: 66px;
+  height: 66px;
+
+  margin: 0 auto 11px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background:
+    linear-gradient(
+      145deg,
+      #2563eb,
+      #1d4ed8
+    );
+
+  border-radius: 19px;
+
+  font-size: 34px;
+
+  box-shadow:
+    0 10px 25px
+    rgba(37, 99, 235, 0.28);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.app-icon:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 13px 30px
+    rgba(37, 99, 235, 0.34);
+}
+
+.header h1 {
+  margin: 0;
+
+  font-size: 29px;
+  font-weight: 800;
+
+  letter-spacing: -0.5px;
+}
+
+.header p {
+  margin: 7px 0 0;
+
+  color: var(--muted);
+
+  font-size: 14px;
+
+  line-height: 1.4;
+}
+
+
+/* =================================
+   РљРќРћРџРљРђ РўР•РњР
+================================= */
+
+.theme-button {
+  position: absolute;
+
+  right: 0;
+  top: 0;
+
+  width: 44px;
+  height: 44px;
+
+  border:
+    1px solid var(--border);
+
+  border-radius: 14px;
+
+  background: var(--card);
+
+  color: var(--text);
+
+  font-size: 20px;
+
+  box-shadow:
+    var(--shadow-small);
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    background 0.3s ease,
+    border 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.theme-button:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    var(--shadow);
+}
+
+.theme-button:active {
+  transform: scale(0.95);
+}
+
+
+/* =================================
+   РЎР†РўРљРђ
+================================= */
+
+.content-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.15fr)
+    minmax(300px, 0.85fr);
+
+  gap: 18px;
+
+  align-items: start;
+}
+
+.left-column,
+.right-column {
+  min-width: 0;
+}
+
+
+/* =================================
+   Р—РђР“РђР›Р¬РќР† РљРђР РўРљР
+================================= */
+
+.card {
+  background: var(--card);
+
+  color: var(--text);
+
+  border:
+    1px solid var(--border);
+
+  border-radius: var(--radius);
+
+  padding: 20px;
+
+  margin-bottom: 18px;
+
+  box-shadow:
+    var(--shadow);
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    border 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.card-title {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin-bottom: 15px;
+
+  color: var(--text);
+
+  font-size: 18px;
+
+  font-weight: 800;
+
+  letter-spacing: -0.2px;
+
+  line-height: 1.3;
+}
+
+
+/* =================================
+   Р’РР‘Р†Р  РњР†РЎРўРђ
+================================= */
+
+.city-select-label {
+  margin-bottom: 9px;
+
+  color: var(--muted);
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.1px;
+}
+
+#city-select {
+  width: 100%;
+
+  appearance: none;
+  -webkit-appearance: none;
+
+  padding:
+    14px 46px 14px 16px;
+
+  border:
+    1px solid var(--border);
+
+  border-radius: 15px;
+
+  background-color:
+    var(--card-soft);
+
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='%23707986' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+
+  background-repeat: no-repeat;
+
+  background-position:
+    right 15px center;
+
+  color: var(--text);
+
+  font-family: inherit;
+
+  font-size: 15px;
+
+  font-weight: 700;
+
+  outline: none;
+
+  box-shadow:
+    var(--shadow-small);
+
+  cursor: pointer;
+
+  transition:
+    background 0.25s ease,
+    border 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.2s ease;
+}
+
+#city-select:hover {
+  border-color: var(--primary);
+
+  transform: translateY(-1px);
+}
+
+#city-select:focus {
+  border-color: var(--primary);
+
+  box-shadow:
+    0 0 0 3px
+    color-mix(
+      in srgb,
+      var(--primary) 18%,
+      transparent
+    );
+}
+
+#city-select option {
+  background: var(--card);
+
+  color: var(--text);
+
+  font-weight: 600;
+}
+
+body.dark #city-select {
+  background-color: var(--card-soft);
+
+  border-color:
+    rgba(255, 255, 255, 0.10);
+}
+
+body.dark #city-select option {
+  background: #1b222b;
+
+  color: #f3f4f6;
+}
+
+
+/* =================================
+   РЎРўРђРќ РњР†РЎРўРђ
+================================= */
+
+.status-box {
+  padding: 19px 15px;
+
+  border-radius: 17px;
+
+  text-align: center;
+
+  font-size: 19px;
+
+  font-weight: 800;
+
+  border:
+    1px solid rgba(0, 0, 0, 0.04);
+
+  box-shadow:
+    inset 0 1px 0
+    rgba(255, 255, 255, 0.4);
+
+  line-height: 1.35;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    border 0.3s ease;
+}
+
+.timer {
+  margin-top: 11px;
+
+  text-align: center;
+
+  color: var(--text);
+
+  font-size: 15px;
+
+  font-weight: 700;
+}
+
+.updated {
+  margin-top: 8px;
+
+  text-align: center;
+
+  color: var(--muted);
+
+  font-size: 12px;
+}
+
+
+/* =================================
+   Р—РђР“Р РћР—Р РџРћР РЈР§
+================================= */
+
+#kyiv-region-threat {
+  margin-top: 4px;
+}
+
+
+/*
+   Р—Р°РіРѕР»РѕРІРєРё:
+   вљ пёЏ Р Р°Р№РѕРЅРё РѕР±Р»Р°СЃС‚С–
+   рџ“Ќ РћР±Р»Р°СЃС‚СЊ
+   вљ пёЏ РЎСѓСЃС–РґРЅС– РѕР±Р»Р°СЃС‚С–
+*/
+
+#kyiv-region-threat > div[style*="font-weight"] {
+  display: flex !important;
+
+  align-items: center !important;
+
+  min-height: 38px !important;
+
+  padding: 8px 6px !important;
+
+  margin-top: 16px !important;
+
+  margin-bottom: 9px !important;
+
+  background: transparent !important;
+
+  color: #18202a !important;
+
+  font-size: 14px !important;
+
+  font-weight: 800 !important;
+
+  line-height: 1.35 !important;
+
+  letter-spacing: 0.1px;
+
+  opacity: 1 !important;
+}
+
+
+/*
+   рџЊ™ РЈ РўР•РњРќР†Р™ РўР•РњР†
+   Р·Р°РіРѕР»РѕРІРєРё Р·Р°РІР¶РґРё Р±С–Р»С–
+*/
+
+body.dark
+#kyiv-region-threat > div[style*="font-weight"] {
+  background: transparent !important;
+
+  color: #ffffff !important;
+
+  opacity: 1 !important;
+
+  text-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+body.dark
+#kyiv-region-threat > div[style*="font-weight"] * {
+  color: #ffffff !important;
+}
+
+
+/* =================================
+   РљРђР РўРљР Р—РђР“Р РћР—
+================================= */
+
+.district-item {
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  min-height: 49px;
+
+  padding: 12px 14px;
+
+  margin-bottom: 9px;
+
+  border-radius: 15px;
+
+  background:
+    var(--card-soft);
+
+  border:
+    1px solid var(--border);
+
+  border-left:
+    4px solid var(--border);
+
+  color:
+    var(--text) !important;
+
+  box-shadow:
+    var(--shadow-small);
+
+  font-size: 14px;
+
+  font-weight: 650;
+
+  line-height: 1.4;
+
+  transition:
+    transform 0.2s ease,
+    background 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.district-item:hover {
+  transform: translateY(-1px);
+
+  box-shadow:
+    var(--shadow);
+}
+
+.district-item,
+.district-item * {
+  color:
+    var(--text) !important;
+}
+
+
+/* =================================
+   рџ”ґ Р РђРљР•РўРќРђ РќР•Р‘Р•Р—РџР•РљРђ
+================================= */
+
+.district-red {
+  background:
+    linear-gradient(
+      135deg,
+      var(--red-soft),
+      var(--card)
+    );
+
+  border-color:
+    color-mix(
+      in srgb,
+      var(--red) 22%,
+      var(--border)
+    );
+
+  border-left:
+    4px solid var(--red);
+
+  color:
+    var(--text) !important;
+}
+
+
+/* =================================
+   рџџЎ Р—РђР“Р РћР—Рђ Р‘РџР›Рђ
+================================= */
+
+.district-yellow {
+  background:
+    linear-gradient(
+      135deg,
+      var(--yellow-soft),
+      var(--card)
+    );
+
+  border-color:
+    color-mix(
+      in srgb,
+      var(--yellow) 24%,
+      var(--border)
+    );
+
+  border-left:
+    4px solid var(--yellow);
+
+  color:
+    var(--text) !important;
+}
+
+
+/* =================================
+   рџџў Р’Р†Р”Р‘Р†Р™
+================================= */
+
+.district-item:not(.district-red):not(.district-yellow) {
+  background:
+    linear-gradient(
+      135deg,
+      var(--green-soft),
+      var(--card)
+    );
+
+  border-color:
+    color-mix(
+      in srgb,
+      var(--green) 20%,
+      var(--border)
+    );
+
+  border-left:
+    4px solid var(--green);
+
+  color:
+    var(--text) !important;
+}
+
+
+/* =================================
+   рџЊ™ РўР•РњРќРђ РўР•РњРђ вЂ” РљРђР РўРљР
+================================= */
+
+body.dark .district-item,
+body.dark .district-item * {
+  color:
+    #f3f4f6 !important;
+}
+
+
+/* рџ”ґ */
+
+body.dark .district-red {
+  background:
+    linear-gradient(
+      135deg,
+      #35181b,
+      #21161a
+    );
+
+  border-color:
+    rgba(248, 113, 113, 0.18);
+
+  border-left-color:
+    #f87171;
+
+  color:
+    #ffffff !important;
+}
+
+
+/* рџџЎ */
+
+body.dark .district-yellow {
+  background:
+    linear-gradient(
+      135deg,
+      #332711,
+      #211c13
+    );
+
+  border-color:
+    rgba(251, 191, 36, 0.18);
+
+  border-left-color:
+    #fbbf24;
+
+  color:
+    #ffffff !important;
+}
+
+
+/* рџџў */
+
+body.dark
+.district-item:not(.district-red):not(.district-yellow) {
+  background:
+    linear-gradient(
+      135deg,
+      #10291b,
+      #17211b
+    );
+
+  border-color:
+    rgba(74, 222, 128, 0.16);
+
+  border-left-color:
+    #4ade80;
+
+  color:
+    #ffffff !important;
+}
+
+
+/* =================================
+   РђРљРўРР’РќР† Р РђР™РћРќР
+================================= */
+
+.districts-list {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 7px;
+
+  margin-top: 10px;
+}
+
+
+/* =================================
+   Р†РЎРўРћР Р†РЇ РўР РР’РћР“
+================================= */
+
+.alert-history {
+  margin-top: 18px;
+}
+
+.history-empty {
+  padding: 16px;
+
+  border-radius: 15px;
+
+  background:
+    var(--card-soft);
+
+  border:
+    1px solid var(--border);
+
+  color:
+    var(--muted);
+
+  font-size: 14px;
+
+  line-height: 1.5;
+
+  text-align: center;
+}
+
+
+/* РћРґРёРЅ Р·Р°РїРёСЃ */
+
+.history-item {
+  position: relative;
+
+  display: flex;
+
+  gap: 13px;
+
+  padding: 15px 3px;
+
+  border-bottom:
+    1px solid var(--border);
+
+  transition:
+    background 0.25s ease,
+    transform 0.2s ease;
+}
+
+.history-item:last-child {
+  border-bottom: none;
+}
+
+.history-item:hover {
+  background:
+    var(--card-soft);
+
+  border-radius: 14px;
+}
+
+
+/* =================================
+   Р†РљРћРќРљРђ Р†РЎРўРћР Р†Р‡
+================================= */
+
+.history-icon {
+  width: 42px;
+  height: 42px;
+
+  flex: 0 0 42px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 13px;
+
+  border:
+    1px solid var(--border);
+
+  font-size: 19px;
+
+  box-shadow:
+    var(--shadow-small);
+}
+
+.history-icon.alert {
+  background:
+    var(--red-soft);
+
+  color:
+    var(--red);
+}
+
+.history-icon.clear {
+  background:
+    var(--green-soft);
+
+  color:
+    var(--green);
+}
+
+
+/* =================================
+   РўР•РљРЎРў Р†РЎРўРћР Р†Р‡
+================================= */
+
+.history-main {
+  min-width: 0;
+
+  flex: 1;
+
+  padding-top: 1px;
+}
+
+.history-title {
+  color:
+    var(--text) !important;
+
+  font-size: 14px;
+
+  font-weight: 800;
+
+  line-height: 1.35;
+}
+
+.history-meta {
+  margin-top: 6px;
+
+  color:
+    var(--muted) !important;
+
+  font-size: 12px;
+
+  line-height: 1.6;
+}
+
+.history-meta br {
+  line-height: 1.8;
+}
+
+
+/* =================================
+   РќРћР’РРќР
+================================= */
+
+.news-card {
+  min-height: 300px;
+}
+
+.news-title {
+  margin-bottom: 14px;
+
+  color:
+    var(--text);
+
+  font-size: 19px;
+
+  font-weight: 800;
+}
+
+.news-item {
+  padding: 13px 0;
+
+  border-bottom:
+    1px solid var(--border);
+}
+
+.news-item:last-child {
+  border-bottom: none;
+}
+
+.news-time {
+  margin-bottom: 5px;
+
+  color:
+    var(--muted);
+
+  font-size: 12px;
+}
+
+.news-text {
+  color:
+    var(--text);
+
+  font-size: 15px;
+
+  line-height: 1.45;
+}
+
+
+/* =================================
+   РљРќРћРџРљРђ Р”РўР•Рљ
+================================= */
+
+.dtek-button {
+  display: block;
+
+  margin-top: 15px;
+
+  padding: 13px 15px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #2563eb,
+      #1d4ed8
+    );
+
+  color:
+    #ffffff !important;
+
+  text-decoration: none;
+
+  text-align: center;
+
+  border-radius: 14px;
+
+  font-weight: 750;
+
+  box-shadow:
+    0 7px 18px
+    rgba(37, 99, 235, 0.20);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.dtek-button:hover {
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 10px 22px
+    rgba(37, 99, 235, 0.25);
+}
+
+.dtek-button:active {
+  transform: scale(0.98);
+}
+
+
+/* =================================
+   FOOTER
+================================= */
+
+.footer {
+  margin-top: 28px;
+
+  padding-bottom: 10px;
+
+  color:
+    var(--muted);
+
+  text-align: center;
+
+  font-size: 13px;
+}
+
+
+/* =================================
+   рџ“± РњРћР‘Р†Р›Р¬РќРђ Р’Р•Р РЎР†РЇ
+================================= */
+
+@media (max-width: 700px) {
+
+  body {
+    padding: 13px;
+  }
+
+  .app {
+    max-width: 100%;
+  }
+
+  .header {
+    margin-bottom: 20px;
+  }
+
+  .app-icon {
+    width: 62px;
+    height: 62px;
+
+    border-radius: 18px;
+
+    font-size: 32px;
+  }
+
+  .header h1 {
+    font-size: 26px;
+  }
+
+  .header p {
+    font-size: 13px;
+  }
+
+  .theme-button {
+    width: 42px;
+    height: 42px;
+
+    border-radius: 13px;
+  }
+
+  .content-grid {
+    grid-template-columns: 1fr;
+
+    gap: 0;
+  }
+
+  .left-column {
+    order: 1;
+  }
+
+  .right-column {
+    order: 2;
+  }
+
+  .card {
+    padding: 17px;
+
+    border-radius: 18px;
+
+    margin-bottom: 15px;
+  }
+
+  .card-title {
+    font-size: 17px;
+  }
+
+  .status-box {
+    padding: 18px 11px;
+
+    font-size: 18px;
+
+    border-radius: 16px;
+  }
+
+
+  /* Р—Р°РіРѕР»РѕРІРєРё Р·Р°РіСЂРѕР· */
+
+  #kyiv-region-threat
+  > div[style*="font-weight"] {
+    min-height: 34px;
+
+    padding: 7px 3px !important;
+
+    margin-top: 13px !important;
+
+    margin-bottom: 7px !important;
+
+    font-size: 13px !important;
+  }
+
+
+  /* РљР°СЂС‚РєРё Р·Р°РіСЂРѕР· */
+
+  .district-item {
+    min-height: 46px;
+
+    padding: 11px 12px;
+
+    margin-bottom: 8px;
+
+    border-radius: 14px;
+
+    font-size: 13px;
+  }
+
+
+  /* Р†СЃС‚РѕСЂС–СЏ */
+
+  .history-item {
+    gap: 10px;
+
+    padding: 13px 1px;
+  }
+
+  .history-icon {
+    width: 38px;
+    height: 38px;
+
+    flex-basis: 38px;
+
+    border-radius: 12px;
+
+    font-size: 17px;
+  }
+
+  .history-title {
+    font-size: 13px;
+  }
+
+  .history-meta {
+    font-size: 11.5px;
+
+    line-height: 1.55;
+  }
+
+
+  /* Р’РёР±С–СЂ РјС–СЃС‚Р° */
+
+  #city-select {
+    padding:
+      13px 44px 13px 14px;
+
+    font-size: 14px;
+
+    border-radius: 14px;
+  }
+
+  .city-select-label {
+    font-size: 12px;
+
+    margin-bottom: 8px;
+  }
+}
+
+
+/* =================================
+   Р”РЈР–Р• РњРђР›Р•РќР¬РљР† Р•РљР РђРќР
+================================= */
+
+@media (max-width: 380px) {
+
+  body {
+    padding: 10px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .header h1 {
+    font-size: 24px;
+  }
+
+  .status-box {
+    font-size: 17px;
+  }
+
+  .district-item {
+    font-size: 12.5px;
+  }
+
+  .history-meta {
+    font-size: 11px;
+  }
+}
+/* =========================
+   DTEK вЂ” Р“Р РђР¤Р†Рљ Р’Р†Р”РљР›Р®Р§Р•РќР¬
+   ========================= */
+
+.dtek-card { text-align: center; }
+.dtek-card .card-title { font-size: 18px; font-weight: 800; color: var(--text); }
+.dtek-location { margin-top: 7px; font-size: 13px; color: var(--muted); }
+.dtek-schedule { margin-top: 14px; padding: 14px; border-radius: 16px; background: var(--card-soft); border: 1px solid var(--border); min-height: 90px; box-sizing: border-box; }
+.dtek-loading { min-height: 60px; display: flex; align-items: center; justify-content: center; color: var(--muted); font-size: 13px; }
+.dtek-button { display: block; margin-top: 13px; padding: 12px 14px; border-radius: 13px; background: var(--accent); color: #fff !important; text-decoration: none; font-size: 14px; font-weight: 700; transition: transform .15s ease, opacity .15s ease; }
+.dtek-button:active { transform: scale(.98); opacity: .85; }
+.dtek-note { margin-top: 9px; font-size: 11px; line-height: 1.4; color: var(--muted); }
+
+.dtek-table-wrapper { width: 100%; overflow-x: auto; overflow-y: hidden; margin-top: 12px; padding-bottom: 4px; -webkit-overflow-scrolling: touch; }
+.dtek-table { display: grid; grid-template-columns: repeat(24, minmax(38px, 1fr)); gap: 4px; min-width: 960px; }
+.dtek-hour-cell { text-align: center; position: relative; }
+.dtek-hour-number { font-size: 10px; font-weight: 700; color: var(--muted); margin-bottom: 4px; }
+.dtek-hour-block { height: 34px; width: 100%; border-radius: 8px; border: 1px solid var(--border); box-sizing: border-box; overflow: hidden; transition: transform .15s ease; }
+.dtek-hour-cell:active .dtek-hour-block { transform: scale(.94); }
+.dtek-cell-green .dtek-hour-block { background: #45b96b; border-color: #359956; }
+.dtek-cell-dark .dtek-hour-block { background: #4a4f55; border-color: #3a3e43; }
+.dtek-cell-first-half .dtek-hour-block { background: linear-gradient(to right,#4a4f55 0%,#4a4f55 50%,#45b96b 50%,#45b96b 100%); border-color: #3a3e43; }
+.dtek-cell-second-half .dtek-hour-block { background: linear-gradient(to right,#45b96b 0%,#45b96b 50%,#4a4f55 50%,#4a4f55 100%); border-color: #3a3e43; }
+.dtek-cell-yellow .dtek-hour-block { background: #e5b93f; border-color: #c99e27; }
+.dtek-cell-empty .dtek-hour-block { background: #d8dadd; border-color: #c5c8cc; }
+.dtek-current-hour .dtek-hour-block { box-shadow: 0 0 0 2px #3b82f6, 0 0 8px rgba(59,130,246,.45); }
+.dtek-current-hour .dtek-hour-number { color: #3b82f6; font-weight: 800; }
+.dtek-empty-day { margin-top: 12px; padding: 12px; border-radius: 12px; background: var(--card-soft); color: var(--muted); font-size: 13px; }
+.dtek-legend { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 14px; margin-top: 14px; font-size: 11px; color: var(--muted); }
+.dtek-legend span { display: inline-flex; align-items: center; gap: 5px; }
+.dtek-legend i { width: 11px; height: 11px; border-radius: 4px; display: inline-block; flex-shrink: 0; }
+.dtek-legend-green { background: #45b96b; }
+.dtek-legend-dark { background: #4a4f55; }
+.dtek-legend-first { background: linear-gradient(to right,#4a4f55 0%,#4a4f55 50%,#45b96b 50%,#45b96b 100%); }
+.dtek-legend-second { background: linear-gradient(to right,#45b96b 0%,#45b96b 50%,#4a4f55 50%,#4a4f55 100%); }
+.dtek-legend-yellow { background: #e5b93f; }
+.dtek-legend-empty { background: #d8dadd; border: 1px solid #c5c8cc; box-sizing: border-box; }
+.dtek-info-row { margin-top: 8px; padding: 10px 12px; border-radius: 10px; background: var(--card-soft); font-size: 12px; color: var(--muted); }
+
+body.dark .dtek-card .card-title { color: #fff; }
+body.dark .dtek-location { color: #b8c0ca; }
+body.dark .dtek-schedule { background: linear-gradient(135deg,#171c22,#11161b); border-color: #2b333d; }
+body.dark .dtek-loading { color: #aeb7c2; }
+body.dark .dtek-note { color: #8f99a5; }
+body.dark .dtek-hour-number { color: #9ca5af; }
+body.dark .dtek-cell-green .dtek-hour-block { background: #3ca861; border-color: #318d50; }
+body.dark .dtek-cell-dark .dtek-hour-block { background: #454a50; border-color: #353a40; }
+body.dark .dtek-cell-first-half .dtek-hour-block { background: linear-gradient(to right,#454a50 0%,#454a50 50%,#3ca861 50%,#3ca861 100%); }
+body.dark .dtek-cell-second-half .dtek-hour-block { background: linear-gradient(to right,#3ca861 0%,#3ca861 50%,#454a50 50%,#454a50 100%); }
+body.dark .dtek-cell-yellow .dtek-hour-block { background: #d3a936; border-color: #b68f24; }
+body.dark .dtek-cell-empty .dtek-hour-block { background: #555b62; border-color: #464b51; }
+body.dark .dtek-legend-first { background: linear-gradient(to right,#454a50 0%,#454a50 50%,#3ca861 50%,#3ca861 100%); }
+body.dark .dtek-legend-second { background: linear-gradient(to right,#3ca861 0%,#3ca861 50%,#454a50 50%,#454a50 100%); }
+body.dark .dtek-legend-empty { background: #555b62; border-color: #464b51; }
+body.dark .dtek-current-hour .dtek-hour-number { color: #60a5fa; }
+</style>
+
+
+
+
+<style>
+/* KYIV Р±РµР·РїРµРєР° вЂ” РєРЅРѕРїРєР° РЅР°Р»Р°С€С‚СѓРІР°РЅСЊ */
+.settings-btn {
+    position: fixed;
+    top: 18px;
+    right: 18px;
+    width: 46px;
+    height: 46px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.92);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.settings-btn:active {
+    transform: scale(0.92);
+}
+
+.settings-btn:hover {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.24);
+}
+
+/* KYIV Р±РµР·РїРµРєР° вЂ” РїР°РЅРµР»СЊ РЅР°Р»Р°С€С‚СѓРІР°РЅСЊ */
+
+.settings-panel {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: min(380px, 92vw);
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.97);
+    box-shadow: -8px 0 30px rgba(0, 0, 0, 0.18);
+    z-index: 10000;
+    transform: translateX(105%);
+    transition: transform 0.3s ease;
+    overflow-y: auto;
+    backdrop-filter: blur(12px);
+}
+
+.settings-panel.open {
+    transform: translateX(0);
+}
+
+.settings-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.settings-header h2 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.settings-close {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.06);
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.settings-content {
+    padding: 18px;
+}
+
+.settings-section {
+    margin-bottom: 24px;
+}
+
+.settings-section h3 {
+    margin: 0 0 12px;
+    font-size: 16px;
+}
+
+.settings-option {
+    display: block;
+    width: 100%;
+    margin: 8px 0;
+    padding: 13px 15px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 14px;
+    background: #f7f7f7;
+    text-align: left;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.settings-switch {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 13px 15px;
+    border-radius: 14px;
+    background: #f7f7f7;
+    margin: 8px 0;
+}
+
+.settings-switch input {
+    width: 20px;
+    height: 20px;
+}
+
+/* KYIV Р±РµР·РїРµРєР° вЂ” С„РѕРЅРё */
+body.bg-night {
+    background: linear-gradient(135deg, #071a2b, #123b5d);
+}
+
+body.bg-evening {
+    background: linear-gradient(135deg, #402040, #b56b45);
+}
+
+body.bg-day {
+    background: linear-gradient(135deg, #eaf6ff, #ffffff);
+}
+
+body.bg-dark {
+    background: linear-gradient(135deg, #101010, #292929);
+}
+
+.alert-sound-option.selected {
+    border: 2px solid #2e7d32;
+    background: rgba(46, 125, 50, 0.10);
+    font-weight: 600;
+}
+.alert-sound-option {
+    display: block;
+    width: 100%;
+    margin: 8px 0;
+    padding: 13px 15px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 14px;
+    background: #f7f7f7;
+    text-align: left;
+    font-size: 15px;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.alert-sound-option:active {
+    transform: scale(0.98);
+}
+
+.alert-sound-option:hover {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.10);
+}
+
+/* KYIV Р±РµР·РїРµРєР° вЂ” Р·РіРѕСЂС‚Р°РЅРЅСЏ С–СЃС‚РѕСЂС–С— */
+
+.history-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    user-select: none;
+}
+
+.history-arrow {
+    font-size: 14px;
+    transition: transform 0.25s ease;
+}
+
+.history-header.collapsed .history-arrow {
+    transform: rotate(-90deg);
+}
+
+.history-content {
+    max-height: 1000px;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.history-content.collapsed {
+    max-height: 0;
+}
+
+/* KYIV Р±РµР·РїРµРєР° вЂ” РЅРёР¶РЅС” РјРµРЅСЋ С€РІРёРґРєРѕРіРѕ РґРѕСЃС‚СѓРїСѓ */
+
+.bottom-menu {
+    position: fixed;
+    left: 50%;
+    bottom: 14px;
+    transform: translateX(-50%);
+    width: min(94vw, 520px);
+    height: 64px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 6px 8px;
+
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 22px;
+
+    box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.20);
+
+    z-index: 9998;
+}
+
+.bottom-menu button {
+    width: 50px;
+    height: 50px;
+
+    border: none;
+    border-radius: 16px;
+
+    background: transparent;
+
+    font-size: 25px;
+    line-height: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.15s ease,
+        background 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.bottom-menu button:active {
+    transform: scale(0.88);
+}
+
+.bottom-menu button.active {
+    background: rgba(33, 150, 243, 0.16);
+
+    box-shadow:
+        inset 0 0 0 1px rgba(33, 150, 243, 0.15);
+}
+
+.bottom-menu button:hover {
+    background: rgba(0, 0, 0, 0.06);
+}
+
+/* Р©РѕР± РЅРёР¶РЅС” РјРµРЅСЋ РЅРµ РїРµСЂРµРєСЂРёРІР°Р»Рѕ РѕСЃС‚Р°РЅРЅСЋ РєР°СЂС‚РєСѓ */
+body {
+    padding-bottom: 95px;
+}
+
+/* РќР° РјР°Р»РµРЅСЊРєРёС… РµРєСЂР°РЅР°С… */
+@media (max-width: 420px) {
+
+    .bottom-menu {
+        bottom: 10px;
+        height: 60px;
+        border-radius: 20px;
+    }
+
+    .bottom-menu button {
+        width: 46px;
+        height: 46px;
+        font-size: 23px;
+        border-radius: 14px;
+    }
+}
+
+/* KYIV Р±РµР·РїРµРєР° вЂ” РІС–РєРЅРѕ РїРѕРІС–С‚СЂСЏРЅРѕС— СЃРёС‚СѓР°С†С–С— */
+
+.air-panel {
+    position: fixed;
+    inset: 0;
+    z-index: 10001;
+
+    background: linear-gradient(135deg, #071a2b, #123b5d);
+
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+
+    overflow-y: auto;
+    padding-bottom: 90px;
+}
+
+.air-panel.open {
+    transform: translateY(0);
+}
+
+.air-header {
+    position: sticky;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 18px 18px;
+
+    background: rgba(7, 26, 43, 0.94);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+
+    z-index: 2;
+}
+
+.air-header h2 {
+    margin: 0;
+    color: #fff;
+    font-size: 21px;
+}
+
+.air-close {
+    width: 42px;
+    height: 42px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.12);
+    color: #fff;
+
+    font-size: 30px;
+    line-height: 1;
+
+    cursor: pointer;
+}
+
+.air-close:active {
+    transform: scale(0.9);
+}
+
+.air-content {
+    padding: 20px;
+}
+
+.air-empty {
+    max-width: 520px;
+    margin: 60px auto 0;
+
+    padding: 28px 22px;
+
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 22px;
+
+    color: #fff;
+}
+
+.air-empty-icon {
+    font-size: 46px;
+    margin-bottom: 14px;
+}
+
+.air-empty-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.air-empty-text {
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* KYIV Р±РµР·РїРµРєР° вЂ” РѕС„РѕСЂРјР»РµРЅРЅСЏ СЃС‚СЂС–С‡РєРё РЅРѕРІРёРЅ */
+
+.news-source {
+    margin-top: 5px;
+    margin-bottom: 4px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    color: #1976d2;
+}
+
+.news-description {
+    margin-top: 7px;
+
+    font-size: 14px;
+    line-height: 1.45;
+
+    color: #555;
+}
+
+.news-link {
+    display: inline-block;
+
+    margin-top: 10px;
+    padding: 7px 12px;
+
+    border-radius: 10px;
+
+    background: rgba(33, 150, 243, 0.10);
+
+    color: #1976d2;
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.news-link:active {
+    transform: scale(0.96);
+}
+
+/* KYIV Р±РµР·РїРµРєР° вЂ” РєРЅРѕРїРєР° СЂРѕР·РіРѕСЂС‚Р°РЅРЅСЏ РЅРѕРІРёРЅРё */
+
+.news-more {
+    margin-top: 8px;
+    padding: 7px 11px;
+
+    border: none;
+    border-radius: 9px;
+
+    background: rgba(33, 150, 243, 0.10);
+    color: #1976d2;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.news-more:active {
+    transform: scale(0.96);
+}
+
+/* KYIV Р±РµР·РїРµРєР° вЂ” Р·РіРѕСЂС‚Р°РЅРЅСЏ СЃС‚СЂС–С‡РєРё РЅРѕРІРёРЅ */
+
+.news-hidden {
+    display: none;
+}
+
+.news-card.news-expanded .news-hidden {
+    display: block;
+}
+
+.news-toggle {
+    display: block;
+
+    width: 100%;
+    margin-top: 12px;
+    padding: 9px 14px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: rgba(33, 150, 243, 0.10);
+    color: #1976d2;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.news-toggle:active {
+    transform: scale(0.98);
+}
+
+</style>
+
+</head>
+
+<body>
+<div class="app">
+
+  <div class="header">
+
+    <button id="theme-button"
+            class="theme-button"
+            type="button"
+            aria-label="Р—РјС–РЅРёС‚Рё С‚РµРјСѓ">рџЊ™</button>
+            <button id="sound-button"
+        type="button"
+        aria-label="Р—РІСѓРєРѕРІС– СЃРїРѕРІС–С‰РµРЅРЅСЏ"
+        style="
+          position:absolute;
+          right:50px;
+          top:0;
+          width:42px;
+          height:42px;
+          border:none;
+          border-radius:14px;
+          background:var(--card);
+          color:var(--text);
+          font-size:20px;
+          box-shadow:var(--shadow);
+          cursor:pointer;
+        ">рџ”•</button>
+
+    <div class="app-icon">рџ›Ў</div>
+
+    <h1>KYIV Р±РµР·РїРµРєР°</h1>
+
+    <p>Р’Р°Р¶Р»РёРІР° С–РЅС„РѕСЂРјР°С†С–СЏ РІ РѕРґРЅРѕРјСѓ РјС–СЃС†С–</p>
+
+  </div>
+
+
+<div class="city-select-label">
+  рџ“Ќ РњРѕС” РјС–СЃС‚Рѕ
+</div>
+
+<select id="city-select">
+
+  <option value="kyiv">РљРёС—РІ</option>
+  <option value="zhytomyr">Р–РёС‚РѕРјРёСЂ</option>
+  <option value="cherkasy">Р§РµСЂРєР°СЃРё</option>
+  <option value="chernihiv">Р§РµСЂРЅС–РіС–РІ</option>
+  <option value="poltava">РџРѕР»С‚Р°РІР°</option>
+  <option value="vinnytsia">Р’С–РЅРЅРёС†СЏ</option>
+  <option value="khmelnytskyi">РҐРјРµР»СЊРЅРёС†СЊРєРёР№</option>
+  <option value="rivne">Р С–РІРЅРµ</option>
+  <option value="lutsk">Р›СѓС†СЊРє</option>
+  <option value="sumy">РЎСѓРјРё</option>
+
+</select>
+  <div class="content-grid">
+
+    <div class="left-column">
+
+      <div class="card">
+        <div class="card-title">рџљЁ РџРѕРІС–С‚СЂСЏРЅР° С‚СЂРёРІРѕРіР°</div>
+
+        <div id="kyiv-alert"
+             class="status-box"
+             style="background:#e8f5e9;color:#1b5e20;">
+          рџ”„ РћРўР РРњРЈР„РњРћ Р”РђРќР†...
+        </div>
+
+        <div id="kyiv-districts"
+     style="
+       margin-top:10px;
+       font-size:14px;
+       line-height:1.6;
+     ">
+</div>
+
+        <div id="kyiv-timer" class="timer"></div>
+
+        <div id="kyiv-updated" class="updated">
+          РћСЃС‚Р°РЅРЅСЏ РїРµСЂРµРІС–СЂРєР°: вЂ”
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">вљ пёЏ Р—Р°РіСЂРѕР·Рё РїРѕСЂСѓС‡</div>
+
+        <div id="kyiv-region-threat"
+             class="status-box"
+             style="background:#e8f5e9;color:#1b5e20;">
+          рџ”„ РћРўР РРњРЈР„РњРћ Р”РђРќР†...
+        </div>
+
+        <div id="kyiv-region-timer" class="timer"></div>
+
+        <div id="kyiv-region-updated" class="updated">
+          РћСЃС‚Р°РЅРЅСЏ РїРµСЂРµРІС–СЂРєР°: вЂ”
+        </div>
+      </div>
+
+      <div class="card dtek-card">
+
+  <div class="card-title">
+    рџ’Ў Р’С–РґРєР»СЋС‡РµРЅРЅСЏ СЃРІС–С‚Р»Р°
+  </div>
+
+  <div class="dtek-location">
+  рџ“Ќ <span id="dtek-address">РђРґСЂРµСЃР° РЅРµ РЅР°Р»Р°С€С‚РѕРІР°РЅР°</span>
+</div>
+
+<button
+  type="button"
+  class="dtek-address-button"
+  onclick="openDtekAddressSettings()"
+>
+  вљ™пёЏ РќР°Р»Р°С€С‚СѓРІР°С‚Рё Р°РґСЂРµСЃСѓ
+</button>
+
+  <div id="dtek-schedule" class="dtek-schedule">
+
+    <div class="dtek-loading">
+      рџ”„ Р—Р°РІР°РЅС‚Р°Р¶РµРЅРЅСЏ РіСЂР°С„С–РєР°...
+    </div>
+
+  </div>
+
+  <a
+    href="https://www.dtek-kem.com.ua/ua/shutdowns"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="dtek-button"
+  >
+    рџ”— Р’С–РґРєСЂРёС‚Рё РіСЂР°С„С–Рє РЅР° СЃР°Р№С‚С– Р”РўР•Рљ
+  </a>
+
+  <div class="dtek-note">
+    Р“СЂР°С„С–Рє РјРѕР¶Рµ Р·РјС–РЅСЋРІР°С‚РёСЃСЏ РїСЂРѕС‚СЏРіРѕРј РґРЅСЏ
+  </div>
+
+</div>
+
+
+     <div class="card alert-history">
+
+  <div class="card-title history-header" id="historyToggle">
+    <span>рџ“‹ Р†СЃС‚РѕСЂС–СЏ С‚СЂРёРІРѕРі</span>
+    <span class="history-arrow">в–ј</span>
+  </div>
+
+  <div id="alert-history-list" class="history-content">
+    <div class="history-empty">
+      Р†СЃС‚РѕСЂС–СЏ Р·'СЏРІРёС‚СЊСЃСЏ РїС–СЃР»СЏ РїРµСЂС€РѕС— Р·РјС–РЅРё СЃС‚Р°С‚СѓСЃСѓ С‚СЂРёРІРѕРіРё.
+    </div>
+  </div>
+
+</div>
+
+    </div>
+
+    <div class="right-column">
+
+      <div class="card news-card" id="news-section">
+
+        <div class="news-title">
+          рџ“° РћСЃС‚Р°РЅРЅС– РїРѕРґС–С—
+        </div>
+
+        <div class="news-item">
+          <div class="news-time">
+            РћС‡С–РєСѓС”РјРѕ РїС–РґРєР»СЋС‡РµРЅРЅСЏ
+          </div>
+
+          <div class="news-text">
+            РЎС‚СЂС–С‡РєР° РІР°Р¶Р»РёРІРёС… РїРѕРІС–РґРѕРјР»РµРЅСЊ Р·'СЏРІРёС‚СЊСЃСЏ С‚СѓС‚.
+          </div>
+        </div>
+
+        <div class="news-item">
+          <div class="news-time">
+            KYIV Р±РµР·РїРµРєР°
+          </div>
+
+          <div class="news-text">
+            РўСѓС‚ РјРё Р·РјРѕР¶РµРјРѕ РїРѕРєР°Р·СѓРІР°С‚Рё Р°РєС‚СѓР°Р»СЊРЅС– РїРѕРґС–С—, РїРѕРІ'СЏР·Р°РЅС– Р· РљРёС”РІРѕРј.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="footer">
+    KYIV Р±РµР·РїРµРєР°
+  </div>
+
+</div>
+
+<script>
+
+
+/* РњР†РЎРўРћ РўРђ Р™РћР“Рћ Р”РђРќР† */
+
+const CITY_REGIONS = {
+
+  kyiv: {
+    name: "РљРёС—РІ",
+    regionName: "РљРёС—РІСЃСЊРєР° РѕР±Р»Р°СЃС‚СЊ",
+    slug: "kyiv",
+    oblastSlug: "kyivska"
+  },
+
+  zhytomyr: {
+    name: "Р–РёС‚РѕРјРёСЂ",
+    regionName: "Р–РёС‚РѕРјРёСЂСЃСЊРєР° РѕР±Р»Р°СЃС‚СЊ",
+    slug: "zitomirska-oblast",
+    oblastSlug: "zitomirska"
+  },
+
+  cherkasy: {
+    name: "Р§РµСЂРєР°СЃРё",
+    regionName: "Р§РµСЂРєР°СЃСЊРєР° РѕР±Р»Р°СЃС‚СЊ",
+    slug: "cerkaska-oblast",
+    oblastSlug: "cerkaska"
+  },
+
+  chernihiv: {
+    name: "Р§РµСЂРЅС–РіС–РІ",
+    regionName: "Р§РµСЂРЅС–РіС–РІСЃСЊРєР° РѕР±Р»Р°СЃС‚СЊ",
+    slug: "cernigivska-oblast",
+    oblastSlug: "cernigivska"
+  },
+
+  poltava: {
+    name: "РџРѕР»С‚Р°РІР°",
+    regionName: "РџРѕР»С‚Р°РІСЃСЊРєР° РѕР±Р»Р°СЃС‚СЊ",
+    slug: "poltavska-oblast",
+    oblastSlug: "poltavska"
+  },
+
+  vinnytsia: {
+    name: "Р’С–РЅРЅРёС†СЏ",
+    regionName: "Р’С–РЅРЅРёС†СЊРєР° РѕР±Р»Р°СЃС‚СЊ",
+    slug: "vinnicka-oblast",
+    oblastSlug: "vinnicka"
+  },
+
+  khmelnytskyi: {
+    name: "РҐРјРµР»СЊРЅРёС†СЊРєРёР№",
+    regionName: "РҐРјРµР»СЊРЅРёС†СЊРєР° РѕР±Р»Р°СЃС‚СЊ",
+    slug: "xmelnycka-oblast",
+    oblastSlug: "xmelnycka"
+  },
+
+  rivne: {
+    name: "Р С–РІРЅРµ",
+    regionName: "Р С–РІРЅРµРЅСЃСЊРєР° РѕР±Р»Р°СЃС‚СЊ",
+    slug: "rivnenska-oblast",
+    oblastSlug: "rivnenska"
+  },
+
+  lutsk: {
+    name: "Р›СѓС†СЊРє",
+    regionName: "Р’РѕР»РёРЅСЃСЊРєР° РѕР±Р»Р°СЃС‚СЊ",
+    slug: "volinska-oblast",
+    oblastSlug: "volinska"
+  },
+
+  sumy: {
+    name: "РЎСѓРјРё",
+    regionName: "РЎСѓРјСЃСЊРєР° РѕР±Р»Р°СЃС‚СЊ",
+    slug: "sumska-oblast",
+    oblastSlug: "sumska"
+  }
+
+};
+
+/* Р—РђР“Р РћР—Р РџРћР РЈР§ */
+
+const NEARBY_REGIONS = {
+
+  kyiv: [
+    { name: "Р–РёС‚РѕРјРёСЂСЃСЊРєР° РѕР±Р»Р°СЃС‚СЊ", slug: "zitomirska-oblast" },
+    { name: "Р’С–РЅРЅРёС†СЊРєР° РѕР±Р»Р°СЃС‚СЊ", slug: "vinnicka-oblast" },
+    { name: "Р§РµСЂРєР°СЃСЊРєР° РѕР±Р»Р°СЃС‚СЊ", slug: "cerkaska-oblast" },
+    { name: "РџРѕР»С‚Р°РІСЃСЊРєР° РѕР±Р»Р°СЃС‚СЊ", slug: "poltavska-oblast" },
+    { name: "Р§РµСЂРЅС–РіС–РІСЃСЊРєР° РѕР±Р»Р°СЃС‚СЊ", slug: "cernigivska-oblast" }
+  ],
+
+  zhytomyr: [
+    { name: "РљРёС—РІСЃСЊРєР° РѕР±Р»Р°СЃС‚СЊ", slug: "kyivska-oblast" },
+    { name: "Р’С–РЅРЅРёС†СЊРєР° РѕР±Р»Р°СЃС‚СЊ", slug: "vinnicka-oblast" },
+    { name: "РҐРјРµР»СЊРЅРёС†СЊРєР° РѕР±Р»Р°СЃС‚СЊ", slug: "xmelnycka-oblast" },
+    { name: "Р С–РІРЅРµРЅСЃСЊРєР° РѕР±Р»Р°СЃС‚СЊ", slug: "rivnenska-oblast" }
+  ],
+
+  cherkasy: [
+    { name: "РљРёС—РІСЃСЊРєР° РѕР±Р»Р°СЃС‚СЊ", slug: "kyivska-oblast" },
+    { name: "Р§РµСЂРЅС–РіС–РІСЃСЊРєР° РѕР±Р»Р°СЃС‚СЊ", slug: "cernigivska-oblast" },
+    { name: "РџРѕР»С‚Р°РІСЃСЊРєР° РѕР±Р»Р°СЃС‚СЊ", slug: "poltavska-oblast" },
+    { name: "РљС–СЂРѕРІРѕРіСЂР°РґСЃСЊРєР° РѕР±Р»Р°СЃС‚СЊ", slug: "kirovohradska-oblast" },
+    { name: "Р’С–РЅРЅРёС†СЊРєР° РѕР±Р»Р°СЃС‚СЊ", slug: "vinnicka-oblast" }
+  ],
+
+  chernihiv: [
+    { name: "РљРёС—РІСЃСЊРєР° РѕР±Р»Р°СЃС‚СЊ", slug: "kyivska-oblast" },
+    { name: "РЎСѓРјСЃСЊРєР° РѕР±Р»Р°СЃС‚СЊ", slug: "sumska-oblast" },
+    { name: "РџРѕР»С‚Р°РІСЃСЊРєР° РѕР±Р»Р°СЃС‚СЊ", slug: "poltavska-oblast" }
+  ],
+
+  poltava: [
+    { name: "РљРёС—РІСЃСЊРєР° РѕР±Р»Р°СЃС‚СЊ", slug: "kyivska-oblast" },
+    { name: "Р§РµСЂРЅС–РіС–РІСЃСЊРєР° РѕР±Р»Р°СЃС‚СЊ", slug: "cernigivska-oblast" },
+    { name: "РЎСѓРјСЃСЊРєР° РѕР±Р»Р°СЃС‚СЊ", slug: "sumska-oblast" },
+    { name: "РҐР°СЂРєС–РІСЃСЊРєР° РѕР±Р»Р°СЃС‚СЊ", slug: "xarkivska-oblast" },
+    { name: "Р”РЅС–РїСЂРѕРїРµС‚СЂРѕРІСЃСЊРєР° РѕР±Р»Р°СЃС‚СЊ", slug: "dnipropetrovska-oblast" },
+    { name: "РљС–СЂРѕРІРѕРіСЂР°РґСЃСЊРєР° РѕР±Р»Р°СЃС‚СЊ", slug: "kirovohradska-oblast" },
+    { name: "Р§РµСЂРєР°СЃСЊРєР° РѕР±Р»Р°СЃС‚СЊ", slug: "cerkaska-oblast" }
+  ],
+
+  vinnytsia: [
+    { name: "Р–РёС‚РѕРјРёСЂСЃСЊРєР° РѕР±Р»Р°СЃС‚СЊ", slug: "zitomirska-oblast" },
+    { name: "РљРёС—РІСЃСЊРєР° РѕР±Р»Р°СЃС‚СЊ", slug: "kyivska-oblast" },
+    { name: "Р§РµСЂРєР°СЃСЊРєР° РѕР±Р»Р°СЃС‚СЊ", slug: "cerkaska-oblast" },
+    { name: "РљС–СЂРѕРІРѕРіСЂР°РґСЃСЊРєР° РѕР±Р»Р°СЃС‚СЊ", slug: "kirovohradska-oblast" },
+    { name: "РћРґРµСЃСЊРєР° РѕР±Р»Р°СЃС‚СЊ", slug: "odeska-oblast" },
+    { name: "РњРёРєРѕР»Р°С—РІСЃСЊРєР° РѕР±Р»Р°СЃС‚СЊ", slug: "mykolaivska-oblast" },
+    { name: "РҐРјРµР»СЊРЅРёС†СЊРєР° РѕР±Р»Р°СЃС‚СЊ", slug: "xmelnycka-oblast" }
+  ],
+
+  khmelnytskyi: [
+    { name: "Р–РёС‚РѕРјРёСЂСЃСЊРєР° РѕР±Р»Р°СЃС‚СЊ", slug: "zitomirska-oblast" },
+    { name: "Р’С–РЅРЅРёС†СЊРєР° РѕР±Р»Р°СЃС‚СЊ", slug: "vinnicka-oblast" },
+    { name: "РўРµСЂРЅРѕРїС–Р»СЊСЃСЊРєР° РѕР±Р»Р°СЃС‚СЊ", slug: "ternopilska-oblast" },
+    { name: "Р С–РІРЅРµРЅСЃСЊРєР° РѕР±Р»Р°СЃС‚СЊ", slug: "rivnenska-oblast" },
+    { name: "Р§РµСЂРЅС–РІРµС†СЊРєР° РѕР±Р»Р°СЃС‚СЊ", slug: "chernivetska-oblast" }
+  ],
+
+  rivne: [
+    { name: "Р’РѕР»РёРЅСЃСЊРєР° РѕР±Р»Р°СЃС‚СЊ", slug: "volynska-oblast" },
+    { name: "Р›СЊРІС–РІСЃСЊРєР° РѕР±Р»Р°СЃС‚СЊ", slug: "lvivska-oblast" },
+    { name: "РўРµСЂРЅРѕРїС–Р»СЊСЃСЊРєР° РѕР±Р»Р°СЃС‚СЊ", slug: "ternopilska-oblast" },
+    { name: "РҐРјРµР»СЊРЅРёС†СЊРєР° РѕР±Р»Р°СЃС‚СЊ", slug: "xmelnycka-oblast" },
+    { name: "Р–РёС‚РѕРјРёСЂСЃСЊРєР° РѕР±Р»Р°СЃС‚СЊ", slug: "zitomirska-oblast" }
+  ],
+
+  lutsk: [
+    { name: "Р С–РІРЅРµРЅСЃСЊРєР° РѕР±Р»Р°СЃС‚СЊ", slug: "rivnenska-oblast" },
+    { name: "Р›СЊРІС–РІСЃСЊРєР° РѕР±Р»Р°СЃС‚СЊ", slug: "lvivska-oblast" }
+  ],
+
+  sumy: [
+    { name: "Р§РµСЂРЅС–РіС–РІСЃСЊРєР° РѕР±Р»Р°СЃС‚СЊ", slug: "cernigivska-oblast" },
+    { name: "РџРѕР»С‚Р°РІСЃСЊРєР° РѕР±Р»Р°СЃС‚СЊ", slug: "poltavska-oblast" },
+    { name: "РҐР°СЂРєС–РІСЃСЊРєР° РѕР±Р»Р°СЃС‚СЊ", slug: "xarkivska-oblast" }
+  ]
+
+};
+const KYIV_REGION_API =
+  "https://tryvoha.online/api/v1/alerts/kyivska";
+let kyivAlertStartedAt = null;
+let regionAlertStartedAt = null;
+
+
+
+/* Р†РЎРўРћР Р†РЇ РўР РР’РћР“ вЂ” 7 Р”РќР†Р’ */
+
+const HISTORY_PREFIX =
+  "kyiv-bezpeka-alert-history-";
+
+const HISTORY_DAYS = 7;
+const HISTORY_MAX = 200;
+
+
+/* РћРўР РРњРђРўР РљР›Р®Р§ Р”Р›РЇ Р’РР‘Р РђРќРћР“Рћ РњР†РЎРўРђ */
+
+function getHistoryKey() {
+
+  const city = getSelectedCity();
+
+  return HISTORY_PREFIX + city;
+
+}
+
+
+/* РћРўР РРњРђРўР Р†РЎРўРћР Р†Р® */
+
+function getAlertHistory() {
+
+  try {
+
+    const saved =
+      localStorage.getItem(
+        getHistoryKey()
+      );
+
+    const parsed =
+      saved ? JSON.parse(saved) : [];
+
+    if (!Array.isArray(parsed)) {
+      return [];
+    }
+
+    const now = Date.now();
+
+    const sevenDays =
+      HISTORY_DAYS *
+      24 *
+      60 *
+      60 *
+      1000;
+
+    const filtered =
+      parsed.filter(item => {
+
+        const dateValue =
+          item.endedAt ||
+          item.startedAt;
+
+        const time =
+          new Date(dateValue).getTime();
+
+        return (
+          !isNaN(time) &&
+          now - time <= sevenDays
+        );
+
+      });
+
+    return filtered;
+
+  } catch (error) {
+
+    console.error(
+      "РџРѕРјРёР»РєР° С–СЃС‚РѕСЂС–С—:",
+      error
+    );
+
+    return [];
+
+  }
+
+}
+
+
+/* Р—Р‘Р•Р Р•Р“РўР Р†РЎРўРћР Р†Р® */
+
+function saveAlertHistory(history) {
+
+  try {
+
+    localStorage.setItem(
+
+      getHistoryKey(),
+
+      JSON.stringify(
+        history
+          .slice(0, HISTORY_MAX)
+      )
+
+    );
+
+  } catch (error) {
+
+    console.error(
+      "РџРѕРјРёР»РєР° Р·Р±РµСЂРµР¶РµРЅРЅСЏ С–СЃС‚РѕСЂС–С—:",
+      error
+    );
+
+  }
+
+}
+
+
+/* Р”РћР”РђРўР Р—РђРџРРЎ */
+
+function addHistoryItem(item) {
+
+  const history =
+    getAlertHistory();
+
+  history.unshift(item);
+
+  saveAlertHistory(history);
+
+  renderAlertHistory();
+
+}
+
+
+/* Р¤РћР РњРђРўРЈР’РђРќРќРЇ Р”РђРўР */
+
+function formatHistoryDate(value) {
+
+  if (!value) {
+    return "вЂ”";
+  }
+
+  const date =
+    new Date(value);
+
+  if (isNaN(date.getTime())) {
+    return "вЂ”";
+  }
+
+  return date.toLocaleString(
+    "uk-UA",
+    {
+      day: "2-digit",
+      month: "2-digit",
+      hour: "2-digit",
+      minute: "2-digit"
+    }
+  );
+
+}
+
+
+/* РўР РР’РђР›Р†РЎРўР¬ */
+
+function formatHistoryDuration(
+  start,
+  end
+) {
+
+  if (!start || !end) {
+    return "";
+  }
+
+  const startDate =
+    new Date(start);
+
+  const endDate =
+    new Date(end);
+
+  if (
+    isNaN(startDate.getTime()) ||
+    isNaN(endDate.getTime())
+  ) {
+    return "";
+  }
+
+  const totalMinutes =
+    Math.max(
+      0,
+      Math.floor(
+        (endDate - startDate) /
+        60000
+      )
+    );
+
+  const hours =
+    Math.floor(
+      totalMinutes / 60
+    );
+
+  const minutes =
+    totalMinutes % 60;
+
+  if (hours > 0) {
+
+    return (
+      hours +
+      " РіРѕРґ " +
+      minutes +
+      " С…РІ"
+    );
+
+  }
+
+  return minutes + " С…РІ";
+
+}
+
+
+/* РќРђР—Р’Рђ Р Р†Р’РќРЇ */
+
+function getHistoryLevelText(level) {
+
+  if (level === "red") {
+    return "рџ”ґ Р Р°РєРµС‚РЅР° РЅРµР±РµР·РїРµРєР°";
+  }
+
+  if (level === "yellow") {
+    return "рџџЎ Р—Р°РіСЂРѕР·Р° Р‘РџР›Рђ";
+  }
+
+  return "вљ пёЏ РўСЂРёРІРѕРіР°";
+
+}
+
+
+/* Р’Р†Р”РћР‘Р РђР–Р•РќРќРЇ Р†РЎРўРћР Р†Р‡ */
+
+function renderAlertHistory() {
+
+  const list =
+    document.getElementById(
+      "alert-history-list"
+    );
+
+  if (!list) {
+    return;
+  }
+
+  const history =
+    getAlertHistory();
+
+  if (!history.length) {
+
+    list.innerHTML = `
+
+      <div class="history-empty">
+
+        Р—Р° РѕСЃС‚Р°РЅРЅС– 7 РґРЅС–РІ
+        С‚СЂРёРІРѕРі РЅРµ Р·Р°С„С–РєСЃРѕРІР°РЅРѕ.
+
+      </div>
+
+    `;
+
+    return;
+
+  }
+
+
+  list.innerHTML =
+
+    history.map(item => {
+
+      const levelClass =
+        item.level === "red"
+          ? "alert-red"
+          : "alert-yellow";
+
+
+      const levelText =
+        getHistoryLevelText(
+          item.level
+        );
+
+
+      const cityName =
+        item.cityName ||
+        getSelectedCityData().name;
+
+
+      let html = `
+
+        <div
+          class="history-item ${levelClass}"
+        >
+
+          <div class="history-icon alert">
+
+            рџљЁ
+
+          </div>
+
+          <div class="history-main">
+
+            <div class="history-title">
+
+              ${levelText}
+
+            </div>
+
+            <div class="history-meta">
+
+              рџ“Ќ ${cityName}
+
+              <br>
+
+              РџРѕС‡Р°С‚РѕРє:
+              ${formatHistoryDate(
+                item.startedAt
+              )}
+
+            </div>
+
+      `;
+
+
+      if (item.endedAt) {
+
+        html += `
+
+            <div class="history-meta">
+
+              рџџў Р’С–РґР±С–Р№:
+              ${formatHistoryDate(
+                item.endedAt
+              )}
+
+              ${
+                item.duration
+                  ? `<br>вЏ±пёЏ РўСЂРёРІР°Р»С–СЃС‚СЊ: ${item.duration}`
+                  : ""
+              }
+
+            </div>
+
+        `;
+
+      } else {
+
+        html += `
+
+            <div class="history-meta">
+
+              рџ”ґ РўСЂРёРІРѕРіР° С‰Рµ С‚СЂРёРІР°С”
+
+            </div>
+
+        `;
+
+      }
+
+
+      if (
+        item.regionName
+      ) {
+
+        html += `
+
+          <div class="history-meta">
+
+            рџ—єпёЏ ${item.regionName}
+
+          </div>
+
+        `;
+
+      }
+
+
+      if (
+  item.districts &&
+  item.districts.length
+) {
+
+  html += `
+
+    <div class="history-meta">
+
+      Р Р°Р№РѕРЅРё:
+
+      <br>
+
+      ${item.districts
+        .map(
+          district => {
+
+            const icon =
+              district.level === "red"
+                ? "рџ”ґ"
+                : "рџџЎ";
+
+            let time = "";
+
+            if (district.startedAt) {
+
+              const districtDate =
+                new Date(
+                  district.startedAt
+                );
+
+              if (
+                !isNaN(
+                  districtDate.getTime()
+                )
+              ) {
+
+                time =
+                  " вЂ” " +
+                  districtDate.toLocaleTimeString(
+                    "uk-UA",
+                    {
+                      hour: "2-digit",
+                      minute: "2-digit"
+                    }
+                  );
+
+              }
+
+            }
+
+            return (
+              icon +
+              " " +
+              district.name +
+              time
+            );
+
+          }
+        )
+        .join("<br>")}
+
+    </div>
+
+  `;
+
+}
+
+
+      html += `
+
+          </div>
+
+        </div>
+
+      `;
+
+
+      return html;
+
+    }).join("");
+
+}
+
+
+/* РџРћРљРђР—РђРўР Р†РЎРўРћР Р†Р® */
+
+renderAlertHistory();
+
+/* РўРµРјР° + Р—РІСѓРє */
+
+const themeButton =
+document.getElementById("theme-button");
+
+const soundButton =
+document.getElementById("sound-button");
+
+let soundEnabled =
+localStorage.getItem("kyiv-bezpeka-sound") === "on";
+let audioContext = null;
+
+/* РўР•РњРђ */
+
+function updateThemeButton() {
+themeButton.textContent =
+document.body.classList.contains("dark")
+? "вЂпёЏ"
+: "рџЊ™";
+}
+
+const savedTheme =
+localStorage.getItem("kyiv-bezpeka-theme");
+
+if (savedTheme === "dark") {
+document.body.classList.add("dark");
+}
+
+updateThemeButton();
+
+themeButton.addEventListener("click", function () {
+
+document.body.classList.toggle("dark");
+
+localStorage.setItem(
+"kyiv-bezpeka-theme",
+document.body.classList.contains("dark")
+? "dark"
+: "light"
+);
+
+updateThemeButton();
+});
+
+/* Р—Р’РЈРљ */
+
+function updateSoundButton() {
+
+soundButton.textContent =
+soundEnabled ? "рџ””" : "рџ”•";
+}
+
+updateSoundButton();
+
+soundButton.addEventListener("click", function () {
+
+if (!audioContext) {
+
+audioContext =
+  new (window.AudioContext ||
+    window.webkitAudioContext)();
+}
+
+if (audioContext.state === "suspended") {
+audioContext.resume();
+}
+
+soundEnabled = !soundEnabled;
+localStorage.setItem(
+  "kyiv-bezpeka-sound",
+  soundEnabled ? "on" : "off"
+);
+
+updateSoundButton();
+
+if (soundEnabled) {
+playTestSound();
+}
+});
+
+function playTestSound() {
+
+if (!canPlayAlertSound()) return;
+if (!audioContext) return;
+
+const oscillator =
+audioContext.createOscillator();
+
+const gain =
+audioContext.createGain();
+
+oscillator.connect(gain);
+
+gain.connect(
+audioContext.destination
+);
+
+oscillator.frequency.value = 700;
+
+gain.gain.setValueAtTime(
+0.001,
+audioContext.currentTime
+);
+
+gain.gain.exponentialRampToValueAtTime(
+0.25,
+audioContext.currentTime + 0.03
+);
+
+gain.gain.exponentialRampToValueAtTime(
+0.001,
+audioContext.currentTime + 0.35
+);
+
+oscillator.start();
+
+oscillator.stop(
+audioContext.currentTime + 0.35
+);
+}
+
+// KYIV Р±РµР·РїРµРєР° вЂ” Р·РІСѓРєРё СЂС–Р·РЅРёС… С‚РёРїС–РІ С‚СЂРёРІРѕРі
+
+function playDroneSound() {
+
+   if (!canPlayAlertSound()) return;
+if (!audioContext) return;
+
+    const now = audioContext.currentTime;
+
+    const oscillator = audioContext.createOscillator();
+    const gain = audioContext.createGain();
+
+    oscillator.connect(gain);
+    gain.connect(audioContext.destination);
+
+    oscillator.type = "sine";
+
+    oscillator.frequency.setValueAtTime(500, now);
+    oscillator.frequency.linearRampToValueAtTime(850, now + 0.8);
+    oscillator.frequency.linearRampToValueAtTime(500, now + 1.6);
+
+    gain.gain.setValueAtTime(0.001, now);
+    gain.gain.exponentialRampToValueAtTime(0.25, now + 0.05);
+    gain.gain.exponentialRampToValueAtTime(0.001, now + 1.6);
+
+    oscillator.start(now);
+    oscillator.stop(now + 1.6);
+}
+function canPlayAlertSound() {
+    return localStorage.getItem('kyivBezpekaSound') !== 'off';
+}
+
+function playMissileSound() {
+
+    if (!canPlayAlertSound()) return;
+if (!audioContext) return;
+
+    const now = audioContext.currentTime;
+
+    const oscillator = audioContext.createOscillator();
+    const gain = audioContext.createGain();
+
+    oscillator.connect(gain);
+    gain.connect(audioContext.destination);
+
+    oscillator.type = "square";
+
+    oscillator.frequency.setValueAtTime(900, now);
+    oscillator.frequency.setValueAtTime(1200, now + 0.18);
+    oscillator.frequency.setValueAtTime(900, now + 0.36);
+
+    gain.gain.setValueAtTime(0.001, now);
+    gain.gain.exponentialRampToValueAtTime(0.22, now + 0.03);
+    gain.gain.exponentialRampToValueAtTime(0.001, now + 0.45);
+
+    oscillator.start(now);
+    oscillator.stop(now + 0.45);
+}
+
+
+function playAllClearSound() {
+
+    if (!canPlayAlertSound()) return;
+if (!audioContext) return;
+
+    const now = audioContext.currentTime;
+
+    const oscillator = audioContext.createOscillator();
+    const gain = audioContext.createGain();
+
+    oscillator.connect(gain);
+    gain.connect(audioContext.destination);
+
+    oscillator.type = "sine";
+
+    oscillator.frequency.setValueAtTime(500, now);
+    oscillator.frequency.linearRampToValueAtTime(700, now + 0.4);
+    oscillator.frequency.linearRampToValueAtTime(900, now + 0.8);
+
+    gain.gain.setValueAtTime(0.001, now);
+    gain.gain.exponentialRampToValueAtTime(0.18, now + 0.05);
+    gain.gain.exponentialRampToValueAtTime(0.001, now + 0.8);
+
+    oscillator.start(now);
+    oscillator.stop(now + 0.8);
+}
+
+/* Р§РђРЎ РўР РР’РћР“Р */
+
+function formatDuration(startTime) {
+
+  if (!startTime) return "";
+
+  const start = new Date(startTime);
+  const now = new Date();
+
+  if (isNaN(start.getTime())) return "";
+
+  const totalMinutes = Math.max(
+    0,
+    Math.floor((now - start) / 60000)
+  );
+
+  const hours =
+    Math.floor(totalMinutes / 60);
+
+  const minutes =
+    totalMinutes % 60;
+
+  if (hours > 0) {
+    return "вЏ±пёЏ РўСЂРёРІР°С”: " +
+      hours + " РіРѕРґ " +
+      minutes + " С…РІ";
+  }
+
+  return "вЏ±пёЏ РўСЂРёРІР°С”: " +
+    minutes + " С…РІ";
+}
+
+async function updateKyivAlert() {
+
+  const box =
+
+    document.getElementById("kyiv-alert");
+
+  const timer =
+
+    document.getElementById("kyiv-timer");
+
+  const city =
+
+    getSelectedCityData();
+
+  try {
+
+    const response =
+
+      await fetch(
+
+        `https://tryvoha.online/api/v1/alerts/${city.slug}`
+
+      );
+
+    if (!response.ok) {
+
+      throw new Error("РџРѕРјРёР»РєР° СЃРµСЂРІРµСЂР°");
+
+    }
+
+    const data =
+
+      await response.json();
+     /* Р§РђРЎ РџРћР§РђРўРљРЈ РўР РР’РћР“Р Р— API */
+
+if (data.active && data.started_at) {
+
+  kyivAlertStartedAt =
+    new Date(data.started_at).getTime();
+
+} else {
+
+  kyivAlertStartedAt = null;
+
+}
+
+    document.getElementById(
+
+      "kyiv-updated"
+
+    ).textContent =
+
+      "РћСЃС‚Р°РЅРЅСЏ РїРµСЂРµРІС–СЂРєР°: " +
+
+      new Date().toLocaleTimeString(
+
+        "uk-UA",
+
+        {
+
+          hour: "2-digit",
+
+          minute: "2-digit"
+
+        }
+
+      );
+
+    const districts =
+
+      data.districts_active || [];
+
+    const hasRed =
+
+      data.level === "red" ||
+
+      districts.some(
+
+        district =>
+
+          district.level === "red"
+
+      );
+
+    const hasYellow =
+
+      data.level === "yellow" ||
+
+      districts.some(
+
+        district =>
+
+          district.level === "yellow"
+
+      );
+
+      /* Р†РЎРўРћР Р†РЇ вЂ” РЎРўРђРќ РњР†РЎРўРђ */
+
+const isActive =
+  hasRed || hasYellow;
+
+const currentLevel =
+  hasRed ? "red" :
+  hasYellow ? "yellow" :
+  null;
+
+const cityKey =
+  getSelectedCity();
+
+const stateKey =
+  "kyiv-bezpeka-history-state-" +
+  cityKey;
+
+let previousState = null;
+
+try {
+  previousState =
+    JSON.parse(
+      localStorage.getItem(stateKey)
+    );
+} catch (error) {
+  previousState = null;
+}
+
+if (!previousState) {
+
+  localStorage.setItem(
+    stateKey,
+    JSON.stringify({
+      active: isActive,
+      level: currentLevel
+    })
+  );
+
+} else {
+
+  /* РќРћР’Рђ РўР РР’РћР“Рђ */
+
+  if (
+    !previousState.active &&
+    isActive
+  ) {
+
+    const startedAt =
+      new Date().toISOString();
+
+    const historyItem = {
+      id:
+        cityKey +
+        "-" +
+        Date.now(),
+
+      cityName:
+        city.name,
+
+      regionName:
+        city.regionName,
+
+      level:
+        currentLevel,
+
+      startedAt:
+        startedAt,
+
+      endedAt:
+        null,
+
+      duration:
+        null,
+
+      districts:
+  districts.map(district => ({
+    name:
+      district.name_uk,
+
+    level:
+      district.level,
+
+    startedAt:
+      district.started_at
+  }))
+    };
+
+    localStorage.setItem(
+      "kyiv-bezpeka-current-history-" +
+      cityKey,
+      JSON.stringify(historyItem)
+    );
+
+    addHistoryItem(historyItem);
+  }
+
+  /* Р’Р†Р”Р‘Р†Р™ */
+
+  if (
+    previousState.active &&
+    !isActive
+  ) {
+
+    const currentKey =
+      "kyiv-bezpeka-current-history-" +
+      cityKey;
+
+    let currentItem = null;
+
+    try {
+      currentItem =
+        JSON.parse(
+          localStorage.getItem(
+            currentKey
+          )
+        );
+    } catch (error) {
+      currentItem = null;
+    }
+
+    if (currentItem) {
+
+      currentItem.endedAt =
+        new Date().toISOString();
+
+      currentItem.duration =
+        formatHistoryDuration(
+          currentItem.startedAt,
+          currentItem.endedAt
+        );
+
+      const history =
+        getAlertHistory();
+
+      const index =
+        history.findIndex(
+          item =>
+            item.id === currentItem.id
+        );
+
+      if (index !== -1) {
+
+        history[index] =
+          currentItem;
+
+        saveAlertHistory(
+          history
+        );
+
+        renderAlertHistory();
+      }
+
+      localStorage.removeItem(
+        currentKey
+      );
+    }
+  }
+
+  /* Р—РђРџРђРњ'РЇРўРћР’РЈР„РњРћ РќРћР’РР™ РЎРўРђРќ */
+
+  localStorage.setItem(
+    stateKey,
+    JSON.stringify({
+      active: isActive,
+      level: currentLevel
+    })
+  );
+}
+      if (hasRed) {
+
+      box.textContent =
+
+        "рџ”ґ " +
+
+        city.name +
+
+        ": Р Р°РєРµС‚РЅР° РЅРµР±РµР·РїРµРєР° ";
+
+      box.style.background =
+
+        "#ffebee";
+
+      box.style.color =
+
+        "#b71c1c";
+
+    } else if (hasYellow) {
+
+      box.textContent =
+
+        "рџџЎ " +
+
+        city.name +
+
+        ": Р—Р°РіСЂРѕР·Р° Р‘РџР›Рђ ";
+
+      box.style.background =
+
+        "#fff8e1";
+
+      box.style.color =
+
+        "#f57f17";
+
+    } else {
+
+      box.textContent =
+
+        "рџџў " +
+
+        city.name +
+
+        ": Р’С–РґР±С–Р№";
+
+      box.style.background =
+
+        "#e8f5e9";
+
+      box.style.color =
+
+        "#1b5e20";
+
+      timer.textContent =
+
+        "";
+
+    }
+
+  } catch (error) {
+
+    console.error(
+
+      "РџРѕРјРёР»РєР° РјС–СЃС‚Р°:",
+
+      error
+
+    );
+
+    box.textContent =
+
+      "вљЄпёЏ " +
+
+      city.name +
+
+      ": РќР• Р’Р”РђР›РћРЎРЇ РћРўР РРњРђРўР Р”РђРќР†";
+
+    box.style.background =
+
+      "#eeeeee";
+
+    box.style.color =
+
+      "#424242";
+
+    timer.textContent =
+
+      "";
+
+  }
+
+}
+//* РљРР‡Р’РЎР¬РљРђ РћР‘Р›РђРЎРўР¬ */
+
+async function updateKyivRegionThreat() {
+
+  const box =
+
+    document.getElementById("kyiv-region-threat");
+
+  const city =
+
+    getSelectedCity();
+
+  const cityData =
+
+    getSelectedCityData();
+
+  const nearby =
+
+    NEARBY_REGIONS[city] || [];
+
+  try {
+
+    const mainResponse =
+  await fetch(
+    "https://tryvoha.online/api/v1/alerts/" +
+    cityData.oblastSlug
+  );
+
+    const mainData =
+
+      await mainResponse.json();
+
+    const districts =
+
+      mainData.districts_active || [];
+
+    let html = "";
+
+    /* Р РђР™РћРќР РћР‘Р›РђРЎРўР† */
+
+const activeDistricts =
+
+  districts.filter(
+
+    district =>
+
+      district.level === "red" ||
+
+      district.level === "yellow"
+
+  );
+
+if (activeDistricts.length > 0) {
+
+  html +=
+
+    "<div style='font-weight:700;margin-bottom:10px;'>" +
+
+    "вљ пёЏ Р Р°Р№РѕРЅРё РѕР±Р»Р°СЃС‚С–" +
+
+    "</div>";
+
+  for (const district of activeDistricts) {
+
+    if (district.level === "red") {
+
+      html +=
+
+        "<div class='district-item district-red'>" +
+
+        "рџ”ґ " +
+
+        district.name_uk +
+
+        " вЂ” Р Р°РєРµС‚РЅР° РЅРµР±РµР·РїРµРєР° " +
+
+        "</div>";
+
+    } else {
+
+      html +=
+
+        "<div class='district-item district-yellow'>" +
+
+        "рџџЎ " +
+
+        district.name_uk +
+
+        " вЂ” Р·Р°РіСЂРѕР·Р° Р‘РџР›Рђ " +
+
+        "</div>";
+
+    }
+
+  }
+
+}
+
+    /* РћР‘Р›РђРЎРўР¬ */
+
+    let mainLevel =
+
+      mainData.level;
+
+    if (
+
+      districts.some(
+
+        district => district.level === "red"
+
+      )
+
+    ) {
+
+      mainLevel = "red";
+
+    } else if (
+
+      districts.some(
+
+        district => district.level === "yellow"
+
+      )
+
+    ) {
+
+      mainLevel = "yellow";
+
+    }
+
+    html +=
+
+      "<div style='font-weight:700;margin-top:16px;margin-bottom:10px;'>" +
+
+      "рџ“Ќ РћР±Р»Р°СЃС‚СЊ" +
+
+      "</div>";
+
+    if (mainLevel === "red") {
+
+      html +=
+
+        "<div class='district-item district-red'>" +
+
+        "рџ”ґ " +
+
+        cityData.regionName +
+
+        "  вЂ” Р Р°РєРµС‚РЅР° РЅРµР±РµР·РїРµРєР° " +
+
+        "</div>";
+
+    } else if (
+
+      mainLevel === "yellow"
+
+    ) {
+
+      html +=
+
+        "<div class='district-item district-yellow'>" +
+
+        "рџџЎ " +
+
+        cityData.regionName +
+
+        "  вЂ” Р—Р°РіСЂРѕР·Р° Р‘РџР›Рђ " +
+
+        "</div>";
+
+    } else {
+
+      html +=
+
+        "<div class='district-item'>" +
+
+        "рџџў " +
+
+        cityData.regionName +
+
+        " РѕР±Р»Р°СЃС‚СЊ вЂ” Р’С–РґР±С–Р№ " +
+
+        "</div>";
+
+    }
+    /* РЎРЈРЎР†Р”РќР† РћР‘Р›РђРЎРўР† */
+
+    let activeNearby = [];
+
+    for (const region of nearby) {
+
+      try {
+
+        const response =
+
+          await fetch(
+
+            "https://tryvoha.online/api/v1/alerts/" +
+
+            region.slug
+
+          );
+
+        if (!response.ok) {
+
+          continue;
+
+        }
+
+        const data =
+
+          await response.json();
+
+        let level =
+
+          data.level;
+
+        const regionDistricts =
+
+          data.districts_active || [];
+
+        if (
+
+          regionDistricts.some(
+
+            district => district.level === "red"
+
+          )
+
+        ) {
+
+          level = "red";
+
+        } else if (
+
+          regionDistricts.some(
+
+            district => district.level === "yellow"
+
+          )
+
+        ) {
+
+          level = "yellow";
+
+        }
+
+        if (
+
+          level === "red" ||
+
+          level === "yellow"
+
+        ) {
+
+          activeNearby.push({
+
+            name: region.name,
+
+            level: level
+
+          });
+
+        }
+
+      } catch (error) {
+
+        console.log(
+
+          "РќРµ РІРґР°Р»РѕСЃСЏ РѕС‚СЂРёРјР°С‚Рё:",
+
+          region.name
+
+        );
+
+      }
+
+    }
+
+    /* РџРћРљРђР—РЈР„РњРћ РЎРЈРЎР†Р”РќР† РћР‘Р›РђРЎРўР† */
+
+    if (activeNearby.length > 0) {
+
+      html +=
+
+        "<div style='font-weight:700;margin-top:16px;margin-bottom:10px;'>" +
+
+        "вљ пёЏ РЎСѓСЃС–РґРЅС– РѕР±Р»Р°СЃС‚С–" +
+
+        "</div>";
+
+      for (const region of activeNearby) {
+
+        if (region.level === "red") {
+
+          html +=
+
+            "<div class='district-item district-red'>" +
+
+            "рџ”ґ " +
+
+            region.name +
+
+            " вЂ” Р Р°РєРµС‚РЅР° РЅРµР±РµР·РїРµРєР° " +
+
+            "</div>";
+
+        } else {
+
+          html +=
+
+            "<div class='district-item district-yellow'>" +
+
+            "рџџЎ " +
+
+            region.name +
+
+            " вЂ” Р·Р°РіСЂРѕР·Р° Р‘РџР›Рђ " +
+
+            "</div>";
+
+        }
+
+      }
+
+    }
+
+    /* Р’РР’Р†Р” */
+
+    box.innerHTML =
+
+      html;
+
+    const updated =
+
+      document.getElementById(
+
+        "kyiv-region-updated"
+
+      );
+
+    if (updated) {
+
+      updated.textContent =
+
+        "РћСЃС‚Р°РЅРЅСЏ РїРµСЂРµРІС–СЂРєР°: " +
+
+        new Date().toLocaleTimeString(
+
+          "uk-UA",
+
+          {
+
+            hour: "2-digit",
+
+            minute: "2-digit"
+
+          }
+
+        );
+
+    }
+
+  } catch (error) {
+
+    console.error(
+
+      "РџРѕРјРёР»РєР° Р·Р°РіСЂРѕР· РїРѕСЂСѓС‡:",
+
+      error
+
+    );
+
+    box.innerHTML =
+
+      "<div class='district-item'>" +
+
+      "вљЄпёЏ РќРµ РІРґР°Р»РѕСЃСЏ РѕС‚СЂРёРјР°С‚Рё РґР°РЅС–" +
+
+      "</div>";
+
+  }
+
+}
+/* РўРђР™РњР•Р Р */
+
+function updateTimers() {
+
+  const kyivTimer =
+    document.getElementById("kyiv-timer");
+
+  const regionTimer =
+    document.getElementById("kyiv-region-timer");
+
+  if (kyivAlertStartedAt) {
+    kyivTimer.textContent =
+      formatDuration(kyivAlertStartedAt);
+  } else {
+    kyivTimer.textContent = "";
+  }
+
+  if (regionAlertStartedAt) {
+    regionTimer.textContent =
+      formatDuration(regionAlertStartedAt);
+  } else {
+    regionTimer.textContent = "";
+  }
+}
+
+
+/* Р’РР‘Р РђРќР• РњР†РЎРўРћ */
+
+function getSelectedCity() {
+
+  return localStorage.getItem(
+    "kyiv-bezpeka-city"
+  ) || "kyiv";
+
+}
+
+
+function getSelectedCityData() {
+
+  return CITY_REGIONS[getSelectedCity()]
+    || CITY_REGIONS.kyiv;
+
+}
+
+
+/* РћРќРћР’Р›Р•РќРќРЇ Р’РЎР†РҐ Р”РђРќРРҐ */
+
+async function updateAllData() {
+
+  await Promise.allSettled([
+
+    updateKyivAlert(),
+
+    updateKyivRegionThreat()
+
+  ]);
+
+  updateTimers();
+
+}
+
+/* DTEK вЂ” РђР”Р Р•РЎРђ */
+
+const DTEK_ADDRESS_KEY =
+  "kyiv-bezpeka-dtek-address";
+
+const DEFAULT_DTEK_ADDRESS =
+  "РћРЅРѕСЂРµ РґРµ Р‘Р°Р»СЊР·Р°РєР° 63Р‘, РљРёС—РІ";
+
+
+function getDtekAddress() {
+
+  return localStorage.getItem(
+    DTEK_ADDRESS_KEY
+  ) || DEFAULT_DTEK_ADDRESS;
+
+}
+
+
+function updateDtekAddress() {
+
+  const element =
+    document.getElementById(
+      "dtek-address"
+    );
+
+  if (!element) {
+    return;
+  }
+
+  element.textContent =
+    getDtekAddress();
+
+}
+
+
+function openDtekAddressSettings() {
+
+  const currentAddress =
+    getDtekAddress();
+
+  const newAddress =
+    window.prompt(
+      "Р’РІРµРґС–С‚СЊ Р°РґСЂРµСЃСѓ РґР»СЏ РіСЂР°С„С–РєР° Р”РўР•Рљ:",
+      currentAddress
+    );
+
+  if (
+    newAddress !== null &&
+    newAddress.trim() !== ""
+  ) {
+
+    localStorage.setItem(
+      DTEK_ADDRESS_KEY,
+      newAddress.trim()
+    );
+
+    updateDtekAddress();
+
+  }
+
+}
+
+
+/* РџРѕРєР°Р·СѓС”РјРѕ Р°РґСЂРµСЃСѓ РїС–СЃР»СЏ Р·Р°РІР°РЅС‚Р°Р¶РµРЅРЅСЏ HTML */
+
+updateDtekAddress();
+
+/* РџР•Р РЁР• РћРќРћР’Р›Р•РќРќРЇ */
+
+updateAllData();
+
+
+/* РђР’РўРћРњРђРўРР§РќР• РћРќРћР’Р›Р•РќРќРЇ */
+
+setInterval(function () {
+
+  updateAllData();
+
+}, 30000);
+
+
+/* РћРќРћР’Р›Р•РќРќРЇ РўРђР™РњР•Р Рђ Р©РћРЎР•РљРЈРќР”Р */
+
+setInterval(function () {
+
+  updateTimers();
+
+}, 1000);
+
+
+/* Р’РР‘Р†Р  РњР†РЎРўРђ */
+
+const citySelect =
+  document.getElementById("city-select");
+
+
+const savedCity =
+  localStorage.getItem(
+    "kyiv-bezpeka-city"
+  );
+
+
+if (savedCity &&
+    CITY_REGIONS[savedCity]) {
+
+  citySelect.value = savedCity;
+
+}
+
+/* РџР Р Р—РњР†РќР† РњР†РЎРўРђ вЂ” РћРќРћР’Р›Р®Р„РњРћ РћР”Р РђР—РЈ */
+
+citySelect.addEventListener(
+  "change",
+  function () {
+
+    localStorage.setItem(
+      "kyiv-bezpeka-city",
+      citySelect.value
+    );
+
+    /* РЎРєРёРґР°С”РјРѕ СЃС‚Р°СЂС– С‚Р°Р№РјРµСЂРё */
+
+    kyivAlertStartedAt = null;
+
+    regionAlertStartedAt = null;
+
+    /* РџРѕРєР°Р·СѓС”РјРѕ С–СЃС‚РѕСЂС–СЋ РЅРѕРІРѕРіРѕ РјС–СЃС‚Р° */
+
+    renderAlertHistory();
+
+    /* РћРґСЂР°Р·Сѓ РѕС‚СЂРёРјСѓС”РјРѕ РЅРѕРІС– РґР°РЅС– */
+
+    updateAllData();
+
+  }
+);
+</script>
+
+<script src="dtek-ui.js"></script><script src="news-ui.js"></script>
+
+
+
+<!-- KYIV Р±РµР·РїРµРєР° вЂ” РїР°РЅРµР»СЊ РЅР°Р»Р°С€С‚СѓРІР°РЅСЊ -->
+<div id="settingsPanel" class="settings-panel">
+    <div class="settings-header">
+        <h2>РќР°Р»Р°С€С‚СѓРІР°РЅРЅСЏ</h2>
+        <button id="settingsClose" class="settings-close" aria-label="Р—Р°РєСЂРёС‚Рё">Г—</button>
+    </div>
+
+    <div class="settings-content">
+        <div class="settings-section">
+            <h3>рџЋЁ РћС„РѕСЂРјР»РµРЅРЅСЏ</h3>
+            <div class="background-options">
+    <button class="settings-option" data-bg="night">рџЊ™ РќС–С‡РЅРёР№ РљРёС—РІ</button>
+    <button class="settings-option" data-bg="evening">рџЊ† Р’РµС‡С–СЂРЅС–Р№ РљРёС—РІ</button>
+    <button class="settings-option" data-bg="day">вЂпёЏ РЎРІС–С‚Р»РёР№ РґРµРЅСЊ</button>
+    <button class="settings-option" data-bg="dark">рџЊЊ РўРµРјРЅР° С‚РµРјР°</button>
+</div>
+        </div>
+
+        <div class="settings-section">
+            <h3>рџ”Љ Р—РІСѓРєРё</h3>
+            <label class="settings-switch">
+                <span>Р—РІСѓРєРё СЃРїРѕРІС–С‰РµРЅСЊ</span>
+                <input type="checkbox" id="soundToggle" checked>
+            </label>
+        </div>
+        <div class="settings-section">
+
+    <h3>рџљЁ РўРёРїРё Р·РІСѓРєС–РІ</h3>
+
+    <button class="alert-sound-option" data-alert-sound="drone">
+        рџ›ё Р‘РџР›Рђ
+    </button>
+
+    <button class="alert-sound-option" data-alert-sound="missile">
+        рџљЂ Р Р°РєРµС‚РЅР° РЅРµР±РµР·РїРµРєР°
+    </button>
+
+    <button class="alert-sound-option" data-alert-sound="allclear">
+        рџџў Р’С–РґР±С–Р№ С‚СЂРёРІРѕРіРё
+    </button>
+
+    <button class="alert-sound-option"data-alert-sound="test">
+        рџ”Љ РўРµСЃС‚РѕРІРёР№ Р·РІСѓРє
+    </button>
+</div>
+
+        <div class="settings-section">
+            <h3>рџ“і Р’С–Р±СЂР°С†С–СЏ</h3>
+            <label class="settings-switch">
+                <span>Р’С–Р±СЂР°С†С–СЏ СЃРїРѕРІС–С‰РµРЅСЊ</span>
+                <input type="checkbox" id="vibrationToggle" checked>
+            </label>
+        </div>
+
+        <div class="settings-section">
+            <h3>рџЊ™ РўРёС…Р° РЅС–С‡</h3>
+            <label class="settings-switch">
+                <span>РќРµ С‚СѓСЂР±СѓРІР°С‚Рё РІРЅРѕС‡С–</span>
+                <input type="checkbox" id="quietNightToggle">
+            </label>
+        </div>
+    </div>
+</div>
+
+
+<script>
+/* KYIV Р±РµР·РїРµРєР° вЂ” Р·Р°РєСЂРёС‚С‚СЏ РїР°РЅРµР»С– РЅР°Р»Р°С€С‚СѓРІР°РЅСЊ */
+
+const settingsPanelCloseTarget =
+    document.getElementById('settingsPanel');
+
+const settingsCloseButton =
+    document.getElementById('settingsClose');
+
+if (settingsCloseButton && settingsPanelCloseTarget) {
+
+    settingsCloseButton.addEventListener('click', () => {
+        settingsPanelCloseTarget.classList.remove('open');
+    });
+
+}
+</script>
+
+<script>
+
+/* KYIV Р±РµР·РїРµРєР° вЂ” РїРµСЂРµРјРёРєР°РЅРЅСЏ С‚Р° Р·Р±РµСЂРµР¶РµРЅРЅСЏ С„РѕРЅСѓ */
+
+const backgroundButtons = document.querySelectorAll('.settings-option');
+
+function setBackground(bg) {
+    document.body.classList.remove(
+        'bg-night',
+        'bg-evening',
+        'bg-day',
+        'bg-dark'
+    );
+
+    document.body.classList.add(`bg-${bg}`);
+    localStorage.setItem('kyivBezpekaBackground', bg);
+}
+
+backgroundButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        setBackground(button.dataset.bg);
+    });
+});
+
+const savedBackground = localStorage.getItem('kyivBezpekaBackground');
+
+if (savedBackground) {
+    setBackground(savedBackground);
+}
+
+</script>
+
+<script>
+/* KYIV Р±РµР·РїРµРєР° вЂ” РЅР°Р»Р°С€С‚СѓРІР°РЅРЅСЏ Р·РІСѓРєС–РІ */
+
+const soundToggle = document.getElementById('soundToggle');
+
+function setSoundEnabled(enabled) {
+    soundToggle.checked = enabled;
+    localStorage.setItem('kyivBezpekaSound', enabled ? 'on' : 'off');
+}
+
+const savedSound = localStorage.getItem('kyivBezpekaSound');
+
+if (savedSound !== null) {
+    setSoundEnabled(savedSound === 'on');
+}
+
+soundToggle.addEventListener('change', () => {
+    setSoundEnabled(soundToggle.checked);
+});
+</script>
+
+<script>
+/* KYIV Р±РµР·РїРµРєР° вЂ” РЅР°Р»Р°С€С‚СѓРІР°РЅРЅСЏ РІС–Р±СЂР°С†С–С— */
+
+const vibrationToggle = document.getElementById('vibrationToggle');
+
+function setVibrationEnabled(enabled) {
+    vibrationToggle.checked = enabled;
+    localStorage.setItem('kyivBezpekaVibration', enabled ? 'on' : 'off');
+}
+
+const savedVibration = localStorage.getItem('kyivBezpekaVibration');
+
+if (savedVibration !== null) {
+    setVibrationEnabled(savedVibration === 'on');
+}
+
+vibrationToggle.addEventListener('change', () => {
+    setVibrationEnabled(vibrationToggle.checked);
+});
+</script>
+
+<script>
+/* KYIV Р±РµР·РїРµРєР° вЂ” СЂРµР¶РёРј В«РўРёС…Р° РЅС–С‡В» */
+
+const quietNightToggle = document.getElementById('quietNightToggle');
+
+function setQuietNight(enabled) {
+    quietNightToggle.checked = enabled;
+    localStorage.setItem('kyivBezpekaQuietNight', enabled ? 'on' : 'off');
+}
+
+const savedQuietNight = localStorage.getItem('kyivBezpekaQuietNight');
+
+if (savedQuietNight !== null) {
+    setQuietNight(savedQuietNight === 'on');
+}
+
+quietNightToggle.addEventListener('change', () => {
+    setQuietNight(quietNightToggle.checked);
+});
+</script>
+
+<script>
+
+const alertSoundButtons =
+    document.querySelectorAll('.alert-sound-option');
+
+function setAlertSound(type) {
+
+    localStorage.setItem(
+        'kyivBezpekaAlertSound',
+        type
+    );
+
+    alertSoundButtons.forEach(button => {
+
+        button.classList.toggle(
+            'selected',
+            button.dataset.alertSound === type
+        );
+
+    });
+}
+
+const savedAlertSound =
+    localStorage.getItem('kyivBezpekaAlertSound') || 'drone';
+
+setAlertSound(savedAlertSound);
+
+alertSoundButtons.forEach(button => {
+
+    button.addEventListener('click', () => {
+
+        const type =
+            button.dataset.alertSound;
+
+        setAlertSound(type);
+
+        if (!audioContext) {
+
+            audioContext =
+                new (window.AudioContext ||
+                    window.webkitAudioContext)();
+
+        }
+
+        if (audioContext.state === "suspended") {
+            audioContext.resume();
+        }
+
+        if (type === 'drone') {
+            playDroneSound();
+            alertVibration();
+        }
+
+        if (type === 'missile') {
+            playMissileSound();
+            alertVibration();
+        }
+
+        if (type === 'allclear') {
+            playAllClearSound();
+        }
+
+        if (type === 'test') {
+            playTestSound();
+            alertVibration();
+        }
+
+    });
+
+});
+</script>
+
+<script>
+/* KYIV Р±РµР·РїРµРєР° вЂ” РєРµСЂСѓРІР°РЅРЅСЏ С–СЃС‚РѕСЂС–С”СЋ */
+
+const historyToggle =
+    document.getElementById('historyToggle');
+
+const historyContent =
+    document.getElementById('alert-history-list');
+
+historyToggle.addEventListener('click', () => {
+
+    historyToggle.classList.toggle('collapsed');
+    historyContent.classList.toggle('collapsed');
+
+});
+</script>
+
+<script>
+/* KYIV Р±РµР·РїРµРєР° вЂ” РїС–РґРіРѕС‚РѕРІРєР° push-СЃРїРѕРІС–С‰РµРЅСЊ */
+
+document.addEventListener("DOMContentLoaded", async () => {
+
+    if (!window.Capacitor) {
+        console.log("Capacitor РЅРµ Р·РЅР°Р№РґРµРЅРѕ");
+        return;
+    }
+
+    const PushNotifications =
+        window.Capacitor.Plugins.PushNotifications;
+
+    if (!PushNotifications) {
+        console.log("PushNotifications РЅРµ Р·РЅР°Р№РґРµРЅРѕ");
+        return;
+    }
+
+    try {
+
+        const permission =
+            await PushNotifications.requestPermissions();
+
+        console.log(
+            "Р”РѕР·РІС–Р» РЅР° СЃРїРѕРІС–С‰РµРЅРЅСЏ:",
+            permission.receive
+        );
+
+        if (permission.receive !== "granted") {
+            console.log("РљРѕСЂРёСЃС‚СѓРІР°С‡ РЅРµ РґРѕР·РІРѕР»РёРІ СЃРїРѕРІС–С‰РµРЅРЅСЏ");
+            return;
+        }
+
+        await PushNotifications.register();
+
+        console.log("Push-СЃРїРѕРІС–С‰РµРЅРЅСЏ Р·Р°СЂРµС”СЃС‚СЂРѕРІР°РЅРѕ");
+
+    } catch (error) {
+
+        console.error(
+            "РџРѕРјРёР»РєР° push-СЃРїРѕРІС–С‰РµРЅСЊ:",
+            error
+        );
+
+    }
+
+});
+</script>
+
+<!-- KYIV Р±РµР·РїРµРєР° вЂ” РЅРёР¶РЅС” РјРµРЅСЋ -->
+
+<nav class="bottom-menu" id="bottomMenu">
+
+    <button type="button"
+            data-section="status"
+            class="active"
+            aria-label="РџРµСЂРµРІС–СЂРєР° СЃС‚Р°РЅСѓ"
+            title="РџРµСЂРµРІС–СЂРєР° СЃС‚Р°РЅСѓ">
+        рџ›ЎпёЏ
+    </button>
+
+    <button type="button"
+            data-section="light"
+            aria-label="РЎРІС–С‚Р»Рѕ"
+            title="РЎРІС–С‚Р»Рѕ">
+        рџ’Ў
+    </button>
+
+    <button type="button"
+            data-section="air"
+            aria-label="РџРѕРІС–С‚СЂСЏРЅР° СЃРёС‚СѓР°С†С–СЏ"
+            title="РџРѕРІС–С‚СЂСЏРЅР° СЃРёС‚СѓР°С†С–СЏ">
+        рџЋЇ
+    </button>
+
+    <button type="button"
+            data-section="news"
+            aria-label="РћСЃС‚Р°РЅРЅС– РЅРѕРІРёРЅРё"
+            title="РћСЃС‚Р°РЅРЅС– РЅРѕРІРёРЅРё">
+        рџ“°
+    </button>
+
+    <button type="button"
+            data-section="settings"
+            aria-label="РќР°Р»Р°С€С‚СѓРІР°РЅРЅСЏ"
+            title="РќР°Р»Р°С€С‚СѓРІР°РЅРЅСЏ">
+        вљ™пёЏ
+    </button>
+
+</nav>
+
+
+<!-- KYIV Р±РµР·РїРµРєР° вЂ” РІС–РєРЅРѕ РїРѕРІС–С‚СЂСЏРЅРѕС— СЃРёС‚СѓР°С†С–С— -->
+
+<div class="air-panel" id="airPanel">
+
+    <div class="air-header">
+        <h2>РџРѕРІС–С‚СЂСЏРЅР° СЃРёС‚СѓР°С†С–СЏ</h2>
+
+        <button
+            type="button"
+            class="air-close"
+            id="airClose"
+            aria-label="Р—Р°РєСЂРёС‚Рё">
+            Г—
+        </button>
+    </div>
+
+    <div class="air-content">
+
+        <div class="air-empty">
+            <div class="air-empty-icon">рџЋЇ</div>
+
+            <div class="air-empty-title">
+                РћС‡С–РєСѓС”РјРѕ С–РЅС„РѕСЂРјР°С†С–СЋ
+            </div>
+
+            <div class="air-empty-text">
+                РўСѓС‚ РІС–РґРѕР±СЂР°Р¶Р°С‚РёРјСѓС‚СЊСЃСЏ Р°РєС‚СѓР°Р»СЊРЅС– РїСѓР±Р»С–С‡РЅС– РїРѕРІС–РґРѕРјР»РµРЅРЅСЏ РїСЂРѕ РїРѕРІС–С‚СЂСЏРЅСѓ СЃРёС‚СѓР°С†С–СЋ.
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+/* KYIV Р±РµР·РїРµРєР° вЂ” Р»РѕРіС–РєР° РЅРёР¶РЅСЊРѕРіРѕ РјРµРЅСЋ */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const menu =
+        document.getElementById("bottomMenu");
+
+    if (!menu) return;
+
+    const buttons =
+        menu.querySelectorAll("button");
+
+    buttons.forEach(button => {
+
+        button.addEventListener("click", () => {
+
+            const section =
+                button.dataset.section;
+
+            buttons.forEach(item => {
+                item.classList.remove("active");
+            });
+
+            button.classList.add("active");
+
+
+            /* РќР°Р»Р°С€С‚СѓРІР°РЅРЅСЏ */
+
+            if (section === "settings") {
+
+                const panel =
+                    document.querySelector(".settings-panel");
+
+                if (panel) {
+                    panel.classList.add("open");
+                }
+
+                return;
+            }
+
+
+            /* РџРµСЂРµРІС–СЂРєР° СЃС‚Р°РЅСѓ */
+
+            if (section === "status") {
+
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+
+                return;
+            }
+
+
+            /* РЎРІС–С‚Р»Рѕ */
+
+            if (section === "light") {
+
+                const dtek =
+                    document.getElementById("dtek-schedule");
+
+                if (dtek) {
+
+                    dtek.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start"
+                    });
+
+                }
+
+                return;
+            }
+
+
+            /* РќРѕРІРёРЅРё */
+
+            if (section === "news") {
+
+                const news =
+                    document.querySelector(".news-card");
+
+                if (news) {
+
+                    news.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start"
+                    });
+
+                }
+
+                return;
+            }
+
+
+            /* РџРѕРІС–С‚СЂСЏРЅР° СЃРёС‚СѓР°С†С–СЏ */
+
+            if (section === "air") {
+
+                const airPanel =
+                    document.getElementById("airPanel");
+
+                if (airPanel) {
+                    airPanel.classList.add("open");
+                }
+
+                return;
+            }
+
+        });
+
+    });
+
+});
+
+
+/* Р—Р°РєСЂРёС‚С‚СЏ РїРѕРІС–С‚СЂСЏРЅРѕС— СЃРёС‚СѓР°С†С–С— */
+
+const airPanel =
+    document.getElementById("airPanel");
+
+const airClose =
+    document.getElementById("airClose");
+
+if (airClose && airPanel) {
+
+    airClose.addEventListener("click", () => {
+
+        airPanel.classList.remove("open");
+
+    });
+
+}
+
+</script>
+
+
+<script>
+/* KYIV Р±РµР·РїРµРєР° вЂ” РЅРѕРІРёРЅРё Р· GitHub */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const newsCard =
+        document.querySelector(".news-card");
+
+    if (!newsCard) return;
+
+
+    /* GitHub Raw вЂ” РґР¶РµСЂРµР»Рѕ Р°РІС‚РѕРјР°С‚РёС‡РЅРѕ РѕРЅРѕРІР»РµРЅРёС… РЅРѕРІРёРЅ */
+    const NEWS_URL =
+        "https://raw.githubusercontent.com/7777127/-/main/news-data.json";
+
+
+    function escapeHtml(value) {
+
+        return String(value || "")
+            .replaceAll("&", "&amp;")
+            .replaceAll("<", "&lt;")
+            .replaceAll(">", "&gt;")
+            .replaceAll('"', "&quot;")
+            .replaceAll("'", "&#039;");
+
+    }
+
+
+    function formatNewsDate(value) {
+
+        if (!value) {
+            return "Р§Р°СЃ РЅРµ РІРєР°Р·Р°РЅРѕ";
+        }
+
+        const date =
+            new Date(value);
+
+        if (isNaN(date.getTime())) {
+            return "Р§Р°СЃ РЅРµ РІРєР°Р·Р°РЅРѕ";
+        }
+
+        return date.toLocaleString(
+            "uk-UA",
+            {
+                day: "2-digit",
+                month: "2-digit",
+                hour: "2-digit",
+                minute: "2-digit"
+            }
+        );
+
+    }
+
+
+    async function loadNews() {
+
+        try {
+
+            const response =
+                await fetch(
+                    NEWS_URL +
+                    "?ts=" +
+                    Date.now(),
+                    {
+                        cache: "no-store"
+                    }
+                );
+
+
+            if (!response.ok) {
+
+                throw new Error(
+                    "РќРµ РІРґР°Р»РѕСЃСЏ РѕС‚СЂРёРјР°С‚Рё news-data.json"
+                );
+
+            }
+
+
+            const data =
+                await response.json();
+
+
+            if (
+                !data ||
+                !Array.isArray(data.items)
+            ) {
+
+                throw new Error(
+                    "РќРµРїСЂР°РІРёР»СЊРЅРёР№ С„РѕСЂРјР°С‚ news-data.json"
+                );
+
+            }
+
+
+            const news =
+                data.items;
+
+
+            /* РЇРєС‰Рѕ РЅРѕРІРёРЅ РїРѕРєРё РЅРµРјР°С” */
+
+            if (!news.length) {
+
+                newsCard.innerHTML = `
+
+                    <div class="news-title">
+                        рџ“° РћСЃС‚Р°РЅРЅС– РЅРѕРІРёРЅРё
+                    </div>
+
+                    <div class="news-item">
+
+                        <div class="news-time">
+                            РћС‡С–РєСѓС”РјРѕ РЅРѕРІС– РїРѕРІС–РґРѕРјР»РµРЅРЅСЏ
+                        </div>
+
+                        <div class="news-text">
+                            РќРѕРІРёРЅРё РїРѕРєРё РЅРµ РѕС‚СЂРёРјР°РЅС– Р· РѕС„С–С†С–Р№РЅРёС… РґР¶РµСЂРµР».
+                        </div>
+
+                    </div>
+
+                `;
+
+                return;
+
+            }
+
+
+            newsCard.innerHTML = `
+
+                <div class="news-title">
+                    рџ“° РћСЃС‚Р°РЅРЅС– РЅРѕРІРёРЅРё
+                </div>
+
+                <div class="news-list"></div>
+
+                ${
+                    news.length > 3
+                    ? `
+                        <button
+                            type="button"
+                            class="news-toggle">
+                            РџРѕРєР°Р·Р°С‚Рё РІСЃС– РЅРѕРІРёРЅРё
+                        </button>
+                      `
+                    : ""
+                }
+
+            `;
+
+
+            const newsList =
+                newsCard.querySelector(
+                    ".news-list"
+                );
+
+
+            const toggleButton =
+                newsCard.querySelector(
+                    ".news-toggle"
+                );
+
+
+            news.forEach(
+                (item, index) => {
+
+                    const newsItem =
+                        document.createElement(
+                            "div"
+                        );
+
+
+                    newsItem.className =
+                        "news-item";
+
+
+                    /* РџРµСЂС€С– 3 РїРѕРєР°Р·СѓС”РјРѕ РѕРґСЂР°Р·Сѓ */
+
+                    if (index >= 3) {
+
+                        newsItem.classList.add(
+                            "news-hidden"
+                        );
+
+                    }
+
+
+                    const title =
+                        item.title || "Р‘РµР· Р·Р°РіРѕР»РѕРІРєР°";
+
+
+                    const source =
+                        item.source || "РћС„С–С†С–Р№РЅРµ РґР¶РµСЂРµР»Рѕ";
+
+
+                    const fullText =
+                        item.text ||
+                        item.description ||
+                        "";
+
+
+                    const shortText =
+                        fullText.length > 180
+                        ? fullText
+                            .slice(0, 180)
+                            .trim() + "вЂ¦"
+                        : fullText;
+
+
+                    newsItem.innerHTML = `
+
+                        <div class="news-time">
+                            ${escapeHtml(
+                                formatNewsDate(
+                                    item.publishedAt
+                                )
+                            )}
+                        </div>
+
+                        <div class="news-source">
+                            ${escapeHtml(source)}
+                        </div>
+
+                        <div class="news-text">
+                            ${escapeHtml(title)}
+                        </div>
+
+                        ${
+                            fullText
+                            ? `
+
+                                <div
+                                    class="news-description"
+                                    data-full="${encodeURIComponent(fullText)}"
+                                    data-short="${encodeURIComponent(shortText)}">
+
+                                    ${escapeHtml(shortText)}
+
+                                </div>
+
+                                ${
+                                    fullText.length > 180
+                                    ? `
+
+                                        <button
+                                            type="button"
+                                            class="news-more">
+                                            Р§РёС‚Р°С‚Рё РїРѕРІРЅС–СЃС‚СЋ
+                                        </button>
+
+                                      `
+                                    : ""
+                                }
+
+                              `
+                            : ""
+                        }
+
+                        ${
+                            item.url
+                            ? `
+
+                                <a
+                                    class="news-link"
+                                    href="${escapeHtml(item.url)}"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+
+                                    Р’С–РґРєСЂРёС‚Рё РґР¶РµСЂРµР»Рѕ
+
+                                </a>
+
+                              `
+                            : ""
+                        }
+
+                    `;
+
+
+                    /* РљРЅРѕРїРєР° "Р§РёС‚Р°С‚Рё РїРѕРІРЅС–СЃС‚СЋ" */
+
+                    const moreButton =
+                        newsItem.querySelector(
+                            ".news-more"
+                        );
+
+
+                    const description =
+                        newsItem.querySelector(
+                            ".news-description"
+                        );
+
+
+                    if (
+                        moreButton &&
+                        description
+                    ) {
+
+                        moreButton.addEventListener(
+                            "click",
+                            () => {
+
+                                const expanded =
+                                    newsItem.classList.toggle(
+                                        "expanded"
+                                    );
+
+
+                                if (expanded) {
+
+                                    description.textContent =
+                                        decodeURIComponent(
+                                            description.dataset.full
+                                        );
+
+                                    moreButton.textContent =
+                                        "Р—РіРѕСЂРЅСѓС‚Рё";
+
+                                } else {
+
+                                    description.textContent =
+                                        decodeURIComponent(
+                                            description.dataset.short
+                                        );
+
+                                    moreButton.textContent =
+                                        "Р§РёС‚Р°С‚Рё РїРѕРІРЅС–СЃС‚СЋ";
+
+                                }
+
+                            }
+                        );
+
+                    }
+
+
+                    newsList.appendChild(
+                        newsItem
+                    );
+
+                }
+            );
+
+
+            /* РџРѕРєР°Р·Р°С‚Рё РІСЃС– / Р·РіРѕСЂРЅСѓС‚Рё */
+
+            if (toggleButton) {
+
+                toggleButton.addEventListener(
+                    "click",
+                    () => {
+
+                        const expanded =
+                            newsCard.classList.toggle(
+                                "news-expanded"
+                            );
+
+
+                        if (expanded) {
+
+                            toggleButton.textContent =
+                                "Р—РіРѕСЂРЅСѓС‚Рё РЅРѕРІРёРЅРё";
+
+                        } else {
+
+                            toggleButton.textContent =
+                                "РџРѕРєР°Р·Р°С‚Рё РІСЃС– РЅРѕРІРёРЅРё";
+
+                        }
+
+                    }
+                );
+
+            }
+
+
+        } catch (error) {
+
+            console.error(
+                "РџРѕРјРёР»РєР° Р·Р°РІР°РЅС‚Р°Р¶РµРЅРЅСЏ РЅРѕРІРёРЅ:",
+                error
+            );
+
+        }
+
+    }
+
+
+    /* РџРµСЂС€Рµ Р·Р°РІР°РЅС‚Р°Р¶РµРЅРЅСЏ */
+
+    loadNews();
+
+
+    /*
+       РџРµСЂРµРІС–СЂСЏС”РјРѕ GitHub РєРѕР¶РЅС– 30 СЃРµРєСѓРЅРґ.
+
+       РЎР°Рј GitHub РѕРЅРѕРІР»СЋС” news-data.json
+       РїСЂРёР±Р»РёР·РЅРѕ РєРѕР¶РЅС– 5 С…РІРёР»РёРЅ С‡РµСЂРµР· Actions.
+    */
+
+    setInterval(
+        loadNews,
+        30 * 1000
+    );
+
+});
+</script>
+
+</body>
+
+</html>
+
+

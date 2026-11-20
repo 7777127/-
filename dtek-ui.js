@@ -170,7 +170,7 @@ function renderDtekSchedule(data) {
 
         (
           groupText
-            ? '<span>Черга: ' +
+            ? '<span>Адреса: ' +
               escapeHtml(groupText) +
               '</span>'
             : ''
@@ -419,7 +419,17 @@ function renderTable(schedule) {
     }
   });
 
-  const currentHour = getCurrentKyivHour();
+  const now = new Date();
+  const kyivParts = new Intl.DateTimeFormat("uk-UA", {
+    timeZone: "Europe/Kyiv",
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: false
+  }).formatToParts(now);
+
+  const nowHour = Number(kyivParts.find(p => p.type === "hour")?.value || 0);
+  const nowMinute = Number(kyivParts.find(p => p.type === "minute")?.value || 0);
+  const currentMinutes = nowHour * 60 + nowMinute;
 
   // DTEK uses hour keys 1..24 for the intervals 00:00–01:00 ... 23:00–24:00.
   // "first-half" means the first 30 minutes are without power.
@@ -493,8 +503,8 @@ function renderTable(schedule) {
 
   intervals.forEach(interval => {
     const isCurrent =
-      currentHour * 60 >= interval.start &&
-      currentHour * 60 < interval.end;
+      currentMinutes >= interval.start &&
+      currentMinutes < interval.end;
 
     let rowClass =
       classForStatus(interval.status);
@@ -535,8 +545,10 @@ function renderTable(schedule) {
   let timeline = "";
 
   slots.forEach(slot => {
+    const slotStart = slot.hour * 60 + slot.minute;
     const isCurrent =
-      slot.hour === currentHour;
+      currentMinutes >= slotStart &&
+      currentMinutes < slotStart + 30;
 
     let slotClass =
       classForStatus(slot.status);

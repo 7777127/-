@@ -1,9 +1,19 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-20T19:32:02.265777+00:00",
+  "fetchedAt": "2026-11-20T20:23:47.250839+00:00",
   "retentionDays": 3,
-  "count": 63,
+  "count": 64,
   "items": [
+    {
+      "id": "kyivinfo-1f33bde90a95",
+      "title": "🤯",
+      "text": "🤯 ГОРИТЬ Еко-маркет на кардачах ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108305",
+      "publishedAt": "2026-11-20T20:09:15+00:00",
+      "importance": "normal"
+    },
     {
       "id": "kyivinfo-6b526462de9e",
       "title": "😱",

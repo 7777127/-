@@ -1,0 +1,228 @@
+import hashlib
+import json
+import re
+from datetime import datetime, timedelta, timezone
+from bs4 import BeautifulSoup
+import requests
+
+
+OUTPUT_FILE = "news-data.json"
+RETENTION_DAYS = 3  # 2 або 3 дні — скільки зберігати новини в стрічці
+
+CHANNELS = [
+    {
+        "idPrefix": "kyivinfo",
+        "source": "Київ ІНФО",
+        "username": "kievinfo_kyiv",
+        "url": "https://t.me/kievinfo_kyiv",
+        "web_url": "https://t.me/s/kievinfo_kyiv",
+        "region": "kyiv",
+    },
+    {
+        "idPrefix": "kyivnebo",
+        "source": "Київ Небо",
+        "username": "kyiv_nebo",
+        "url": "https://t.me/kyiv_nebo",
+        "web_url": "https://t.me/s/kyiv_nebo",
+        "region": "kyiv",
+    },
+]
+
+HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/124.0.0.0 Safari/537.36"
+    )
+}
+
+
+def clean_text(value):
+    if not value:
+        return ""
+    value = re.sub(r"\s+", " ", value)
+    return value.strip()
+
+
+def parse_iso_to_dt(value):
+    if not value:
+        return None
+    try:
+        dt = datetime.fromisoformat(value.replace("Z", "+00:00"))
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        return dt.astimezone(timezone.utc)
+    except Exception:
+        return None
+
+
+def make_stable_id(prefix, key_str):
+    digest = hashlib.sha256(key_str.encode("utf-8")).hexdigest()[:12]
+    return f"{prefix}-{digest}"
+
+
+def load_existing_items(cutoff_dt):
+    """Читає попередні новини з OUTPUT_FILE та відсікає старіші за RETENTION_DAYS."""
+    try:
+        with open(OUTPUT_FILE, "r", encoding="utf-8") as f:
+            data = json.load(f)
+    except FileNotFoundError:
+        return []
+    except json.JSONDecodeError as err:
+        print(f"ПОПЕРЕДЖЕННЯ: не вдалося розпарсити існуючий {OUTPUT_FILE} ({err}). Почнемо з чистого списку.")
+        return []
+    except OSError as err:
+        print(f"ПОПЕРЕДЖЕННЯ: помилка читання {OUTPUT_FILE} ({err}). Почнемо з чистого списку.")
+        return []
+
+    raw_items = data.get("items") if isinstance(data, dict) else []
+    if not isinstance(raw_items, list):
+        return []
+
+    valid_items = []
+    for item in raw_items:
+        if not isinstance(item, dict):
+            continue
+        dt = parse_iso_to_dt(item.get("publishedAt"))
+        if dt and dt >= cutoff_dt:
+            valid_items.append(item)
+
+    return valid_items
+
+
+def fetch_channel(channel, cutoff_dt):
+    """Завантажує та парсить публічну веб-сторінку каналу, повертає (items, error_message)."""
+    print(f"Отримуємо новини: {channel['source']} -> {channel['web_url']}")
+
+    try:
+        response = requests.get(
+            channel["web_url"],
+            headers=HEADERS,
+            timeout=20,
+        )
+        response.raise_for_status()
+    except requests.Timeout:
+        msg = f"{channel['source']}: перевищено час очікування відповіді (timeout)"
+        print(f"ПОМИЛКА: {msg}")
+        return [], msg
+    except requests.HTTPError as err:
+        status = err.response.status_code if err.response is not None else "невідомий"
+        msg = f"{channel['source']}: HTTP помилка {status}"
+        print(f"ПОМИЛКА: {msg}")
+        return [], msg
+    except requests.RequestException as err:
+        msg = f"{channel['source']}: мережева помилка запиту ({err})"
+        print(f"ПОМИЛКА: {msg}")
+        return [], msg
+
+    try:
+        soup = BeautifulSoup(response.text, "html.parser")
+        messages = soup.select(".tgme_widget_message_wrap")
+    except Exception as err:
+        msg = f"{channel['source']}: помилка розбору HTML ({err})"
+        print(f"ПОМИЛКА: {msg}")
+        return [], msg
+
+    items = []
+    # Беремо останні 20 повідомлень за один прохід
+    for msg_el in messages[-20:]:
+        try:
+            text_el = msg_el.select_one(".tgme_widget_message_text")
+            time_el = msg_el.select_one("time.time")
+            link_el = msg_el.select_one(".tgme_widget_message_date")
+
+            raw_text = text_el.get_text("\n", strip=True) if text_el else ""
+            full_text = clean_text(raw_text)
+            if not full_text:
+                continue
+
+            first_line = raw_text.split("\n")[0].strip() if raw_text else full_text
+            title = first_line[:65] + "..." if len(first_line) > 65 else first_line
+
+            raw_dt_str = time_el.get("datetime") if time_el else None
+            dt = parse_iso_to_dt(raw_dt_str) or datetime.now(timezone.utc)
+
+            if dt < cutoff_dt:
+                continue
+
+            post_url = (link_el.get("href") if link_el else "") or channel["url"]
+            dedup_key = post_url.strip() if post_url.strip() != channel["url"] else f"{channel['source']}::{full_text}"
+
+            items.append({
+                "id": make_stable_id(channel["idPrefix"], dedup_key),
+                "_dedup_key": dedup_key,
+                "source": channel["source"],
+                "region": channel["region"],
+                "title": title,
+                "text": full_text,
+                "url": post_url,
+                "publishedAt": dt.isoformat(),
+                "importance": "normal",
+            })
+        except Exception as err:
+            print(f"ПОПЕРЕДЖЕННЯ ({channel['source']}): пропущено одне повідомлення через помилку: {err}")
+            continue
+
+    print(f"Знайдено актуальних постів у {channel['source']}: {len(items)}")
+    return items, None
+
+
+def main():
+    now_dt = datetime.now(timezone.utc)
+    cutoff_dt = now_dt - timedelta(days=RETENTION_DAYS)
+
+    existing_items = load_existing_items(cutoff_dt)
+    fetched_items = []
+    errors = []
+
+    for channel in CHANNELS:
+        items, err = fetch_channel(channel, cutoff_dt)
+        if err:
+            errors.append(err)
+        fetched_items.extend(items)
+
+    # Об'єднуємо збережені за останні N днів новини та свіжі пости без дублікатів
+    merged_by_key = {}
+
+    for item in existing_items:
+        key = item.get("_dedup_key") or item.get("url") or f"{item.get('source')}::{item.get('text')}"
+        if key:
+            merged_by_key[key] = {k: v for k, v in item.items() if k != "_dedup_key"}
+
+    for item in fetched_items:
+        key = item.get("_dedup_key") or item.get("url")
+        if key:
+            merged_by_key[key] = {k: v for k, v in item.items() if k != "_dedup_key"}
+
+    all_news = list(merged_by_key.values())
+    all_news.sort(
+        key=lambda x: parse_iso_to_dt(x.get("publishedAt")) or datetime.min.replace(tzinfo=timezone.utc),
+        reverse=True,
+    )
+
+    result = {
+        "ok": len(errors) < len(CHANNELS) or len(all_news) > 0,
+        "fetchedAt": now_dt.isoformat(),
+        "retentionDays": RETENTION_DAYS,
+        "count": len(all_news),
+        "items": all_news,
+    }
+
+    if errors:
+        result["errors"] = errors
+
+    try:
+        with open(OUTPUT_FILE, "w", encoding="utf-8") as file:
+            json.dump(result, file, ensure_ascii=False, indent=2)
+    except OSError as err:
+        print(f"КРИТИЧНА ПОМИЛКА: не вдалося записати {OUTPUT_FILE}: {err}")
+        raise SystemExit(1)
+
+    print(
+        f"Готово. У стрічці новин (за {RETENTION_DAYS} дн.): {len(all_news)}"
+        + (f" | Помилок джерел: {len(errors)}" if errors else "")
+    )
+
+
+if __name__ == "__main__":
+    main()

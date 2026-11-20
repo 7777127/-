@@ -1,0 +1,5707 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KYIV безпека</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#2e7d32">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #f4f6f9;
+  --card: #ffffff;
+  --card-soft: #f7f9fc;
+
+  --text: #18202a;
+  --text-soft: #3f4854;
+  --muted: #707986;
+
+  --border: rgba(20, 30, 40, 0.08);
+
+  --primary: #2563eb;
+  --primary-soft: #eff6ff;
+
+  --green: #16a34a;
+  --green-soft: #ecfdf3;
+
+  --red: #dc2626;
+  --red-soft: #fff1f2;
+
+  --yellow: #d97706;
+  --yellow-soft: #fffbeb;
+
+  --shadow:
+    0 8px 30px rgba(15, 23, 42, 0.07);
+
+  --shadow-small:
+    0 3px 12px rgba(15, 23, 42, 0.06);
+
+  --radius: 20px;
+}
+
+
+/* =================================
+   ТЕМНА ТЕМА
+================================= */
+
+body.dark {
+  --bg: #0c1016;
+  --card: #151a21;
+  --card-soft: #1b222b;
+
+  --text: #f3f4f6;
+  --text-soft: #d1d5db;
+  --muted: #9aa4b2;
+
+  --border: rgba(255, 255, 255, 0.08);
+
+  --primary: #60a5fa;
+  --primary-soft: #172554;
+
+  --green: #4ade80;
+  --green-soft: #10291b;
+
+  --red: #f87171;
+  --red-soft: #35181b;
+
+  --yellow: #fbbf24;
+  --yellow-soft: #332711;
+
+  --shadow:
+    0 10px 35px rgba(0, 0, 0, 0.28);
+
+  --shadow-small:
+    0 4px 14px rgba(0, 0, 0, 0.22);
+}
+
+
+/* =================================
+   ОСНОВА
+================================= */
+
+body {
+  margin: 0;
+  padding: 20px;
+
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
+
+  background: var(--bg);
+  color: var(--text);
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+.app {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+
+/* =================================
+   ШАПКА
+================================= */
+
+.header {
+  position: relative;
+
+  text-align: center;
+
+  margin-bottom: 25px;
+}
+
+.app-icon {
+  width: 66px;
+  height: 66px;
+
+  margin: 0 auto 11px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background:
+    linear-gradient(
+      145deg,
+      #2563eb,
+      #1d4ed8
+    );
+
+  border-radius: 19px;
+
+  font-size: 34px;
+
+  box-shadow:
+    0 10px 25px
+    rgba(37, 99, 235, 0.28);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.app-icon:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 13px 30px
+    rgba(37, 99, 235, 0.34);
+}
+
+.header h1 {
+  margin: 0;
+
+  font-size: 29px;
+  font-weight: 800;
+
+  letter-spacing: -0.5px;
+}
+
+.header p {
+  margin: 7px 0 0;
+
+  color: var(--muted);
+
+  font-size: 14px;
+
+  line-height: 1.4;
+}
+
+
+/* =================================
+   КНОПКА ТЕМИ
+================================= */
+
+.theme-button {
+  position: absolute;
+
+  right: 0;
+  top: 0;
+
+  width: 44px;
+  height: 44px;
+
+  border:
+    1px solid var(--border);
+
+  border-radius: 14px;
+
+  background: var(--card);
+
+  color: var(--text);
+
+  font-size: 20px;
+
+  box-shadow:
+    var(--shadow-small);
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    background 0.3s ease,
+    border 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.theme-button:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    var(--shadow);
+}
+
+.theme-button:active {
+  transform: scale(0.95);
+}
+
+
+/* =================================
+   СІТКА
+================================= */
+
+.content-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.15fr)
+    minmax(300px, 0.85fr);
+
+  gap: 18px;
+
+  align-items: start;
+}
+
+.left-column,
+.right-column {
+  min-width: 0;
+}
+
+
+/* =================================
+   ЗАГАЛЬНІ КАРТКИ
+================================= */
+
+.card {
+  background: var(--card);
+
+  color: var(--text);
+
+  border:
+    1px solid var(--border);
+
+  border-radius: var(--radius);
+
+  padding: 20px;
+
+  margin-bottom: 18px;
+
+  box-shadow:
+    var(--shadow);
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    border 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.card-title {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin-bottom: 15px;
+
+  color: var(--text);
+
+  font-size: 18px;
+
+  font-weight: 800;
+
+  letter-spacing: -0.2px;
+
+  line-height: 1.3;
+}
+
+
+/* =================================
+   ВИБІР МІСТА
+================================= */
+
+.city-select-label {
+  margin-bottom: 9px;
+
+  color: var(--muted);
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.1px;
+}
+
+#city-select {
+  width: 100%;
+
+  appearance: none;
+  -webkit-appearance: none;
+
+  padding:
+    14px 46px 14px 16px;
+
+  border:
+    1px solid var(--border);
+
+  border-radius: 15px;
+
+  background-color:
+    var(--card-soft);
+
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='%23707986' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+
+  background-repeat: no-repeat;
+
+  background-position:
+    right 15px center;
+
+  color: var(--text);
+
+  font-family: inherit;
+
+  font-size: 15px;
+
+  font-weight: 700;
+
+  outline: none;
+
+  box-shadow:
+    var(--shadow-small);
+
+  cursor: pointer;
+
+  transition:
+    background 0.25s ease,
+    border 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.2s ease;
+}
+
+#city-select:hover {
+  border-color: var(--primary);
+
+  transform: translateY(-1px);
+}
+
+#city-select:focus {
+  border-color: var(--primary);
+
+  box-shadow:
+    0 0 0 3px
+    color-mix(
+      in srgb,
+      var(--primary) 18%,
+      transparent
+    );
+}
+
+#city-select option {
+  background: var(--card);
+
+  color: var(--text);
+
+  font-weight: 600;
+}
+
+body.dark #city-select {
+  background-color: var(--card-soft);
+
+  border-color:
+    rgba(255, 255, 255, 0.10);
+}
+
+body.dark #city-select option {
+  background: #1b222b;
+
+  color: #f3f4f6;
+}
+
+
+/* =================================
+   СТАН МІСТА
+================================= */
+
+.status-box {
+  padding: 19px 15px;
+
+  border-radius: 17px;
+
+  text-align: center;
+
+  font-size: 19px;
+
+  font-weight: 800;
+
+  border:
+    1px solid rgba(0, 0, 0, 0.04);
+
+  box-shadow:
+    inset 0 1px 0
+    rgba(255, 255, 255, 0.4);
+
+  line-height: 1.35;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    border 0.3s ease;
+}
+
+.timer {
+  margin-top: 11px;
+
+  text-align: center;
+
+  color: var(--text);
+
+  font-size: 15px;
+
+  font-weight: 700;
+}
+
+.updated {
+  margin-top: 8px;
+
+  text-align: center;
+
+  color: var(--muted);
+
+  font-size: 12px;
+}
+
+
+/* =================================
+   ЗАГРОЗИ ПОРУЧ
+================================= */
+
+#kyiv-region-threat {
+  margin-top: 4px;
+}
+
+
+/*
+   Заголовки:
+   ⚠️ Райони області
+   📍 Область
+   ⚠️ Сусідні області
+*/
+
+#kyiv-region-threat > div[style*="font-weight"] {
+  display: flex !important;
+
+  align-items: center !important;
+
+  min-height: 38px !important;
+
+  padding: 8px 6px !important;
+
+  margin-top: 16px !important;
+
+  margin-bottom: 9px !important;
+
+  background: transparent !important;
+
+  color: #18202a !important;
+
+  font-size: 14px !important;
+
+  font-weight: 800 !important;
+
+  line-height: 1.35 !important;
+
+  letter-spacing: 0.1px;
+
+  opacity: 1 !important;
+}
+
+
+/*
+   🌙 У ТЕМНІЙ ТЕМІ
+   заголовки завжди білі
+*/
+
+body.dark
+#kyiv-region-threat > div[style*="font-weight"] {
+  background: transparent !important;
+
+  color: #ffffff !important;
+
+  opacity: 1 !important;
+
+  text-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+body.dark
+#kyiv-region-threat > div[style*="font-weight"] * {
+  color: #ffffff !important;
+}
+
+
+/* =================================
+   КАРТКИ ЗАГРОЗ
+================================= */
+
+.district-item {
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  min-height: 49px;
+
+  padding: 12px 14px;
+
+  margin-bottom: 9px;
+
+  border-radius: 15px;
+
+  background:
+    var(--card-soft);
+
+  border:
+    1px solid var(--border);
+
+  border-left:
+    4px solid var(--border);
+
+  color:
+    var(--text) !important;
+
+  box-shadow:
+    var(--shadow-small);
+
+  font-size: 14px;
+
+  font-weight: 650;
+
+  line-height: 1.4;
+
+  transition:
+    transform 0.2s ease,
+    background 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.district-item:hover {
+  transform: translateY(-1px);
+
+  box-shadow:
+    var(--shadow);
+}
+
+.district-item,
+.district-item * {
+  color:
+    var(--text) !important;
+}
+
+
+/* =================================
+   🔴 РАКЕТНА НЕБЕЗПЕКА
+================================= */
+
+.district-red {
+  background:
+    linear-gradient(
+      135deg,
+      var(--red-soft),
+      var(--card)
+    );
+
+  border-color:
+    color-mix(
+      in srgb,
+      var(--red) 22%,
+      var(--border)
+    );
+
+  border-left:
+    4px solid var(--red);
+
+  color:
+    var(--text) !important;
+}
+
+
+/* =================================
+   🟡 ЗАГРОЗА БПЛА
+================================= */
+
+.district-yellow {
+  background:
+    linear-gradient(
+      135deg,
+      var(--yellow-soft),
+      var(--card)
+    );
+
+  border-color:
+    color-mix(
+      in srgb,
+      var(--yellow) 24%,
+      var(--border)
+    );
+
+  border-left:
+    4px solid var(--yellow);
+
+  color:
+    var(--text) !important;
+}
+
+
+/* =================================
+   🟢 ВІДБІЙ
+================================= */
+
+.district-item:not(.district-red):not(.district-yellow) {
+  background:
+    linear-gradient(
+      135deg,
+      var(--green-soft),
+      var(--card)
+    );
+
+  border-color:
+    color-mix(
+      in srgb,
+      var(--green) 20%,
+      var(--border)
+    );
+
+  border-left:
+    4px solid var(--green);
+
+  color:
+    var(--text) !important;
+}
+
+
+/* =================================
+   🌙 ТЕМНА ТЕМА — КАРТКИ
+================================= */
+
+body.dark .district-item,
+body.dark .district-item * {
+  color:
+    #f3f4f6 !important;
+}
+
+
+/* 🔴 */
+
+body.dark .district-red {
+  background:
+    linear-gradient(
+      135deg,
+      #35181b,
+      #21161a
+    );
+
+  border-color:
+    rgba(248, 113, 113, 0.18);
+
+  border-left-color:
+    #f87171;
+
+  color:
+    #ffffff !important;
+}
+
+
+/* 🟡 */
+
+body.dark .district-yellow {
+  background:
+    linear-gradient(
+      135deg,
+      #332711,
+      #211c13
+    );
+
+  border-color:
+    rgba(251, 191, 36, 0.18);
+
+  border-left-color:
+    #fbbf24;
+
+  color:
+    #ffffff !important;
+}
+
+
+/* 🟢 */
+
+body.dark
+.district-item:not(.district-red):not(.district-yellow) {
+  background:
+    linear-gradient(
+      135deg,
+      #10291b,
+      #17211b
+    );
+
+  border-color:
+    rgba(74, 222, 128, 0.16);
+
+  border-left-color:
+    #4ade80;
+
+  color:
+    #ffffff !important;
+}
+
+
+/* =================================
+   АКТИВНІ РАЙОНИ
+================================= */
+
+.districts-list {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 7px;
+
+  margin-top: 10px;
+}
+
+
+/* =================================
+   ІСТОРІЯ ТРИВОГ
+================================= */
+
+.alert-history {
+  margin-top: 18px;
+}
+
+.history-empty {
+  padding: 20px 16px;
+
+  border-radius: 18px;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--card-soft),
+      transparent
+    );
+
+  border:
+    1px solid var(--border);
+
+  color:
+    var(--muted);
+
+  font-size: 14px;
+
+  line-height: 1.55;
+
+  text-align: center;
+}
+
+
+/* Один запис */
+
+.history-item {
+  position: relative;
+
+  display: flex;
+
+  gap: 13px;
+
+  margin-bottom: 10px;
+
+  padding: 14px;
+
+  overflow: hidden;
+
+  border:
+    1px solid var(--border);
+
+  border-radius: 18px;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--card-soft),
+      transparent
+    );
+
+  box-shadow:
+    var(--shadow-small);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.history-item:last-child {
+  margin-bottom: 0;
+}
+
+.history-item:hover {
+  transform:
+    translateY(-1px);
+
+  box-shadow:
+    var(--shadow);
+}
+
+
+/* Кольоровий акцент */
+
+.history-item::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  top: 12px;
+  bottom: 12px;
+
+  width: 3px;
+
+  border-radius: 0 4px 4px 0;
+
+  background:
+    var(--red);
+}
+
+.history-item.alert-yellow::before {
+  background:
+    #f59e0b;
+}
+
+
+/* =================================
+   ІКОНКА ІСТОРІЇ
+================================= */
+
+.history-icon {
+  width: 42px;
+  height: 42px;
+
+  flex: 0 0 42px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 1px;
+
+  border-radius: 13px;
+
+  border:
+    1px solid var(--border);
+
+  font-size: 18px;
+
+  background:
+    var(--red-soft);
+
+  color:
+    var(--red);
+
+  box-shadow:
+    var(--shadow-small);
+}
+
+
+/* =================================
+   ТЕКСТ ІСТОРІЇ
+================================= */
+
+.history-main {
+  min-width: 0;
+
+  flex: 1;
+
+  padding-top: 1px;
+}
+
+.history-title {
+  color:
+    var(--text) !important;
+
+  font-size: 14px;
+
+  font-weight: 800;
+
+  line-height: 1.35;
+
+  letter-spacing:
+    -0.1px;
+}
+
+.history-meta {
+  margin-top: 6px;
+
+  color:
+    var(--muted) !important;
+
+  font-size: 12px;
+
+  line-height: 1.55;
+}
+
+.history-meta + .history-meta {
+  padding-top: 2px;
+}
+
+.history-meta br {
+  line-height: 1.8;
+}
+
+
+/* Перший рядок часу */
+
+.history-main .history-meta:first-of-type {
+  margin-top: 7px;
+}
+
+
+/* Картка поточної тривоги */
+
+.history-item:not(.alert-red):not(.alert-yellow) {
+  border-left:
+    3px solid var(--red);
+}
+
+
+/* Мобільні екрани */
+
+@media (max-width: 700px) {
+
+  .history-item {
+    gap: 11px;
+
+    margin-bottom: 9px;
+
+    padding: 13px;
+
+    border-radius: 16px;
+  }
+
+  .history-icon {
+    width: 38px;
+    height: 38px;
+
+    flex-basis: 38px;
+
+    border-radius: 12px;
+
+    font-size: 17px;
+  }
+
+  .history-title {
+    font-size: 13px;
+  }
+
+  .history-meta {
+    font-size: 11.5px;
+
+    line-height: 1.55;
+  }
+}
+
+
+/* =================================
+   НОВИНИ
+================================= */
+
+.news-card {
+  min-height: 300px;
+}
+
+.news-title {
+  margin-bottom: 14px;
+
+  color:
+    var(--text);
+
+  font-size: 19px;
+
+  font-weight: 800;
+}
+
+.news-item {
+  padding: 13px 0;
+
+  border-bottom:
+    1px solid var(--border);
+}
+
+.news-item:last-child {
+  border-bottom: none;
+}
+
+.news-time {
+  margin-bottom: 5px;
+
+  color:
+    var(--muted);
+
+  font-size: 12px;
+}
+
+.news-text {
+  color:
+    var(--text);
+
+  font-size: 15px;
+
+  line-height: 1.45;
+}
+
+
+/* =================================
+   КНОПКА ДТЕК
+================================= */
+
+.dtek-button {
+  display: block;
+
+  margin-top: 15px;
+
+  padding: 13px 15px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #2563eb,
+      #1d4ed8
+    );
+
+  color:
+    #ffffff !important;
+
+  text-decoration: none;
+
+  text-align: center;
+
+  border-radius: 14px;
+
+  font-weight: 750;
+
+  box-shadow:
+    0 7px 18px
+    rgba(37, 99, 235, 0.20);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.dtek-button:hover {
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 10px 22px
+    rgba(37, 99, 235, 0.25);
+}
+
+.dtek-button:active {
+  transform: scale(0.98);
+}
+
+/* =================================
+   FOOTER
+================================= */
+
+.footer {
+  margin-top: 28px;
+
+  padding-bottom: 10px;
+
+  color:
+    var(--muted);
+
+  text-align: center;
+
+  font-size: 13px;
+}
+
+
+/* =================================
+   📱 МОБІЛЬНА ВЕРСІЯ
+================================= */
+
+@media (max-width: 700px) {
+
+  body {
+    padding: 13px;
+  }
+
+  .app {
+    max-width: 100%;
+  }
+
+  .header {
+    margin-bottom: 20px;
+  }
+
+  .app-icon {
+    width: 62px;
+    height: 62px;
+
+    border-radius: 18px;
+
+    font-size: 32px;
+  }
+
+  .header h1 {
+    font-size: 26px;
+  }
+
+  .header p {
+    font-size: 13px;
+  }
+
+  .theme-button {
+    width: 42px;
+    height: 42px;
+
+    border-radius: 13px;
+  }
+
+  .content-grid {
+    grid-template-columns: 1fr;
+
+    gap: 0;
+  }
+
+  .left-column {
+    order: 1;
+  }
+
+  .right-column {
+    order: 2;
+  }
+
+  .card {
+    padding: 17px;
+
+    border-radius: 18px;
+
+    margin-bottom: 15px;
+  }
+
+  .card-title {
+    font-size: 17px;
+  }
+
+  .status-box {
+    padding: 18px 11px;
+
+    font-size: 18px;
+
+    border-radius: 16px;
+  }
+
+
+  /* Заголовки загроз */
+
+  #kyiv-region-threat
+  > div[style*="font-weight"] {
+    min-height: 34px;
+
+    padding: 7px 3px !important;
+
+    margin-top: 13px !important;
+
+    margin-bottom: 7px !important;
+
+    font-size: 13px !important;
+  }
+
+
+  /* Картки загроз */
+
+  .district-item {
+    min-height: 46px;
+
+    padding: 11px 12px;
+
+    margin-bottom: 8px;
+
+    border-radius: 14px;
+
+    font-size: 13px;
+  }
+
+
+  /* Історія */
+
+  .history-item {
+    gap: 10px;
+
+    padding: 13px 1px;
+  }
+
+  .history-icon {
+    width: 38px;
+    height: 38px;
+
+    flex-basis: 38px;
+
+    border-radius: 12px;
+
+    font-size: 17px;
+  }
+
+  .history-title {
+    font-size: 13px;
+  }
+
+  .history-meta {
+    font-size: 11.5px;
+
+    line-height: 1.55;
+  }
+
+
+  /* Вибір міста */
+
+  #city-select {
+    padding:
+      13px 44px 13px 14px;
+
+    font-size: 14px;
+
+    border-radius: 14px;
+  }
+
+  .city-select-label {
+    font-size: 12px;
+
+    margin-bottom: 8px;
+  }
+}
+
+
+/* =================================
+   ДУЖЕ МАЛЕНЬКІ ЕКРАНИ
+================================= */
+
+@media (max-width: 380px) {
+
+  body {
+    padding: 10px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .header h1 {
+    font-size: 24px;
+  }
+
+  .status-box {
+    font-size: 17px;
+  }
+
+  .district-item {
+    font-size: 12.5px;
+  }
+
+  .history-meta {
+    font-size: 11px;
+  }
+}
+/* =========================
+   DTEK — ГРАФІК ВІДКЛЮЧЕНЬ
+   ========================= */
+
+.dtek-card {
+  text-align: center;
+}
+
+.dtek-card .card-title {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--text);
+}
+
+.dtek-location {
+  margin-top: 7px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+/* Сам блок графіка */
+.dtek-schedule {
+  margin-top: 14px;
+  padding: 14px;
+  border-radius: 16px;
+  background: var(--card-soft);
+  border: 1px solid var(--border);
+  min-height: 90px;
+  box-sizing: border-box;
+}
+
+/* Завантаження */
+.dtek-loading {
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* Кнопка ДТЕК */
+.dtek-button {
+  display: block;
+  margin-top: 13px;
+  padding: 12px 14px;
+
+  border-radius: 13px;
+
+  background: var(--accent);
+  color: #ffffff !important;
+
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+
+  transition:
+    transform 0.15s ease,
+    opacity 0.15s ease;
+}
+
+.dtek-button:active {
+  transform: scale(0.98);
+  opacity: 0.85;
+}
+
+/* Пояснення */
+.dtek-note {
+  margin-top: 9px;
+  font-size: 11px;
+  line-height: 1.4;
+  color: var(--muted);
+}
+
+
+/* =========================
+   ТЕМНА ТЕМА
+   ========================= */
+
+body.dark .dtek-card .card-title {
+  color: #ffffff;
+}
+
+body.dark .dtek-location {
+  color: #b8c0ca;
+}
+
+body.dark .dtek-schedule {
+  background: linear-gradient(
+    135deg,
+    #171c22,
+    #11161b
+  );
+
+  border-color: #2b333d;
+}
+
+body.dark .dtek-loading {
+  color: #aeb7c2;
+}
+
+body.dark .dtek-note {
+  color: #8f99a5;
+}
+
+
+/* =================================
+   ⚙️ НАЛАШТУВАННЯ СПОВІЩЕНЬ
+================================= */
+
+.notification-settings-card {
+  scroll-margin-top: 18px;
+  display: none;
+  overflow: visible;
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  margin: 0;
+  padding: 18px;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.notification-settings-card.settings-modal-open {
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  background: rgba(10,14,20,.58);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.settings-modal-panel {
+  width: min(620px, 620px);
+  max-height: min(88vh, 760px);
+  overflow: auto;
+  padding: 22px;
+  border: 1px solid var(--border);
+  border-radius: 26px;
+  background: var(--card);
+  box-shadow: 0 28px 80px rgba(0,0,0,.28);
+  transform: translateY(10px) scale(.98);
+  opacity: 0;
+  transition: transform .22s ease, opacity .22s ease;
+}
+
+.notification-settings-card.settings-modal-open .settings-modal-panel {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+}
+
+.settings-modal-head {
+  position: sticky;
+  top: -22px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: -22px -22px 16px;
+  padding: 18px 22px 14px;
+  background: color-mix(in srgb, var(--card) 94%, transparent);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+}
+
+.settings-close {
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--border);
+  border-radius: 13px;
+  background: var(--card-soft);
+  color: var(--text);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.settings-open-button {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--card);
+  color: var(--text);
+  font-size: 20px;
+  box-shadow: var(--shadow-small);
+  cursor: pointer;
+}
+
+.settings-open-button:active,
+.settings-close:active {
+  transform: scale(.95);
+}
+
+body.settings-open {
+  overflow: hidden;
+}
+
+.nav-settings-button {
+  border: 0;
+  font: inherit;
+  cursor: pointer;
+}
+
+@media (max-width:700px) {
+  .notification-settings-card.settings-modal-open {
+    align-items: stretch;
+    justify-content: stretch;
+    padding: 0;
+    height: 100dvh;
+    min-height: 100vh;
+  }
+
+  .settings-modal-panel {
+    width: 100%;
+    height: 100dvh;
+    min-height: 100vh;
+    max-height: none;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    border: 0;
+    border-radius: 0;
+    padding: 18px 16px 28px;
+  }
+
+  .settings-modal-head {
+    top: -18px;
+    margin: -18px -18px 14px;
+    padding: 15px 18px 12px;
+  }
+}
+
+.notification-settings-intro {
+  margin: -5px 0 16px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.notification-setting {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 0;
+  border-top: 1px solid var(--border);
+}
+
+.notification-setting:first-of-type {
+  border-top: 0;
+}
+
+.notification-setting-icon {
+  width: 38px;
+  height: 38px;
+  flex: 0 0 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: var(--card-soft);
+  border: 1px solid var(--border);
+  font-size: 18px;
+}
+
+.notification-setting-main {
+  min-width: 0;
+  flex: 1;
+}
+
+.notification-setting-title {
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+.notification-setting-note {
+  margin-top: 3px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.35;
+}
+
+.notification-switch {
+  position: relative;
+  width: 48px;
+  height: 28px;
+  flex: 0 0 48px;
+}
+
+.notification-switch input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.notification-switch span {
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  cursor: pointer;
+  transition: .2s ease;
+}
+
+.notification-switch span::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  background: var(--card);
+  box-shadow: var(--shadow-small);
+  transition: .2s ease;
+}
+
+.notification-switch input:checked + span {
+  background: var(--primary);
+  border-color: var(--primary);
+}
+
+.notification-switch input:checked + span::after {
+  transform: translateX(20px);
+}
+
+.notification-region {
+  margin-top: 6px;
+  padding: 12px 13px;
+  border-radius: 15px;
+  background: var(--card-soft);
+  border: 1px solid var(--border);
+}
+
+.notification-region label {
+  display: block;
+  margin-bottom: 7px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 800;
+}
+
+#vibration-region-select {
+  width: 100%;
+  padding: 11px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--text);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  outline: none;
+}
+
+.notification-test-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.notification-test-button {
+  min-height: 42px;
+  border: 1px solid var(--border);
+  border-radius: 13px;
+  background: var(--card-soft);
+  color: var(--text);
+  font: inherit;
+  font-size: 11px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.notification-test-button:active {
+  transform: scale(.98);
+}
+
+.notification-settings-footer {
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 10.5px;
+  line-height: 1.45;
+}
+
+@media (max-width: 700px) {
+  .notification-test-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* =================================
+   🌆 ФОНИ КИЄВА
+================================= */
+
+body {
+  --kyiv-bg-a: rgba(37,99,235,.08);
+  --kyiv-bg-b: rgba(22,163,74,.055);
+}
+
+body::before {
+  transition: background .45s ease, opacity .45s ease;
+}
+
+body.background-night {
+  background:
+    radial-gradient(circle at 50% -12%, rgba(96,165,250,.18), transparent 36%),
+    linear-gradient(180deg, #101a31 0%, #0d1322 48%, #080c14 100%);
+}
+
+body.background-night::before {
+  background:
+    radial-gradient(circle at 18% 24%, rgba(255,255,255,.08) 0 1px, transparent 2px),
+    radial-gradient(circle at 74% 18%, rgba(255,255,255,.07) 0 1px, transparent 2px),
+    radial-gradient(circle at 58% 34%, rgba(255,255,255,.06) 0 1px, transparent 2px);
+  background-size: 150px 130px, 190px 160px, 230px 190px;
+  opacity: .8;
+}
+
+body.background-dnipro {
+  background:
+    radial-gradient(circle at 50% 10%, rgba(56,189,248,.18), transparent 34%),
+    linear-gradient(180deg, #122b43 0%, #0e3348 52%, #07151f 100%);
+}
+
+body.background-dnipro::before {
+  background:
+    linear-gradient(170deg, transparent 0 60%, rgba(56,189,248,.08) 61% 63%, transparent 64%),
+    radial-gradient(ellipse at 50% 100%, rgba(14,116,144,.24), transparent 52%);
+  opacity: 1;
+}
+
+body.background-sunset {
+  background:
+    radial-gradient(circle at 50% 18%, rgba(251,191,36,.28), transparent 28%),
+    linear-gradient(180deg, #30234b 0%, #6b3c48 45%, #17202f 100%);
+}
+
+body.background-sunset::before {
+  background:
+    radial-gradient(circle at 50% 30%, rgba(251,191,36,.22), transparent 14%),
+    linear-gradient(180deg, transparent 58%, rgba(15,23,42,.32) 100%);
+}
+
+body.background-lights {
+  background:
+    radial-gradient(circle at 18% 30%, rgba(59,130,246,.18), transparent 24%),
+    radial-gradient(circle at 82% 58%, rgba(168,85,247,.13), transparent 26%),
+    linear-gradient(145deg, #111827, #0b1220 55%, #111827);
+}
+
+body.background-lights::before {
+  background:
+    radial-gradient(circle at 15% 72%, rgba(250,204,21,.12), transparent 2%),
+    radial-gradient(circle at 28% 58%, rgba(250,204,21,.10), transparent 2%),
+    radial-gradient(circle at 72% 68%, rgba(59,130,246,.12), transparent 2%),
+    radial-gradient(circle at 86% 42%, rgba(250,204,21,.10), transparent 2%);
+  background-size: 110px 90px, 140px 120px, 170px 130px, 130px 110px;
+}
+
+body.background-minimal {
+  background:
+    radial-gradient(circle at 15% 0%, rgba(37,99,235,.10), transparent 32%),
+    radial-gradient(circle at 90% 100%, rgba(22,163,74,.07), transparent 30%),
+    var(--bg);
+}
+
+body.background-minimal::before {
+  background:
+    radial-gradient(circle at 50% -10%, color-mix(in srgb, var(--primary) 8%, transparent), transparent 34%),
+    radial-gradient(circle at 100% 70%, color-mix(in srgb, var(--primary) 5%, transparent), transparent 28%);
+}
+
+/* У темній темі фони залишаються атмосферними, але картки читаються чітко. */
+body.dark.background-night,
+body.dark.background-dnipro,
+body.dark.background-sunset,
+body.dark.background-lights {
+  --card: rgba(18,24,32,.92);
+  --card-soft: rgba(28,36,47,.78);
+}
+
+.background-settings {
+  margin: 8px 0 18px;
+  padding: 14px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: var(--card-soft);
+}
+
+.background-settings-head {
+  margin-bottom: 11px;
+}
+
+.background-options {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+}
+
+.background-option {
+  min-width: 0;
+  min-height: 82px;
+  padding: 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 5px;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  color: #fff;
+  font: inherit;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  isolation: isolate;
+  transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+}
+
+.background-option::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+.background-option span {
+  font-size: 22px;
+  line-height: 1;
+  text-shadow: 0 2px 8px rgba(0,0,0,.35);
+}
+
+.background-option small {
+  font-size: 9px;
+  font-weight: 850;
+  text-shadow: 0 1px 5px rgba(0,0,0,.5);
+}
+
+.background-option:hover {
+  transform: translateY(-2px);
+}
+
+.background-option.is-selected {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--primary) 16%, transparent);
+}
+
+.bg-preview-night::before {
+  background: linear-gradient(160deg, #172554, #0f172a 55%, #020617);
+}
+.bg-preview-dnipro::before {
+  background: linear-gradient(160deg, #0e7490, #164e63 50%, #082f49);
+}
+.bg-preview-sunset::before {
+  background: linear-gradient(160deg, #7c3aed, #c2410c 55%, #172033);
+}
+.bg-preview-lights::before {
+  background:
+    radial-gradient(circle at 25% 55%, #facc15 0 2px, transparent 3px),
+    radial-gradient(circle at 70% 30%, #60a5fa 0 2px, transparent 3px),
+    linear-gradient(160deg, #1e1b4b, #111827 55%, #020617);
+}
+.bg-preview-minimal::before {
+  background: linear-gradient(145deg, #f1f5f9, #dbeafe);
+}
+body.dark .bg-preview-minimal::before {
+  background: linear-gradient(145deg, #334155, #172554);
+}
+
+@media (max-width: 700px) {
+  .background-options {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .background-option {
+    min-height: 72px;
+  }
+
+  .background-option small {
+    font-size: 8.5px;
+  }
+}
+
+
+/* =================================
+   KYIV БЕЗПЕКА — MODERN APP UI
+   VISUAL LAYER ONLY
+================================= */
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 12% 0%, rgba(37,99,235,.08), transparent 30%),
+    radial-gradient(circle at 88% 12%, rgba(22,163,74,.055), transparent 28%),
+    var(--bg);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body.dark {
+  background:
+    radial-gradient(circle at 12% 0%, rgba(96,165,250,.09), transparent 30%),
+    radial-gradient(circle at 88% 12%, rgba(74,222,128,.045), transparent 28%),
+    var(--bg);
+}
+
+.app {
+  max-width: 1120px;
+  padding: 6px 0 18px;
+}
+
+.header {
+  display: grid;
+  justify-items: center;
+  margin-bottom: 28px;
+}
+
+.app-icon {
+  width: 72px;
+  height: 72px;
+  margin-bottom: 13px;
+  border-radius: 22px;
+  background: linear-gradient(145deg,#2563eb 0%,#1d4ed8 55%,#1e40af 100%);
+  box-shadow:
+    0 14px 32px rgba(37,99,235,.24),
+    inset 0 1px 0 rgba(255,255,255,.28);
+}
+
+.header h1 {
+  font-size: clamp(27px, 4vw, 32px);
+  letter-spacing: -0.8px;
+  line-height: 1.05;
+}
+
+.header p {
+  max-width: 430px;
+  margin-top: 9px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.theme-button,
+#sound-button {
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,.78);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+body.dark .theme-button,
+body.dark #sound-button {
+  background: rgba(21,26,33,.82);
+}
+
+.content-grid {
+  gap: 20px;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  padding: 22px;
+  margin-bottom: 20px;
+  border-radius: 22px;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.96), rgba(255,255,255,.90)),
+    var(--card);
+  box-shadow:
+    0 10px 32px rgba(15,23,42,.065),
+    0 1px 2px rgba(15,23,42,.04);
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: inherit;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.55);
+}
+
+body.dark .card {
+  background:
+    linear-gradient(180deg, rgba(24,30,38,.98), rgba(19,24,31,.98)),
+    var(--card);
+  box-shadow:
+    0 14px 38px rgba(0,0,0,.22),
+    0 1px 2px rgba(0,0,0,.18);
+}
+
+.card-title {
+  position: relative;
+  z-index: 1;
+  gap: 9px;
+  margin-bottom: 17px;
+  font-size: 17px;
+  letter-spacing: -0.25px;
+}
+
+.card-title:first-letter {
+  font-size: 1.05em;
+}
+
+#city-select {
+  min-height: 50px;
+  border-radius: 16px;
+  background-color: var(--card-soft);
+  box-shadow: none;
+  border-color: var(--border);
+}
+
+#city-select:hover {
+  transform: none;
+  background-color: var(--card-soft);
+}
+
+#city-select:focus {
+  transform: none;
+}
+
+.status-box {
+  min-height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 17px 18px;
+  border-radius: 18px;
+  font-size: 18px;
+  letter-spacing: -0.15px;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.5),
+    0 5px 16px rgba(15,23,42,.045);
+}
+
+.timer {
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 750;
+}
+
+.updated {
+  margin-top: 9px;
+  font-size: 11px;
+  letter-spacing: .1px;
+}
+
+#kyiv-region-threat {
+  margin-top: 10px;
+}
+
+#kyiv-region-threat > div[style*="font-weight"] {
+  padding: 5px 2px !important;
+  min-height: 32px !important;
+  margin-top: 18px !important;
+  margin-bottom: 8px !important;
+  font-size: 12px !important;
+  text-transform: uppercase;
+  letter-spacing: .55px;
+  color: var(--muted) !important;
+}
+
+body.dark #kyiv-region-threat > div[style*="font-weight"],
+body.dark #kyiv-region-threat > div[style*="font-weight"] * {
+  color: var(--muted) !important;
+  text-shadow: none;
+}
+
+.district-item {
+  min-height: 48px;
+  margin-bottom: 8px;
+  padding: 12px 14px;
+  border-radius: 15px;
+  box-shadow: none;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.district-item:hover {
+  transform: none;
+  box-shadow: var(--shadow-small);
+}
+
+.news-card {
+  min-height: 0;
+}
+
+.news-title {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.news-item {
+  padding: 14px 2px;
+}
+
+.news-time {
+  font-size: 11px;
+  margin-bottom: 6px;
+}
+
+.news-text {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.alert-history {
+  margin-top: 14px;
+}
+
+.history-item {
+  background:
+    linear-gradient(135deg, var(--card-soft), var(--card));
+  border-radius: 17px;
+  box-shadow: none;
+}
+
+.history-item:hover {
+  transform: translateY(-1px);
+}
+
+.dtek-card {
+  text-align: left;
+}
+
+.dtek-card .card-title {
+  margin-bottom: 5px;
+}
+
+.dtek-location {
+  margin-top: 3px;
+  font-size: 12px;
+}
+
+.dtek-schedule {
+  margin-top: 14px;
+  padding: 12px;
+  border-radius: 17px;
+  background: var(--card-soft);
+  border-color: var(--border);
+  overflow: hidden;
+}
+
+.dtek-button {
+  min-height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12px;
+  border-radius: 15px;
+  font-size: 14px;
+  box-shadow: 0 8px 20px rgba(37,99,235,.18);
+}
+
+.footer {
+  margin-top: 20px;
+  padding: 6px 0 16px;
+  font-size: 11px;
+  opacity: .78;
+}
+
+@media (max-width: 700px) {
+  body {
+    padding: 10px;
+  }
+
+  .app {
+    padding: 3px 0 12px;
+  }
+
+  .header {
+    margin-bottom: 18px;
+    padding: 0 2px;
+  }
+
+  .app-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 18px;
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .header h1 {
+    font-size: 25px;
+  }
+
+  .header p {
+    font-size: 12px;
+    margin-top: 7px;
+  }
+
+  .theme-button,
+  #sound-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 13px;
+  }
+
+  .content-grid {
+    gap: 0;
+  }
+
+  .card {
+    padding: 16px;
+    margin-bottom: 13px;
+    border-radius: 19px;
+  }
+
+  .card-title {
+    margin-bottom: 14px;
+    font-size: 16px;
+  }
+
+  #city-select {
+    min-height: 48px;
+    padding: 12px 42px 12px 14px;
+    border-radius: 15px;
+  }
+
+  .status-box {
+    min-height: 60px;
+    padding: 15px 12px;
+    border-radius: 16px;
+    font-size: 16px;
+  }
+
+  .timer {
+    font-size: 13px;
+  }
+
+  .district-item {
+    min-height: 45px;
+    padding: 11px 12px;
+    border-radius: 14px;
+    font-size: 12.5px;
+  }
+
+  .dtek-schedule {
+    padding: 9px;
+    border-radius: 15px;
+  }
+
+  .dtek-button {
+    min-height: 45px;
+    border-radius: 14px;
+  }
+
+  .footer {
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 380px) {
+  .card {
+    padding: 14px;
+    border-radius: 17px;
+  }
+
+  .status-box {
+    font-size: 15px;
+  }
+}
+
+
+/* =================================
+   APP-LIKE INTERFACE
+================================= */
+
+.location-panel {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+  margin:0 0 9px;
+  padding:10px 12px 10px 14px;
+  border:1px solid var(--border);
+  border-radius:18px;
+  background:var(--card);
+  box-shadow:var(--shadow-small);
+}
+
+.location-copy {
+  min-width:0;
+  display:flex;
+  flex-direction:column;
+  gap:2px;
+}
+
+.eyebrow {
+  color:var(--muted);
+  font-size:9px;
+  font-weight:800;
+  letter-spacing:1px;
+}
+
+.location-title {
+  color:var(--text);
+  font-size:14px;
+  font-weight:800;
+}
+
+.location-panel #city-select {
+  width:auto;
+  min-width:170px;
+  max-width:55%;
+  min-height:44px;
+  padding:10px 38px 10px 13px;
+  border-radius:13px;
+  background:var(--card-soft);
+  box-shadow:none;
+  font-size:13px;
+}
+
+.quick-status {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:7px;
+  margin:0 0 18px;
+  color:var(--muted);
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:.15px;
+}
+
+.quick-dot {
+  width:7px;
+  height:7px;
+  border-radius:50%;
+  background:var(--green);
+  box-shadow:0 0 0 4px var(--green-soft);
+}
+
+.card-topline {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+}
+
+.card-topline .card-title {
+  margin-bottom:0;
+}
+
+.live-badge,
+.section-chip {
+  flex:0 0 auto;
+  display:inline-flex;
+  align-items:center;
+  gap:5px;
+  padding:5px 8px;
+  border-radius:999px;
+  background:var(--card-soft);
+  color:var(--muted);
+  border:1px solid var(--border);
+  font-size:9px;
+  font-weight:850;
+  letter-spacing:.7px;
+}
+
+.live-badge span {
+  width:6px;
+  height:6px;
+  border-radius:50%;
+  background:var(--green);
+  box-shadow:0 0 0 3px var(--green-soft);
+}
+
+.hero-status-card {
+  border-color:color-mix(in srgb,var(--primary) 14%,var(--border));
+}
+
+.hero-status-card .status-box {
+  margin-top:17px;
+  min-height:78px;
+  border:1px solid var(--border);
+  font-size:20px;
+  font-weight:850;
+}
+
+.bottom-nav {
+  position:sticky;
+  bottom:12px;
+  z-index:20;
+  display:flex;
+  align-items:stretch;
+  justify-content:space-around;
+  gap:4px;
+  max-width:620px;
+  margin:8px auto 0;
+  padding:7px;
+  border:1px solid var(--border);
+  border-radius:20px;
+  background:color-mix(in srgb,var(--card) 88%,transparent);
+  backdrop-filter:blur(18px);
+  -webkit-backdrop-filter:blur(18px);
+  box-shadow:0 12px 32px rgba(15,23,42,.12);
+}
+
+.nav-item {
+  flex:1;
+  min-width:0;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:3px;
+  min-height:46px;
+  border-radius:14px;
+  color:var(--muted);
+  text-decoration:none;
+  transition:background .2s ease,color .2s ease,transform .2s ease;
+}
+
+.nav-item span {
+  font-size:17px;
+  line-height:1;
+}
+
+.nav-item small {
+  font-size:9px;
+  font-weight:800;
+}
+
+.nav-item:hover,
+.nav-item.active {
+  color:var(--text);
+  background:var(--card-soft);
+}
+
+.nav-item:active {
+  transform:scale(.97);
+}
+
+@media (max-width:700px) {
+  .location-panel {
+    padding:9px 9px 9px 12px;
+    border-radius:16px;
+  }
+
+  .location-title { font-size:13px; }
+
+  .location-panel #city-select {
+    min-width:145px;
+    max-width:58%;
+    min-height:42px;
+    font-size:12.5px;
+  }
+
+  .quick-status {
+    margin-bottom:13px;
+    font-size:9.5px;
+  }
+
+  .card-topline .card-title {
+    font-size:16px;
+  }
+
+  .live-badge,
+  .section-chip {
+    padding:4px 7px;
+    font-size:8px;
+  }
+
+  .hero-status-card .status-box {
+    min-height:72px;
+    font-size:18px;
+  }
+
+  .bottom-nav {
+    bottom:8px;
+    margin-top:5px;
+    border-radius:18px;
+    padding:6px;
+  }
+
+  .nav-item {
+    min-height:44px;
+  }
+}
+
+
+/* =================================
+   FINAL APP VISUAL SYSTEM
+================================= */
+
+html { scroll-behavior: smooth; }
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  background:
+    radial-gradient(circle at 50% -10%, color-mix(in srgb, var(--primary) 8%, transparent), transparent 34%),
+    radial-gradient(circle at 100% 70%, color-mix(in srgb, var(--primary) 5%, transparent), transparent 28%);
+}
+
+.app {
+  width: min(100%, 1050px);
+  padding-bottom: 8px;
+}
+
+.header {
+  padding-top: 4px;
+}
+
+.header h1 {
+  letter-spacing: -0.8px;
+}
+
+.header p {
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: inherit;
+  background: linear-gradient(135deg, rgba(255,255,255,.045), transparent 45%);
+  z-index: -1;
+}
+
+.hero-status-card {
+  padding: 21px;
+  border-width: 1px;
+  transition:
+    transform .3s ease,
+    box-shadow .3s ease,
+    border-color .3s ease,
+    background .3s ease;
+}
+
+.hero-status-card .status-box {
+  position: relative;
+  overflow: hidden;
+  min-height: 86px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 18px;
+  font-size: clamp(19px, 2.2vw, 23px);
+  letter-spacing: -.2px;
+}
+
+.hero-status-card .status-box::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(110deg, transparent 20%, rgba(255,255,255,.28), transparent 55%);
+  transform: translateX(-120%);
+  transition: transform .8s ease;
+}
+
+.hero-status-card:hover .status-box::after {
+  transform: translateX(120%);
+}
+
+.live-badge {
+  transition: transform .2s ease, background .2s ease;
+}
+
+body.alert-active-red .hero-status-card {
+  border-color: color-mix(in srgb, var(--red) 35%, var(--border));
+  box-shadow: 0 14px 42px color-mix(in srgb, var(--red) 16%, transparent);
+}
+
+body.alert-active-red .hero-status-card .live-badge {
+  color: var(--red);
+  border-color: color-mix(in srgb, var(--red) 28%, var(--border));
+  background: var(--red-soft);
+}
+
+body.alert-active-red .live-badge span {
+  animation: livePulse 1.25s ease-in-out infinite;
+  background: var(--red);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--red) 15%, transparent);
+}
+
+body.alert-active-yellow .hero-status-card {
+  border-color: color-mix(in srgb, var(--yellow) 32%, var(--border));
+  box-shadow: 0 14px 40px color-mix(in srgb, var(--yellow) 13%, transparent);
+}
+
+body.alert-active-yellow .hero-status-card .live-badge {
+  color: var(--yellow);
+  border-color: color-mix(in srgb, var(--yellow) 26%, var(--border));
+  background: var(--yellow-soft);
+}
+
+body.alert-active-yellow .live-badge span {
+  animation: livePulse 1.6s ease-in-out infinite;
+  background: var(--yellow);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--yellow) 14%, transparent);
+}
+
+body.alert-safe .hero-status-card {
+  border-color: color-mix(in srgb, var(--green) 18%, var(--border));
+}
+
+body.alert-safe .live-badge span {
+  background: var(--green);
+}
+
+@keyframes livePulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.55); opacity: .55; }
+}
+
+.location-panel,
+.quick-status,
+.bottom-nav {
+  transition: background .3s ease, border-color .3s ease, box-shadow .3s ease;
+}
+
+.quick-status {
+  min-height: 18px;
+}
+
+.quick-status .quick-dot {
+  transition: background .3s ease, box-shadow .3s ease;
+}
+
+body.alert-active-red .quick-status .quick-dot {
+  background: var(--red);
+  box-shadow: 0 0 0 4px var(--red-soft);
+  animation: livePulse 1.25s ease-in-out infinite;
+}
+
+body.alert-active-yellow .quick-status .quick-dot {
+  background: var(--yellow);
+  box-shadow: 0 0 0 4px var(--yellow-soft);
+}
+
+body.alert-safe .quick-status .quick-dot {
+  background: var(--green);
+  box-shadow: 0 0 0 4px var(--green-soft);
+}
+
+.section-chip {
+  white-space: nowrap;
+}
+
+#nearby-section,
+#power-section,
+#history-section,
+#news-section,
+#settings-section {
+  scroll-margin-top: 18px;
+}
+
+.dtek-card .dtek-schedule {
+  border-radius: 17px;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.035);
+}
+
+.news-card {
+  overflow: hidden;
+}
+
+.footer {
+  padding-bottom: 86px;
+}
+
+@media (max-width: 700px) {
+  body {
+    padding-bottom: 8px;
+  }
+
+  .hero-status-card {
+    padding: 17px;
+  }
+
+  .hero-status-card .status-box {
+    min-height: 78px;
+  }
+
+  .footer {
+    padding-bottom: 78px;
+  }
+
+  .bottom-nav {
+    box-shadow: 0 10px 30px rgba(15,23,42,.16);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+}
+
+
+
+/* DTEK visual polish — keeps the existing hourly schedule */
+.dtek-head{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:12px;
+  margin-bottom:12px;
+}
+.dtek-subtitle{
+  margin-top:3px;
+  font-size:11px;
+  color:var(--muted);
+}
+.dtek-live{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  padding:6px 9px;
+  border-radius:999px;
+  background:rgba(34,197,94,.10);
+  border:1px solid rgba(34,197,94,.20);
+  color:#4ade80;
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:.06em;
+  white-space:nowrap;
+}
+.dtek-live span{
+  width:6px;
+  height:6px;
+  border-radius:50%;
+  background:#22c55e;
+  box-shadow:0 0 0 3px rgba(34,197,94,.10);
+}
+.dtek-location{
+  display:flex;
+  align-items:center;
+  gap:5px;
+  padding:9px 11px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:rgba(255,255,255,.025);
+}
+.dtek-address-button{
+  margin-top:7px;
+  padding:0;
+  border:0;
+  background:transparent;
+  color:var(--accent);
+  font:inherit;
+  font-size:11px;
+  font-weight:700;
+  cursor:pointer;
+}
+.dtek-result{display:flex;flex-direction:column;gap:12px}
+.dtek-status{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:8px;
+  padding:10px 11px;
+  border-radius:13px;
+  background:rgba(255,255,255,.025);
+  border:1px solid var(--border);
+}
+.dtek-status strong{font-size:12px}
+.dtek-status span{font-size:10px;color:var(--muted);font-weight:700}
+.dtek-day{
+  overflow:hidden;
+  border:1px solid var(--border);
+  border-radius:15px;
+  background:rgba(255,255,255,.018);
+}
+.dtek-day-title{
+  padding:10px 12px 7px;
+  font-size:13px;
+  font-weight:800;
+}
+.dtek-summary{padding:0 12px 9px;font-size:11px}
+.dtek-outage-count{color:#fbbf24;font-weight:700}
+.dtek-no-outage{color:#4ade80;font-weight:700}
+.dtek-intervals{padding:0 8px 8px;display:grid;gap:5px}
+.dtek-hour{
+  display:grid;
+  grid-template-columns:92px 1fr;
+  align-items:center;
+  gap:8px;
+  min-height:32px;
+  padding:0 9px;
+  border-radius:9px;
+  font-size:10px;
+}
+.dtek-hour-time{font-variant-numeric:tabular-nums;font-weight:800;color:var(--text)}
+.dtek-hour-status{color:var(--muted);font-weight:650}
+.dtek-hour-normal{background:rgba(34,197,94,.09);border:1px solid rgba(34,197,94,.10)}
+.dtek-hour-normal .dtek-hour-status{color:#4ade80}
+.dtek-hour-outage{background:rgba(148,163,184,.10);border:1px solid rgba(148,163,184,.12)}
+.dtek-hour-outage .dtek-hour-status{color:#cbd5e1}
+.dtek-hour-partial,.dtek-hour-emergency{background:rgba(245,158,11,.10);border:1px solid rgba(245,158,11,.13)}
+.dtek-hour-partial .dtek-hour-status,.dtek-hour-emergency .dtek-hour-status{color:#fbbf24}
+.dtek-updated{text-align:center;color:var(--muted);font-size:10px;padding-top:1px}
+@media (max-width:560px){
+  .dtek-hour{grid-template-columns:82px 1fr;font-size:9.5px}
+  .dtek-status span{font-size:9px}
+}
+
+
+/* Notification settings — final visual polish */
+.settings-modal-panel{
+  background:linear-gradient(180deg,var(--card),color-mix(in srgb,var(--card) 92%,#000 8%));
+}
+.settings-modal-head .card-title{font-size:18px;font-weight:850}
+.notification-settings-intro{
+  padding:11px 12px;
+  border-radius:13px;
+  background:rgba(37,99,235,.07);
+  border:1px solid rgba(37,99,235,.12);
+}
+.push-setup-box{
+  margin:0 0 8px;
+  padding:14px;
+  border-radius:17px;
+  background:linear-gradient(135deg,rgba(37,99,235,.10),rgba(37,99,235,.035));
+  border:1px solid rgba(37,99,235,.16);
+}
+.push-setup-title{font-weight:850;font-size:13px}
+.push-setup-status{margin:5px 0 10px;color:var(--muted);font-size:11px;line-height:1.4}
+.notification-setting{
+  margin-top:5px;
+  padding:12px;
+  border:1px solid var(--border);
+  border-radius:15px;
+  background:rgba(255,255,255,.018);
+}
+.notification-setting + .notification-setting{border-top:1px solid var(--border)}
+.notification-setting-icon{
+  width:40px;height:40px;flex-basis:40px;
+  background:linear-gradient(145deg,var(--card-soft),rgba(255,255,255,.025));
+}
+.notification-setting:has(#notify-red){border-left:3px solid #ef4444}
+.notification-setting:has(#notify-yellow){border-left:3px solid #f59e0b}
+.notification-setting:has(#notify-end){border-left:3px solid #22c55e}
+.notification-setting:has(#notify-vibration){border-left:3px solid #a855f7}
+.notification-setting:has(#notify-sound){border-left:3px solid #3b82f6}
+.notification-setting:has(#notify-power){border-left:3px solid #facc15}
+.notification-setting:has(#notify-news){border-left:3px solid #60a5fa}
+.notification-setting:has(#notify-quiet){border-left:3px solid #94a3b8}
+.notification-test-row{margin-top:16px}
+.notification-test-button{
+  background:var(--card);
+  box-shadow:var(--shadow-small);
+  transition:transform .15s ease,box-shadow .15s ease,border-color .15s ease;
+}
+.notification-test-button:hover{transform:translateY(-1px);box-shadow:var(--shadow)}
+.notification-test-button[data-test-sound="yellow"]{border-color:rgba(245,158,11,.35)}
+.notification-test-button[data-test-sound="red"]{border-color:rgba(239,68,68,.35)}
+.notification-test-button[data-test-sound="end"]{border-color:rgba(34,197,94,.35)}
+.settings-close{transition:transform .15s ease,background .15s ease}
+.settings-close:hover{background:var(--card-soft)}
+#sound-button{
+  transition:transform .15s ease,background .15s ease;
+}
+#sound-button:active{transform:scale(.94)}
+
+
+/* === DTEK GRAPH — 30 MIN SEGMENTS === */
+.dtek-graph {
+  margin-top: 4px;
+  padding: 8px;
+  border-radius: 13px;
+  background: color-mix(in srgb, var(--card) 92%, #000 8%);
+  border: 1px solid var(--border);
+}
+.dtek-graph-head,
+.dtek-graph-row {
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1fr);
+  gap: 8px;
+  align-items: center;
+}
+.dtek-graph-head {
+  padding: 2px 7px 7px;
+  color: var(--muted);
+  font-size: 9px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+.dtek-graph-list {
+  display: grid;
+  gap: 4px;
+}
+.dtek-graph-row {
+  min-width: 0;
+}
+.dtek-graph-time {
+  color: var(--text);
+  font-size: 9px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.dtek-graph-track {
+  min-width: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  height: 26px;
+}
+.dtek-half {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  font-size: 8px;
+  font-weight: 850;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.dtek-half-on {
+  background: rgba(34,197,94,.16);
+  border-color: rgba(34,197,94,.20);
+  color: #22c55e;
+}
+.dtek-half-off {
+  background: rgba(100,116,139,.18);
+  border-color: rgba(100,116,139,.22);
+  color: var(--text-soft);
+}
+.dtek-half-emergency {
+  background: rgba(245,158,11,.20);
+  border-color: rgba(245,158,11,.28);
+  color: #f59e0b;
+}
+.dtek-graph-empty {
+  padding: 18px 8px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 11px;
+}
+.dtek-graph-legacy {
+  display: grid;
+  gap: 5px;
+}
+@media (max-width: 560px) {
+  .dtek-graph-head,
+  .dtek-graph-row {
+    grid-template-columns: 64px minmax(0, 1fr);
+    gap: 6px;
+  }
+  .dtek-graph-time { font-size: 8px; }
+  .dtek-half { font-size: 7px; }
+}
+
+/* === FINAL FIXES: nearby + settings === */
+
+.nearby-card {
+  min-width: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.nearby-scroll {
+  width: 100%;
+  min-width: 0;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+#kyiv-region-threat {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  display: block;
+  overflow: hidden;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+#kyiv-region-threat > .district-item,
+#kyiv-region-threat .district-item {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  display: flex !important;
+  flex: 0 0 100% !important;
+  box-sizing: border-box !important;
+  overflow: hidden;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  white-space: normal;
+}
+
+#kyiv-region-threat .districts-list,
+#kyiv-region-threat > .districts-list {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 8px;
+}
+
+#kyiv-region-threat > div[style*="font-weight"] {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  display: block !important;
+  white-space: normal !important;
+  overflow-wrap: anywhere !important;
+  word-break: break-word !important;
+}
+
+@media (max-width: 700px) {
+  .nearby-card {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  #kyiv-region-threat > div[style*="font-weight"] {
+    white-space: normal !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  .settings-modal-head {
+    position: sticky;
+    top: 0;
+    margin: -18px -16px 14px;
+    padding: 14px 16px 12px;
+  }
+}
+
+@media (max-width: 380px) {
+  .nearby-card {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+</style>
+</head>
+
+<body>
+<div class="app">
+
+  <div class="header">
+
+    <button id="settings-open-button"
+            class="settings-open-button"
+            type="button"
+            aria-label="Відкрити налаштування"
+            title="Налаштування">⚙️</button>
+
+    <button id="theme-button"
+            class="theme-button"
+            type="button"
+            aria-label="Змінити тему">🌙</button>
+            <button id="sound-button"
+        type="button"
+        aria-label="Звукові сповіщення"
+        style="
+          position:absolute;
+          right:50px;
+          top:0;
+          width:42px;
+          height:42px;
+          border:none;
+          border-radius:14px;
+          background:var(--card);
+          color:var(--text);
+          font-size:20px;
+          box-shadow:var(--shadow);
+          cursor:pointer;
+        ">🔕</button>
+
+    <div class="app-icon">🛡</div>
+
+    <h1>KYIV безпека</h1>
+
+    <p>Важлива інформація в одному місці</p>
+
+  </div>
+
+
+<div class="location-panel">
+  <div class="location-copy">
+    <span class="eyebrow">ВАШЕ МІСТО</span>
+    <span class="location-title">📍 Локація</span>
+  </div>
+  <select id="city-select">
+
+  <option value="kyiv">Київ</option>
+  <option value="zhytomyr">Житомир</option>
+  <option value="cherkasy">Черкаси</option>
+  <option value="chernihiv">Чернігів</option>
+  <option value="poltava">Полтава</option>
+  <option value="vinnytsia">Вінниця</option>
+  <option value="khmelnytskyi">Хмельницький</option>
+  <option value="rivne">Рівне</option>
+  <option value="lutsk">Луцьк</option>
+  <option value="sumy">Суми</option>
+
+  </select>
+</div>
+
+<div class="content-grid">
+
+    <div class="left-column">
+
+      <div class="card hero-status-card" id="status-section">
+        <div class="card-topline">
+          <div class="card-title">🚨 Повітряна тривога</div>
+          <span class="live-badge"><span></span> LIVE</span>
+        </div>
+
+        <div id="kyiv-alert"
+             class="status-box"
+             style="background:#e8f5e9;color:#1b5e20;">
+          🔄 ОТРИМУЄМО ДАНІ...
+        </div>
+
+        <div id="kyiv-districts"
+     style="
+       margin-top:10px;
+       font-size:14px;
+       line-height:1.6;
+     ">
+</div>
+
+        <div id="kyiv-timer" class="timer"></div>
+
+        <div id="kyiv-updated" class="updated">
+          Остання перевірка: —
+        </div>
+      </div>
+
+      <div class="card nearby-card" id="nearby-section">
+        <div class="card-topline">
+          <div class="card-title">⚠️ Загрози поруч</div>
+        </div>
+
+        <div class="nearby-scroll">
+          <div id="kyiv-region-threat"
+               class="status-box"
+               style="background:#e8f5e9;color:#1b5e20;">
+            🔄 ОТРИМУЄМО ДАНІ...
+          </div>
+
+        <div id="kyiv-region-timer" class="timer"></div>
+
+        <div id="kyiv-region-updated" class="updated">
+          Остання перевірка: —
+        </div>
+        </div>
+      </div>
+
+
+      <div class="card notification-settings-card" id="settings-section" aria-hidden="true">
+        <div class="settings-modal-panel" role="dialog" aria-modal="true" aria-labelledby="settings-modal-title">
+          <div class="settings-modal-head">
+            <div>
+              <div class="card-title" id="settings-modal-title" style="margin-bottom:3px;">⚙️ Сповіщення</div>
+              <div style="color:var(--muted);font-size:12px;">Керування звуком, вібрацією та push</div>
+            </div>
+            <button id="settings-close-button" class="settings-close" type="button" aria-label="Закрити">✕</button>
+          </div>
+
+        <div class="notification-settings-intro">
+          Обирай окремо, що саме має сповіщати тебе. Налаштування зберігаються на цьому пристрої.
+        </div>
+        <div class="background-settings">
+          <div class="background-settings-head">
+            <div>
+              <div class="notification-setting-title">🌆 Фон Києва</div>
+              <div class="notification-setting-note">Обери атмосферу головного екрана. Працює окремо від світлої та темної теми.</div>
+            </div>
+          </div>
+
+          <div class="background-options" role="group" aria-label="Фон Києва">
+            <button type="button" class="background-option bg-preview-night" data-background="night">
+              <span>🌃</span><small>Нічний Київ</small>
+            </button>
+            <button type="button" class="background-option bg-preview-dnipro" data-background="dnipro">
+              <span>🌉</span><small>Дніпро</small>
+            </button>
+            <button type="button" class="background-option bg-preview-sunset" data-background="sunset">
+              <span>🌇</span><small>Захід сонця</small>
+            </button>
+            <button type="button" class="background-option bg-preview-lights" data-background="lights">
+              <span>✨</span><small>Київські вогні</small>
+            </button>
+            <button type="button" class="background-option bg-preview-minimal" data-background="minimal">
+              <span>◻️</span><small>Мінімалістичний</small>
+            </button>
+          </div>
+        </div>
+
+
+        <div class="push-setup-box">
+          <div class="push-setup-title">📲 Push-сповіщення</div>
+          <div id="push-status" class="push-setup-status">
+            Перевіряємо підтримку push…
+          </div>
+          <button
+            id="push-enable-button"
+            type="button"
+            class="notification-test-button"
+          >
+            🔔 Підключити push
+          </button>
+        </div>
+
+        <div class="notification-setting">
+          <div class="notification-setting-icon">🔴</div>
+          <div class="notification-setting-main">
+            <div class="notification-setting-title">Ракетна небезпека</div>
+            <div class="notification-setting-note">Звук і сповіщення при початку червоної тривоги</div>
+          </div>
+          <label class="notification-switch">
+            <input id="notify-red" type="checkbox">
+            <span></span>
+          </label>
+        </div>
+
+        <div class="notification-setting">
+          <div class="notification-setting-icon">🟡</div>
+          <div class="notification-setting-main">
+            <div class="notification-setting-title">Загроза БПЛА</div>
+            <div class="notification-setting-note">Окремий сигнал для жовтої тривоги</div>
+          </div>
+          <label class="notification-switch">
+            <input id="notify-yellow" type="checkbox">
+            <span></span>
+          </label>
+        </div>
+
+        <div class="notification-setting">
+          <div class="notification-setting-icon">🟢</div>
+          <div class="notification-setting-main">
+            <div class="notification-setting-title">Відбій</div>
+            <div class="notification-setting-note">Окремий короткий сигнал після завершення тривоги</div>
+          </div>
+          <label class="notification-switch">
+            <input id="notify-end" type="checkbox">
+            <span></span>
+          </label>
+        </div>
+
+        <div class="notification-setting">
+          <div class="notification-setting-icon">📳</div>
+          <div class="notification-setting-main">
+            <div class="notification-setting-title">Вібрація</div>
+            <div class="notification-setting-note">Працює лише для вибраної нижче області</div>
+          </div>
+          <label class="notification-switch">
+            <input id="notify-vibration" type="checkbox">
+            <span></span>
+          </label>
+        </div>
+
+        <div class="notification-region">
+          <label for="vibration-region-select">ОБЛАСТЬ ДЛЯ ВІБРАЦІЇ</label>
+          <select id="vibration-region-select"></select>
+        </div>
+
+        <div class="notification-setting">
+          <div class="notification-setting-icon">🔊</div>
+          <div class="notification-setting-main">
+            <div class="notification-setting-title">Звукові сповіщення</div>
+            <div class="notification-setting-note">Сигнали тривоги та відбою</div>
+          </div>
+          <label class="notification-switch">
+            <input id="notify-sound" type="checkbox">
+            <span></span>
+          </label>
+        </div>
+
+        <div class="notification-setting">
+          <div class="notification-setting-icon">💡</div>
+          <div class="notification-setting-main">
+            <div class="notification-setting-title">Зміни ДТЕК</div>
+            <div class="notification-setting-note">Підготовлено для сповіщень про зміни графіка</div>
+          </div>
+          <label class="notification-switch">
+            <input id="notify-power" type="checkbox">
+            <span></span>
+          </label>
+        </div>
+
+        <div class="notification-setting">
+          <div class="notification-setting-icon">📰</div>
+          <div class="notification-setting-main">
+            <div class="notification-setting-title">Важливі новини</div>
+            <div class="notification-setting-note">Підготовлено для важливих повідомлень стрічки</div>
+          </div>
+          <label class="notification-switch">
+            <input id="notify-news" type="checkbox">
+            <span></span>
+          </label>
+        </div>
+
+        <div class="notification-setting">
+          <div class="notification-setting-icon">🌙</div>
+          <div class="notification-setting-main">
+            <div class="notification-setting-title">Тихий режим</div>
+            <div class="notification-setting-note">Прибирає звук і вібрацію, але не вимикає критичні сповіщення</div>
+          </div>
+          <label class="notification-switch">
+            <input id="notify-quiet" type="checkbox">
+            <span></span>
+          </label>
+        </div>
+
+        <div class="notification-test-row">
+          <button class="notification-test-button" type="button" data-test-sound="yellow">🟡 Тест БПЛА</button>
+          <button class="notification-test-button" type="button" data-test-sound="red">🔴 Тест ракети</button>
+          <button class="notification-test-button" type="button" data-test-sound="end">🟢 Тест відбою</button>
+        </div>
+
+        <div class="notification-settings-footer">
+          Для реального push у фоні/при закритому PWA потрібен окремий push-сервер. Цей екран уже зберігає твої вибрані параметри.
+        </div>
+        </div>
+      </div>
+
+      <div class="card dtek-card" id="power-section">
+
+  <div class="dtek-head">
+    <div>
+      <div class="card-title">💡 Відключення світла</div>
+      <div class="dtek-subtitle">Актуальний графік для вашої адреси</div>
+    </div>
+    <span class="dtek-live"><span></span> LIVE</span>
+  </div>
+
+  <div class="dtek-location">
+  📍 <span id="dtek-address">Адреса не налаштована</span>
+</div>
+
+<button
+  type="button"
+  class="dtek-address-button"
+  onclick="openDtekAddressSettings()"
+>
+  ⚙️ Налаштувати адресу
+</button>
+
+  <div id="dtek-schedule" class="dtek-schedule">
+
+    <div class="dtek-loading">
+      🔄 Завантаження графіка...
+    </div>
+
+  </div>
+
+  <a
+    href="https://www.dtek-kem.com.ua/ua/shutdowns"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="dtek-button"
+  >
+    🔗 Відкрити графік на сайті ДТЕК
+  </a>
+
+  <div class="dtek-note">
+    Графік може змінюватися протягом дня
+  </div>
+
+</div>
+
+    </div>
+
+    <div class="right-column">
+
+      <div class="card news-card" id="news-section">
+
+        <div class="card-topline">
+          <div class="card-title">📰 Останні події</div>
+          <span class="section-chip">НОВИНИ</span>
+        </div>
+
+        <div class="news-empty">
+          Завантажуємо останні повідомлення...
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <nav class="bottom-nav" aria-label="Навігація">
+    <a href="#status-section" class="nav-item active"><span>🚨</span><small>Статус</small></a>
+    <a href="#nearby-section" class="nav-item"><span>⚠️</span><small>Поруч</small></a>
+    <a href="#power-section" class="nav-item"><span>💡</span><small>Світло</small></a>
+    <button type="button" class="nav-item nav-settings-button" id="settings-nav-button"><span>⚙️</span><small>Налашт.</small></button>
+  </nav>
+
+  <div class="footer">
+    KYIV безпека · актуальні дані
+  </div>
+
+</div>
+
+<script>
+
+
+/* МІСТО ТА ЙОГО ДАНІ */
+
+const CITY_REGIONS = {
+
+  kyiv: {
+    name: "Київ",
+    regionName: "Київська область",
+    slug: "kyiv",
+    oblastSlug: "kyivska"
+  },
+
+  zhytomyr: {
+    name: "Житомир",
+    regionName: "Житомирська область",
+    slug: "zitomirska-oblast",
+    oblastSlug: "zitomirska"
+  },
+
+  cherkasy: {
+    name: "Черкаси",
+    regionName: "Черкаська область",
+    slug: "cerkaska-oblast",
+    oblastSlug: "cerkaska"
+  },
+
+  chernihiv: {
+    name: "Чернігів",
+    regionName: "Чернігівська область",
+    slug: "cernigivska-oblast",
+    oblastSlug: "cernigivska"
+  },
+
+  poltava: {
+    name: "Полтава",
+    regionName: "Полтавська область",
+    slug: "poltavska-oblast",
+    oblastSlug: "poltavska"
+  },
+
+  vinnytsia: {
+    name: "Вінниця",
+    regionName: "Вінницька область",
+    slug: "vinnicka-oblast",
+    oblastSlug: "vinnicka"
+  },
+
+  khmelnytskyi: {
+    name: "Хмельницький",
+    regionName: "Хмельницька область",
+    slug: "xmelnycka-oblast",
+    oblastSlug: "xmelnycka"
+  },
+
+  rivne: {
+    name: "Рівне",
+    regionName: "Рівненська область",
+    slug: "rivnenska-oblast",
+    oblastSlug: "rivnenska"
+  },
+
+  lutsk: {
+    name: "Луцьк",
+    regionName: "Волинська область",
+    slug: "volinska-oblast",
+    oblastSlug: "volinska"
+  },
+
+  sumy: {
+    name: "Суми",
+    regionName: "Сумська область",
+    slug: "sumska-oblast",
+    oblastSlug: "sumska"
+  }
+
+};
+
+/* ЗАГРОЗИ ПОРУЧ */
+
+const NEARBY_REGIONS = {
+
+  kyiv: [
+    { name: "Житомирська область", slug: "zitomirska-oblast" },
+    { name: "Вінницька область", slug: "vinnicka-oblast" },
+    { name: "Черкаська область", slug: "cerkaska-oblast" },
+    { name: "Полтавська область", slug: "poltavska-oblast" },
+    { name: "Чернігівська область", slug: "cernigivska-oblast" }
+  ],
+
+  zhytomyr: [
+    { name: "Київська область", slug: "kyivska-oblast" },
+    { name: "Вінницька область", slug: "vinnicka-oblast" },
+    { name: "Хмельницька область", slug: "xmelnycka-oblast" },
+    { name: "Рівненська область", slug: "rivnenska-oblast" }
+  ],
+
+  cherkasy: [
+    { name: "Київська область", slug: "kyivska-oblast" },
+    { name: "Чернігівська область", slug: "cernigivska-oblast" },
+    { name: "Полтавська область", slug: "poltavska-oblast" },
+    { name: "Кіровоградська область", slug: "kirovohradska-oblast" },
+    { name: "Вінницька область", slug: "vinnicka-oblast" }
+  ],
+
+  chernihiv: [
+    { name: "Київська область", slug: "kyivska-oblast" },
+    { name: "Сумська область", slug: "sumska-oblast" },
+    { name: "Полтавська область", slug: "poltavska-oblast" }
+  ],
+
+  poltava: [
+    { name: "Київська область", slug: "kyivska-oblast" },
+    { name: "Чернігівська область", slug: "cernigivska-oblast" },
+    { name: "Сумська область", slug: "sumska-oblast" },
+    { name: "Харківська область", slug: "xarkivska-oblast" },
+    { name: "Дніпропетровська область", slug: "dnipropetrovska-oblast" },
+    { name: "Кіровоградська область", slug: "kirovohradska-oblast" },
+    { name: "Черкаська область", slug: "cerkaska-oblast" }
+  ],
+
+  vinnytsia: [
+    { name: "Житомирська область", slug: "zitomirska-oblast" },
+    { name: "Київська область", slug: "kyivska-oblast" },
+    { name: "Черкаська область", slug: "cerkaska-oblast" },
+    { name: "Кіровоградська область", slug: "kirovohradska-oblast" },
+    { name: "Одеська область", slug: "odeska-oblast" },
+    { name: "Миколаївська область", slug: "mykolaivska-oblast" },
+    { name: "Хмельницька область", slug: "xmelnycka-oblast" }
+  ],
+
+  khmelnytskyi: [
+    { name: "Житомирська область", slug: "zitomirska-oblast" },
+    { name: "Вінницька область", slug: "vinnicka-oblast" },
+    { name: "Тернопільська область", slug: "ternopilska-oblast" },
+    { name: "Рівненська область", slug: "rivnenska-oblast" },
+    { name: "Чернівецька область", slug: "chernivetska-oblast" }
+  ],
+
+  rivne: [
+    { name: "Волинська область", slug: "volynska-oblast" },
+    { name: "Львівська область", slug: "lvivska-oblast" },
+    { name: "Тернопільська область", slug: "ternopilska-oblast" },
+    { name: "Хмельницька область", slug: "xmelnycka-oblast" },
+    { name: "Житомирська область", slug: "zitomirska-oblast" }
+  ],
+
+  lutsk: [
+    { name: "Рівненська область", slug: "rivnenska-oblast" },
+    { name: "Львівська область", slug: "lvivska-oblast" }
+  ],
+
+  sumy: [
+    { name: "Чернігівська область", slug: "cernigivska-oblast" },
+    { name: "Полтавська область", slug: "poltavska-oblast" },
+    { name: "Харківська область", slug: "xarkivska-oblast" }
+  ]
+
+};
+const KYIV_REGION_API =
+  "https://tryvoha.online/api/v1/alerts/kyivska";
+let kyivAlertStartedAt = null;
+let regionAlertStartedAt = null;
+
+
+
+/* ІСТОРІЯ ТРИВОГ — 7 ДНІВ */
+
+const HISTORY_PREFIX =
+  "kyiv-bezpeka-alert-history-";
+
+const HISTORY_DAYS = 7;
+const HISTORY_MAX = 200;
+
+
+/* ОТРИМАТИ КЛЮЧ ДЛЯ ВИБРАНОГО МІСТА */
+
+function getHistoryKey() {
+
+  const city = getSelectedCity();
+
+  return HISTORY_PREFIX + city;
+
+}
+
+
+/* ОТРИМАТИ ІСТОРІЮ */
+
+function getAlertHistory() {
+
+  try {
+
+    const saved =
+      localStorage.getItem(
+        getHistoryKey()
+      );
+
+    const parsed =
+      saved ? JSON.parse(saved) : [];
+
+    if (!Array.isArray(parsed)) {
+      return [];
+    }
+
+    const now = Date.now();
+
+    const sevenDays =
+      HISTORY_DAYS *
+      24 *
+      60 *
+      60 *
+      1000;
+
+    const filtered =
+      parsed.filter(item => {
+
+        const dateValue =
+          item.endedAt ||
+          item.startedAt;
+
+        const time =
+          new Date(dateValue).getTime();
+
+        return (
+          !isNaN(time) &&
+          now - time <= sevenDays
+        );
+
+      });
+
+    return filtered;
+
+  } catch (error) {
+
+    console.error(
+      "Помилка історії:",
+      error
+    );
+
+    return [];
+
+  }
+
+}
+
+
+/* ЗБЕРЕГТИ ІСТОРІЮ */
+
+function saveAlertHistory(history) {
+
+  try {
+
+    localStorage.setItem(
+
+      getHistoryKey(),
+
+      JSON.stringify(
+        history
+          .slice(0, HISTORY_MAX)
+      )
+
+    );
+
+  } catch (error) {
+
+    console.error(
+      "Помилка збереження історії:",
+      error
+    );
+
+  }
+
+}
+
+
+/* ДОДАТИ ЗАПИС */
+
+function addHistoryItem(item) {
+
+  const history =
+    getAlertHistory();
+
+  history.unshift(item);
+
+  saveAlertHistory(history);
+
+  renderAlertHistory();
+
+}
+
+
+/* ФОРМАТУВАННЯ ДАТИ */
+
+function formatHistoryDate(value) {
+
+  if (!value) {
+    return "—";
+  }
+
+  const date =
+    new Date(value);
+
+  if (isNaN(date.getTime())) {
+    return "—";
+  }
+
+  return date.toLocaleString(
+    "uk-UA",
+    {
+      day: "2-digit",
+      month: "2-digit",
+      hour: "2-digit",
+      minute: "2-digit"
+    }
+  );
+
+}
+
+
+/* ТРИВАЛІСТЬ */
+
+function formatHistoryDuration(
+  start,
+  end
+) {
+
+  if (!start || !end) {
+    return "";
+  }
+
+  const startDate =
+    new Date(start);
+
+  const endDate =
+    new Date(end);
+
+  if (
+    isNaN(startDate.getTime()) ||
+    isNaN(endDate.getTime())
+  ) {
+    return "";
+  }
+
+  const totalMinutes =
+    Math.max(
+      0,
+      Math.floor(
+        (endDate - startDate) /
+        60000
+      )
+    );
+
+  const hours =
+    Math.floor(
+      totalMinutes / 60
+    );
+
+  const minutes =
+    totalMinutes % 60;
+
+  if (hours > 0) {
+
+    return (
+      hours +
+      " год " +
+      minutes +
+      " хв"
+    );
+
+  }
+
+  return minutes + " хв";
+
+}
+
+
+/* НАЗВА РІВНЯ */
+
+function getHistoryLevelText(level) {
+
+  if (level === "red") {
+    return "🔴 Ракетна небезпека";
+  }
+
+  if (level === "yellow") {
+    return "🟡 Загроза БПЛА";
+  }
+
+  return "⚠️ Тривога";
+
+}
+
+
+/* ВІДОБРАЖЕННЯ ІСТОРІЇ */
+
+function renderAlertHistory() {
+
+  const list =
+    document.getElementById(
+      "alert-history-list"
+    );
+
+  if (!list) {
+    return;
+  }
+
+  const history =
+    getAlertHistory();
+
+  if (!history.length) {
+
+    list.innerHTML = `
+
+      <div class="history-empty">
+
+        За останні 7 днів
+        тривог не зафіксовано.
+
+      </div>
+
+    `;
+
+    return;
+
+  }
+
+
+  list.innerHTML =
+
+    history.map(item => {
+
+      const levelClass =
+        item.level === "red"
+          ? "alert-red"
+          : "alert-yellow";
+
+
+      const levelText =
+        getHistoryLevelText(
+          item.level
+        );
+
+
+      const cityName =
+        item.cityName ||
+        getSelectedCityData().name;
+
+
+      let html = `
+
+        <div
+          class="history-item ${levelClass}"
+        >
+
+          <div class="history-icon alert">
+
+            🚨
+
+          </div>
+
+          <div class="history-main">
+
+            <div class="history-title">
+
+              ${levelText}
+
+            </div>
+
+            <div class="history-meta">
+
+              📍 ${cityName}
+
+              <br>
+
+              Початок:
+              ${formatHistoryDate(
+                item.startedAt
+              )}
+
+            </div>
+
+      `;
+
+
+      if (item.endedAt) {
+
+        html += `
+
+            <div class="history-meta">
+
+              🟢 Відбій:
+              ${formatHistoryDate(
+                item.endedAt
+              )}
+
+              ${                item.duration
+                  ? `<br>⏱️ Тривалість: ${item.duration}`
+                  : ""
+              }
+
+            </div>
+
+        `;
+
+      } else {
+
+        html += `
+
+            <div class="history-meta">
+
+              🔴 Тривога ще триває
+
+            </div>
+
+        `;
+
+      }
+
+
+      if (
+        item.regionName
+      ) {
+
+        html += `
+
+          <div class="history-meta">
+
+            🗺️ ${item.regionName}
+
+          </div>
+
+        `;
+
+      }
+
+
+      if (
+  item.districts &&
+  item.districts.length
+) {
+
+  html += `
+
+    <div class="history-meta">
+
+      Райони:
+
+      <br>
+
+      ${item.districts
+        .map(
+          district => {
+
+            const icon =
+              district.level === "red"
+                ? "🔴"
+                : "🟡";
+
+            let time = "";
+
+            if (district.startedAt) {
+
+              const districtDate =
+                new Date(
+                  district.startedAt
+                );
+
+              if (
+                !isNaN(
+                  districtDate.getTime()
+                )
+              ) {
+
+                time =
+                  " — " +
+                  districtDate.toLocaleTimeString(
+                    "uk-UA",
+                    {
+                      hour: "2-digit",
+                      minute: "2-digit"
+                    }
+                  );
+
+              }
+
+            }
+
+            return (
+              icon +
+              " " +
+              district.name +
+              time
+            );
+
+          }
+        )
+        .join("<br>")}
+
+    </div>
+
+  `;
+
+}
+
+
+      html += `
+
+          </div>
+
+        </div>
+
+      `;
+
+
+      return html;
+
+    }).join("");
+
+}
+
+
+/* ПОКАЗАТИ ІСТОРІЮ */
+
+renderAlertHistory();
+
+
+/* 🌆 ФОН КИЄВА */
+
+const BACKGROUND_KEY = "kyiv-bezpeka-background";
+const DEFAULT_BACKGROUND = "minimal";
+
+function applyBackground(name) {
+  const allowed = ["night", "dnipro", "sunset", "lights", "minimal"];
+  const background = allowed.includes(name)
+    ? name
+    : DEFAULT_BACKGROUND;
+
+  document.body.classList.remove(
+    "background-night",
+    "background-dnipro",
+    "background-sunset",
+    "background-lights",
+    "background-minimal"
+  );
+
+  document.body.classList.add("background-" + background);
+
+  document.querySelectorAll("[data-background]").forEach(function (button) {
+    button.classList.toggle(
+      "is-selected",
+      button.dataset.background === background
+    );
+  });
+
+  localStorage.setItem(BACKGROUND_KEY, background);
+}
+
+const savedBackground =
+  localStorage.getItem(BACKGROUND_KEY) || DEFAULT_BACKGROUND;
+
+applyBackground(savedBackground);
+
+document.querySelectorAll("[data-background]").forEach(function (button) {
+  button.addEventListener("click", function () {
+    applyBackground(button.dataset.background);
+  });
+});
+
+
+/* ТЕМА + СПОВІЩЕННЯ + ЗВУК */
+
+const themeButton =
+document.getElementById("theme-button");
+
+const soundButton =
+document.getElementById("sound-button");
+
+const NOTIFICATION_SETTINGS_KEY =
+  "kyiv-bezpeka-notification-settings";
+
+const DEFAULT_NOTIFICATION_SETTINGS = {
+  red: true,
+  yellow: true,
+  end: true,
+  vibration: true,
+  sound: true,
+  power: false,
+  news: false,
+  quiet: false,
+  vibrationRegion: "kyiv"
+};
+
+function getNotificationSettings() {
+  try {
+    const saved = JSON.parse(
+      localStorage.getItem(NOTIFICATION_SETTINGS_KEY)
+    );
+
+    return Object.assign(
+      {},
+      DEFAULT_NOTIFICATION_SETTINGS,
+      saved || {}
+    );
+  } catch (error) {
+    return Object.assign({}, DEFAULT_NOTIFICATION_SETTINGS);
+  }
+}
+
+let notificationSettings =
+  getNotificationSettings();
+
+const legacySound =
+  localStorage.getItem("kyiv-bezpeka-sound");
+
+if (legacySound === "on") {
+  notificationSettings.sound = true;
+} else if (legacySound === "off") {
+  notificationSettings.sound = false;
+}
+
+saveNotificationSettings();
+
+function saveNotificationSettings() {
+  localStorage.setItem(
+    NOTIFICATION_SETTINGS_KEY,
+    JSON.stringify(notificationSettings)
+  );
+}
+
+function setupNotificationSettings() {
+  const ids = [
+    "notify-red",
+    "notify-yellow",
+    "notify-end",
+    "notify-vibration",
+    "notify-sound",
+    "notify-power",
+    "notify-news",
+    "notify-quiet"
+  ];
+
+  ids.forEach(function (id) {
+    const input = document.getElementById(id);
+    if (!input) return;
+
+    const key = id.replace("notify-", "");
+    input.checked = !!notificationSettings[key];
+
+    input.addEventListener("change", function () {
+      notificationSettings[key] = input.checked;
+      saveNotificationSettings();
+
+      if (key === "sound" && input.checked) {
+        ensureAudio();
+        playAlertSound("end");
+      }
+    });
+  });
+
+  const regionSelect =
+    document.getElementById("vibration-region-select");
+
+  if (regionSelect) {
+    Object.keys(CITY_REGIONS).forEach(function (key) {
+      const option = document.createElement("option");
+      option.value = key;
+      option.textContent = CITY_REGIONS[key].regionName;
+      regionSelect.appendChild(option);
+    });
+
+    regionSelect.value =
+      notificationSettings.vibrationRegion ||
+      getSelectedCity();
+
+    regionSelect.addEventListener("change", function () {
+      notificationSettings.vibrationRegion =
+        regionSelect.value;
+      saveNotificationSettings();
+    });
+  }
+
+  document.querySelectorAll("[data-test-sound]").forEach(function (button) {
+    button.addEventListener("click", function () {
+      ensureAudio();
+      playAlertSound(button.dataset.testSound);
+
+      if (
+        button.dataset.testSound !== "end" &&
+        notificationSettings.vibration &&
+        notificationSettings.vibrationRegion === getSelectedCity() &&
+        !notificationSettings.quiet
+      ) {
+        vibrateForLevel(button.dataset.testSound);
+      }
+    });
+  });
+}
+
+let soundEnabled =
+  notificationSettings.sound;
+
+let audioContext = null;
+
+function ensureAudio() {
+  if (!audioContext) {
+    audioContext =
+      new (window.AudioContext ||
+        window.webkitAudioContext)();
+  }
+
+  if (audioContext.state === "suspended") {
+    audioContext.resume().catch(function () {});
+  }
+
+  return audioContext;
+}
+
+function updateSoundButton() {
+  soundButton.textContent =
+    notificationSettings.sound ? "🔔" : "🔕";
+}
+
+function playSirenSegment(ctx, start, duration, from, to, volume, type) {
+  const oscillator = ctx.createOscillator();
+  const gain = ctx.createGain();
+
+  oscillator.type = type || "sine";
+  oscillator.frequency.setValueAtTime(from, ctx.currentTime + start);
+  oscillator.frequency.exponentialRampToValueAtTime(to, ctx.currentTime + start + duration);
+
+  gain.gain.setValueAtTime(0.001, ctx.currentTime + start);
+  gain.gain.exponentialRampToValueAtTime(volume, ctx.currentTime + start + 0.04);
+  gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + start + duration);
+
+  oscillator.connect(gain);
+  gain.connect(ctx.destination);
+  oscillator.start(ctx.currentTime + start);
+  oscillator.stop(ctx.currentTime + start + duration + 0.04);
+}
+
+function playAlertSound(type) {
+  if (!notificationSettings.sound || notificationSettings.quiet) return;
+
+  const ctx = ensureAudio();
+  if (!ctx) return;
+
+  if (type === "red") {
+    playSirenSegment(ctx, 0.00, 0.72, 520, 980, 0.20, "sawtooth");
+    playSirenSegment(ctx, 0.78, 0.72, 980, 520, 0.20, "sawtooth");
+    playSirenSegment(ctx, 1.56, 0.72, 520, 980, 0.20, "sawtooth");
+    playSirenSegment(ctx, 2.34, 0.72, 980, 520, 0.20, "sawtooth");
+    return;
+  }
+
+  if (type === "yellow") {
+    playSirenSegment(ctx, 0.00, 0.38, 610, 820, 0.15, "triangle");
+    playSirenSegment(ctx, 0.44, 0.38, 820, 610, 0.15, "triangle");
+    playSirenSegment(ctx, 0.88, 0.38, 610, 820, 0.15, "triangle");
+    return;
+  }
+
+  playSirenSegment(ctx, 0.00, 0.30, 560, 760, 0.14, "sine");
+  playSirenSegment(ctx, 0.34, 0.30, 760, 980, 0.14, "sine");
+  playSirenSegment(ctx, 0.68, 0.46, 980, 1220, 0.16, "sine");
+}
+
+function vibrateForLevel(level) {
+  if (
+    !notificationSettings.vibration ||
+    notificationSettings.quiet ||
+    notificationSettings.vibrationRegion !== getSelectedCity()
+  ) {
+    return;
+  }
+
+  if (!("vibrate" in navigator)) return;
+
+  const pattern =
+    level === "red"
+      ? [220, 120, 220, 120, 420]
+      : [180, 100, 180];
+
+  try {
+    navigator.vibrate(pattern);
+  } catch (error) {}
+}
+
+/* МОДАЛЬНІ НАЛАШТУВАННЯ */
+
+const settingsModal = document.getElementById("settings-section");
+const settingsOpenButton = document.getElementById("settings-open-button");
+const settingsCloseButton = document.getElementById("settings-close-button");
+const settingsNavButton = document.getElementById("settings-nav-button");
+
+function setSettingsModal(open) {
+  if (!settingsModal) return;
+  settingsModal.classList.toggle("settings-modal-open", open);
+  settingsModal.setAttribute("aria-hidden", open ? "false" : "true");
+  document.body.classList.toggle("settings-open", open);
+  if (open && settingsCloseButton) {
+    setTimeout(function () { settingsCloseButton.focus(); }, 40);
+  }
+}
+
+if (settingsOpenButton) settingsOpenButton.addEventListener("click", function () {
+  setSettingsModal(true);
+});
+if (settingsCloseButton) settingsCloseButton.addEventListener("click", function () {
+  setSettingsModal(false);
+});
+if (settingsNavButton) settingsNavButton.addEventListener("click", function () {
+  setSettingsModal(true);
+});
+if (settingsModal) settingsModal.addEventListener("click", function (event) {
+  if (event.target === settingsModal) setSettingsModal(false);
+});
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") setSettingsModal(false);
+});
+
+/* ТЕМА */
+
+function updateThemeButton() {
+  themeButton.textContent =
+    document.body.classList.contains("dark")
+      ? "☀️"
+      : "🌙";
+}
+
+const savedTheme =
+  localStorage.getItem("kyiv-bezpeka-theme");
+
+if (savedTheme === "dark") {
+  document.body.classList.add("dark");
+}
+
+updateThemeButton();
+
+themeButton.addEventListener("click", function () {
+  document.body.classList.toggle("dark");
+
+  localStorage.setItem(
+    "kyiv-bezpeka-theme",
+    document.body.classList.contains("dark")
+      ? "dark"
+      : "light"
+  );
+
+  updateThemeButton();
+});
+
+soundButton.addEventListener("click", function () {
+  ensureAudio();
+
+  notificationSettings.sound =
+    !notificationSettings.sound;
+
+  soundEnabled =
+    notificationSettings.sound;
+
+  saveNotificationSettings();
+  updateSoundButton();
+
+  if (notificationSettings.sound) {
+    playAlertSound("end");
+  }
+});
+
+setupNotificationSettings();
+updateSoundButton();
+
+/* ЧАС ТРИВОГИ */
+
+function formatDuration(startTime) {
+
+  if (!startTime) return "";
+
+  const start = new Date(startTime);
+  const now = new Date();
+
+  if (isNaN(start.getTime())) return "";
+
+  const totalMinutes = Math.max(
+    0,
+    Math.floor((now - start) / 60000)
+  );
+
+  const hours =
+    Math.floor(totalMinutes / 60);
+
+  const minutes =
+    totalMinutes % 60;
+
+  if (hours > 0) {
+    return "⏱️ Триває: " +
+      hours + " год " +
+      minutes + " хв";
+  }
+
+  return "⏱️ Триває: " +
+    minutes + " хв";
+}
+
+async function updateKyivAlert() {
+
+  const box =
+
+    document.getElementById("kyiv-alert");
+
+  const timer =
+
+    document.getElementById("kyiv-timer");
+
+  const city =
+
+    getSelectedCityData();
+
+  try {
+
+    const response =
+
+      await fetch(
+
+        `https://tryvoha.online/api/v1/alerts/${city.slug}`
+
+      );
+
+    if (!response.ok) {
+
+      throw new Error("Помилка сервера");
+
+    }
+
+    const data =
+
+      await response.json();
+     /* ЧАС ПОЧАТКУ ТРИВОГИ З API */
+
+if (data.active && data.started_at) {
+
+  kyivAlertStartedAt =
+    new Date(data.started_at).getTime();
+
+} else {
+
+  kyivAlertStartedAt = null;
+
+}
+
+    document.getElementById(
+
+      "kyiv-updated"
+
+    ).textContent =
+
+      "Остання перевірка: " +
+
+      new Date().toLocaleTimeString(
+
+        "uk-UA",
+
+        {
+
+          hour: "2-digit",
+
+          minute: "2-digit"
+
+        }
+
+      );
+
+    const districts =
+
+      data.districts_active || [];
+
+    const hasRed =
+
+      data.level === "red" ||
+
+      districts.some(
+
+        district =>
+
+          district.level === "red"
+
+      );
+
+    const hasYellow =
+
+      data.level === "yellow" ||
+
+      districts.some(
+
+        district =>
+
+          district.level === "yellow"
+
+      );
+
+      /* ВІЗУАЛЬНИЙ СТАН ДОДАТКУ — логіку даних не змінюємо */
+      document.body.classList.toggle("alert-active-red", hasRed);
+      document.body.classList.toggle("alert-active-yellow", !hasRed && hasYellow);
+      document.body.classList.toggle("alert-safe", !hasRed && !hasYellow);
+
+      /* ІСТОРІЯ — СТАН МІСТА */
+
+      const isActive =
+        hasRed || hasYellow;
+
+      const currentLevel =
+        hasRed ? "red" :
+        hasYellow ? "yellow" :
+        null;
+
+      const cityKey =
+        getSelectedCity();
+
+      const currentKey =
+        "kyiv-bezpeka-current-history-" +
+        cityKey;
+
+      /*
+        Для історії використовуємо реальний started_at
+        від API. Це важливо: перезавантаження сторінки
+        або чергова перевірка не створюють нову тривогу.
+      */
+
+      let currentItem = null;
+
+      try {
+        currentItem =
+          JSON.parse(
+            localStorage.getItem(currentKey)
+          );
+      } catch (error) {
+        currentItem = null;
+      }
+
+      if (isActive) {
+
+        const apiStartedAt =
+          data.started_at || null;
+
+        let isNewAlert = false;
+
+        /*
+          Якщо поточна тривога вже є — оновлюємо її,
+          але НЕ створюємо новий запис.
+        */
+
+        if (currentItem) {
+
+          currentItem.level =
+            currentLevel;
+
+          currentItem.districts =
+            districts.map(district => ({
+              name:
+                district.name_uk,
+
+              level:
+                district.level,
+
+              startedAt:
+                district.started_at
+            }));
+
+          if (
+            apiStartedAt &&
+            currentItem.startedAt !== apiStartedAt
+          ) {
+            isNewAlert = true;
+            /*
+              API повідомив про нову тривогу.
+              Замінюємо старий незавершений запис.
+            */
+            currentItem.id =
+              cityKey + "-" + apiStartedAt;
+
+            currentItem.startedAt =
+              apiStartedAt;
+
+            currentItem.endedAt =
+              null;
+
+            currentItem.duration =
+              null;
+          }
+
+        } else {
+
+          isNewAlert = true;
+
+          /*
+            Якщо застосунок відкрили вже під час тривоги,
+            беремо фактичний час початку з API.
+          */
+
+          const startedAt =
+            apiStartedAt ||
+            new Date().toISOString();
+
+          currentItem = {
+            id:
+              cityKey + "-" + startedAt,
+
+            cityName:
+              city.name,
+
+            regionName:
+              city.regionName,
+
+            level:
+              currentLevel,
+
+            startedAt:
+              startedAt,
+
+            endedAt:
+              null,
+
+            duration:
+              null,
+
+            districts:
+              districts.map(district => ({
+                name:
+                  district.name_uk,
+
+                level:
+                  district.level,
+
+                startedAt:
+                  district.started_at
+              }))
+          };
+        }
+
+        localStorage.setItem(
+          currentKey,
+          JSON.stringify(currentItem)
+        );
+
+        const history =
+          getAlertHistory();
+
+        const index =
+          history.findIndex(
+            item =>
+              item.id === currentItem.id
+          );
+
+        if (index === -1) {
+
+          history.unshift(
+            currentItem
+          );
+
+        } else {
+
+          history[index] =
+            currentItem;
+        }
+
+        saveAlertHistory(history);
+        renderAlertHistory();
+
+        if (isNewAlert) notifyNewAlert(currentItem);
+
+      } else {
+
+        /*
+          Відбій: завершуємо саме ту тривогу,
+          яка була записана як поточна.
+        */
+
+        if (currentItem) {
+
+          currentItem.endedAt =
+            new Date().toISOString();
+
+          currentItem.duration =
+            formatHistoryDuration(
+              currentItem.startedAt,
+              currentItem.endedAt
+            );
+
+          const history =
+            getAlertHistory();
+
+          const index =
+            history.findIndex(
+              item =>
+                item.id === currentItem.id
+            );
+
+          if (index !== -1) {
+
+            history[index] =
+              currentItem;
+
+            saveAlertHistory(history);
+          }
+
+          notifyAlertEnd(currentItem);
+
+          localStorage.removeItem(
+            currentKey
+          );
+
+          renderAlertHistory();
+        }
+      }
+
+      if (hasRed) {
+
+      box.textContent =
+
+        "🔴 " +
+
+        city.name +
+
+        ": Ракетна небезпека ";
+
+      box.style.background =
+
+        "#ffebee";
+
+      box.style.color =
+
+        "#b71c1c";
+
+    } else if (hasYellow) {
+
+      box.textContent =
+
+        "🟡 " +
+
+        city.name +
+
+        ": Загроза БПЛА ";
+
+      box.style.background =
+
+        "#fff8e1";
+
+      box.style.color =
+
+        "#f57f17";
+
+    } else {
+
+      box.textContent =
+
+        "🟢 " +
+
+        city.name +
+
+        ": Відбій";
+
+      box.style.background =
+
+        "#e8f5e9";
+
+      box.style.color =
+
+        "#1b5e20";
+
+      timer.textContent =
+
+        "";
+
+    }
+
+  } catch (error) {
+
+    console.error(
+
+      "Помилка міста:",
+
+      error
+
+    );
+
+    box.textContent =
+
+      "⚪️ " +
+
+      city.name +
+
+      ": НЕ ВДАЛОСЯ ОТРИМАТИ ДАНІ";
+
+    box.style.background =
+
+      "#eeeeee";
+
+    box.style.color =
+
+      "#424242";
+
+    timer.textContent =
+
+      "";
+
+  }
+
+}
+//* КИЇВСЬКА ОБЛАСТЬ */
+
+async function updateKyivRegionThreat() {
+
+  const box =
+
+    document.getElementById("kyiv-region-threat");
+
+  const city =
+
+    getSelectedCity();
+
+  const cityData =
+
+    getSelectedCityData();
+
+  const nearby =
+
+    NEARBY_REGIONS[city] || [];
+
+  try {
+
+    const mainResponse =
+  await fetch(
+    "https://tryvoha.online/api/v1/alerts/" +
+    cityData.oblastSlug
+  );
+
+    const mainData =
+
+      await mainResponse.json();
+
+    const districts =
+
+      mainData.districts_active || [];
+
+    let html = "";
+
+    /* РАЙОНИ ОБЛАСТІ */
+
+const activeDistricts =
+
+  districts.filter(
+
+    district =>
+
+      district.level === "red" ||
+
+      district.level === "yellow"
+
+  );
+
+if (activeDistricts.length > 0) {
+
+  html +=
+
+    "<div style='font-weight:700;margin-bottom:10px;'>" +
+
+    "⚠️ Райони області" +
+
+    "</div>";
+
+  for (const district of activeDistricts) {
+
+    if (district.level === "red") {
+
+      html +=
+
+        "<div class='district-item district-red'>" +
+
+        "🔴 " +
+
+        district.name_uk +
+
+        " — Ракетна небезпека " +
+
+        "</div>";
+
+    } else {
+
+      html +=
+
+        "<div class='district-item district-yellow'>" +
+
+        "🟡 " +
+
+        district.name_uk +
+
+        " — загроза БПЛА " +
+
+        "</div>";
+
+    }
+
+  }
+
+}
+
+    /* ОБЛАСТЬ */
+
+    let mainLevel =
+
+      mainData.level;
+
+    if (
+
+      districts.some(
+
+        district => district.level === "red"
+
+      )
+
+    ) {
+
+      mainLevel = "red";
+
+    } else if (
+
+      districts.some(
+
+        district => district.level === "yellow"
+
+      )
+
+    ) {
+
+      mainLevel = "yellow";
+
+    }
+
+    html +=
+
+      "<div style='font-weight:700;margin-top:16px;margin-bottom:10px;'>" +
+
+      "📍 Область" +
+
+      "</div>";
+
+    if (mainLevel === "red") {
+
+      html +=
+
+        "<div class='district-item district-red'>" +
+
+        "🔴 " +
+
+        cityData.regionName +
+
+        "  — Ракетна небезпека " +
+
+        "</div>";
+
+    } else if (
+
+      mainLevel === "yellow"
+
+    ) {
+
+      html +=
+
+        "<div class='district-item district-yellow'>" +
+
+        "🟡 " +
+
+        cityData.regionName +
+
+        "  — Загроза БПЛА " +
+
+        "</div>";
+
+    } else {
+
+      html +=
+
+        "<div class='district-item'>" +
+
+        "🟢 " +
+
+        cityData.regionName +
+
+        " область — Відбій " +
+
+        "</div>";
+
+    }
+    /* СУСІДНІ ОБЛАСТІ */
+
+    let activeNearby = [];
+
+    for (const region of nearby) {
+
+      try {
+
+        const response =
+
+          await fetch(
+
+            "https://tryvoha.online/api/v1/alerts/" +
+
+            region.slug
+
+          );
+
+        if (!response.ok) {
+
+          continue;
+
+        }
+
+        const data =
+
+          await response.json();
+
+        let level =
+
+          data.level;
+
+        const regionDistricts =
+
+          data.districts_active || [];
+
+        if (
+
+          regionDistricts.some(
+
+            district => district.level === "red"
+
+          )
+
+        ) {
+
+          level = "red";
+
+        } else if (
+
+          regionDistricts.some(
+
+            district => district.level === "yellow"
+
+          )
+
+        ) {
+
+          level = "yellow";
+
+        }
+
+        if (
+
+          level === "red" ||
+
+          level === "yellow"
+
+        ) {
+
+          activeNearby.push({
+
+            name: region.name,
+
+            level: level
+
+          });
+
+        }
+
+      } catch (error) {
+
+        console.log(
+
+          "Не вдалося отримати:",
+
+          region.name
+
+        );
+
+      }
+
+    }
+
+    /* ПОКАЗУЄМО СУСІДНІ ОБЛАСТІ */
+
+    if (activeNearby.length > 0) {
+
+      html +=
+
+        "<div style='font-weight:700;margin-top:16px;margin-bottom:10px;'>" +
+
+        "⚠️ Сусідні області" +
+
+        "</div>";
+
+      for (const region of activeNearby) {
+
+        if (region.level === "red") {
+
+          html +=
+
+            "<div class='district-item district-red'>" +
+
+            "🔴 " +
+
+            region.name +
+
+            " — Ракетна небезпека " +
+
+            "</div>";
+
+        } else {
+
+          html +=
+
+            "<div class='district-item district-yellow'>" +
+
+            "🟡 " +
+
+            region.name +
+
+            " — загроза БПЛА " +
+
+            "</div>";
+
+        }
+
+      }
+
+    }
+
+    /* ВИВІД */
+
+    box.innerHTML =
+
+      html;
+
+    const updated =
+
+      document.getElementById(
+
+        "kyiv-region-updated"
+
+      );
+
+    if (updated) {
+
+      updated.textContent =
+
+        "Остання перевірка: " +
+
+        new Date().toLocaleTimeString(
+
+          "uk-UA",
+
+          {
+
+            hour: "2-digit",
+
+            minute: "2-digit"
+
+          }
+        );
+
+    }
+
+  } catch (error) {
+
+    console.error(
+
+      "Помилка загроз поруч:",
+
+      error
+
+    );
+
+    box.innerHTML =
+
+      "<div class='district-item'>" +
+
+      "⚪️ Не вдалося отримати дані" +
+
+      "</div>";
+
+  }
+
+}
+/* ТАЙМЕРИ */
+
+function updateTimers() {
+
+  const kyivTimer =
+    document.getElementById("kyiv-timer");
+
+  const regionTimer =
+    document.getElementById("kyiv-region-timer");
+
+  if (kyivAlertStartedAt) {
+    kyivTimer.textContent =
+      formatDuration(kyivAlertStartedAt);
+  } else {
+    kyivTimer.textContent = "";
+  }
+
+  if (regionAlertStartedAt) {
+    regionTimer.textContent =
+      formatDuration(regionAlertStartedAt);
+  } else {
+    regionTimer.textContent = "";
+  }
+}
+
+
+/* ВИБРАНЕ МІСТО */
+
+function getSelectedCity() {
+
+  return localStorage.getItem(
+    "kyiv-bezpeka-city"
+  ) || "kyiv";
+
+}
+
+
+function getSelectedCityData() {
+
+  return CITY_REGIONS[getSelectedCity()]
+    || CITY_REGIONS.kyiv;
+
+}
+
+
+/* ОНОВЛЕННЯ ВСІХ ДАНИХ */
+
+async function updateAllData() {
+
+  await Promise.allSettled([
+
+    updateKyivAlert(),
+
+    updateKyivRegionThreat()
+
+  ]);
+
+  updateTimers();
+
+}
+
+/* DTEK — АДРЕСА */
+
+const DTEK_ADDRESS_KEY =
+  "kyiv-bezpeka-dtek-address";
+
+const DEFAULT_DTEK_ADDRESS =
+  "Оноре де Бальзака 63Б, Київ";
+
+
+function getDtekAddress() {
+
+  return localStorage.getItem(
+    DTEK_ADDRESS_KEY
+  ) || DEFAULT_DTEK_ADDRESS;
+
+}
+
+
+function updateDtekAddress() {
+
+  const element =
+    document.getElementById(
+      "dtek-address"
+    );
+
+  if (!element) {
+    return;
+  }
+
+  element.textContent =
+    getDtekAddress();
+
+}
+
+
+function openDtekAddressSettings() {
+
+  const currentAddress =
+    getDtekAddress();
+
+  const newAddress =
+    window.prompt(
+      "Введіть адресу для графіка ДТЕК:",
+      currentAddress
+    );
+
+  if (
+    newAddress !== null &&
+    newAddress.trim() !== ""
+  ) {
+
+    localStorage.setItem(
+      DTEK_ADDRESS_KEY,
+      newAddress.trim()
+    );
+
+    updateDtekAddress();
+
+  }
+
+}
+
+
+/* Показуємо адресу після завантаження HTML */
+
+updateDtekAddress();
+
+/* ПЕРШЕ ОНОВЛЕННЯ */
+
+updateAllData();
+
+/* Автоматично просимо дозвіл лише після дії користувача.
+   Для push користувач натискає кнопку «Підключити push». */
+
+
+/* АВТОМАТИЧНЕ ОНОВЛЕННЯ */
+
+setInterval(function () {
+
+  updateAllData();
+
+}, 30000);
+
+
+/* ОНОВЛЕННЯ ТАЙМЕРА ЩОСЕКУНДИ */
+
+setInterval(function () {
+
+  updateTimers();
+
+}, 1000);
+
+
+/* ВИБІР МІСТА */
+
+const citySelect =
+  document.getElementById("city-select");
+
+
+const savedCity =
+  localStorage.getItem(
+    "kyiv-bezpeka-city"
+  );
+
+
+if (savedCity &&
+    CITY_REGIONS[savedCity]) {
+
+  citySelect.value = savedCity;
+
+}
+
+/* ПРИ ЗМІНІ МІСТА — ОНОВЛЮЄМО ОДРАЗУ */
+
+citySelect.addEventListener(
+  "change",
+  function () {
+
+    localStorage.setItem(
+      "kyiv-bezpeka-city",
+      citySelect.value
+    );
+
+    if (
+      !notificationSettings.vibrationRegion ||
+      notificationSettings.vibrationRegion === getSelectedCity()
+    ) {
+      notificationSettings.vibrationRegion = citySelect.value;
+      saveNotificationSettings();
+
+      const vibrationRegionSelect =
+        document.getElementById("vibration-region-select");
+
+      if (vibrationRegionSelect) {
+        vibrationRegionSelect.value = citySelect.value;
+      }
+    }
+
+    /* Скидаємо старі таймери */
+
+    kyivAlertStartedAt = null;
+
+    regionAlertStartedAt = null;
+
+    /* Показуємо історію нового міста */
+
+    renderAlertHistory();
+
+    /* Одразу отримуємо нові дані */
+
+    updateAllData();
+
+  }
+);
+
+/* 📲 WEB PUSH */
+
+let pushRegistration = null;
+
+function setPushStatus(text) {
+  const element = document.getElementById("push-status");
+  if (element) {
+    element.textContent = text;
+  }
+}
+
+async function registerPushServiceWorker() {
+  if (!("serviceWorker" in navigator)) {
+    setPushStatus("Цей браузер не підтримує Service Worker.");
+    return null;
+  }
+
+  try {
+    pushRegistration = await navigator.serviceWorker.register(
+      "./servise-worker.js"
+    );
+
+    await navigator.serviceWorker.ready;
+
+    if ("PushManager" in window) {
+      const subscription =
+        await pushRegistration.pushManager.getSubscription();
+
+      if (subscription) {
+        setPushStatus("✅ Push уже підключений на цьому пристрої.");
+      } else {
+        setPushStatus(
+          "Готово до підключення push. Натисни кнопку нижче."
+        );
+      }
+    } else {
+      setPushStatus("Push API недоступний у цьому браузері.");
+    }
+
+    return pushRegistration;
+  } catch (error) {
+    console.error("Помилка Service Worker:", error);
+    setPushStatus("⚠️ Не вдалося підключити push-службу.");
+    return null;
+  }
+}
+
+async function enablePushNotifications() {
+  const button =
+    document.getElementById("push-enable-button");
+
+  if (button) {
+    button.disabled = true;
+    button.textContent = "⏳ Підключення…";
+  }
+
+  try {
+    if (!("Notification" in window)) {
+      throw new Error("Notification API недоступний.");
+    }
+
+    const permission =
+      await Notification.requestPermission();
+
+    if (permission !== "granted") {
+      setPushStatus(
+        "🔕 Дозвіл на системні сповіщення не надано."
+      );
+      return;
+    }
+
+    const registration =
+      await registerPushServiceWorker();
+
+    if (!registration || !("PushManager" in window)) {
+      return;
+    }
+
+    /*
+      Підписку створимо на наступному етапі,
+      коли підключимо VAPID-ключ сервера.
+      Service Worker уже готовий приймати push.
+    */
+    setPushStatus(
+      "✅ Сповіщення дозволені. Push-служба готова."
+    );
+
+  } catch (error) {
+    console.error("Помилка push:", error);
+    setPushStatus(
+      "⚠️ Не вдалося підключити push."
+    );
+  } finally {
+    if (button) {
+      button.disabled = false;
+      button.textContent = "🔔 Підключити push";
+    }
+  }
+}
+
+const pushEnableButton =
+  document.getElementById("push-enable-button");
+
+if (pushEnableButton) {
+  pushEnableButton.addEventListener(
+    "click",
+    enablePushNotifications
+  );
+}
+
+registerPushServiceWorker();
+
+/* 🔔 СПОВІЩЕННЯ */
+
+let lastAlertNotificationId =
+  localStorage.getItem(
+    "kyiv-bezpeka-last-alert-notification"
+  ) || "";
+
+let lastEndedAlertId =
+  localStorage.getItem(
+    "kyiv-bezpeka-last-ended-alert"
+  ) || "";
+
+function showBrowserNotification(title, body, vibration) {
+  if (
+    !("Notification" in window) ||
+    Notification.permission !== "granted"
+  ) {
+    return;
+  }
+
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.ready.then(function (registration) {
+      registration.showNotification(title, {
+        body: body,
+        tag: "kyiv-bezpeka-alert",
+        renotify: true,
+        vibrate: vibration || undefined,
+        data: { url: window.location.href }
+      });
+    }).catch(function () {});
+  }
+}
+
+function notifyNewAlert(item) {
+  if (!item || !item.id || item.id === lastAlertNotificationId) {
+    return;
+  }
+
+  lastAlertNotificationId = item.id;
+  localStorage.setItem(
+    "kyiv-bezpeka-last-alert-notification",
+    item.id
+  );
+
+  const allowed =
+    item.level === "red"
+      ? notificationSettings.red
+      : notificationSettings.yellow;
+
+  if (!allowed) return;
+
+  const vibrationAllowed =
+    notificationSettings.vibration &&
+    !notificationSettings.quiet &&
+    notificationSettings.vibrationRegion === getSelectedCity();
+
+  const vibration =
+    item.level === "red"
+      ? [220, 120, 220, 120, 420]
+      : [180, 100, 180];
+
+  if (vibrationAllowed) {
+    try {
+      navigator.vibrate(vibration);
+    } catch (error) {}
+  }
+
+  if (
+    notificationSettings.sound &&
+    !notificationSettings.quiet
+  ) {
+    playAlertSound(item.level);
+  }
+
+  const title =
+    item.level === "red"
+      ? "🔴 Ракетна небезпека"
+      : "🟡 Загроза БПЛА";
+
+  showBrowserNotification(
+    title,
+    item.cityName + ": перевірте статус повітряної тривоги.",
+    vibrationAllowed ? vibration : undefined
+  );
+}
+
+function notifyAlertEnd(item) {
+  if (
+    !item ||
+    !item.id ||
+    item.id === lastEndedAlertId ||
+    !notificationSettings.end
+  ) {
+    return;
+  }
+
+  lastEndedAlertId = item.id;
+
+  localStorage.setItem(
+    "kyiv-bezpeka-last-ended-alert",
+    item.id
+  );
+
+  if (
+    notificationSettings.sound &&
+    !notificationSettings.quiet
+  ) {
+    playAlertSound("end");
+  }
+
+  const vibrationAllowed =
+    notificationSettings.vibration &&
+    !notificationSettings.quiet &&
+    notificationSettings.vibrationRegion === getSelectedCity();
+
+  if (vibrationAllowed && "vibrate" in navigator) {
+    try {
+      navigator.vibrate([100, 80, 100]);
+    } catch (error) {}
+  }
+
+  showBrowserNotification(
+    "🟢 Відбій",
+    item.cityName + ": повітряна тривога завершилась.",
+    vibrationAllowed ? [100, 80, 100] : undefined
+  );
+}
+
+function requestNotificationPermission() {
+  if (
+    "Notification" in window &&
+    Notification.permission === "default"
+  ) {
+    Notification.requestPermission().catch(function () {});
+  }
+}
+
+</script>
+
+
+<script src="dtek-ui.js"></script>
+<script src="news-ui.js"></script>
+</body>
+
+</html>

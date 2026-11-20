@@ -1,0 +1,52 @@
+name: KYIV news update
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/15 * * * *"
+  push:
+    paths:
+      - "news_fetch.py"
+      - "requirements-news.txt"
+      - ".github/workflows/news-update.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: kyiv-news-update
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements-news.txt
+
+      - name: Fetch official news
+        run: python news_fetch.py
+
+      - name: Commit updated news
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add news-data.json
+          if git diff --cached --quiet; then
+            echo "No news-data changes."
+            exit 0
+          fi
+          git commit -m "Update official news feed"
+          git pull --rebase origin main
+          git push origin HEAD:main

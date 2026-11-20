@@ -398,12 +398,9 @@ function getCurrentKyivHour() {
     Number(hourText);
 
 
-  if (hour === 0) {
-
-    hour = 24;
-
+  if (hour >= 24) {
+    hour = 0;
   }
-
 
   return hour;
 
@@ -542,7 +539,7 @@ function renderTable(schedule) {
 
 
     if (
-      hour === currentHour
+      displayStartHour === currentHour
     ) {
 
       statusClass +=
@@ -554,9 +551,10 @@ function renderTable(schedule) {
     }
 
 
-    const hourText =
-      String(hour)
-        .padStart(2, "0");
+    const displayStartHour = hour - 1;
+
+    const startText = String(displayStartHour).padStart(2, "0");
+    const endText = String(hour % 24).padStart(2, "0");
 
 
     cells +=

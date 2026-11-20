@@ -1,9 +1,39 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-20T21:15:57.054124+00:00",
+  "fetchedAt": "2026-11-20T22:08:00.667595+00:00",
   "retentionDays": 3,
-  "count": 64,
+  "count": 67,
   "items": [
+    {
+      "id": "kyivinfo-32cb002a4611",
+      "title": "😵",
+      "text": "😵 💡 Оновлений графік на завтра для Київщини",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108314",
+      "publishedAt": "2026-11-20T22:03:11+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-1a8ff1c58ace",
+      "title": "😵",
+      "text": "😵 💡 Оновлений графік на завтра для Київщини",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108313",
+      "publishedAt": "2026-11-20T22:00:51+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-50f4d77a8d05",
+      "title": "👀",
+      "text": "👀 Небо Києва захищено «лазерами» — в столиці почали збивати ворожі дрони лазерною зброєю «Блиск», яка бʼє на відстань до 1 км , пише BBC Система виявляє повітряну ціль, наводиться на неї та пропалює її корпус лазерним променем . 🇺🇦 Київ ІНФО | Надіслати новину",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108311",
+      "publishedAt": "2026-11-20T21:28:29+00:00",
+      "importance": "red"
+    },
     {
       "id": "kyivinfo-1f33bde90a95",
       "title": "🤯",

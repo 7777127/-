@@ -1,9 +1,19 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-20T13:32:54.228931+00:00",
+  "fetchedAt": "2026-11-20T14:32:09.839772+00:00",
   "retentionDays": 3,
-  "count": 48,
+  "count": 49,
   "items": [
+    {
+      "id": "kyivnebo-010bf3ada4b4",
+      "title": "Якщо маєте бажання, можете подякувати за нічне інформування та попередження ось тут:",
+      "text": "Якщо маєте бажання, можете подякувати за нічне інформування та попередження ось тут: https://send.monobank.ua/2RHnoR5CsZ 4149497532872514",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34157",
+      "publishedAt": "2026-11-20T13:47:01+00:00",
+      "importance": "normal"
+    },
     {
       "id": "kyivinfo-0350497ee22a",
       "title": "😵",

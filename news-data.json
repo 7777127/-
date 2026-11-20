@@ -1,9 +1,79 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-20T22:08:00.667595+00:00",
+  "fetchedAt": "2026-11-20T22:53:44.646504+00:00",
   "retentionDays": 3,
-  "count": 67,
+  "count": 74,
   "items": [
+    {
+      "id": "kyivinfo-2eb0bd75e5f5",
+      "title": "✅",
+      "text": "✅ ВІДБІЙ ПОВІТРЯНОЇ ТРИВОГИ ✅",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108321",
+      "publishedAt": "2026-11-20T22:51:24+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-41bbd68b4276",
+      "title": "✈️",
+      "text": "✈️ Реактивний БпЛА курсом на Вишгород, дальше на Київ. Уважно",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108320",
+      "publishedAt": "2026-11-20T22:43:59+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-b83d1b4f088f",
+      "title": "✈️",
+      "text": "✈️ Реактивний БпЛА курсом на Вишгород, дальше на Київ. Уважно",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108319",
+      "publishedAt": "2026-11-20T22:42:36+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-81259f798981",
+      "title": "🟡",
+      "text": "🟡 м. Київ — повітряна тривога, жовтий рівень: Дронова загроза (жовтий рівень)",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108318",
+      "publishedAt": "2026-11-20T22:42:08+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-8a2037e406b0",
+      "title": "1х Реактивний БпЛА курсом на Димер",
+      "text": "1х Реактивний БпЛА курсом на Димер",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108317",
+      "publishedAt": "2026-11-20T22:41:32+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-ebb8dc38f04e",
+      "title": "1х Реактивний БпЛА курсом на Димер",
+      "text": "1х Реактивний БпЛА курсом на Димер",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108316",
+      "publishedAt": "2026-11-20T22:38:16+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-42caf86b44a3",
+      "title": "🟡",
+      "text": "🟡 Вишгородський/Броварський район — повітряна тривога, жовтий рівень Загроза по БпЛА Детальний радар 👉🏽 @kievinform_ua1",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108315",
+      "publishedAt": "2026-11-20T22:30:05+00:00",
+      "importance": "red"
+    },
     {
       "id": "kyivinfo-32cb002a4611",
       "title": "😵",

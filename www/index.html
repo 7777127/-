@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>KYIV безпека</title>
 <link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIINfQ3jJ5w5b6k8M5Yw2b0z8p2b1b6g8vM=" crossorigin=""/>
 <meta name="theme-color" content="#2e7d32">
 
 <style>
@@ -1640,6 +1641,91 @@ body {
     color: rgba(255, 255, 255, 0.72);
     font-size: 15px;
     line-height: 1.5;
+}
+
+
+/* KYIV безпека — карта повітряної ситуації */
+.air-map-card {
+    margin-top: 18px;
+    padding: 16px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.055);
+    border: 1px solid rgba(255,255,255,0.10);
+}
+.air-map-title {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:10px;
+    color:#fff;
+    font-size:17px;
+    font-weight:800;
+    margin-bottom:12px;
+}
+.air-map-status {
+    color:rgba(255,255,255,0.62);
+    font-size:12px;
+    font-weight:600;
+    white-space:nowrap;
+}
+#airUkraineMap {
+    width:100%;
+    height:430px;
+    border-radius:18px;
+    overflow:hidden;
+    background:#0b1118;
+    border:1px solid rgba(255,255,255,0.08);
+}
+.air-legend {
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px 14px;
+    margin-top:11px;
+    color:rgba(255,255,255,0.72);
+    font-size:12px;
+}
+.air-legend span {
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+}
+.air-dot {
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    display:inline-block;
+}
+.air-dot.clear { background:rgba(255,255,255,0.18); border:1px solid rgba(255,255,255,0.28); }
+.air-dot.yellow { background:#fbbf24; }
+.air-dot.red { background:#f87171; }
+.air-channel-button {
+    display:block;
+    margin-top:12px;
+    padding:12px 14px;
+    border-radius:13px;
+    background:rgba(33,150,243,0.14);
+    border:1px solid rgba(96,165,250,0.20);
+    color:#fff !important;
+    text-decoration:none;
+    text-align:center;
+    font-size:14px;
+    font-weight:750;
+}
+.air-region-popup {
+    color:#18202a;
+    font-weight:700;
+}
+.leaflet-container {
+    background:#0b1118;
+    font-family:inherit;
+}
+.leaflet-control-zoom a {
+    background:#151a21 !important;
+    color:#fff !important;
+    border-color:rgba(255,255,255,0.10) !important;
+}
+@media (max-width:700px) {
+    #airUkraineMap { height:360px; }
 }
 
 /* KYIV безпека — оформлення стрічки новин */
@@ -4128,21 +4214,159 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     <div class="air-content">
 
-        <div class="air-empty">
-            <div class="air-empty-icon">🎯</div>
-
-            <div class="air-empty-title">
-                Очікуємо інформацію
+        <div class="air-map-card">
+            <div class="air-map-title">
+                <span>🗺️ Карта тривог України</span>
+                <span class="air-map-status" id="airMapStatus">Завантаження…</span>
             </div>
 
+            <div id="airUkraineMap" aria-label="Інтерактивна карта повітряних тривог України"></div>
+
+            <div class="air-legend">
+                <span><i class="air-dot clear"></i> Немає тривоги</span>
+                <span><i class="air-dot yellow"></i> Жовтий рівень</span>
+                <span><i class="air-dot red"></i> Червоний рівень</span>
+            </div>
+
+            <a
+                class="air-channel-button"
+                href="https://t.me/air_alert_ua"
+                target="_blank"
+                rel="noopener noreferrer">
+                📢 Відкрити офіційний канал «Повітряна Тривога»
+            </a>
+        </div>
+
+        <div class="air-empty" id="airInfoBox">
+            <div class="air-empty-icon">🎯</div>
+            <div class="air-empty-title">Публічна інформація</div>
             <div class="air-empty-text">
-                Тут відображатимуться актуальні публічні повідомлення про повітряну ситуацію.
+                Карта показує лише публічний рівень повітряної небезпеки по областях.
+                Дані не містять інформації про рух або розташування повітряних цілей.
             </div>
         </div>
 
     </div>
 
 </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+<script>
+/* KYIV безпека — інтерактивна карта повітряних тривог */
+document.addEventListener("DOMContentLoaded", async () => {
+    const mapEl = document.getElementById("airUkraineMap");
+    const statusEl = document.getElementById("airMapStatus");
+    if (!mapEl || !window.L) return;
+
+    const map = L.map(mapEl, {
+        zoomControl: true,
+        attributionControl: true,
+        minZoom: 5,
+        maxZoom: 8
+    });
+
+    const geoUrl = "https://cdn.jsdelivr.net/gh/darmat1/ukraine-geo-data@main/geodata/Ukraine.geojson";
+    const statusUrl = "./air-alerts.json";
+
+    const stateLabel = {
+        N: "Немає тривоги",
+        R: "Червоний рівень",
+        Y: "Жовтий рівень",
+        P: "Часткова тривога"
+    };
+
+    function fillFor(state) {
+        if (state === "R") return "#f87171";
+        if (state === "Y" || state === "P") return "#fbbf24";
+        return "transparent";
+    }
+
+    function borderFor(state) {
+        if (state === "R") return "#f87171";
+        if (state === "Y" || state === "P") return "#fbbf24";
+        return "rgba(255,255,255,0.20)";
+    }
+
+    function getName(feature) {
+        const p = feature && feature.properties ? feature.properties : {};
+        return p.name || p.NAME_UA || p.name_uk || p.NAME || p.name_en || "Область";
+    }
+
+    function normalize(value) {
+        return String(value || "")
+            .toLowerCase()
+            .replaceAll("’", "'")
+            .replaceAll("'", "")
+            .replace(/область|області|м\./g, "")
+            .replace(/[^а-яіїєґa-z0-9]+/g, "");
+    }
+
+    function stateForFeature(name, regions) {
+        const target = normalize(name);
+        for (const [key, value] of Object.entries(regions || {})) {
+            if (normalize(key) === target) return value;
+        }
+        return "N";
+    }
+
+    try {
+        const [geoResponse, statusResponse] = await Promise.all([
+            fetch(geoUrl + "?ts=" + Date.now(), {cache:"no-store"}),
+            fetch(statusUrl + "?ts=" + Date.now(), {cache:"no-store"})
+        ]);
+
+        if (!geoResponse.ok) throw new Error("Не вдалося завантажити геометрію карти");
+        if (!statusResponse.ok) throw new Error("Не вдалося отримати статуси тривог");
+
+        const geo = await geoResponse.json();
+        const data = await statusResponse.json();
+        const regions = data.regions || {};
+
+        const layer = L.geoJSON(geo, {
+            style: feature => {
+                const state = stateForFeature(getName(feature), regions);
+                return {
+                    color: borderFor(state),
+                    weight: 1.1,
+                    fillColor: fillFor(state),
+                    fillOpacity: state === "N" ? 0 : 0.82
+                };
+            },
+            onEachFeature: (feature, layerItem) => {
+                const name = getName(feature);
+                const state = stateForFeature(name, regions);
+                layerItem.bindPopup(
+                    '<div class="air-region-popup">' +
+                    name + '<br>' +
+                    '<span style="font-weight:600;">' +
+                    (stateLabel[state] || "Немає даних") +
+                    '</span></div>'
+                );
+                layerItem.on({
+                    mouseover: e => e.target.setStyle({
+                        weight: 2,
+                        fillOpacity: state === "N" ? 0.04 : 0.92
+                    }),
+                    mouseout: e => e.target.setStyle({
+                        weight: 1.1,
+                        fillOpacity: state === "N" ? 0 : 0.82
+                    })
+                });
+            }
+        }).addTo(map);
+
+        map.fitBounds(layer.getBounds(), {padding:[8,8]});
+        const stamp = data.updatedAt ? new Date(data.updatedAt).toLocaleTimeString("uk-UA",{hour:"2-digit",minute:"2-digit"}) : "";
+        statusEl.textContent = stamp ? "Оновлено " + stamp : "Актуальні дані";
+    } catch (error) {
+        console.error("Карта тривог:", error);
+        statusEl.textContent = "Дані тимчасово недоступні";
+        map.setView([49.0, 31.0], 6);
+    }
+});
+</script>
 
 <script>
 /* KYIV безпека — логіка нижнього меню */
@@ -4464,6 +4688,8 @@ document.addEventListener("DOMContentLoaded", () => {
                             "news-hidden"
                         );
 
+                        newsItem.hidden = true;
+
                     }
 
 
@@ -4633,22 +4859,26 @@ document.addEventListener("DOMContentLoaded", () => {
                     () => {
 
                         const expanded =
-                            newsCard.classList.toggle(
+                            !newsCard.classList.contains(
                                 "news-expanded"
                             );
 
+                        newsCard.classList.toggle(
+                            "news-expanded",
+                            expanded
+                        );
 
-                        if (expanded) {
+                        newsList
+                            .querySelectorAll(".news-hidden")
+                            .forEach(item => {
+                                item.style.display =
+                                    expanded ? "block" : "none";
+                            });
 
-                            toggleButton.textContent =
-                                "Згорнути новини";
-
-                        } else {
-
-                            toggleButton.textContent =
-                                "Показати всі новини";
-
-                        }
+                        toggleButton.textContent =
+                            expanded
+                            ? "Згорнути новини"
+                            : "Показати всі новини";
 
                     }
                 );

@@ -1,18 +1,358 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-21T04:49:29.906816+00:00",
+  "fetchedAt": "2026-11-21T17:28:32.537184+00:00",
   "retentionDays": 3,
-  "count": 108,
+  "count": 142,
   "items": [
+    {
+      "id": "kyivinfo-06e8a97e7f94",
+      "title": "🎞",
+      "text": "🎞 😶‍🌫️ Коли столиця зникає в тумані, звичайні вулиці стають декораціями до старого кіно",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108401",
+      "publishedAt": "2026-11-21T17:15:37+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-7de144244b98",
+      "title": "🔴",
+      "text": "🔴 Оновлення щодо руху транспорту Південним мостом 🔹 З правого на лівий берег рух дозволений виключно громадському транспорту з дотриманням дистанції. 🔹 З лівого на правий берег продовжують їхати вантажівки масою до 10 тонн, громадський транспорт масою до 18…",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108399",
+      "publishedAt": "2026-11-21T15:20:08+00:00",
+      "importance": "orange"
+    },
+    {
+      "id": "kyivinfo-3e3fb111506d",
+      "title": "🔴",
+      "text": "🔴 Оновлення щодо руху транспорту Південним мостом 🔹 З правого на лівий берег рух дозволений виключно громадському транспорту з дотриманням дистанції. 🔹 З лівого на правий берег продовжують їхати вантажівки масою до 10 тонн, громадський транспорт масою до 18 тонн та легковий транспорт.",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108398",
+      "publishedAt": "2026-11-21T15:19:43+00:00",
+      "importance": "orange"
+    },
+    {
+      "id": "kyivinfo-2e779113578f",
+      "title": "👀",
+      "text": "👀 Обстановочка в одному із супермаркетів столиці… 👀 📩 Засняли або побачили щось цікаве чи важливе – одразу надсилайте нам в бот, опублікуємо – @novosty_kiev_bot 🇺🇦 Київ ІНФО | Надіслати новину",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108397",
+      "publishedAt": "2026-11-21T14:37:29+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-4d25778d75fb",
+      "title": "Двоє з трьох людей вже не можуть впевнено відрізнити ШІ контент від реального.",
+      "text": "Двоє з трьох людей вже не можуть впевнено відрізнити ШІ контент від реального. Згідно зі свіжими дослідженнями Cosmolot і Vector, 67% опитаних не впорались з розпізнаванням AI контенту. Поки ми обговорюємо етику нейромереж. AI навчився добре маскуватися 🥷",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108396",
+      "publishedAt": "2026-11-21T14:19:29+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-b1bd1d55f546",
+      "title": "✅",
+      "text": "✅ ВІДБІЙ ПОВІТРЯНОЇ ТРИВОГИ ✅",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108395",
+      "publishedAt": "2026-11-21T14:12:39+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-0f4c72461580",
+      "title": "Обстановочка на зараз",
+      "text": "Обстановочка на зараз ✈️ ✈️",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108394",
+      "publishedAt": "2026-11-21T12:58:07+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-e7634e686565",
+      "title": "🟡",
+      "text": "🟡 Жовтий рівень тривоги • Бориспільський район (Київська обл.) • Броварський район (Київська обл.) Ситуація на зараз https://t.me/kievinform_ua1/42948",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108392",
+      "publishedAt": "2026-11-21T12:45:02+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-268f47a752f5",
+      "title": "🔴",
+      "text": "🔴 Кияни розповіли як після ударів та перекриття мостів добирались з одного берегу на інший 🇺🇦 Київ ІНФО | Надіслати новину",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108390",
+      "publishedAt": "2026-11-21T12:19:37+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-4d742ee1b381",
+      "title": "❗️",
+      "text": "❗️ Дорогі читачі, які мають Telegram Premium, дуже прошу « підзарядити » наш канал 🇺🇦 . Для цього, потрібно перейти за цим посиланням, натиснути зарядити канал ( boost channel ). Це відкриває додаткові функції для каналу. https://t.me/boost/kievinfo_kyiv",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108389",
+      "publishedAt": "2026-11-21T10:42:15+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-21068405c239",
+      "title": "✅",
+      "text": "✅ ВІДБІЙ ПОВІТРЯНОЇ ТРИВОГИ ✅",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108388",
+      "publishedAt": "2026-11-21T10:39:47+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-20fc135efb30",
+      "title": "Реактивний дрон повз Козин на Теличку, Південний міст",
+      "text": "Реактивний дрон повз Козин на Теличку, Південний міст",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108387",
+      "publishedAt": "2026-11-21T10:36:58+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivnebo-11f6b3d83670",
+      "title": "Більше не фіксується",
+      "text": "Більше не фіксується",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34169",
+      "publishedAt": "2026-11-21T10:34:30+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-5a15a579699a",
+      "title": "Дарниця",
+      "text": "Дарниця",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34168",
+      "publishedAt": "2026-11-21T10:33:33+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-6080431a18fe",
+      "title": "Реактивний дрон повз Козин на Теличку, Південний міст",
+      "text": "Реактивний дрон повз Козин на Теличку, Південний міст",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108386",
+      "publishedAt": "2026-11-21T10:32:45+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivnebo-cd8870e30a43",
+      "title": "Південний міст",
+      "text": "Південний міст",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34167",
+      "publishedAt": "2026-11-21T10:32:42+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-894d0da361f6",
+      "title": "Теличка",
+      "text": "Теличка",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34166",
+      "publishedAt": "2026-11-21T10:32:29+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-23e2cdae75df",
+      "title": "🟡",
+      "text": "🟡 м. Київ — повітряна тривога, жовтий рівень: Дронова загроза (жовтий рівень)",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108385",
+      "publishedAt": "2026-11-21T10:32:12+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivnebo-f4dd5d54bcb0",
+      "title": "Реактивний виліз біля Конча-Заспи",
+      "text": "Реактивний виліз біля Конча-Заспи",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34165",
+      "publishedAt": "2026-11-21T10:31:29+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-7019b30b0f9c",
+      "title": "👀",
+      "text": "👀 🚀 У Подільському районі сапери витягли бойову частину російської балістичної ракети, що не розірвалася, яка впала у дворі житлових будинків, — ДСНС 🇺🇦 Київ ІНФО | Надіслати новину",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108382",
+      "publishedAt": "2026-11-21T10:30:22+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-dea52b9e0575",
+      "title": "🟡",
+      "text": "🟡 Жовтий рівень тривоги • Бориспільський район (Київська обл.) • Броварський район (Київська обл.) Детальний радар 👉🏽 @kievinform_ua1",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108381",
+      "publishedAt": "2026-11-21T10:04:56+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-c38e4a7f3526",
+      "title": "💧",
+      "text": "💧 У 5 районах Києва перебої з водопостачанням: саме у Голосіївському, Святошинському, Солом’янському, Шевченківському та Подільському районах у частині будинків знизився тиск, в інших вода тимчасово відсутня. ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot…",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108379",
+      "publishedAt": "2026-11-21T08:37:35+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-7470f2330ca1",
+      "title": "💧",
+      "text": "💧 У 5 районах Києва перебої з водопостачанням: саме у Голосіївському, Святошинському, Солом’янському, Шевченківському та Подільському районах у частині будинків знизився тиск, в інших вода тимчасово відсутня. ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108378",
+      "publishedAt": "2026-11-21T07:12:06+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-12f2e2227c3c",
+      "title": "🤯",
+      "text": "🤯 В Подільському районі ГОРИТЬ приватний будинок 🏠 ОВА: У Подільському районі внаслідок ворожої атаки сталося загоряння двох приватних житлових будинків ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108369",
+      "publishedAt": "2026-11-21T07:08:07+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-5b122c94355c",
+      "title": "#нампишуть",
+      "text": "#нампишуть 🤯 В Голосіївському районі впали уламки на будинки. Про жертв поки невідомо, але руйнування значні Хто на місці, підтверджуєте? ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108366",
+      "publishedAt": "2026-11-21T06:04:03+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-d4a6d2d0b134",
+      "title": "Ситуація на зараз",
+      "text": "Ситуація на зараз ✈️",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108365",
+      "publishedAt": "2026-11-21T05:47:45+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-92ae288966bd",
+      "title": "Вилетів за межі столиці курс Погреби",
+      "text": "Вилетів за межі столиці курс Погреби ✈️ ✈️ Детальний рух ШАХЕДІВ описується на нашому спеціалізованому каналі – @kievinform_ua1 @kievinform_ua1 @kievinform_ua1 🇺🇦 Київ ІНФО | Надіслати новину",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108364",
+      "publishedAt": "2026-11-21T05:35:01+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-c151a31a09b1",
+      "title": "Розворот на Північний міст, Трою",
+      "text": "Розворот на Північний міст, Трою",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108363",
+      "publishedAt": "2026-11-21T05:33:14+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-6d34ee427ddb",
+      "title": "По Дніпру в сторону центру! Печерськ",
+      "text": "По Дніпру в сторону центру! Печерськ",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108362",
+      "publishedAt": "2026-11-21T05:31:28+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-2aa3f1f2a5de",
+      "title": "Позняки, Осокорки увага",
+      "text": "Позняки, Осокорки увага ⚠️ ✈️",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108361",
+      "publishedAt": "2026-11-21T05:30:47+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-97cb955d3aba",
+      "title": "Повз Мощун на Вишгород",
+      "text": "Повз Мощун на Вишгород ⚠️",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108360",
+      "publishedAt": "2026-11-21T05:25:06+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-9d0e90ac8f31",
+      "title": "РБПЛА на Бучу, Ірпінь",
+      "text": "РБПЛА на Бучу, Ірпінь",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108359",
+      "publishedAt": "2026-11-21T05:20:03+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-d5860ee95d7e",
+      "title": "РБПЛА на Бучу, Ірпінь",
+      "text": "РБПЛА на Бучу, Ірпінь",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108358",
+      "publishedAt": "2026-11-21T05:19:13+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-8f3661114a7f",
+      "title": "🟡",
+      "text": "🟡 м. Київ — повітряна тривога, жовтий рівень: Дронова загроза (жовтий рівень)",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108357",
+      "publishedAt": "2026-11-21T05:17:57+00:00",
+      "importance": "red"
+    },
     {
       "id": "kyivinfo-1e52d61c98fb",
       "title": "🤯",
-      "text": "🤯 В Подільському районі ГОРИТЬ приватний будинок 🏠 ОВА: У Подільському районі внаслідок ворожої атаки сталося загоряння двох приватних житлових будинків 06:39 ✅ ВІДБІЙ ТРИВОГИ ✅ ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "text": "🤯 В Подільському районі ГОРИТЬ приватний будинок 🏠 ОВА: У Подільському районі внаслідок ворожої атаки сталося загоряння двох приватних житлових будинків ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
       "source": "Київ ІНФО",
       "region": "kyiv",
       "url": "https://t.me/kievinfo_kyiv/108354",
       "publishedAt": "2026-11-21T04:04:56+00:00",
-      "importance": "red"
+      "importance": "normal"
     },
     {
       "id": "kyivinfo-7e0bd53f985b",

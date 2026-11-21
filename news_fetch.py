@@ -139,7 +139,7 @@ def fetch_source(source, cutoff_dt):
         return [], err
 
     items = []
-    for msg in messages[-20:]:
+    for msg in messages[-50:]:
         try:
             text_el = msg.select_one(".tgme_widget_message_text")
             time_el = msg.select_one("time.time")

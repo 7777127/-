@@ -1,9 +1,49 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-21T01:47:47.356276+00:00",
+  "fetchedAt": "2026-11-21T02:38:25.810111+00:00",
   "retentionDays": 3,
-  "count": 87,
+  "count": 91,
   "items": [
+    {
+      "id": "kyivinfo-76649537a28a",
+      "title": "Переяслав уважно. 2х зі сходу",
+      "text": "Переяслав уважно. 2х зі сходу ✈️",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108336",
+      "publishedAt": "2026-11-21T02:35:34+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-b40d883718be",
+      "title": "✈️",
+      "text": "✈️ 7х звичайних БпЛА на/повз Згурівку",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108335",
+      "publishedAt": "2026-11-21T02:17:12+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-27b917fc247f",
+      "title": "✈️",
+      "text": "✈️ 7х звичайних БпЛА на/повз Згурівку",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108334",
+      "publishedAt": "2026-11-21T02:12:13+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-4afbbf39ee70",
+      "title": "🟡",
+      "text": "🟡 Бориспільський/Броварський район — повітряна тривога, жовтий рівень БпЛА з Чернігівщини Детальний радар 👉🏽 @kievinform_ua1",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108333",
+      "publishedAt": "2026-11-21T01:48:15+00:00",
+      "importance": "red"
+    },
     {
       "id": "kyivinfo-b517c6eba8e2",
       "title": "✅",

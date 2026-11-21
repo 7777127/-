@@ -4871,8 +4871,9 @@ document.addEventListener("DOMContentLoaded", () => {
                         newsList
                             .querySelectorAll(".news-hidden")
                             .forEach(item => {
+                                item.hidden = !expanded;
                                 item.style.display =
-                                    expanded ? "block" : "none";
+                                    expanded ? "block" : "";
                             });
 
                         toggleButton.textContent =

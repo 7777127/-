@@ -1,9 +1,89 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-21T03:30:31.470955+00:00",
+  "fetchedAt": "2026-11-21T04:30:07.843520+00:00",
   "retentionDays": 3,
-  "count": 100,
+  "count": 108,
   "items": [
+    {
+      "id": "kyivinfo-1e52d61c98fb",
+      "title": "🤯",
+      "text": "🤯 В Подільському районі ГОРИТЬ приватний будинок 🏠 ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108354",
+      "publishedAt": "2026-11-21T04:04:56+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-7e0bd53f985b",
+      "title": "Бориспіль уважно по БпЛА",
+      "text": "Бориспіль уважно по БпЛА ⚠️ ✈️",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108353",
+      "publishedAt": "2026-11-21T04:02:21+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-62c017ad6ce1",
+      "title": "Бориспіль уважно по БпЛА",
+      "text": "Бориспіль уважно по БпЛА ⚠️ ✈️",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108352",
+      "publishedAt": "2026-11-21T03:59:29+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-93cd3ad30b0b",
+      "title": "Мости уважно",
+      "text": "Мости уважно ⚠️ перебуваємо в укритті!!",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108351",
+      "publishedAt": "2026-11-21T03:40:50+00:00",
+      "importance": "orange"
+    },
+    {
+      "id": "kyivinfo-4e649e9ce6b0",
+      "title": "🔴",
+      "text": "🔴 🔴 🔴 ❗️ БАЛІСТИКА НА КИЇВ 🚀 в укриття! ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108350",
+      "publishedAt": "2026-11-21T03:40:23+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-40fad18c4ed2",
+      "title": "🔴",
+      "text": "🔴 🔴 🔴 ❗️ БАЛІСТИКА НА КИЇВ 🚀 в укриття! ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108349",
+      "publishedAt": "2026-11-21T03:39:15+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-00bddafbb2b7",
+      "title": "⚠️",
+      "text": "⚠️ Загроза БАЛІСТИКИ",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108348",
+      "publishedAt": "2026-11-21T03:37:23+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-3ed4ee1a59bb",
+      "title": "⚠️",
+      "text": "⚠️ ❗️ КИЇВ та ОБЛАСТЬ ТРИВОГА. В укриття!",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108347",
+      "publishedAt": "2026-11-21T03:37:16+00:00",
+      "importance": "red"
+    },
     {
       "id": "kyivinfo-6c85760e81e6",
       "title": "✈️",

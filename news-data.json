@@ -1,13 +1,283 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-21T23:14:47.841670+00:00",
+  "fetchedAt": "2026-11-21T23:53:55.708061+00:00",
   "retentionDays": 3,
-  "count": 152,
+  "count": 179,
   "items": [
+    {
+      "id": "kyivnebo-63e2f80737fc",
+      "title": "Трипілля",
+      "text": "Трипілля",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34188",
+      "publishedAt": "2026-11-21T23:53:27+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-d198e10ceff6",
+      "title": "Бориспіль",
+      "text": "Бориспіль",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34187",
+      "publishedAt": "2026-11-21T23:50:13+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-35f789865065",
+      "title": "Реактивний БпЛА курсом на Бровари",
+      "text": "Реактивний БпЛА курсом на Бровари",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108433",
+      "publishedAt": "2026-11-21T23:48:50+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-2072488cceae",
+      "title": "Реактивний БпЛА курсом на Бровари",
+      "text": "Реактивний БпЛА курсом на Бровари",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108432",
+      "publishedAt": "2026-11-21T23:46:37+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivnebo-d4f617500b32",
+      "title": "На Бровари",
+      "text": "На Бровари",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34186",
+      "publishedAt": "2026-11-21T23:45:08+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-9aee6001aaca",
+      "title": "Київщина:",
+      "text": "Київщина: Реактивний БпЛА курсом на Вишгород Реактивний БпЛА повз Припʼять вилетів на територію Білорусі",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108431",
+      "publishedAt": "2026-11-21T23:43:56+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivnebo-ea5b5abb1929",
+      "title": "На Петрівці, Вишгород",
+      "text": "На Петрівці, Вишгород",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34185",
+      "publishedAt": "2026-11-21T23:42:32+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-0a44b6c3212f",
+      "title": "На Димер",
+      "text": "На Димер",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34184",
+      "publishedAt": "2026-11-21T23:41:48+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-e304ca5f1dc9",
+      "title": "✈️",
+      "text": "✈️ Реактивний БпЛА на Ворзель ✈️ Реактивний БпЛА на Припʼять",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108430",
+      "publishedAt": "2026-11-21T23:40:09+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivnebo-d144d8340e0a",
+      "title": "Маневрує біля Києва, зараз Ворзель",
+      "text": "Маневрує біля Києва, зараз Ворзель",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34183",
+      "publishedAt": "2026-11-21T23:38:20+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-41294a01df68",
+      "title": "Загалом:",
+      "text": "Загалом: Реактивний БпЛА курсом на Чорнобиль Реактивний БпЛА курсом на Васильків",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108429",
+      "publishedAt": "2026-11-21T23:31:03+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivnebo-d5b3d2dc1e6f",
+      "title": "На Васильків",
+      "text": "На Васильків",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34182",
+      "publishedAt": "2026-11-21T23:30:17+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-cfbdc3ad119c",
+      "title": "Реактивний курсом на Лісники",
+      "text": "Реактивний курсом на Лісники",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108428",
+      "publishedAt": "2026-11-21T23:28:49+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-43cc57dadf24",
+      "title": "Віта-Литовська",
+      "text": "Віта-Литовська",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34181",
+      "publishedAt": "2026-11-21T23:28:30+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-5086980fe3cc",
+      "title": "Реактивний БпЛА курсом на Видубичі",
+      "text": "Реактивний БпЛА курсом на Видубичі",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108427",
+      "publishedAt": "2026-11-21T23:27:35+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivnebo-62cc258db140",
+      "title": "Видубичі",
+      "text": "Видубичі",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34180",
+      "publishedAt": "2026-11-21T23:27:21+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-7edd04523f6c",
+      "title": "Русанівка",
+      "text": "Русанівка",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34179",
+      "publishedAt": "2026-11-21T23:27:13+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-ef7abdf7a3fa",
+      "title": "Дарниця",
+      "text": "Дарниця",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34178",
+      "publishedAt": "2026-11-21T23:27:04+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-7a6291e65a4d",
+      "title": "Реактивний БпЛА курсом на Троєщину",
+      "text": "Реактивний БпЛА курсом на Троєщину",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108426",
+      "publishedAt": "2026-11-21T23:26:35+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivnebo-c16467ed5030",
+      "title": "Дуже високо летить",
+      "text": "Дуже високо летить",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34177",
+      "publishedAt": "2026-11-21T23:26:34+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-b28a24bd058b",
+      "title": "Лісовий масив",
+      "text": "Лісовий масив",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34176",
+      "publishedAt": "2026-11-21T23:26:27+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-06802824e9d9",
+      "title": "На Троєщину",
+      "text": "На Троєщину",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34175",
+      "publishedAt": "2026-11-21T23:25:12+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-3f66f397287b",
+      "title": "РБпЛА курсом на Петрівці",
+      "text": "РБпЛА курсом на Петрівці ✈️",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108425",
+      "publishedAt": "2026-11-21T23:24:17+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-4cf383b4c4cb",
+      "title": "Реактив на Димер/Демидів",
+      "text": "Реактив на Димер/Демидів ✈️",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108424",
+      "publishedAt": "2026-11-21T23:23:46+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-71b4b9e45197",
+      "title": "Реактивний на Петрівці, Вишгород",
+      "text": "Реактивний на Петрівці, Вишгород",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34174",
+      "publishedAt": "2026-11-21T23:23:15+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-d9c303a24a53",
+      "title": "🟡",
+      "text": "🟡 м. Київ — повітряна тривога, жовтий рівень: Дронова загроза (жовтий рівень)",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108423",
+      "publishedAt": "2026-11-21T23:22:51+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-d205108052be",
+      "title": "Реактив на Димер/Демидів",
+      "text": "Реактив на Димер/Демидів ✈️",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108422",
+      "publishedAt": "2026-11-21T23:22:27+00:00",
+      "importance": "normal"
+    },
     {
       "id": "kyivinfo-405af3b67f54",
       "title": "🟡",
-      "text": "🟡 Вишгородський район — повітряна тривога, жовтий рівень Детальний радар 👉🏽 @kievinform_ua1",
+      "text": "🟡 Вишгородський район — повітряна тривога, жовтий рівень Загроза по БпЛА Детальний радар 👉🏽 @kievinform_ua1",
       "source": "Київ ІНФО",
       "region": "kyiv",
       "url": "https://t.me/kievinfo_kyiv/108421",

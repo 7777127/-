@@ -1,9 +1,19 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-21T19:01:55.774230+00:00",
+  "fetchedAt": "2026-11-21T19:48:23.838075+00:00",
   "retentionDays": 3,
-  "count": 147,
+  "count": 148,
   "items": [
+    {
+      "id": "kyivinfo-d09fea06a707",
+      "title": "Хотів - Чабани увага",
+      "text": "Хотів - Чабани увага",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108413",
+      "publishedAt": "2026-11-21T19:20:52+00:00",
+      "importance": "normal"
+    },
     {
       "id": "kyivnebo-de89e0df2fc2",
       "title": "Більше не летить",

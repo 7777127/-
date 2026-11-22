@@ -1,9 +1,19 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-22T11:47:34.066335+00:00",
+  "fetchedAt": "2026-11-22T12:31:20.376041+00:00",
   "retentionDays": 3,
-  "count": 219,
+  "count": 220,
   "items": [
+    {
+      "id": "kyivinfo-dcb89ee67042",
+      "title": "⚠️",
+      "text": "⚠️ ❗️ УВАГА! ПОВІТРЯНА ТРИВОГА! Всі в УКРИТТЯ! Детальний радар 👉🏽 @kievinform_ua1",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108482",
+      "publishedAt": "2026-11-22T12:25:15+00:00",
+      "importance": "red"
+    },
     {
       "id": "kyivinfo-c322c379ae02",
       "title": "🤬",

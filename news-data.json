@@ -1,9 +1,29 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-22T01:52:30.382049+00:00",
+  "fetchedAt": "2026-11-22T02:41:59.004379+00:00",
   "retentionDays": 3,
-  "count": 194,
+  "count": 196,
   "items": [
+    {
+      "id": "kyivinfo-c2c738148891",
+      "title": "✅",
+      "text": "✅ ВІДБІЙ ПОВІТРЯНОЇ ТРИВОГИ ✅",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108444",
+      "publishedAt": "2026-11-22T02:07:01+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-17860612089f",
+      "title": "❗️",
+      "text": "❗️ Реактивний БпЛА на Димер",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108443",
+      "publishedAt": "2026-11-22T02:02:32+00:00",
+      "importance": "red"
+    },
     {
       "id": "kyivinfo-d11b1d6e8b97",
       "title": "🟡",

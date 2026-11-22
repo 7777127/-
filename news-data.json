@@ -1,9 +1,109 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-22T11:05:42.050078+00:00",
+  "fetchedAt": "2026-11-22T11:47:34.066335+00:00",
   "retentionDays": 3,
-  "count": 209,
+  "count": 219,
   "items": [
+    {
+      "id": "kyivinfo-c322c379ae02",
+      "title": "🤬",
+      "text": "🤬 🚀 Проріл Герань-5 на Київщині в напрямку столиці ґ 13:33 ✅ ВІДБІЙ ТРИВОГИ у м. Києві ✈️ ✈️ Детальний рух Д РОНІВ та РАКЕТ описується на нашому спеціалізованому каналі – Київ ІНФО LIVE [ радар ] ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108480",
+      "publishedAt": "2026-11-22T11:29:05+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-222b35793a4f",
+      "title": "Через Канівське вдсх курс Ржищів йде рБПЛА",
+      "text": "Через Канівське вдсх курс Ржищів йде рБПЛА",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108479",
+      "publishedAt": "2026-11-22T11:24:27+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivnebo-cf9df398a55e",
+      "title": "Очікуємо на відбої",
+      "text": "Очікуємо на відбої",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34198",
+      "publishedAt": "2026-11-22T11:23:17+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-74de9a7a6fed",
+      "title": "Більше не летить",
+      "text": "Більше не летить",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34197",
+      "publishedAt": "2026-11-22T11:15:31+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-9ffcfa31ab76",
+      "title": "Зняли ціль.",
+      "text": "Зняли ціль. Збитий/впав ✈️ 👀 ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108478",
+      "publishedAt": "2026-11-22T11:15:15+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-f26726a7102c",
+      "title": "Залишився 1х курс Троя",
+      "text": "Залишився 1х курс Троя",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108477",
+      "publishedAt": "2026-11-22T11:12:46+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-d52d826544a3",
+      "title": "Троєщина",
+      "text": "Троєщина",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34196",
+      "publishedAt": "2026-11-22T11:12:28+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-f7e48be35037",
+      "title": "1х бПЛА на Вишгород",
+      "text": "1х бПЛА на Вишгород 1х рБПЛА на Катюжанку",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108476",
+      "publishedAt": "2026-11-22T11:08:34+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivnebo-937df39bdb9f",
+      "title": "Звичайний нікчемний Шахед біля Вишгорода",
+      "text": "Звичайний нікчемний Шахед біля Вишгорода",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34195",
+      "publishedAt": "2026-11-22T11:08:09+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-22add5b6b2d6",
+      "title": "🟡",
+      "text": "🟡 м. Київ — повітряна тривога, жовтий рівень: Дронова загроза (жовтий рівень)",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108475",
+      "publishedAt": "2026-11-22T11:07:33+00:00",
+      "importance": "red"
+    },
     {
       "id": "kyivinfo-22186e4f770a",
       "title": "Шахед до Лебедівки/Києва від Десни",

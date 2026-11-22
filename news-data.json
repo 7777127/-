@@ -1,9 +1,39 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-22T00:38:02.683875+00:00",
+  "fetchedAt": "2026-11-22T01:52:30.382049+00:00",
   "retentionDays": 3,
-  "count": 191,
+  "count": 194,
   "items": [
+    {
+      "id": "kyivinfo-d11b1d6e8b97",
+      "title": "🟡",
+      "text": "🟡 Вишгородський район — повітряна тривога, жовтий рівень Загроза БПЛА з Чернігівщини Детальний радар 👉🏽 @kievinform_ua1",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108442",
+      "publishedAt": "2026-11-22T01:49:10+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-fa076b7d1368",
+      "title": "✅",
+      "text": "✅ ВІДБІЙ ПОВІТРЯНОЇ ТРИВОГИ ✅",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108441",
+      "publishedAt": "2026-11-22T01:21:22+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-8a3b0935d208",
+      "title": "🟡",
+      "text": "🟡 Вишгородський район — повітряна тривога, жовтий рівень Загроза БПЛА Детальний радар 👉🏽 @kievinform_ua1",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108440",
+      "publishedAt": "2026-11-22T01:02:10+00:00",
+      "importance": "red"
+    },
     {
       "id": "kyivinfo-ef378f2a2fa0",
       "title": "✅",

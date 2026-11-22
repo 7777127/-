@@ -1,9 +1,19 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-22T22:10:08.884060+00:00",
+  "fetchedAt": "2026-11-22T22:54:00.259318+00:00",
   "retentionDays": 3,
-  "count": 276,
+  "count": 277,
   "items": [
+    {
+      "id": "kyivinfo-3ce9c519f7a5",
+      "title": "🟡",
+      "text": "🟡 Вишгородський район — повітряна тривога, жовтий рівень Загроза по БпЛА Детальний радар 👉🏽 @kievinform_ua1",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108528",
+      "publishedAt": "2026-11-22T22:40:00+00:00",
+      "importance": "red"
+    },
     {
       "id": "kyivinfo-7ffd032e291b",
       "title": "🔴",

@@ -1,9 +1,19 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-22T17:29:13.897620+00:00",
+  "fetchedAt": "2026-11-22T18:13:41.800983+00:00",
   "retentionDays": 3,
-  "count": 271,
+  "count": 272,
   "items": [
+    {
+      "id": "kyivinfo-1fde6bdefb8d",
+      "title": "❗️",
+      "text": "❗️ Ворог забрав життя людини у Вишневому. Ще троє людей поранені, – ОВА. ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108510",
+      "publishedAt": "2026-11-22T17:44:07+00:00",
+      "importance": "normal"
+    },
     {
       "id": "kyivinfo-7dd420c19d8c",
       "title": "❤️",

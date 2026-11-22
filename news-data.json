@@ -1,9 +1,49 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-22T02:41:59.004379+00:00",
+  "fetchedAt": "2026-11-22T03:35:45.077743+00:00",
   "retentionDays": 3,
-  "count": 196,
+  "count": 200,
   "items": [
+    {
+      "id": "kyivinfo-baac0d6ccb2d",
+      "title": "✅",
+      "text": "✅ ВІДБІЙ ПОВІТРЯНОЇ ТРИВОГИ ✅",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108449",
+      "publishedAt": "2026-11-22T03:04:31+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-46efe5337680",
+      "title": "1х Реактивний БпЛА на Димер",
+      "text": "1х Реактивний БпЛА на Димер",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108448",
+      "publishedAt": "2026-11-22T02:59:35+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-b7152b01865d",
+      "title": "1х Реактивний БпЛА на Димер",
+      "text": "1х Реактивний БпЛА на Димер",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108447",
+      "publishedAt": "2026-11-22T02:56:40+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-ea037de4cc73",
+      "title": "🟡",
+      "text": "🟡 Вишгородський район — повітряна тривога, жовтий рівень Реактивниц БПЛА з Чернігівщини Детальний радар 👉🏽 @kievinform_ua1",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108446",
+      "publishedAt": "2026-11-22T02:48:19+00:00",
+      "importance": "red"
+    },
     {
       "id": "kyivinfo-c2c738148891",
       "title": "✅",

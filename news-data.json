@@ -1,9 +1,29 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-22T10:19:59.272658+00:00",
+  "fetchedAt": "2026-11-22T11:05:42.050078+00:00",
   "retentionDays": 3,
-  "count": 207,
+  "count": 209,
   "items": [
+    {
+      "id": "kyivinfo-22186e4f770a",
+      "title": "Шахед до Лебедівки/Києва від Десни",
+      "text": "Шахед до Лебедівки/Києва від Десни",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108474",
+      "publishedAt": "2026-11-22T11:00:37+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-8f3558d40403",
+      "title": "💔",
+      "text": "💔 Щойно з-під завалів зруйнованого будинку в Димері рятувальники дістали тіло загиблої людини — ще шукають 13 жителів… 🇺🇦 Київ ІНФО | Надіслати новину",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108472",
+      "publishedAt": "2026-11-22T10:31:35+00:00",
+      "importance": "orange"
+    },
     {
       "id": "kyivinfo-2cbe8617bc32",
       "title": "✅",

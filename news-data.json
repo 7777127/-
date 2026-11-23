@@ -1,9 +1,29 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-23T14:34:27.077604+00:00",
+  "fetchedAt": "2026-11-23T15:41:49.447152+00:00",
   "retentionDays": 3,
   "count": 327,
   "items": [
+    {
+      "id": "kyivinfo-991386254b74",
+      "title": "❗️",
+      "text": "❗️ Також, щойно БпЛА поцілив у будинок у Подільському районі, — Кличко",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108604",
+      "publishedAt": "2026-11-23T14:50:26+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-9b43695acd6a",
+      "title": "🤯",
+      "text": "🤯 ❗️ ШАХЕД впав в центрі міста у двір багатоповерхівок на ресторани: кадри наслідків удару ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108602",
+      "publishedAt": "2026-11-23T14:35:52+00:00",
+      "importance": "red"
+    },
     {
       "id": "kyivnebo-99b2678ed6fc",
       "title": "Відбій",
@@ -3253,26 +3273,6 @@
       "url": "https://t.me/kievinfo_kyiv/108293",
       "publishedAt": "2026-11-20T16:16:05+00:00",
       "importance": "orange"
-    },
-    {
-      "id": "kyivnebo-a7a1ab556a56",
-      "title": "Якщо маєте бажання, можете подякувати за нічне інформування та попередження ось тут: 5457082500356857",
-      "text": "Якщо маєте бажання, можете подякувати за нічне інформування та попередження ось тут: 5457082500356857",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34158",
-      "publishedAt": "2026-11-20T15:40:46+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-22d21170e5d5",
-      "title": "🐒",
-      "text": "🐒 ...їхати в дощ на моноколесі із руками в карманах - погана ідея... ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108290",
-      "publishedAt": "2026-11-20T14:42:58+00:00",
-      "importance": "normal"
     }
   ]
 }

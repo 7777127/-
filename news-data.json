@@ -1,9 +1,29 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-23T05:55:38.860276+00:00",
+  "fetchedAt": "2026-11-23T07:17:51.946677+00:00",
   "retentionDays": 3,
-  "count": 295,
+  "count": 297,
   "items": [
+    {
+      "id": "kyivinfo-5f4c35065724",
+      "title": "👀",
+      "text": "👀 Великого рататуя помітили на Тараса Шевченка в Києві. ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108563",
+      "publishedAt": "2026-11-23T06:40:07+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-b1e74fcb9933",
+      "title": "🟡",
+      "text": "🟡 Бориспільський, Обухівський район (Київська обл.) Жовтий рівень тривоги. Детальний радар 👉🏽 @kievinform_ua1",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108562",
+      "publishedAt": "2026-11-23T06:31:46+00:00",
+      "importance": "red"
+    },
     {
       "id": "kyivinfo-5f41a5503d31",
       "title": "Був Вибух",

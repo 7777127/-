@@ -1,9 +1,279 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-23T13:14:47.498541+00:00",
+  "fetchedAt": "2026-11-23T14:34:27.077604+00:00",
   "retentionDays": 3,
-  "count": 303,
+  "count": 327,
   "items": [
+    {
+      "id": "kyivnebo-99b2678ed6fc",
+      "title": "Відбій",
+      "text": "Відбій",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34271",
+      "publishedAt": "2026-11-23T14:31:54+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-bae872c8b71d",
+      "title": "✅",
+      "text": "✅ ВІДБІЙ ПОВІТРЯНОЇ ТРИВОГИ ✅",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108601",
+      "publishedAt": "2026-11-23T14:31:51+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-e18194bd5ed2",
+      "title": "Біля Києва наразі чисто, 1 на Чернігівщині",
+      "text": "Біля Києва наразі чисто, 1 на Чернігівщині 🚀 ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108600",
+      "publishedAt": "2026-11-23T14:24:43+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-52ee97ca074d",
+      "title": "Біля Києва наразі чисто, 1 на Чернігівщині",
+      "text": "Біля Києва наразі чисто, 1 на Чернігівщині",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34270",
+      "publishedAt": "2026-11-23T14:24:10+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-0a828f50521d",
+      "title": "Все, більше не летить",
+      "text": "Все, більше не летить",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34269",
+      "publishedAt": "2026-11-23T14:23:50+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-795b465c921e",
+      "title": "ВИБУХ",
+      "text": "ВИБУХ 💥 падає ‼️",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108599",
+      "publishedAt": "2026-11-23T14:23:48+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-4bed66f902c5",
+      "title": "Центр в укриття! Знову на нас",
+      "text": "Центр в укриття! Знову на нас ❗️ 🚀",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108598",
+      "publishedAt": "2026-11-23T14:23:23+00:00",
+      "importance": "orange"
+    },
+    {
+      "id": "kyivnebo-ff40bc3cd794",
+      "title": "Може впасти зараз",
+      "text": "Може впасти зараз",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34268",
+      "publishedAt": "2026-11-23T14:23:18+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-b9adbe771f6f",
+      "title": "Поділ",
+      "text": "Поділ",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34267",
+      "publishedAt": "2026-11-23T14:23:00+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-417a9ad8fa96",
+      "title": "Центр Києва",
+      "text": "Центр Києва",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34266",
+      "publishedAt": "2026-11-23T14:22:31+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-0a501ee0dad4",
+      "title": "Арсенальна",
+      "text": "Арсенальна",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34265",
+      "publishedAt": "2026-11-23T14:22:08+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-a4bc7b8983f1",
+      "title": "Позняки",
+      "text": "Позняки",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34264",
+      "publishedAt": "2026-11-23T14:20:48+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-879e0c5dc36a",
+      "title": "Знову ШАХЕД через Бортничі на ПОХ",
+      "text": "Знову ШАХЕД через Бортничі на ПОХ ❗️ 🚀",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108597",
+      "publishedAt": "2026-11-23T14:20:32+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivnebo-86d54761e72c",
+      "title": "На Бортничі, Осокорки",
+      "text": "На Бортничі, Осокорки",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34263",
+      "publishedAt": "2026-11-23T14:19:27+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-281f092df238",
+      "title": "Дочекалися, один біля Гнідина",
+      "text": "Дочекалися, один біля Гнідина",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34262",
+      "publishedAt": "2026-11-23T14:18:11+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-356113c300d3",
+      "title": "🔴",
+      "text": "🔴 В Шевченківському районі, внаслідок падіння уламків, сталося загоряння двох авто. Та пожежа на першому поверсі 5-поверхового житлового будинку. Пошкоджені також балкони на 2-4 поверхах. Із будинку врятували двох людей. Та виявили одного постраждалого.…",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108596",
+      "publishedAt": "2026-11-23T13:59:06+00:00",
+      "importance": "orange"
+    },
+    {
+      "id": "kyivinfo-1b052587df71",
+      "title": "💥",
+      "text": "💥 🚀 Його підбили і він впав на місто… ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108595",
+      "publishedAt": "2026-11-23T13:54:36+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-b36aa7e45540",
+      "title": "До Києва наразі не летять",
+      "text": "До Києва наразі не летять",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34261",
+      "publishedAt": "2026-11-23T13:54:10+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-28ca7e75e9ff",
+      "title": "Не знаю, чому досі не дали відбій. 3 на Чернігівщині, можливо їх чекають.",
+      "text": "Не знаю, чому досі не дали відбій. 3 на Чернігівщині, можливо їх чекають.",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34260",
+      "publishedAt": "2026-11-23T13:42:32+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-ca3556696c10",
+      "title": "Все. Дорозвідка",
+      "text": "Все. Дорозвідка 👀 ✈️ ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108594",
+      "publishedAt": "2026-11-23T13:19:01+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-6d3eff14dda4",
+      "title": "Курс на Центр! Через Міст Патона",
+      "text": "Курс на Центр! Через Міст Патона ✈️",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108593",
+      "publishedAt": "2026-11-23T13:16:43+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-ddad58fbd022",
+      "title": "Очікуємо на відбої",
+      "text": "Очікуємо на відбої",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34259",
+      "publishedAt": "2026-11-23T13:16:32+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-cf300e3bb087",
+      "title": "Більше не летить",
+      "text": "Більше не летить",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34258",
+      "publishedAt": "2026-11-23T13:15:59+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-4f2f9e1f511e",
+      "title": "Лук'янівка",
+      "text": "Лук'янівка",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34257",
+      "publishedAt": "2026-11-23T13:15:34+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-44692d895fd2",
+      "title": "Поділ",
+      "text": "Поділ",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34256",
+      "publishedAt": "2026-11-23T13:14:57+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-c3a3811414c0",
+      "title": "Летить низько. Лівий берег Реагуємо",
+      "text": "Летить низько. Лівий берег Реагуємо ⚠️ ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108592",
+      "publishedAt": "2026-11-23T13:14:44+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-e50d87df3742",
+      "title": "Печерськ, Центр",
+      "text": "Печерськ, Центр",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34255",
+      "publishedAt": "2026-11-23T13:14:32+00:00",
+      "importance": "normal"
+    },
     {
       "id": "kyivnebo-7944a296c3be",
       "title": "Міст Патона",
@@ -3003,36 +3273,6 @@
       "url": "https://t.me/kievinfo_kyiv/108290",
       "publishedAt": "2026-11-20T14:42:58+00:00",
       "importance": "normal"
-    },
-    {
-      "id": "kyivnebo-010bf3ada4b4",
-      "title": "Якщо маєте бажання, можете подякувати за нічне інформування та попередження ось тут:",
-      "text": "Якщо маєте бажання, можете подякувати за нічне інформування та попередження ось тут: 5457082509141797",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34157",
-      "publishedAt": "2026-11-20T13:47:01+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-0350497ee22a",
-      "title": "😵",
-      "text": "😵 Приліт ракети у Польщі: її зафіксували камери відеоспостереження поблизу міста Хмілек Ситуація з Польщі тут - t.me/Poland ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108289",
-      "publishedAt": "2026-11-20T13:27:14+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-5109529e2d63",
-      "title": "😰",
-      "text": "😰 До семи зросла кількість загиблих після удару по Києву , — мер ще 17 людей поранено, а також мер повідомив, що рух Подільським мостом відновлено 🇺🇦 Київ ІНФО | Надіслати новину",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108288",
-      "publishedAt": "2026-11-20T13:25:28+00:00",
-      "importance": "red"
     }
   ]
 }

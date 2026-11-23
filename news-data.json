@@ -1,9 +1,199 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-23T16:37:18.334285+00:00",
+  "fetchedAt": "2026-11-23T17:35:38.177392+00:00",
   "retentionDays": 3,
-  "count": 327,
+  "count": 345,
   "items": [
+    {
+      "id": "kyivinfo-7a13df546a14",
+      "title": "❗️",
+      "text": "❗️ Унаслідок російської атаки на Київ 23 листопада двох людей врятували, ще п’ятеро постраждали У Печерському районі загорілися два автомобілі, вогонь перекинувся на балкон п’ятиповерхівки. Також зруйновано балкони з другого по четвертий поверхи. Двох людей врятували, четверо отримали поранення. Пожежу ліквідували на площі 50 кв. м. У Голосіївському районі виникла пожежа на парковці біля нежитлової будівлі, постраждала одна людина. У Подільському районі БпЛА влучив у дах п’ятиповерхівки. Пожежу на мансардному поверсі площею 400 кв. м ліквідували. Інформації про постраждалих немає. 🇺🇦 Київ ІНФО | Надіслати новину",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108617",
+      "publishedAt": "2026-11-23T17:09:14+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivnebo-3ffaa4d9b927",
+      "title": "Відбій",
+      "text": "Відбій",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34282",
+      "publishedAt": "2026-11-23T17:00:53+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-d5d28940a16f",
+      "title": "✅",
+      "text": "✅ ВІДБІЙ ПОВІТРЯНОЇ ТРИВОГИ ✅",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108616",
+      "publishedAt": "2026-11-23T17:00:26+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivnebo-92731141fc43",
+      "title": "На північ області поки",
+      "text": "На північ області поки",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34281",
+      "publishedAt": "2026-11-23T16:59:01+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-4a14ad720430",
+      "title": "Курс на Димер",
+      "text": "Курс на Димер",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108615",
+      "publishedAt": "2026-11-23T16:56:36+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-59803f9a090f",
+      "title": "Димер",
+      "text": "Димер",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34280",
+      "publishedAt": "2026-11-23T16:56:17+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-ab282d8be000",
+      "title": "Вишгород",
+      "text": "Вишгород",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34279",
+      "publishedAt": "2026-11-23T16:54:20+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-b491ba3313b1",
+      "title": "Далі на Дарницю, ДВРЗ",
+      "text": "Далі на Дарницю, ДВРЗ",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108614",
+      "publishedAt": "2026-11-23T16:53:01+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-7b496faabd2b",
+      "title": "Далі в бік Броварів",
+      "text": "Далі в бік Броварів",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34278",
+      "publishedAt": "2026-11-23T16:52:16+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-9381b97faaa9",
+      "title": "Далі на Дарницю, ДВРЗ",
+      "text": "Далі на Дарницю, ДВРЗ",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108613",
+      "publishedAt": "2026-11-23T16:51:49+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-398b771d0109",
+      "title": "На Лівий берег",
+      "text": "На Лівий берег",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34277",
+      "publishedAt": "2026-11-23T16:51:43+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-9664fb8a9b05",
+      "title": "Через Виноградар курс на Центр",
+      "text": "Через Виноградар курс на Центр",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108612",
+      "publishedAt": "2026-11-23T16:51:18+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-635172024d8d",
+      "title": "Центр",
+      "text": "Центр",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34276",
+      "publishedAt": "2026-11-23T16:51:08+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-676527f116fd",
+      "title": "Пролітає над Правим берегом",
+      "text": "Пролітає над Правим берегом",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34275",
+      "publishedAt": "2026-11-23T16:50:37+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-c29aa47e349d",
+      "title": "Поки летить дуже високо",
+      "text": "Поки летить дуже високо",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34274",
+      "publishedAt": "2026-11-23T16:49:44+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-e65254e11aec",
+      "title": "На Виноградар",
+      "text": "На Виноградар",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34273",
+      "publishedAt": "2026-11-23T16:49:40+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-baf3db7c825d",
+      "title": "Реактивний на Петрівці, Вишгород",
+      "text": "Реактивний на Петрівці, Вишгород ❗️ ✈️",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108611",
+      "publishedAt": "2026-11-23T16:47:49+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-dd7057d6d5bd",
+      "title": "Реактивний на Петрівці, Вишгород",
+      "text": "Реактивний на Петрівці, Вишгород",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34272",
+      "publishedAt": "2026-11-23T16:47:30+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-cf84f0a0b94e",
+      "title": "🟡",
+      "text": "🟡 м. Київ — повітряна тривога, жовтий рівень: Дронова загроза (жовтий рівень)",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108610",
+      "publishedAt": "2026-11-23T16:47:20+00:00",
+      "importance": "red"
+    },
     {
       "id": "kyivinfo-8f5c3dbf5c50",
       "title": "‼️",
@@ -3262,16 +3452,6 @@
       "region": "kyiv",
       "url": "https://t.me/kyiv_nebo/34159",
       "publishedAt": "2026-11-20T17:38:45+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-d6eb681597eb",
-      "title": "😑",
-      "text": "😑 🚘 Увечері Київ знову скували масштабні пробки : рух дорогами міста утруднений ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108294",
-      "publishedAt": "2026-11-20T16:56:30+00:00",
       "importance": "normal"
     }
   ]

@@ -1,8 +1,8 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-23T11:06:52.236508+00:00",
+  "fetchedAt": "2026-11-23T11:59:15.707687+00:00",
   "retentionDays": 3,
-  "count": 277,
+  "count": 276,
   "items": [
     {
       "id": "kyivinfo-2bd59dabfc68",
@@ -2763,16 +2763,6 @@
       "url": "https://t.me/kievinfo_kyiv/108285",
       "publishedAt": "2026-11-20T12:24:38+00:00",
       "importance": "orange"
-    },
-    {
-      "id": "kyivinfo-1184d5c45c6f",
-      "title": "🔴",
-      "text": "🔴 Так виглядає Дарницький міст у Києві після атаки рф, - ЗМІ ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108284",
-      "publishedAt": "2026-11-20T11:55:38+00:00",
-      "importance": "normal"
     }
   ]
 }

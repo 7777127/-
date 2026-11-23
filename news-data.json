@@ -1,9 +1,49 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-23T23:08:37.863795+00:00",
+  "fetchedAt": "2026-11-23T23:56:54.655440+00:00",
   "retentionDays": 3,
-  "count": 339,
+  "count": 336,
   "items": [
+    {
+      "id": "kyivinfo-620d62adb185",
+      "title": "1х Реактивний БпЛА курсом на Чорнобиль",
+      "text": "1х Реактивний БпЛА курсом на Чорнобиль 1х Реактивний БпЛА курсом на Димер",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108641",
+      "publishedAt": "2026-11-23T23:50:05+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-cf6652ae56e1",
+      "title": "Реактивний БпЛА курсом на Димер",
+      "text": "Реактивний БпЛА курсом на Димер",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108640",
+      "publishedAt": "2026-11-23T23:43:09+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-27c3288de53b",
+      "title": "Реактивний БпЛА курсом на Димер",
+      "text": "Реактивний БпЛА курсом на Димер",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108639",
+      "publishedAt": "2026-11-23T23:40:48+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-abcf373f5bb6",
+      "title": "🟡",
+      "text": "🟡 Вишгородський район — повітряна тривога, жовтий рівень Загроза по реактивних з Чернігівщини Детальний радар 👉🏽 @kievinform_ua1",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108638",
+      "publishedAt": "2026-11-23T23:31:42+00:00",
+      "importance": "red"
+    },
     {
       "id": "kyivinfo-312e5d5988a6",
       "title": "😳",
@@ -3323,76 +3363,6 @@
       "url": "https://t.me/kievinfo_kyiv/108327",
       "publishedAt": "2026-11-21T00:02:15+00:00",
       "importance": "red"
-    },
-    {
-      "id": "kyivinfo-d452ef092abd",
-      "title": "✈️",
-      "text": "✈️ Реактивний на Вишгород/Київ",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108326",
-      "publishedAt": "2026-11-20T23:53:56+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivnebo-8bf0b1a74011",
-      "title": "Більше не летить",
-      "text": "Більше не летить",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34164",
-      "publishedAt": "2026-11-20T23:53:19+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-6eb2807b00b6",
-      "title": "✈️",
-      "text": "✈️ Реактивний на Вишгород/Київ",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108325",
-      "publishedAt": "2026-11-20T23:52:46+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-ca4c3669605f",
-      "title": "🟡",
-      "text": "🟡 м. Київ — повітряна тривога, жовтий рівень: Дронова загроза (жовтий рівень) Детальний радар 👉🏽 @kievinform_ua1",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108324",
-      "publishedAt": "2026-11-20T23:52:24+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivnebo-17b63d1871b2",
-      "title": "Реактивний на Петрівці, Вишгород",
-      "text": "Реактивний на Петрівці, Вишгород",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34163",
-      "publishedAt": "2026-11-20T23:50:39+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-d0ed3342403a",
-      "title": "❗️",
-      "text": "❗️ Реактивний БпЛА курсом на Димер",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108323",
-      "publishedAt": "2026-11-20T23:48:29+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-14b6ff5887f1",
-      "title": "⚡️",
-      "text": "⚡️ Змінили графіки відключень електроенергії на Київщині. Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108322",
-      "publishedAt": "2026-11-20T23:41:22+00:00",
-      "importance": "normal"
     }
   ]
 }

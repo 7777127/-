@@ -1,9 +1,309 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-23T11:59:15.707687+00:00",
+  "fetchedAt": "2026-11-23T13:14:47.498541+00:00",
   "retentionDays": 3,
-  "count": 276,
+  "count": 303,
   "items": [
+    {
+      "id": "kyivnebo-7944a296c3be",
+      "title": "Міст Патона",
+      "text": "Міст Патона",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34254",
+      "publishedAt": "2026-11-23T13:13:59+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-5d7e19585f0f",
+      "title": "ОСОКОРКИ",
+      "text": "ОСОКОРКИ ⚠️ ✈️",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108591",
+      "publishedAt": "2026-11-23T13:13:26+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-a712f613082c",
+      "title": "Березняки",
+      "text": "Березняки",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34253",
+      "publishedAt": "2026-11-23T13:13:18+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-45f653d37511",
+      "title": "ОСОКОРКИ",
+      "text": "ОСОКОРКИ ⚠️ ✈️",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108590",
+      "publishedAt": "2026-11-23T13:12:59+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-417e18814c54",
+      "title": "Наступний повз Бориспіль",
+      "text": "Наступний повз Бориспіль",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108589",
+      "publishedAt": "2026-11-23T13:11:29+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-c12bf567c280",
+      "title": "На Бортничі, йде низько",
+      "text": "На Бортничі, йде низько",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34252",
+      "publishedAt": "2026-11-23T13:11:01+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-4a85847cd4a6",
+      "title": "Це останній, після нього буде відбій",
+      "text": "Це останній, після нього буде відбій",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34251",
+      "publishedAt": "2026-11-23T13:10:32+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-897a1a21ade6",
+      "title": "І ще один на Гнідин",
+      "text": "І ще один на Гнідин",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34250",
+      "publishedAt": "2026-11-23T13:08:44+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-2a883f3f5124",
+      "title": "Більше не летить",
+      "text": "Більше не летить",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34249",
+      "publishedAt": "2026-11-23T13:04:40+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-4591fc161be6",
+      "title": "Віта-Литовська",
+      "text": "Віта-Литовська",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34248",
+      "publishedAt": "2026-11-23T13:04:10+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-9eb8abfa4c61",
+      "title": "Березняки",
+      "text": "Березняки",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34247",
+      "publishedAt": "2026-11-23T13:02:17+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-329940dd0d98",
+      "title": "На Бортничі",
+      "text": "На Бортничі",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34246",
+      "publishedAt": "2026-11-23T12:59:55+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-f74aa60a5a90",
+      "title": "Ще один Вишеньки, Гнідин",
+      "text": "Ще один Вишеньки, Гнідин",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34245",
+      "publishedAt": "2026-11-23T12:59:33+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-bb45528cbda5",
+      "title": "Збили  падає на Київ",
+      "text": "Збили падає на Київ",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108588",
+      "publishedAt": "2026-11-23T12:40:40+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-402d036d9549",
+      "title": "Наразі без фіксацій біля Києва",
+      "text": "Наразі без фіксацій біля Києва",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34244",
+      "publishedAt": "2026-11-23T12:38:21+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-abc2684f4a46",
+      "title": "Наче також мінус",
+      "text": "Наче також мінус",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34243",
+      "publishedAt": "2026-11-23T12:38:06+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-f884d6682028",
+      "title": "БпЛА на Арсенальну, було гучно",
+      "text": "БпЛА на Арсенальну, було гучно 💥 ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108587",
+      "publishedAt": "2026-11-23T12:37:33+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-a7645a29d76e",
+      "title": "БпЛА на Арсенальну, було гучно",
+      "text": "БпЛА на Арсенальну, було гучно 💥 ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108586",
+      "publishedAt": "2026-11-23T12:36:55+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-bbe69ad0a3bf",
+      "title": "Центр Києва ШАХЕД",
+      "text": "Центр Києва ШАХЕД",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108585",
+      "publishedAt": "2026-11-23T12:36:23+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivnebo-fdad06e17152",
+      "title": "Ще один від Борисполя",
+      "text": "Ще один від Борисполя",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34242",
+      "publishedAt": "2026-11-23T12:36:13+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-909f7f6a6d79",
+      "title": "Цей наче все",
+      "text": "Цей наче все",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34241",
+      "publishedAt": "2026-11-23T12:36:09+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-8f4e317a72e9",
+      "title": "Печерськ",
+      "text": "Печерськ",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34240",
+      "publishedAt": "2026-11-23T12:35:46+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-5a98c3604654",
+      "title": "Міст Патона",
+      "text": "Міст Патона",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34239",
+      "publishedAt": "2026-11-23T12:35:33+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-69299da9724e",
+      "title": "Дуже низько",
+      "text": "Дуже низько",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34238",
+      "publishedAt": "2026-11-23T12:33:27+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-27dfd25f566b",
+      "title": "Осокорки",
+      "text": "Осокорки",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34237",
+      "publishedAt": "2026-11-23T12:33:16+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-8f050cd7262e",
+      "title": "Бортничі",
+      "text": "Бортничі",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34236",
+      "publishedAt": "2026-11-23T12:32:33+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-5eec5f008314",
+      "title": "Перший мінус, ще один летить туди",
+      "text": "Перший мінус, ще один летить туди",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34235",
+      "publishedAt": "2026-11-23T12:27:52+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-5d5883af6eb8",
+      "title": "РБПЛА курс Бориспіль",
+      "text": "РБПЛА курс Бориспіль ✈️",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108584",
+      "publishedAt": "2026-11-23T12:27:47+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-6d1be2a18fdf",
+      "title": "🟡",
+      "text": "🟡 м. Київ — повітряна тривога, жовтий рівень: Дронова загроза (жовтий рівень)",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108583",
+      "publishedAt": "2026-11-23T12:26:41+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-cbdd35683caa",
+      "title": "РБПЛА курс Бориспіль",
+      "text": "РБПЛА курс Бориспіль ✈️",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108582",
+      "publishedAt": "2026-11-23T12:25:11+00:00",
+      "importance": "red"
+    },
     {
       "id": "kyivinfo-2bd59dabfc68",
       "title": "🕯️",
@@ -2733,36 +3033,6 @@
       "url": "https://t.me/kievinfo_kyiv/108288",
       "publishedAt": "2026-11-20T13:25:28+00:00",
       "importance": "red"
-    },
-    {
-      "id": "kyivinfo-1a5ad010a8b8",
-      "title": "✅",
-      "text": "✅ Рух Подільським мостовим переходом відновлений , — поліція ✅ Рух вулицею Новокостянтинівською відновлений. 🇺🇦 Київ ІНФО | Надіслати новину",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108287",
-      "publishedAt": "2026-11-20T12:32:19+00:00",
-      "importance": "orange"
-    },
-    {
-      "id": "kyivinfo-98dcac1754e1",
-      "title": "❗️",
-      "text": "❗️ Взимку лівому берегу загрожують проблеми з опаленням, Правому – з водою, – голова Деснянської РДА Бахматов. ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108286",
-      "publishedAt": "2026-11-20T12:24:43+00:00",
-      "importance": "orange"
-    },
-    {
-      "id": "kyivinfo-c208ddbff9f3",
-      "title": "💡",
-      "text": "💡 Оновлений графік відключення світла для Київщини , — ДТЕК 🔜 Підписатись @kyivsvitlo_dtek",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108285",
-      "publishedAt": "2026-11-20T12:24:38+00:00",
-      "importance": "orange"
     }
   ]
 }

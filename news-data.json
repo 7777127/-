@@ -1,9 +1,129 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-24T19:02:18.238650+00:00",
+  "fetchedAt": "2026-11-24T20:04:23.381434+00:00",
   "retentionDays": 3,
-  "count": 379,
+  "count": 390,
   "items": [
+    {
+      "id": "kyivinfo-8c05f23e8a16",
+      "title": "Деміївська, Мишоловка",
+      "text": "Деміївська, Мишоловка",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108736",
+      "publishedAt": "2026-11-24T20:02:26+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-1e889a564c5d",
+      "title": "Видубичі, Голосіїв",
+      "text": "Видубичі, Голосіїв",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34328",
+      "publishedAt": "2026-11-24T20:02:18+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-034630079b4e",
+      "title": "Совки",
+      "text": "Совки",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34327",
+      "publishedAt": "2026-11-24T20:01:54+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-e666f45f7bf8",
+      "title": "На Шулявку - Жуляни",
+      "text": "На Шулявку - Жуляни 3500 м",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108735",
+      "publishedAt": "2026-11-24T20:01:35+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-b45c03d77e8f",
+      "title": "Нивки",
+      "text": "Нивки",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34326",
+      "publishedAt": "2026-11-24T20:00:48+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-a2ea01db768a",
+      "title": "Берковець, Академ",
+      "text": "Берковець, Академ",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108734",
+      "publishedAt": "2026-11-24T20:00:44+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-249e7b3e3c08",
+      "title": "Правий берег Києва - уважно",
+      "text": "Правий берег Києва - уважно",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34325",
+      "publishedAt": "2026-11-24T20:00:44+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-d43a0c1ded75",
+      "title": "Виноградар",
+      "text": "Виноградар",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34324",
+      "publishedAt": "2026-11-24T20:00:24+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-3e4ca91170b0",
+      "title": "Реактивний на Петрівці, Вишгород",
+      "text": "Реактивний на Петрівці, Вишгород",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34323",
+      "publishedAt": "2026-11-24T19:59:03+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-a0d2047071bb",
+      "title": "Повз Димер курсом на Київ, Вишгород рБПЛА",
+      "text": "Повз Димер курсом на Київ, Вишгород рБПЛА",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108733",
+      "publishedAt": "2026-11-24T19:58:34+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-fc4ce0c2f4d9",
+      "title": "🟡",
+      "text": "🟡 м. Київ — повітряна тривога, жовтий рівень: Дронова загроза (жовтий рівень)",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108732",
+      "publishedAt": "2026-11-24T19:57:54+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-24d819276f23",
+      "title": "❄️",
+      "text": "❄️ Тим часом у Києві розпочався прям СНІГОПАД 😍 , – читачі ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108726",
+      "publishedAt": "2026-11-24T19:16:40+00:00",
+      "importance": "normal"
+    },
     {
       "id": "kyivinfo-b471ce1d4ff8",
       "title": "😵",
@@ -3782,16 +3902,6 @@
       "region": "kyiv",
       "url": "https://t.me/kievinfo_kyiv/108414",
       "publishedAt": "2026-11-21T21:31:26+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-d09fea06a707",
-      "title": "Хотів - Чабани увага",
-      "text": "Хотів - Чабани увага",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108413",
-      "publishedAt": "2026-11-21T19:20:52+00:00",
       "importance": "normal"
     }
   ]

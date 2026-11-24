@@ -1,9 +1,29 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-24T03:06:21.864896+00:00",
+  "fetchedAt": "2026-11-24T04:04:11.836507+00:00",
   "retentionDays": 3,
-  "count": 352,
+  "count": 344,
   "items": [
+    {
+      "id": "kyivinfo-6c6d3a4329a3",
+      "title": "🟡",
+      "text": "🟡 Вишгородський район — повітряна тривога, жовтий рівень Загроза по БпЛА Детальний радар 👉🏽 @kievinform_ua1",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108662",
+      "publishedAt": "2026-11-24T03:40:08+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-25042d5759ef",
+      "title": "✅",
+      "text": "✅ ВІДБІЙ ПОВІТРЯНОЇ ТРИВОГИ ✅",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108661",
+      "publishedAt": "2026-11-24T03:16:49+00:00",
+      "importance": "red"
+    },
     {
       "id": "kyivinfo-d31ade7b262d",
       "title": "🟡",
@@ -3422,106 +3442,6 @@
       "region": "kyiv",
       "url": "https://t.me/kievinfo_kyiv/108354",
       "publishedAt": "2026-11-21T04:04:56+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-7e0bd53f985b",
-      "title": "Бориспіль уважно по БпЛА",
-      "text": "Бориспіль уважно по БпЛА ⚠️ ✈️",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108353",
-      "publishedAt": "2026-11-21T04:02:21+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-62c017ad6ce1",
-      "title": "Бориспіль уважно по БпЛА",
-      "text": "Бориспіль уважно по БпЛА ⚠️ ✈️",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108352",
-      "publishedAt": "2026-11-21T03:59:29+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-93cd3ad30b0b",
-      "title": "Мости уважно",
-      "text": "Мости уважно ⚠️ перебуваємо в укритті!!",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108351",
-      "publishedAt": "2026-11-21T03:40:50+00:00",
-      "importance": "orange"
-    },
-    {
-      "id": "kyivinfo-4e649e9ce6b0",
-      "title": "🔴",
-      "text": "🔴 🔴 🔴 ❗️ БАЛІСТИКА НА КИЇВ 🚀 в укриття! ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108350",
-      "publishedAt": "2026-11-21T03:40:23+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-40fad18c4ed2",
-      "title": "🔴",
-      "text": "🔴 🔴 🔴 ❗️ БАЛІСТИКА НА КИЇВ 🚀 в укриття! ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108349",
-      "publishedAt": "2026-11-21T03:39:15+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-00bddafbb2b7",
-      "title": "⚠️",
-      "text": "⚠️ Загроза БАЛІСТИКИ",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108348",
-      "publishedAt": "2026-11-21T03:37:23+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-3ed4ee1a59bb",
-      "title": "⚠️",
-      "text": "⚠️ ❗️ КИЇВ та ОБЛАСТЬ ТРИВОГА. В укриття!",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108347",
-      "publishedAt": "2026-11-21T03:37:16+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-6c85760e81e6",
-      "title": "✈️",
-      "text": "✈️ На зараз: 1x БпЛА повз парк Залісся 1x БпЛА повз Рогозів на Глибоке",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108346",
-      "publishedAt": "2026-11-21T03:24:00+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-5fc05a7b9c54",
-      "title": "Бориспіль уважно",
-      "text": "Бориспіль уважно ✈️",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108344",
-      "publishedAt": "2026-11-21T03:12:20+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-189e33abeea5",
-      "title": "Вишеньки / Заспа",
-      "text": "Вишеньки / Заспа ⚠️ ✈️",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108343",
-      "publishedAt": "2026-11-21T03:07:42+00:00",
       "importance": "normal"
     }
   ]

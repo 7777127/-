@@ -1,9 +1,149 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-24T12:44:55.329453+00:00",
+  "fetchedAt": "2026-11-24T14:02:28.131564+00:00",
   "retentionDays": 3,
-  "count": 362,
+  "count": 374,
   "items": [
+    {
+      "id": "kyivinfo-4bb529cc6cce",
+      "title": "Вибух",
+      "text": "Вибух 💥 Дорозвідка ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108706",
+      "publishedAt": "2026-11-24T13:27:24+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-82673884ae90",
+      "title": "🟡",
+      "text": "🟡 Жовтий рівень тривоги • Бучанський район (Київська обл.) Детальний радар 👉🏽 @kievinform_ua1",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108705",
+      "publishedAt": "2026-11-24T13:23:44+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-3245430e0112",
+      "title": "✅",
+      "text": "✅ ВІДБІЙ ПОВІТРЯНОЇ ТРИВОГИ ✅",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108704",
+      "publishedAt": "2026-11-24T13:22:36+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-b968e8d599c2",
+      "title": "Вибух",
+      "text": "Вибух 💥 Дорозвідка ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108703",
+      "publishedAt": "2026-11-24T13:19:24+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivnebo-9f60b7d7bb60",
+      "title": "Все, більше не летить",
+      "text": "Все, більше не летить",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34317",
+      "publishedAt": "2026-11-24T13:19:24+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-4e83970e11d2",
+      "title": "Голосіїв",
+      "text": "Голосіїв",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34316",
+      "publishedAt": "2026-11-24T13:18:01+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-067162a880e7",
+      "title": "Реактивний на Вишневе, Жуляни, висота 2800 м",
+      "text": "Реактивний на Вишневе, Жуляни, висота 2800 м",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108702",
+      "publishedAt": "2026-11-24T13:17:59+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-ff9923ca7700",
+      "title": "Жуляни",
+      "text": "Жуляни",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34315",
+      "publishedAt": "2026-11-24T13:17:32+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-dee79320a672",
+      "title": "Висота до 3 км",
+      "text": "Висота до 3 км",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34314",
+      "publishedAt": "2026-11-24T13:17:16+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-836b67c9e922",
+      "title": "Вишневе",
+      "text": "Вишневе",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34313",
+      "publishedAt": "2026-11-24T13:17:12+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-4c4f8cc5fcd8",
+      "title": "Борщагівки",
+      "text": "Борщагівки",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34312",
+      "publishedAt": "2026-11-24T13:16:56+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-928b7b5b3b1a",
+      "title": "реактивний БпЛА повз Гостомель, на Вишгород -Київ",
+      "text": "реактивний БпЛА повз Гостомель, на Вишгород -Київ",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108701",
+      "publishedAt": "2026-11-24T13:15:36+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivnebo-cfb9dc56ca57",
+      "title": "Реактивний на Ірпінь, Горенку",
+      "text": "Реактивний на Ірпінь, Горенку",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34311",
+      "publishedAt": "2026-11-24T13:14:40+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-fbecc074bf3b",
+      "title": "🟡",
+      "text": "🟡 м. Київ — повітряна тривога, жовтий рівень: Дронова загроза (жовтий рівень)",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108700",
+      "publishedAt": "2026-11-24T13:14:06+00:00",
+      "importance": "red"
+    },
     {
       "id": "kyivinfo-9d0f5fbfc7fa",
       "title": "‼️",
@@ -3602,26 +3742,6 @@
       "region": "kyiv",
       "url": "https://t.me/kievinfo_kyiv/108395",
       "publishedAt": "2026-11-21T14:12:39+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-0f4c72461580",
-      "title": "Обстановочка на зараз",
-      "text": "Обстановочка на зараз ✈️ ✈️",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108394",
-      "publishedAt": "2026-11-21T12:58:07+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-e7634e686565",
-      "title": "🟡",
-      "text": "🟡 Жовтий рівень тривоги • Бориспільський район (Київська обл.) • Броварський район (Київська обл.) Ситуація на зараз https://t.me/kievinform_ua1/42948",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108392",
-      "publishedAt": "2026-11-21T12:45:02+00:00",
       "importance": "red"
     }
   ]

@@ -1,9 +1,39 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-24T00:57:12.231972+00:00",
+  "fetchedAt": "2026-11-24T02:13:07.441286+00:00",
   "retentionDays": 3,
-  "count": 360,
+  "count": 358,
   "items": [
+    {
+      "id": "kyivinfo-f73105274ee5",
+      "title": "🟡",
+      "text": "🟡 Вишгородський район — повітряна тривога, жовтий рівень Реактив з Чернігівщини ✈️ Детальний радар 👉🏽 @kievinform_ua1",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108658",
+      "publishedAt": "2026-11-24T01:52:46+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-d62107119328",
+      "title": "✅",
+      "text": "✅ ВІДБІЙ ПОВІТРЯНОЇ ТРИВОГИ ✅",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108657",
+      "publishedAt": "2026-11-24T01:06:45+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-c6e674b3435f",
+      "title": "Реактивний БпЛА курсом на Білу Церкву",
+      "text": "Реактивний БпЛА курсом на Білу Церкву",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108656",
+      "publishedAt": "2026-11-24T01:02:06+00:00",
+      "importance": "red"
+    },
     {
       "id": "kyivinfo-fe6d5d6b7a7f",
       "title": "Реактивний БпЛА курсом на Кагарлик",
@@ -3552,56 +3582,6 @@
       "region": "kyiv",
       "url": "https://t.me/kievinfo_kyiv/108335",
       "publishedAt": "2026-11-21T02:17:12+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-27b917fc247f",
-      "title": "✈️",
-      "text": "✈️ 7х звичайних БпЛА на/повз Згурівку",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108334",
-      "publishedAt": "2026-11-21T02:12:13+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-4afbbf39ee70",
-      "title": "🟡",
-      "text": "🟡 Бориспільський/Броварський район — повітряна тривога, жовтий рівень БпЛА з Чернігівщини Детальний радар 👉🏽 @kievinform_ua1",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108333",
-      "publishedAt": "2026-11-21T01:48:15+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-b517c6eba8e2",
-      "title": "✅",
-      "text": "✅ ВІДБІЙ ПОВІТРЯНОЇ ТРИВОГИ ✅",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108332",
-      "publishedAt": "2026-11-21T01:31:08+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-947c2b816724",
-      "title": "✈️",
-      "text": "✈️ БпЛА курсом на Макарів",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108331",
-      "publishedAt": "2026-11-21T01:28:08+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-e2b3c2ab03e6",
-      "title": "✈️",
-      "text": "✈️ БпЛА курсом на Макарів",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108330",
-      "publishedAt": "2026-11-21T01:19:26+00:00",
       "importance": "red"
     }
   ]

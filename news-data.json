@@ -1,9 +1,39 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-24T11:39:36.644976+00:00",
+  "fetchedAt": "2026-11-24T12:44:55.329453+00:00",
   "retentionDays": 3,
-  "count": 360,
+  "count": 362,
   "items": [
+    {
+      "id": "kyivinfo-9d0f5fbfc7fa",
+      "title": "‼️",
+      "text": "‼️ Трипільська ТЕС перетворилася на руїни після масованих російських атак: станція повністю втратила здатність виробляти електроенергію 🇺🇦 Київ ІНФО | Надіслати новину",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108699",
+      "publishedAt": "2026-11-24T12:42:37+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-6f47e99f0b8f",
+      "title": "🤬",
+      "text": "🤬 ❗️ Герань-5 атакував жд вокзал у Коростені : одна людина загинула, двоє поранені Стежити за обстановкою на Житомирщині можна тут - https://t.me/+JcrDtGY76AZiZTIy ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108698",
+      "publishedAt": "2026-11-24T11:52:01+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-734e8e207a67",
+      "title": "🟡",
+      "text": "🟡 Жовтий рівень тривоги • Білоцерківський район (Київська обл.) Детальний радар 👉🏽 @kievinform_ua1",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108697",
+      "publishedAt": "2026-11-24T11:48:01+00:00",
+      "importance": "red"
+    },
     {
       "id": "kyivinfo-61569ad38c73",
       "title": "⏺",
@@ -3592,16 +3622,6 @@
       "region": "kyiv",
       "url": "https://t.me/kievinfo_kyiv/108392",
       "publishedAt": "2026-11-21T12:45:02+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-268f47a752f5",
-      "title": "🔴",
-      "text": "🔴 Кияни розповіли як після ударів та перекриття мостів добирались з одного берегу на інший 🇺🇦 Київ ІНФО | Надіслати новину",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108390",
-      "publishedAt": "2026-11-21T12:19:37+00:00",
       "importance": "red"
     }
   ]

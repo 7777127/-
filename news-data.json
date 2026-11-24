@@ -1,9 +1,199 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-24T10:42:31.315920+00:00",
+  "fetchedAt": "2026-11-24T11:39:36.644976+00:00",
   "retentionDays": 3,
-  "count": 341,
+  "count": 360,
   "items": [
+    {
+      "id": "kyivinfo-61569ad38c73",
+      "title": "⏺",
+      "text": "⏺ Внаслідок атаки пошкоджено енергетичні об’єкти у Вишгородському та Білоцерківському районах , – КОВА 🇺🇦 Київ ІНФО | Надіслати новину",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108696",
+      "publishedAt": "2026-11-24T11:13:31+00:00",
+      "importance": "orange"
+    },
+    {
+      "id": "kyivinfo-f1bf9898c6ad",
+      "title": "✅",
+      "text": "✅ ВІДБІЙ ПОВІТРЯНОЇ ТРИВОГИ ✅",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108695",
+      "publishedAt": "2026-11-24T11:12:59+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-00bacf44165c",
+      "title": "🔴",
+      "text": "🔴 На Деміївській ПОЖЕЖА… 💥 Горить п риміщення СТО та автомийка ❗️ Росія бʼє по опаленню! У Білоцерківській громаді реактивна «Герань-5» атакувала об’єкт теплопостачання ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108694",
+      "publishedAt": "2026-11-24T11:04:46+00:00",
+      "importance": "orange"
+    },
+    {
+      "id": "kyivnebo-e13b010f6f5c",
+      "title": "На північ області",
+      "text": "На північ області",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34310",
+      "publishedAt": "2026-11-24T11:04:41+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-eb161acc3aa3",
+      "title": "На Гостомель",
+      "text": "На Гостомель",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34309",
+      "publishedAt": "2026-11-24T11:01:30+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-20704d12a857",
+      "title": "⚠️",
+      "text": "⚠️ ✈️ Виходить з Києва повз Пущу ✈️ ✈️ Детальний рух Д РОНІВ та РАКЕТ описується на нашому спеціалізованому каналі – Київ ІНФО LIVE [ радар ] ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108693",
+      "publishedAt": "2026-11-24T11:01:06+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-6915f5276674",
+      "title": "Розворот на Оболонь",
+      "text": "Розворот на Оболонь",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108692",
+      "publishedAt": "2026-11-24T10:59:09+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-f0be4c999d32",
+      "title": "Робить круг через  ПОХ, Бортничі  курс Бровари",
+      "text": "Робить круг через ПОХ, Бортничі курс Бровари ✈️ ⚠️",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108691",
+      "publishedAt": "2026-11-24T10:58:03+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-edd561836e1b",
+      "title": "Далі Бровари",
+      "text": "Далі Бровари",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34308",
+      "publishedAt": "2026-11-24T10:57:44+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-8779f0dd677a",
+      "title": "На Лівому до Рембази",
+      "text": "На Лівому до Рембази",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34307",
+      "publishedAt": "2026-11-24T10:57:35+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-c13d9140a309",
+      "title": "Летить просто щоб позайоб*вати людей… не знижується",
+      "text": "Летить просто щоб позайоб*вати людей… не знижується",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108690",
+      "publishedAt": "2026-11-24T10:56:19+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-0eb16c0c14bd",
+      "title": "Хотів, Чабани",
+      "text": "Хотів, Чабани",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108689",
+      "publishedAt": "2026-11-24T10:56:06+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-434e4fb2ff04",
+      "title": "Хотів, Чабани",
+      "text": "Хотів, Чабани",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34306",
+      "publishedAt": "2026-11-24T10:55:37+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-d6e2beb09627",
+      "title": "Висота майже 7 км, курс Вишневе, Борщагівки",
+      "text": "Висота майже 7 км, курс Вишневе, Борщагівки ✈️",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108688",
+      "publishedAt": "2026-11-24T10:54:36+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-da709a66e5f1",
+      "title": "Борщагівки",
+      "text": "Борщагівки",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34305",
+      "publishedAt": "2026-11-24T10:53:48+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-49f1da516195",
+      "title": "✈️",
+      "text": "✈️ реактивний БпЛА повз Гостомель на Вишгород",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108687",
+      "publishedAt": "2026-11-24T10:52:21+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivnebo-848e6045d06a",
+      "title": "Висота майже 7 км",
+      "text": "Висота майже 7 км",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34304",
+      "publishedAt": "2026-11-24T10:51:45+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-e494740c1f42",
+      "title": "Реактивний на Вишгород",
+      "text": "Реактивний на Вишгород",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34303",
+      "publishedAt": "2026-11-24T10:51:27+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-2d493e7f1041",
+      "title": "🟡",
+      "text": "🟡 м. Київ — повітряна тривога, жовтий рівень: Дронова загроза (жовтий рівень)",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108685",
+      "publishedAt": "2026-11-24T10:51:04+00:00",
+      "importance": "red"
+    },
     {
       "id": "kyivinfo-b205a6936974",
       "title": "🙏",

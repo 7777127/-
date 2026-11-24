@@ -1,9 +1,29 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-24T05:11:11.079656+00:00",
+  "fetchedAt": "2026-11-24T06:09:08.744847+00:00",
   "retentionDays": 3,
-  "count": 343,
+  "count": 335,
   "items": [
+    {
+      "id": "kyivinfo-1ac762572f4c",
+      "title": "✅",
+      "text": "✅ ВІДБІЙ ПОВІТРЯНОЇ ТРИВОГИ ✅",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108664",
+      "publishedAt": "2026-11-24T06:03:25+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-06d30c1b0f20",
+      "title": "💡",
+      "text": "💡 Змінили ГРАФІКИ відключень на Київщині Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108663",
+      "publishedAt": "2026-11-24T05:32:03+00:00",
+      "importance": "normal"
+    },
     {
       "id": "kyivinfo-6c6d3a4329a3",
       "title": "🟡",
@@ -3333,106 +3353,6 @@
       "url": "https://t.me/kievinfo_kyiv/108369",
       "publishedAt": "2026-11-21T07:08:07+00:00",
       "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-5b122c94355c",
-      "title": "#нампишуть",
-      "text": "#нампишуть 🤯 В Голосіївському районі впали уламки на будинки. Про жертв поки невідомо, але руйнування значні Хто на місці, підтверджуєте? ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108366",
-      "publishedAt": "2026-11-21T06:04:03+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-d4a6d2d0b134",
-      "title": "Ситуація на зараз",
-      "text": "Ситуація на зараз ✈️",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108365",
-      "publishedAt": "2026-11-21T05:47:45+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-92ae288966bd",
-      "title": "Вилетів за межі столиці курс Погреби",
-      "text": "Вилетів за межі столиці курс Погреби ✈️ ✈️ Детальний рух ШАХЕДІВ описується на нашому спеціалізованому каналі – @kievinform_ua1 @kievinform_ua1 @kievinform_ua1 🇺🇦 Київ ІНФО | Надіслати новину",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108364",
-      "publishedAt": "2026-11-21T05:35:01+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-c151a31a09b1",
-      "title": "Розворот на Північний міст, Трою",
-      "text": "Розворот на Північний міст, Трою",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108363",
-      "publishedAt": "2026-11-21T05:33:14+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-6d34ee427ddb",
-      "title": "По Дніпру в сторону центру! Печерськ",
-      "text": "По Дніпру в сторону центру! Печерськ",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108362",
-      "publishedAt": "2026-11-21T05:31:28+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-2aa3f1f2a5de",
-      "title": "Позняки, Осокорки увага",
-      "text": "Позняки, Осокорки увага ⚠️ ✈️",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108361",
-      "publishedAt": "2026-11-21T05:30:47+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-97cb955d3aba",
-      "title": "Повз Мощун на Вишгород",
-      "text": "Повз Мощун на Вишгород ⚠️",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108360",
-      "publishedAt": "2026-11-21T05:25:06+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-9d0e90ac8f31",
-      "title": "РБПЛА на Бучу, Ірпінь",
-      "text": "РБПЛА на Бучу, Ірпінь",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108359",
-      "publishedAt": "2026-11-21T05:20:03+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-d5860ee95d7e",
-      "title": "РБПЛА на Бучу, Ірпінь",
-      "text": "РБПЛА на Бучу, Ірпінь",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108358",
-      "publishedAt": "2026-11-21T05:19:13+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-8f3661114a7f",
-      "title": "🟡",
-      "text": "🟡 м. Київ — повітряна тривога, жовтий рівень: Дронова загроза (жовтий рівень)",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108357",
-      "publishedAt": "2026-11-21T05:17:57+00:00",
-      "importance": "red"
     }
   ]
 }

@@ -1,9 +1,109 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-24T09:50:08.352892+00:00",
+  "fetchedAt": "2026-11-24T10:42:31.315920+00:00",
   "retentionDays": 3,
-  "count": 343,
+  "count": 341,
   "items": [
+    {
+      "id": "kyivinfo-b205a6936974",
+      "title": "🙏",
+      "text": "🙏 Друзі, нам потрібно ще 14700 голосів, у кого є преміум tg, проголосуйте, будь ласка , за наш канал https://t.me/boost/kievinfo_kyiv Підтримайте канал, щоб ми добавили більше нових реакцій на пости 🥊 🥊",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108683",
+      "publishedAt": "2026-11-24T10:33:18+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-90550bdbac20",
+      "title": "✅",
+      "text": "✅ ВІДБІЙ ПОВІТРЯНОЇ ТРИВОГИ ✅",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108682",
+      "publishedAt": "2026-11-24T10:31:36+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivnebo-e08a29c58236",
+      "title": "Поки на північ області полетів",
+      "text": "Поки на північ області полетів",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34302",
+      "publishedAt": "2026-11-24T10:22:24+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-16af12c8a275",
+      "title": "⚠️",
+      "text": "⚠️ ✈️ Виходить з Києва повз Пущу",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108681",
+      "publishedAt": "2026-11-24T10:21:39+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-90d9c5ab2f15",
+      "title": "Реактивний маневрує біля Оболоні дуже високо",
+      "text": "Реактивний маневрує біля Оболоні дуже високо",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34301",
+      "publishedAt": "2026-11-24T10:21:21+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-6a58af93e4c2",
+      "title": "Оболонь, Мінський",
+      "text": "Оболонь, Мінський",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108680",
+      "publishedAt": "2026-11-24T10:20:24+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-05017fb0c0bb",
+      "title": "Міст Патона",
+      "text": "Міст Патона",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108679",
+      "publishedAt": "2026-11-24T10:18:39+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-969ab1f0ef9a",
+      "title": "Курс Вишневе, Борщагівки, висота 6600 м. То не довго погоху…",
+      "text": "Курс Вишневе, Борщагівки, висота 6600 м. То не довго погоху…",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108678",
+      "publishedAt": "2026-11-24T10:17:43+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-81b5ba22fa5c",
+      "title": "РБПЛА на Лавіну",
+      "text": "РБПЛА на Лавіну",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108677",
+      "publishedAt": "2026-11-24T10:16:06+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-9181f9309880",
+      "title": "🟡",
+      "text": "🟡 м. Київ — повітряна тривога, жовтий рівень: Дронова загроза (жовтий рівень)",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108676",
+      "publishedAt": "2026-11-24T10:15:34+00:00",
+      "importance": "red"
+    },
     {
       "id": "kyivinfo-3ceff028b8fa",
       "title": "🤯",
@@ -3312,126 +3412,6 @@
       "region": "kyiv",
       "url": "https://t.me/kievinfo_kyiv/108390",
       "publishedAt": "2026-11-21T12:19:37+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-4d742ee1b381",
-      "title": "❗️",
-      "text": "❗️ Дорогі читачі, які мають Telegram Premium, дуже прошу « підзарядити » наш канал 🇺🇦 . Для цього, потрібно перейти за цим посиланням, натиснути зарядити канал ( boost channel ). Це відкриває додаткові функції для каналу. https://t.me/boost/kievinfo_kyiv",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108389",
-      "publishedAt": "2026-11-21T10:42:15+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-21068405c239",
-      "title": "✅",
-      "text": "✅ ВІДБІЙ ПОВІТРЯНОЇ ТРИВОГИ ✅",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108388",
-      "publishedAt": "2026-11-21T10:39:47+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-20fc135efb30",
-      "title": "Реактивний дрон повз Козин на Теличку, Південний міст",
-      "text": "Реактивний дрон повз Козин на Теличку, Південний міст",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108387",
-      "publishedAt": "2026-11-21T10:36:58+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivnebo-11f6b3d83670",
-      "title": "Більше не фіксується",
-      "text": "Більше не фіксується",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34169",
-      "publishedAt": "2026-11-21T10:34:30+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivnebo-5a15a579699a",
-      "title": "Дарниця",
-      "text": "Дарниця",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34168",
-      "publishedAt": "2026-11-21T10:33:33+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-6080431a18fe",
-      "title": "Реактивний дрон повз Козин на Теличку, Південний міст",
-      "text": "Реактивний дрон повз Козин на Теличку, Південний міст",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108386",
-      "publishedAt": "2026-11-21T10:32:45+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivnebo-cd8870e30a43",
-      "title": "Південний міст",
-      "text": "Південний міст",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34167",
-      "publishedAt": "2026-11-21T10:32:42+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivnebo-894d0da361f6",
-      "title": "Теличка",
-      "text": "Теличка",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34166",
-      "publishedAt": "2026-11-21T10:32:29+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-23e2cdae75df",
-      "title": "🟡",
-      "text": "🟡 м. Київ — повітряна тривога, жовтий рівень: Дронова загроза (жовтий рівень)",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108385",
-      "publishedAt": "2026-11-21T10:32:12+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivnebo-f4dd5d54bcb0",
-      "title": "Реактивний виліз біля Конча-Заспи",
-      "text": "Реактивний виліз біля Конча-Заспи",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34165",
-      "publishedAt": "2026-11-21T10:31:29+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-7019b30b0f9c",
-      "title": "👀",
-      "text": "👀 🚀 У Подільському районі сапери витягли бойову частину російської балістичної ракети, що не розірвалася, яка впала у дворі житлових будинків, — ДСНС 🇺🇦 Київ ІНФО | Надіслати новину",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108382",
-      "publishedAt": "2026-11-21T10:30:22+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-dea52b9e0575",
-      "title": "🟡",
-      "text": "🟡 Жовтий рівень тривоги • Бориспільський район (Київська обл.) • Броварський район (Київська обл.) Детальний радар 👉🏽 @kievinform_ua1",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108381",
-      "publishedAt": "2026-11-21T10:04:56+00:00",
       "importance": "red"
     }
   ]

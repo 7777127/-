@@ -1,9 +1,29 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-24T02:13:07.441286+00:00",
+  "fetchedAt": "2026-11-24T03:06:21.864896+00:00",
   "retentionDays": 3,
-  "count": 358,
+  "count": 352,
   "items": [
+    {
+      "id": "kyivinfo-d31ade7b262d",
+      "title": "🟡",
+      "text": "🟡 Білоцерківський район — повітряна тривога, жовтий рівень Загроза БпЛА з Черкащини Детальний радар 👉🏽 @kievinform_ua1",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108660",
+      "publishedAt": "2026-11-24T02:44:38+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-b7321e7a5643",
+      "title": "✅",
+      "text": "✅ ВІДБІЙ ПОВІТРЯНОЇ ТРИВОГИ ✅",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108659",
+      "publishedAt": "2026-11-24T02:26:14+00:00",
+      "importance": "red"
+    },
     {
       "id": "kyivinfo-f73105274ee5",
       "title": "🟡",
@@ -3503,86 +3523,6 @@
       "url": "https://t.me/kievinfo_kyiv/108343",
       "publishedAt": "2026-11-21T03:07:42+00:00",
       "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-93c7b926147b",
-      "title": "Жуляни /Вишеньки уважно",
-      "text": "Жуляни /Вишеньки уважно ✈️",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108342",
-      "publishedAt": "2026-11-21T03:02:37+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-4cc20f00c050",
-      "title": "Гнідин/тец-5/Видубичі. низько літають",
-      "text": "Гнідин/тец-5/Видубичі. низько літають ⚠️ ✈️",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108341",
-      "publishedAt": "2026-11-21T03:00:30+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-fee8859438be",
-      "title": "ВДНГ/Городище уважно",
-      "text": "ВДНГ/Городище уважно ⚠️ ✈️",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108340",
-      "publishedAt": "2026-11-21T02:58:07+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-6c9d1d89abb4",
-      "title": "Бориспіль/Київ",
-      "text": "Бориспіль/Київ ✈️ літають низько. Уважно ⚠️",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108339",
-      "publishedAt": "2026-11-21T02:45:58+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-d67c5e5a73a2",
-      "title": "🟡",
-      "text": "🟡 м. Київ — повітряна тривога, жовтий рівень: Дронова загроза (жовтий рівень)",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108338",
-      "publishedAt": "2026-11-21T02:44:50+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-7b4fa3e4d5a3",
-      "title": "Бориспіль/Козин уважно",
-      "text": "Бориспіль/Козин уважно ⚠️ ✈️",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108337",
-      "publishedAt": "2026-11-21T02:43:49+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-76649537a28a",
-      "title": "Переяслав уважно. 2х зі сходу",
-      "text": "Переяслав уважно. 2х зі сходу ✈️",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108336",
-      "publishedAt": "2026-11-21T02:35:34+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-b40d883718be",
-      "title": "✈️",
-      "text": "✈️ 7х звичайних БпЛА на/повз Згурівку",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108335",
-      "publishedAt": "2026-11-21T02:17:12+00:00",
-      "importance": "red"
     }
   ]
 }

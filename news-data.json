@@ -1,9 +1,249 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-24T20:04:23.381434+00:00",
+  "fetchedAt": "2026-11-24T20:57:50.676378+00:00",
   "retentionDays": 3,
-  "count": 390,
+  "count": 414,
   "items": [
+    {
+      "id": "kyivinfo-723c4732a10d",
+      "title": "🗣️",
+      "text": "🗣️ Влучання уламків БпЛА та пожежа на 1-2 поверхах 16-поверхового житлового будинку у Шевченківському районі, – мер Кличко",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108747",
+      "publishedAt": "2026-11-24T20:43:43+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-544b4d023f87",
+      "title": "🐒",
+      "text": "🐒 Дріфтуни на парковці ТРЦ Lavina mall тут як тут… Люди спокійно не можуть потрапити додому , кожен вечір картинг ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108745",
+      "publishedAt": "2026-11-24T20:27:49+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-0e2f75d1fe3c",
+      "title": "🗣️",
+      "text": "🗣️ Влучання уламків БпЛА та пожежа на 1-2 поверхах 16-поверхового житлового будинку у Шевченківському районі, – мер Кличко",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108744",
+      "publishedAt": "2026-11-24T20:20:39+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-82f01be032c6",
+      "title": "✅",
+      "text": "✅ ВІДБІЙ ПОВІТРЯНОЇ ТРИВОГИ ✅",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108742",
+      "publishedAt": "2026-11-24T20:19:32+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-873b3e4f8810",
+      "title": "Чисто. Дорозвідка",
+      "text": "Чисто. Дорозвідка ✈️ 👀 ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108741",
+      "publishedAt": "2026-11-24T20:14:03+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-fbb59bcdef50",
+      "title": "Зниження на Жуляни через Шулявку",
+      "text": "Зниження на Жуляни через Шулявку",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108740",
+      "publishedAt": "2026-11-24T20:13:48+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-6f6971fef9ba",
+      "title": "Очікуємо на відбої",
+      "text": "Очікуємо на відбої",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34343",
+      "publishedAt": "2026-11-24T20:13:46+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-ac3333aa7ea1",
+      "title": "Впав",
+      "text": "Впав",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34342",
+      "publishedAt": "2026-11-24T20:13:41+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-2d6c8d65bd24",
+      "title": "Схоже долітався",
+      "text": "Схоже долітався",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34341",
+      "publishedAt": "2026-11-24T20:13:00+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-3d4068b99ee0",
+      "title": "Сирець, Шулявка, Нивки",
+      "text": "Сирець, Шулявка, Нивки",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34340",
+      "publishedAt": "2026-11-24T20:12:28+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-709389fc513d",
+      "title": "Кружляє собі на висоті 3 км, може впасти в любий момент",
+      "text": "Кружляє собі на висоті 3 км, може впасти в любий момент",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34339",
+      "publishedAt": "2026-11-24T20:11:52+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-54ff8f06e632",
+      "title": "На Оболонь",
+      "text": "На Оболонь",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34338",
+      "publishedAt": "2026-11-24T20:11:34+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-6dfa2dd4cdf4",
+      "title": "Труханів",
+      "text": "Труханів ✈️ ⚠️",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108739",
+      "publishedAt": "2026-11-24T20:11:31+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-5d10481e0c2c",
+      "title": "Лісовий масив",
+      "text": "Лісовий масив",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34337",
+      "publishedAt": "2026-11-24T20:11:04+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-0352174b53da",
+      "title": "На Троєщину",
+      "text": "На Троєщину",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34336",
+      "publishedAt": "2026-11-24T20:10:16+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-e8a00af479e4",
+      "title": "Петрівці",
+      "text": "Петрівці",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34335",
+      "publishedAt": "2026-11-24T20:08:01+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-d1f651b56308",
+      "title": "Розвернувся і йде Виноградар, Пуща",
+      "text": "Розвернувся і йде Виноградар, Пуща",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108738",
+      "publishedAt": "2026-11-24T20:07:04+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-a0fe1c36575f",
+      "title": "Виноградар",
+      "text": "Виноградар",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34334",
+      "publishedAt": "2026-11-24T20:06:32+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-0dbfce965a33",
+      "title": "Сирець",
+      "text": "Сирець",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34333",
+      "publishedAt": "2026-11-24T20:06:20+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-2c9e67540f79",
+      "title": "✈️",
+      "text": "✈️ Жуляни уважно",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108737",
+      "publishedAt": "2026-11-24T20:06:06+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-631b8793b52c",
+      "title": "Правий берег - знову уважно",
+      "text": "Правий берег - знову уважно",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34332",
+      "publishedAt": "2026-11-24T20:05:05+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-189112e90160",
+      "title": "Жуляни",
+      "text": "Жуляни",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34331",
+      "publishedAt": "2026-11-24T20:05:00+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-e9df03ba984a",
+      "title": "Завернув на Вишневе",
+      "text": "Завернув на Вишневе",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34330",
+      "publishedAt": "2026-11-24T20:04:49+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-fd2765bb93ec",
+      "title": "Глеваха, Васильків",
+      "text": "Глеваха, Васильків",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34329",
+      "publishedAt": "2026-11-24T20:04:16+00:00",
+      "importance": "normal"
+    },
     {
       "id": "kyivinfo-8c05f23e8a16",
       "title": "Деміївська, Мишоловка",

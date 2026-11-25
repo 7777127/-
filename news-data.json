@@ -1,9 +1,79 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-25T21:41:54.159087+00:00",
+  "fetchedAt": "2026-11-25T22:37:40.951146+00:00",
   "retentionDays": 3,
-  "count": 438,
+  "count": 444,
   "items": [
+    {
+      "id": "kyivinfo-9ff6ef31d2dc",
+      "title": "❗️",
+      "text": "❗️ Моменти удару по Києву. Протягом ночі уважно до повідомлень. Може бути повторно 🚀 p.s. і не підписуйтесь на труху, він підарас! ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108873",
+      "publishedAt": "2026-11-25T22:20:32+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-fde0ee7c2bca",
+      "title": "😱",
+      "text": "😱 🤬 Знову удари по ТРЦ Проспект, сильна ПОЖЕЖА - соцмережі ㅤ ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108872",
+      "publishedAt": "2026-11-25T22:17:10+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-6d88bdda27fc",
+      "title": "✅",
+      "text": "✅ ВІДБІЙ ПОВІТРЯНОЇ ТРИВОГИ ✅",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108871",
+      "publishedAt": "2026-11-25T22:16:41+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivnebo-1d60dd7a5b74",
+      "title": "Протягом ночі все ще уважно до можливих тривог",
+      "text": "Протягом ночі все ще уважно до можливих тривог",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34408",
+      "publishedAt": "2026-11-25T22:14:48+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivnebo-4ea3b654bee0",
+      "title": "Відбій",
+      "text": "Відбій",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34407",
+      "publishedAt": "2026-11-25T22:14:31+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-8f3b4f3234fe",
+      "title": "🤯",
+      "text": "🤯 ❗️ Влучання було у ТРЦ Проспект, - соцмережі ㅤ Медики госпіталізували одного постраждалого внаслідок атаки ворога. 23:28 🟢 ВІДБІЙ по балістиці ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108870",
+      "publishedAt": "2026-11-25T21:53:21+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-289b6fb4c53e",
+      "title": "😱",
+      "text": "😱 ❗️ Моменти вибухів другий залп - КАДРИ З МІСЦЬ Дивіться тут 👇🏽 👇🏽 👇🏽 https://t.me/+NGXyG3sT5qZkZjEy https://t.me/+NGXyG3sT5qZkZjEy https://t.me/+NGXyG3sT5qZkZjEy",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108869",
+      "publishedAt": "2026-11-25T21:47:04+00:00",
+      "importance": "red"
+    },
     {
       "id": "kyivinfo-f879d647bb36",
       "title": "ВИБУХИ",
@@ -4373,16 +4443,6 @@
       "url": "https://t.me/kievinfo_kyiv/108528",
       "publishedAt": "2026-11-22T22:40:00+00:00",
       "importance": "red"
-    },
-    {
-      "id": "kyivinfo-7ffd032e291b",
-      "title": "🔴",
-      "text": "🔴 Дитина, яку витягнули з-під завалів у Димері — хлопчик, йому надають допомогу. Досі немає інформації про 10 людей. Відомо про трьох загиблих. Рятувальна операція триває, до неї залучили понад 130 людей, повідомив оновлені дані Зеленський. За словами президента…",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108524",
-      "publishedAt": "2026-11-22T21:48:36+00:00",
-      "importance": "orange"
     }
   ]
 }

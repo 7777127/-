@@ -1,9 +1,29 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-24T23:36:21.018873+00:00",
+  "fetchedAt": "2026-11-25T00:28:18.683686+00:00",
   "retentionDays": 3,
-  "count": 393,
+  "count": 373,
   "items": [
+    {
+      "id": "kyivinfo-260d297f2dfd",
+      "title": "🟡",
+      "text": "🟡 Білоцерківський район — повітряна тривога, жовтий рівень Загроза по БпЛА з Черкащини Детальний радар 👉🏽 @kievinform_ua1",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108749",
+      "publishedAt": "2026-11-25T00:23:40+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-de70d136e13f",
+      "title": "⚡️",
+      "text": "⚡️ зміни до графіків відключень для Київщини станом на 01:33 – ДТЕК ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108748",
+      "publishedAt": "2026-11-24T23:37:13+00:00",
+      "importance": "normal"
+    },
     {
       "id": "kyivinfo-723c4732a10d",
       "title": "🗣️",
@@ -3713,226 +3733,6 @@
       "url": "https://t.me/kievinfo_kyiv/108440",
       "publishedAt": "2026-11-22T01:02:10+00:00",
       "importance": "red"
-    },
-    {
-      "id": "kyivinfo-ef378f2a2fa0",
-      "title": "✅",
-      "text": "✅ ВІДБІЙ ПОВІТРЯНОЇ ТРИВОГИ ✅",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108439",
-      "publishedAt": "2026-11-22T00:08:25+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-02202fe64878",
-      "title": "💥",
-      "text": "💥 Вибух. Дорозвідка ✈️",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108438",
-      "publishedAt": "2026-11-22T00:02:34+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivnebo-7e1ec0980804",
-      "title": "Очікуємо на відбої",
-      "text": "Очікуємо на відбої",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34194",
-      "publishedAt": "2026-11-22T00:01:59+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivnebo-bda162bba627",
-      "title": "Наче все",
-      "text": "Наче все",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34193",
-      "publishedAt": "2026-11-22T00:01:44+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivnebo-c0a1f8bdc5ff",
-      "title": "Оболонь",
-      "text": "Оболонь",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34192",
-      "publishedAt": "2026-11-22T00:00:54+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivnebo-abf896ad931b",
-      "title": "Лук'янівка",
-      "text": "Лук'янівка",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34191",
-      "publishedAt": "2026-11-21T23:59:30+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-71003e0cf09f",
-      "title": "Реактивний БпЛА на Лукʼянівку",
-      "text": "Реактивний БпЛА на Лукʼянівку",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108437",
-      "publishedAt": "2026-11-21T23:59:16+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivnebo-bca9ac0ec27c",
-      "title": "Солома",
-      "text": "Солома",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34190",
-      "publishedAt": "2026-11-21T23:58:30+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-1c09cc968b22",
-      "title": "Реактивний БпЛА курсом на Голосіїв",
-      "text": "Реактивний БпЛА курсом на Голосіїв",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108436",
-      "publishedAt": "2026-11-21T23:57:46+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivnebo-52d74a368a03",
-      "title": "Мишоловка",
-      "text": "Мишоловка",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34189",
-      "publishedAt": "2026-11-21T23:57:13+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-50875b2e4fd9",
-      "title": "Реактивний БпЛА курсом на Козин",
-      "text": "Реактивний БпЛА курсом на Козин",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108435",
-      "publishedAt": "2026-11-21T23:55:37+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivnebo-63e2f80737fc",
-      "title": "Трипілля",
-      "text": "Трипілля",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34188",
-      "publishedAt": "2026-11-21T23:53:27+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-add4cc78f857",
-      "title": "✈️",
-      "text": "✈️ Реактивний БпЛА курсом на Трипілля ✈️ Реактивний БпЛА курсом на Димер",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108434",
-      "publishedAt": "2026-11-21T23:53:00+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivnebo-d198e10ceff6",
-      "title": "Бориспіль",
-      "text": "Бориспіль",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34187",
-      "publishedAt": "2026-11-21T23:50:13+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-35f789865065",
-      "title": "Реактивний БпЛА курсом на Бровари",
-      "text": "Реактивний БпЛА курсом на Бровари",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108433",
-      "publishedAt": "2026-11-21T23:48:50+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-2072488cceae",
-      "title": "Реактивний БпЛА курсом на Бровари",
-      "text": "Реактивний БпЛА курсом на Бровари",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108432",
-      "publishedAt": "2026-11-21T23:46:37+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivnebo-d4f617500b32",
-      "title": "На Бровари",
-      "text": "На Бровари",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34186",
-      "publishedAt": "2026-11-21T23:45:08+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-9aee6001aaca",
-      "title": "Київщина:",
-      "text": "Київщина: Реактивний БпЛА курсом на Вишгород Реактивний БпЛА повз Припʼять вилетів на територію Білорусі",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108431",
-      "publishedAt": "2026-11-21T23:43:56+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivnebo-ea5b5abb1929",
-      "title": "На Петрівці, Вишгород",
-      "text": "На Петрівці, Вишгород",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34185",
-      "publishedAt": "2026-11-21T23:42:32+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivnebo-0a44b6c3212f",
-      "title": "На Димер",
-      "text": "На Димер",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34184",
-      "publishedAt": "2026-11-21T23:41:48+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-e304ca5f1dc9",
-      "title": "✈️",
-      "text": "✈️ Реактивний БпЛА на Ворзель ✈️ Реактивний БпЛА на Припʼять",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108430",
-      "publishedAt": "2026-11-21T23:40:09+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivnebo-d144d8340e0a",
-      "title": "Маневрує біля Києва, зараз Ворзель",
-      "text": "Маневрує біля Києва, зараз Ворзель",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34183",
-      "publishedAt": "2026-11-21T23:38:20+00:00",
-      "importance": "normal"
     }
   ]
 }

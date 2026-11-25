@@ -1,8 +1,8 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-25T04:52:57.952709+00:00",
+  "fetchedAt": "2026-11-25T05:49:20.175655+00:00",
   "retentionDays": 3,
-  "count": 413,
+  "count": 411,
   "items": [
     {
       "id": "kyivinfo-a3f511c14ce1",
@@ -4112,26 +4112,6 @@
       "region": "kyiv",
       "url": "https://t.me/kievinfo_kyiv/108453",
       "publishedAt": "2026-11-22T05:56:17+00:00",
-      "importance": "orange"
-    },
-    {
-      "id": "kyivinfo-fd9760ef435a",
-      "title": "💥",
-      "text": "💥 Внаслідок атаки пошкоджено житловий будинок у Вишгородському районі, – КОДА.",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108451",
-      "publishedAt": "2026-11-22T05:34:14+00:00",
-      "importance": "orange"
-    },
-    {
-      "id": "kyivinfo-0b4943460340",
-      "title": "💥",
-      "text": "💥 Внаслідок атаки пошкоджено житловий будинок у Вишгородському районі , – КОДА. Зруйновано квартири з 1 по 5 поверх. Окрім того, пошкоджено приміщення магазину. Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108450",
-      "publishedAt": "2026-11-22T05:20:12+00:00",
       "importance": "orange"
     }
   ]

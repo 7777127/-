@@ -1,13 +1,313 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-25T20:42:24.111613+00:00",
+  "fetchedAt": "2026-11-25T21:41:54.159087+00:00",
   "retentionDays": 3,
-  "count": 409,
+  "count": 438,
   "items": [
+    {
+      "id": "kyivinfo-f879d647bb36",
+      "title": "ВИБУХИ",
+      "text": "ВИБУХИ 💥 другий залп вже атакував. Чисто ✈️ . Увага до нових! 🥊 Кличко: 🗣 Наразі троє постраждалих у столиці. Двох із них медики госпіталізували. Один поранений - у тяжкому стані. Балістична атака на Київ триває. Перебувайте в укриттях! ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108868",
+      "publishedAt": "2026-11-25T21:40:28+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivnebo-181bba22a546",
+      "title": "Поки чисто",
+      "text": "Поки чисто",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34406",
+      "publishedAt": "2026-11-25T21:39:25+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-47a85a26f99c",
+      "title": "Падають на район ТЕЦ-4 та ТЕЦ-5!",
+      "text": "Падають на район ТЕЦ-4 та ТЕЦ-5! ❗️",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108867",
+      "publishedAt": "2026-11-25T21:39:14+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-928b4c0efc9c",
+      "title": "Впали",
+      "text": "Впали",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34405",
+      "publishedAt": "2026-11-25T21:39:13+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-a52d661a933e",
+      "title": "Підлітають",
+      "text": "Підлітають",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34404",
+      "publishedAt": "2026-11-25T21:38:07+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-6bd95e5eac32",
+      "title": "Курс Бровари, Київ",
+      "text": "Курс Бровари, Київ",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34403",
+      "publishedAt": "2026-11-25T21:37:43+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-34b88808c1bf",
+      "title": "3х РАКЕТИ циркони на Київ",
+      "text": "3х РАКЕТИ циркони на Київ 🚀 ⚠️",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108866",
+      "publishedAt": "2026-11-25T21:37:18+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivnebo-63fd3b706204",
+      "title": "Пролітають Чернігівщину",
+      "text": "Пролітають Чернігівщину",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34402",
+      "publishedAt": "2026-11-25T21:37:17+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-cb40cb12e649",
+      "title": "3-4",
+      "text": "3-4",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34401",
+      "publishedAt": "2026-11-25T21:36:49+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-5a645cad3317",
+      "title": "Ховайтесь",
+      "text": "Ховайтесь",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34400",
+      "publishedAt": "2026-11-25T21:36:39+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-d5c781f1f9b8",
+      "title": "У наш бік",
+      "text": "У наш бік",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34399",
+      "publishedAt": "2026-11-25T21:36:32+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-5dd108277801",
+      "title": "Циркони схоже",
+      "text": "Циркони схоже",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34398",
+      "publishedAt": "2026-11-25T21:36:07+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-09bb6fe96b2a",
+      "title": "Ціль з Курська",
+      "text": "Ціль з Курська",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34397",
+      "publishedAt": "2026-11-25T21:35:46+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-21308aaaf693",
+      "title": "🔴",
+      "text": "🔴 🔴 🔴 ❗️ БАЛІСТИКА НА КИЇВ 🚀 в укриття! ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108865",
+      "publishedAt": "2026-11-25T21:35:38+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivnebo-f0f16a525929",
+      "title": "Відбій",
+      "text": "Відбій",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34396",
+      "publishedAt": "2026-11-25T21:28:41+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-52760aab0b45",
+      "title": "😱",
+      "text": "😱 У Деснянському районі також влучання в торгівельний центр. 🇺🇦 Київ ІНФО | Надіслати новину",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108864",
+      "publishedAt": "2026-11-25T21:27:41+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-d1e925a060c4",
+      "title": "Зараз мають дати відбій",
+      "text": "Зараз мають дати відбій",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34395",
+      "publishedAt": "2026-11-25T21:27:38+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-6bf8810803b5",
+      "title": "😱",
+      "text": "😱 У Деснянському районі також влучання в торгівельний центр. 🇺🇦 Київ ІНФО | Надіслати новину",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108863",
+      "publishedAt": "2026-11-25T21:23:19+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-53889131711d",
+      "title": "За наявною інформацією, у Брянську у них ще під 30 ракет. Воронеж + Курськ — ще близько 20.",
+      "text": "За наявною інформацією, у Брянську у них ще під 30 ракет. Воронеж + Курськ — ще близько 20.",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34394",
+      "publishedAt": "2026-11-25T21:04:21+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-d6bca6a23ac7",
+      "title": "Повний пакет 8 ракет прийшов в районі ТЕЦ-4.",
+      "text": "Повний пакет 8 ракет прийшов в районі ТЕЦ-4.",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108862",
+      "publishedAt": "2026-11-25T21:00:43+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-b9ac43f321e7",
+      "title": "😱",
+      "text": "😱 ❗️ ПЕРШІ ЖАХЛИВІ КАДРИ З МІСЦЬ ВЛУЧАННЯ У КИЄВІ/ОБЛАСТІ Дивитись 👇🏽 👇🏽 👇🏽 https://t.me/+NGXyG3sT5qZkZjEy https://t.me/+NGXyG3sT5qZkZjEy https://t.me/+NGXyG3sT5qZkZjEy",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108861",
+      "publishedAt": "2026-11-25T20:52:45+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-aed5927e76b5",
+      "title": "Протягом вечора/ночі можливі повторні пуски, будьте уважні",
+      "text": "Протягом вечора/ночі можливі повторні пуски, будьте уважні",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34393",
+      "publishedAt": "2026-11-25T20:50:20+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-2cb3d4beeb3a",
+      "title": "ВИБУХИ",
+      "text": "ВИБУХИ 💥 перший залп вже впав. Чисто. Увага до нових! ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108860",
+      "publishedAt": "2026-11-25T20:50:04+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-5d4e3667993b",
+      "title": "ВИБУХИ",
+      "text": "ВИБУХИ 💥 перший залп вже впав. Чисто. Увага до нових! ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108859",
+      "publishedAt": "2026-11-25T20:47:36+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivnebo-e9e4f76d8890",
+      "title": "Поки все",
+      "text": "Поки все",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34392",
+      "publishedAt": "2026-11-25T20:46:51+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-273acb185366",
+      "title": "4х балістичні РАКЕТИ",
+      "text": "4х балістичні РАКЕТИ 🚀 ⚠️",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108858",
+      "publishedAt": "2026-11-25T20:46:35+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivnebo-03d9f323d978",
+      "title": "4 цілі",
+      "text": "4 цілі",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34391",
+      "publishedAt": "2026-11-25T20:46:02+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-f45597439f47",
+      "title": "Балістика на Київ",
+      "text": "Балістика на Київ",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34390",
+      "publishedAt": "2026-11-25T20:45:33+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-43cba86b8955",
+      "title": "🔴",
+      "text": "🔴 🔴 🔴 ❗️ БАЛІСТИКА НА КИЇВ 🚀 в укриття! ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108857",
+      "publishedAt": "2026-11-25T20:45:13+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-ea1f5d8441e1",
+      "title": "⚠️",
+      "text": "⚠️ ❗️ УВАГА! ПОВІТРЯНА ТРИВОГА! Всі в УКРИТТЯ! Детальний радар 👉🏽 @kievinform_ua1",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108856",
+      "publishedAt": "2026-11-25T20:45:01+00:00",
+      "importance": "red"
+    },
     {
       "id": "kyivinfo-114f88e99471",
       "title": "То не комета…",
-      "text": "То не комета… ☄️ то падає збитий рБПЛА 🚀 22:13 ✅ ВІДБІЙ ТРИВОГИ ✅ ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "text": "То не комета… ☄️ то падає збитий рБПЛА 🚀 ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
       "source": "Київ ІНФО",
       "region": "kyiv",
       "url": "https://t.me/kievinfo_kyiv/108854",
@@ -4082,16 +4382,6 @@
       "region": "kyiv",
       "url": "https://t.me/kievinfo_kyiv/108524",
       "publishedAt": "2026-11-22T21:48:36+00:00",
-      "importance": "orange"
-    },
-    {
-      "id": "kyivinfo-4f577e4c9da3",
-      "title": "😰",
-      "text": "😰 На Київщині внаслідок російської атаки загинув чоловік У Саливонках Білоцерківського району спалахнув приватний житловий будинок. Під час рятувальної операції надзвичайники витягли з нього жінку 1984 року народження. Вона зазнала травм середньої тяжкості. ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108516",
-      "publishedAt": "2026-11-22T20:55:36+00:00",
       "importance": "orange"
     }
   ]

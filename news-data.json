@@ -1,9 +1,29 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-25T15:09:06.308832+00:00",
+  "fetchedAt": "2026-11-25T16:18:41.635748+00:00",
   "retentionDays": 3,
-  "count": 376,
+  "count": 362,
   "items": [
+    {
+      "id": "kyivinfo-9c7df4cf8d27",
+      "title": "⚠️",
+      "text": "⚠️ Під загрозою масованої атаки протягом найближчих 48 годин Київ та область, – ЗМІ з посиланням на розвідку США. рф підготувала близько 33 балістичних ракет. Серед потенційних цілей – об’єкти енергетики, мости, транспортна інфраструктура та оборонні підприємства.…",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108815",
+      "publishedAt": "2026-11-25T16:03:39+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-65e0b5e6a2a2",
+      "title": "‼️",
+      "text": "‼️ НАБУ когось приймають на Чикаленко 👀 Хто знає деталі, пишіть нам у бот 👇 ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108814",
+      "publishedAt": "2026-11-25T15:15:15+00:00",
+      "importance": "normal"
+    },
     {
       "id": "kyivinfo-3dbaa0df2a04",
       "title": "🚂",
@@ -3602,166 +3622,6 @@
       "region": "kyiv",
       "url": "https://t.me/kievinfo_kyiv/108506",
       "publishedAt": "2026-11-22T16:24:58+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivnebo-aaf69ea38930",
-      "title": "Київ наразі без загроз",
-      "text": "Київ наразі без загроз",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34227",
-      "publishedAt": "2026-11-22T15:44:35+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivnebo-14b87cb6fa64",
-      "title": "Завернув на Житомирщину",
-      "text": "Завернув на Житомирщину",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34226",
-      "publishedAt": "2026-11-22T15:44:29+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-b3bf1ad981c4",
-      "title": "😱",
-      "text": "😱 ❗️ Є жертви…. Перші кадри після влучання Герань-5 в Новус, Вишневе ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108505",
-      "publishedAt": "2026-11-22T15:44:04+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-bf26fa5dc7ed",
-      "title": "😱",
-      "text": "😱 ❗️ Є жертви…. Перші кадри після влучання Герань-5 в Новус, Вишневе ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108504",
-      "publishedAt": "2026-11-22T15:40:51+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-36f25f8c1831",
-      "title": "Вибух",
-      "text": "Вибух 💥 Дорозвідка ✈️",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108503",
-      "publishedAt": "2026-11-22T15:40:16+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivnebo-6235cd5c720c",
-      "title": "Ще по водосховищу один летить",
-      "text": "Ще по водосховищу один летить",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34225",
-      "publishedAt": "2026-11-22T15:40:04+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivnebo-eb697ce308ec",
-      "title": "Наче мінус",
-      "text": "Наче мінус",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34224",
-      "publishedAt": "2026-11-22T15:39:54+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-93a0f44b76ca",
-      "title": "‼️",
-      "text": "‼️ ✈️ 1х рБПЛА на ТЕРЕМКИ",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108502",
-      "publishedAt": "2026-11-22T15:39:33+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivnebo-a264ffb13374",
-      "title": "На Вишневе",
-      "text": "На Вишневе",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34223",
-      "publishedAt": "2026-11-22T15:39:06+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivnebo-2ea17ae9ac1d",
-      "title": "Повернув на Хотів",
-      "text": "Повернув на Хотів",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34222",
-      "publishedAt": "2026-11-22T15:38:36+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivnebo-aaecfa384e59",
-      "title": "На Васильків, Глеваху",
-      "text": "На Васильків, Глеваху",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34221",
-      "publishedAt": "2026-11-22T15:37:35+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivnebo-07e09f59e603",
-      "title": "На Вишеньки",
-      "text": "На Вишеньки",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34220",
-      "publishedAt": "2026-11-22T15:34:33+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivnebo-1077e44c6029",
-      "title": "Через Труханів на Нижні сади",
-      "text": "Через Труханів на Нижні сади",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34219",
-      "publishedAt": "2026-11-22T15:33:32+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivnebo-acd7cd645b8f",
-      "title": "Реактивний на Оболонь",
-      "text": "Реактивний на Оболонь",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34218",
-      "publishedAt": "2026-11-22T15:31:41+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-af47e01da2be",
-      "title": "😱",
-      "text": "😱 ❗️ Повідомляють про приліт реактивної «Герань-5» по ТЦ «Новус» у Вишневому Хто на місці, підтверджує інформацію? ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108498",
-      "publishedAt": "2026-11-22T15:26:36+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-8a5628a4f22d",
-      "title": "😱",
-      "text": "😱 ❗️ Повідомляють про приліт реактивної «Герань-5» по ТЦ «Новус» у Вишневому Хто на місці , підтверджує інформацію? ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108497",
-      "publishedAt": "2026-11-22T15:17:50+00:00",
       "importance": "normal"
     }
   ]

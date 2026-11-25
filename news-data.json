@@ -1,9 +1,369 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-25T03:47:19.815523+00:00",
+  "fetchedAt": "2026-11-25T04:52:57.952709+00:00",
   "retentionDays": 3,
-  "count": 377,
+  "count": 413,
   "items": [
+    {
+      "id": "kyivinfo-a3f511c14ce1",
+      "title": "❗️",
+      "text": "❗️ Ворог протягом ночі атакува Білу Церкву реактивними БпЛА, внаслідок атаки загинула людина , – місцева влада Ворог атакував інфраструктуру міста. Пошкоджено «Епіцентр», «Нову пошту» та інші об’єкти цивільного бізнесу. ❗️ КОВА: на жаль, унаслідок ворожої атаки у Білоцерківському районі загинув чоловік 1974 року народження. Виникла пожежа на автостоянці. Її ліквідували. Пошкоджено два вантажні автомобілі. 🇺🇦 Київ ІНФО | Надіслати новину",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108780",
+      "publishedAt": "2026-11-25T04:44:02+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-16a795b0851f",
+      "title": "✅",
+      "text": "✅ ВІДБІЙ ТРИВОГИ у м. Києві",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108779",
+      "publishedAt": "2026-11-25T04:38:51+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-72da5d672aee",
+      "title": "Житомир в укриття!",
+      "text": "Житомир в укриття!",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108778",
+      "publishedAt": "2026-11-25T04:27:32+00:00",
+      "importance": "orange"
+    },
+    {
+      "id": "kyivinfo-22ab87032bd4",
+      "title": "✈️",
+      "text": "✈️ Робить коло над столицею. Віта-Литовська - Гнідин 1500 и",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108777",
+      "publishedAt": "2026-11-25T04:21:13+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-7188d9cbaf03",
+      "title": "Київ наразі чисто",
+      "text": "Київ наразі чисто",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34362",
+      "publishedAt": "2026-11-25T04:20:29+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-e31b834a6f99",
+      "title": "Бориспіль",
+      "text": "Бориспіль",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34361",
+      "publishedAt": "2026-11-25T04:20:16+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-1925e27e4296",
+      "title": "Гнідин, Вишеньки",
+      "text": "Гнідин, Вишеньки",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34360",
+      "publishedAt": "2026-11-25T04:16:34+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-ddf0fba00d85",
+      "title": "1х ДВРЗ-Лісовий-Троя",
+      "text": "1х ДВРЗ-Лісовий-Троя",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108776",
+      "publishedAt": "2026-11-25T04:16:18+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-6ff6b3ba982d",
+      "title": "Деміївка",
+      "text": "Деміївка",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34359",
+      "publishedAt": "2026-11-25T04:15:31+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-676c4b0ebdb6",
+      "title": "Липки",
+      "text": "Липки",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34358",
+      "publishedAt": "2026-11-25T04:14:33+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-fb935790944a",
+      "title": "1х ДВРЗ-Лісовий-Троя",
+      "text": "1х ДВРЗ-Лісовий-Троя",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108775",
+      "publishedAt": "2026-11-25T04:13:44+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-72cc20081140",
+      "title": "Лісовий",
+      "text": "Лісовий",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34357",
+      "publishedAt": "2026-11-25T04:13:42+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-14c8f8a5a327",
+      "title": "1 ДВРЗ",
+      "text": "1 ДВРЗ",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34356",
+      "publishedAt": "2026-11-25T04:12:30+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-b067aabbb754",
+      "title": "Чисто наразі над Києвом. Більшість покружляли і полетіли на Житомирську область.",
+      "text": "Чисто наразі над Києвом. Більшість покружляли і полетіли на Житомирську область. 1х в районі Борисполя",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108774",
+      "publishedAt": "2026-11-25T04:10:49+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-719393c15b01",
+      "title": "4 на Житомирщину",
+      "text": "4 на Житомирщину",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34355",
+      "publishedAt": "2026-11-25T04:08:12+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-fbd5cc18a6c1",
+      "title": "Сам Київ наразі чисто",
+      "text": "Сам Київ наразі чисто",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34354",
+      "publishedAt": "2026-11-25T04:08:06+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-7ae24d5f374b",
+      "title": "2 над Києвом",
+      "text": "2 над Києвом",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34353",
+      "publishedAt": "2026-11-25T04:04:56+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-c036c08a4f66",
+      "title": "Обстановка в небі",
+      "text": "Обстановка в небі 🤯 ✈️ 👀",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108773",
+      "publishedAt": "2026-11-25T04:03:39+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-fd9c38a86f29",
+      "title": "3 над Києвом, 3 пролетіли над Києвом і пішли на Чернігівщину",
+      "text": "3 над Києвом, 3 пролетіли над Києвом і пішли на Чернігівщину",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34352",
+      "publishedAt": "2026-11-25T03:59:50+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-03b9672cf3c4",
+      "title": "✈️",
+      "text": "✈️ Бровари з півдня ⚠️ Загалом 6х БпЛА кружляє над/біля Києва",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108771",
+      "publishedAt": "2026-11-25T03:58:29+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-673c44b869fa",
+      "title": "Вишневе уважно",
+      "text": "Вишневе уважно ✈️ ✈️",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108770",
+      "publishedAt": "2026-11-25T03:55:49+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-f240a1de3394",
+      "title": "На Вишневе",
+      "text": "На Вишневе",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34351",
+      "publishedAt": "2026-11-25T03:55:33+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-c05c2d74f185",
+      "title": "Знову правий берег",
+      "text": "Знову правий берег",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34350",
+      "publishedAt": "2026-11-25T03:54:35+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-6ce256d3137b",
+      "title": "Ще 3 курсом до Вишгорода",
+      "text": "Ще 3 курсом до Вишгорода ✈️ ⚠️",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108769",
+      "publishedAt": "2026-11-25T03:53:41+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-0c0510734eb4",
+      "title": "На Вишгород",
+      "text": "На Вишгород",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34349",
+      "publishedAt": "2026-11-25T03:53:13+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-247a10daf90d",
+      "title": "Бориспіль уважно",
+      "text": "Бориспіль уважно ⚠️ ✈️",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108768",
+      "publishedAt": "2026-11-25T03:52:51+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-d989adb2e21c",
+      "title": "Ще 2 від Димера",
+      "text": "Ще 2 від Димера",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34348",
+      "publishedAt": "2026-11-25T03:52:19+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-a7e5309ec001",
+      "title": "Летять на Бориспіль",
+      "text": "Летять на Бориспіль",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34347",
+      "publishedAt": "2026-11-25T03:52:09+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-386fc88c131f",
+      "title": "⚠️",
+      "text": "⚠️ ✈️ з Києва в напрямку Вороньків/Трипілля",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108767",
+      "publishedAt": "2026-11-25T03:51:55+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-1962411cec6b",
+      "title": "⚠️",
+      "text": "⚠️ ✈️ Реактиви: Сирець Поділ Воскресенка",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108766",
+      "publishedAt": "2026-11-25T03:50:08+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-eb1971b01639",
+      "title": "3 над містом",
+      "text": "3 над містом",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34346",
+      "publishedAt": "2026-11-25T03:49:51+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-6643915664e5",
+      "title": "Правий берег",
+      "text": "Правий берег",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34345",
+      "publishedAt": "2026-11-25T03:49:25+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-1e0d70db371b",
+      "title": "⚠️",
+      "text": "⚠️ ✈️ До 6х реактивів до нас. Перші на ЧЗВ залітають",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108765",
+      "publishedAt": "2026-11-25T03:48:46+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-c410b917ff4d",
+      "title": "🟡",
+      "text": "🟡 м. Київ — повітряна тривога, жовтий рівень: Дронова загроза (жовтий рівень)",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108764",
+      "publishedAt": "2026-11-25T03:48:26+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivnebo-3fdff7334cca",
+      "title": "3 реактивні на Димер",
+      "text": "3 реактивні на Димер",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34344",
+      "publishedAt": "2026-11-25T03:47:31+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-96106d38759d",
+      "title": "⚠️",
+      "text": "⚠️ ✈️ До 6х реактивів до нас. Перші на ЧЗВ залітають",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108763",
+      "publishedAt": "2026-11-25T03:46:56+00:00",
+      "importance": "normal"
+    },
     {
       "id": "kyivinfo-b23abf4b43c7",
       "title": "🟡",

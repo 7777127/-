@@ -1,9 +1,29 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-25T14:03:49.025287+00:00",
+  "fetchedAt": "2026-11-25T15:09:06.308832+00:00",
   "retentionDays": 3,
-  "count": 391,
+  "count": 376,
   "items": [
+    {
+      "id": "kyivinfo-3dbaa0df2a04",
+      "title": "🚂",
+      "text": "🚂 Час у дорозі усього до 6 годин — УЗ запускає найшвидший поїзд між Києвом та Львовом Йдеться про новий поїзд Інтерсіті № 777/778 Київ — Львів. Він курсуватиме без зупинок на проміжних станціях. Перший рейс — 4 грудня ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108813",
+      "publishedAt": "2026-11-25T14:25:26+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-ae5b215da4a2",
+      "title": "🥶",
+      "text": "🥶 Завтра Київ і регіон накриє НЕГОДА — пориви вітру сягнуть 7-12 м/с, температура повітря вночі опуститься до -6°С морозу, а вдень від -2°С. Також очікується ожеледь на дорогах , особливо вночі, ввечері та зранку. ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108812",
+      "publishedAt": "2026-11-25T14:17:50+00:00",
+      "importance": "normal"
+    },
     {
       "id": "kyivinfo-9f910f28a8e9",
       "title": "🔴",
@@ -3742,176 +3762,6 @@
       "region": "kyiv",
       "url": "https://t.me/kievinfo_kyiv/108497",
       "publishedAt": "2026-11-22T15:17:50+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivnebo-9b780d6c2307",
-      "title": "Перестав фіксуватися",
-      "text": "Перестав фіксуватися",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34217",
-      "publishedAt": "2026-11-22T15:01:13+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivnebo-428beee84348",
-      "title": "Реактивний Академмістечко",
-      "text": "Реактивний Академмістечко",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34216",
-      "publishedAt": "2026-11-22T15:01:01+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-e507c557a41e",
-      "title": "🚘",
-      "text": "🚘 Трапилось ДТП з перекиданням біля станції метро Житомирська ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108496",
-      "publishedAt": "2026-11-22T14:57:34+00:00",
-      "importance": "orange"
-    },
-    {
-      "id": "kyivnebo-f8eda8190da3",
-      "title": "Сам Київ наразі чисто",
-      "text": "Сам Київ наразі чисто",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34215",
-      "publishedAt": "2026-11-22T14:49:31+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivnebo-a984518ddc6c",
-      "title": "2 вилітають на Хотів, Чабани",
-      "text": "2 вилітають на Хотів, Чабани",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34214",
-      "publishedAt": "2026-11-22T14:46:56+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-f36eb1fe711b",
-      "title": "2х Реактивні БпЛА курсом на Київ",
-      "text": "2х Реактивні БпЛА курсом на Київ Реактивний БпЛА курсом на Коцюбинське Реактивний БпЛА курсом на Богуслав",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108495",
-      "publishedAt": "2026-11-22T14:46:21+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-e2a4e7270a97",
-      "title": "Новий рБПЛА на Виноградар/Мінський масив",
-      "text": "Новий рБПЛА на Виноградар/Мінський масив",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108494",
-      "publishedAt": "2026-11-22T14:45:19+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivnebo-d70c7b0802d3",
-      "title": "Правий берег - з вулиць",
-      "text": "Правий берег - з вулиць",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34213",
-      "publishedAt": "2026-11-22T14:44:57+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivnebo-b8184a8ebe80",
-      "title": "Ще один Горенка",
-      "text": "Ще один Горенка",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34212",
-      "publishedAt": "2026-11-22T14:44:25+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivnebo-9c24f198f1e5",
-      "title": "2 на Мінський масив",
-      "text": "2 на Мінський масив",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34211",
-      "publishedAt": "2026-11-22T14:44:16+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivnebo-c8b2ea5dbdca",
-      "title": "Ще на Петрівці, Вишгород",
-      "text": "Ще на Петрівці, Вишгород",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34210",
-      "publishedAt": "2026-11-22T14:41:55+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivnebo-6e988b82d0e7",
-      "title": "На Васильків",
-      "text": "На Васильків",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34209",
-      "publishedAt": "2026-11-22T14:41:45+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivnebo-8234d5f43478",
-      "title": "Хотів, Чабани",
-      "text": "Хотів, Чабани",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34208",
-      "publishedAt": "2026-11-22T14:39:33+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivnebo-08c2b726879c",
-      "title": "Над Правим пролітає на Теремки",
-      "text": "Над Правим пролітає на Теремки",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34207",
-      "publishedAt": "2026-11-22T14:38:42+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivnebo-4b63b58f5d66",
-      "title": "Ще 1 на Петрівці, 1 не Бровари",
-      "text": "Ще 1 на Петрівці, 1 не Бровари",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34206",
-      "publishedAt": "2026-11-22T14:36:12+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivnebo-4477e8d44bb8",
-      "title": "Більше не фіксується",
-      "text": "Більше не фіксується",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34205",
-      "publishedAt": "2026-11-22T14:05:57+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-430603c61cd7",
-      "title": "Є збиття",
-      "text": "Є збиття 🚀 💥 🛵 Від Переяслава на Ржищів новий ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108493",
-      "publishedAt": "2026-11-22T14:05:37+00:00",
       "importance": "normal"
     }
   ]

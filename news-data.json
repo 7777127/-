@@ -1,9 +1,219 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-25T19:52:16.585021+00:00",
+  "fetchedAt": "2026-11-25T20:42:24.111613+00:00",
   "retentionDays": 3,
-  "count": 388,
+  "count": 409,
   "items": [
+    {
+      "id": "kyivinfo-114f88e99471",
+      "title": "То не комета…",
+      "text": "То не комета… ☄️ то падає збитий рБПЛА 🚀 22:13 ✅ ВІДБІЙ ТРИВОГИ ✅ ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108854",
+      "publishedAt": "2026-11-25T20:10:38+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-c953e28b8a06",
+      "title": "ВИБУХ",
+      "text": "ВИБУХ 💥 Дорозвідка ✈️ 👀 ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108853",
+      "publishedAt": "2026-11-25T20:04:29+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivnebo-4ffadbcf2c76",
+      "title": "Більше не фіксується",
+      "text": "Більше не фіксується",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34389",
+      "publishedAt": "2026-11-25T20:04:25+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-394a44eda9d8",
+      "title": "Центр",
+      "text": "Центр",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34388",
+      "publishedAt": "2026-11-25T20:03:49+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-239f49eec36d",
+      "title": "Вже над центром",
+      "text": "Вже над центром ⚠️ ✈️",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108852",
+      "publishedAt": "2026-11-25T20:03:25+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-12d07a093c4c",
+      "title": "Поділ",
+      "text": "Поділ",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34387",
+      "publishedAt": "2026-11-25T20:03:06+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-721265f60e6b",
+      "title": "Крутиться над містом, зараз ТЕЦ-6, Троєщина",
+      "text": "Крутиться над містом, зараз ТЕЦ-6, Троєщина",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108851",
+      "publishedAt": "2026-11-25T20:02:03+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-ccb2c769117a",
+      "title": "ТЕЦ-6, Троєщина",
+      "text": "ТЕЦ-6, Троєщина",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34386",
+      "publishedAt": "2026-11-25T20:01:41+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-ea77215791ec",
+      "title": "На Бровари",
+      "text": "На Бровари",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34385",
+      "publishedAt": "2026-11-25T20:01:08+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-6a7d24bc881f",
+      "title": "На Рембазу",
+      "text": "На Рембазу",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34384",
+      "publishedAt": "2026-11-25T20:00:29+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-1ebffb5d3ece",
+      "title": "Осокорки",
+      "text": "Осокорки",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34383",
+      "publishedAt": "2026-11-25T20:00:02+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-47d604c58543",
+      "title": "Солома, Совки, Мишоловка",
+      "text": "Солома, Совки, Мишоловка",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108850",
+      "publishedAt": "2026-11-25T19:59:37+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-800580f7f959",
+      "title": "Мишоловка, йде низько",
+      "text": "Мишоловка, йде низько",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34382",
+      "publishedAt": "2026-11-25T19:59:33+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-d2ade1437ed9",
+      "title": "Деміївка",
+      "text": "Деміївка",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34381",
+      "publishedAt": "2026-11-25T19:59:01+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-c0bdc452a4f3",
+      "title": "Поділ",
+      "text": "Поділ",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34380",
+      "publishedAt": "2026-11-25T19:58:19+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-381eba2d861a",
+      "title": "На Почайну, Лукʼянівку",
+      "text": "На Почайну, Лукʼянівку",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34379",
+      "publishedAt": "2026-11-25T19:58:08+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-7a2a69d0884a",
+      "title": "Оболонь, Почайна",
+      "text": "Оболонь, Почайна",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108849",
+      "publishedAt": "2026-11-25T19:57:46+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-96bcfc0ce145",
+      "title": "Троя, Воскресенка, Русанівка",
+      "text": "Троя, Воскресенка, Русанівка ✈️",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108848",
+      "publishedAt": "2026-11-25T19:57:30+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-66c711c3f0db",
+      "title": "Реактивний повз Рожни",
+      "text": "Реактивний повз Рожни",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34378",
+      "publishedAt": "2026-11-25T19:55:47+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-598b4dd536bb",
+      "title": "🚀",
+      "text": "🚀 Реактивний БпЛА на Бровари",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108847",
+      "publishedAt": "2026-11-25T19:54:53+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-592f82184d1c",
+      "title": "🟡",
+      "text": "🟡 м. Київ — повітряна тривога, жовтий рівень: Дронова загроза (жовтий рівень)",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108846",
+      "publishedAt": "2026-11-25T19:54:39+00:00",
+      "importance": "red"
+    },
     {
       "id": "kyivinfo-f80f5c015fc9",
       "title": "😳",

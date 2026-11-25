@@ -1,9 +1,19 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-25T11:39:58.658581+00:00",
+  "fetchedAt": "2026-11-25T12:47:31.398248+00:00",
   "retentionDays": 3,
   "count": 403,
   "items": [
+    {
+      "id": "kyivinfo-657233a6f80c",
+      "title": "Рашисти вже готові до нового удару. Тоже все може бути найближчі декілька ночей.",
+      "text": "Рашисти вже готові до нового удару. Тоже все може бути найближчі декілька ночей.",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108809",
+      "publishedAt": "2026-11-25T12:20:09+00:00",
+      "importance": "red"
+    },
     {
       "id": "kyivinfo-c2ce31664ff1",
       "title": "❗️",
@@ -4023,16 +4033,6 @@
       "url": "https://t.me/kievinfo_kyiv/108483",
       "publishedAt": "2026-11-22T12:53:00+00:00",
       "importance": "orange"
-    },
-    {
-      "id": "kyivinfo-dcb89ee67042",
-      "title": "⚠️",
-      "text": "⚠️ ❗️ УВАГА! ПОВІТРЯНА ТРИВОГА! Всі в УКРИТТЯ! Детальний радар 👉🏽 @kievinform_ua1",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108482",
-      "publishedAt": "2026-11-22T12:25:15+00:00",
-      "importance": "red"
     }
   ]
 }

@@ -1,9 +1,19 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-25T12:47:31.398248+00:00",
+  "fetchedAt": "2026-11-25T14:03:49.025287+00:00",
   "retentionDays": 3,
-  "count": 403,
+  "count": 391,
   "items": [
+    {
+      "id": "kyivinfo-9f910f28a8e9",
+      "title": "🔴",
+      "text": "🔴 Силова запаковка на Данченка 📩 Засняли або побачили щось цікаве чи важливе – одразу надсилайте нам в бот, опублікуємо – @novosty_kiev_bot 🇺🇦 Київ ІНФО | Надіслати новину",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108810",
+      "publishedAt": "2026-11-25T13:04:36+00:00",
+      "importance": "normal"
+    },
     {
       "id": "kyivinfo-657233a6f80c",
       "title": "Рашисти вже готові до нового удару. Тоже все може бути найближчі декілька ночей.",
@@ -3903,136 +3913,6 @@
       "url": "https://t.me/kievinfo_kyiv/108493",
       "publishedAt": "2026-11-22T14:05:37+00:00",
       "importance": "normal"
-    },
-    {
-      "id": "kyivnebo-ab25e6ffd991",
-      "title": "Троєщина, Вишгород",
-      "text": "Троєщина, Вишгород",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34204",
-      "publishedAt": "2026-11-22T14:03:23+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivnebo-06803aecf8eb",
-      "title": "Реактивний Бровари",
-      "text": "Реактивний Бровари",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34203",
-      "publishedAt": "2026-11-22T14:01:47+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-0b86ab00c6fe",
-      "title": "1х рБПЛА Вишневе, Білогородка",
-      "text": "1х рБПЛА Вишневе, Білогородка 1х рБПЛА Щасливе",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108492",
-      "publishedAt": "2026-11-22T13:59:53+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-fbc545dc694a",
-      "title": "Більшість наразі обходять Київ курсом на захід",
-      "text": "Більшість наразі обходять Київ курсом на захід",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108491",
-      "publishedAt": "2026-11-22T13:54:35+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-b10cbaa12b32",
-      "title": "ВИБУХИ",
-      "text": "ВИБУХИ 💥 в передмісті Києва! Є збиття ✈️ Дорозвідка ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108490",
-      "publishedAt": "2026-11-22T13:39:38+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivnebo-2959a361d88e",
-      "title": "Наразі біля Києва чисто",
-      "text": "Наразі біля Києва чисто",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34202",
-      "publishedAt": "2026-11-22T13:39:38+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivnebo-b265abf2873b",
-      "title": "Більше не летить",
-      "text": "Більше не летить",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34201",
-      "publishedAt": "2026-11-22T13:39:24+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-c8fb473c8750",
-      "title": "Ось такий двіж на півночі області",
-      "text": "Ось такий двіж на півночі області 👀",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108489",
-      "publishedAt": "2026-11-22T13:38:41+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivnebo-c2578cce9623",
-      "title": "Берковець",
-      "text": "Берковець",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34200",
-      "publishedAt": "2026-11-22T13:37:46+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-353c21ab1c0c",
-      "title": "Петрівці - Вишгород Герань-5",
-      "text": "Петрівці - Вишгород Герань-5 ⚠️ 🚀",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108488",
-      "publishedAt": "2026-11-22T13:35:34+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivnebo-43c1347101b7",
-      "title": "Реактивний на Петрівці, Вишгород",
-      "text": "Реактивний на Петрівці, Вишгород",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34199",
-      "publishedAt": "2026-11-22T13:34:03+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-a8d66448c3ab",
-      "title": "🟡",
-      "text": "🟡 м. Київ — повітряна тривога, жовтий рівень: Дронова загроза (жовтий рівень)",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108487",
-      "publishedAt": "2026-11-22T13:33:48+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-8fcb6054df9e",
-      "title": "😰",
-      "text": "😰 Кадри наслідків атаки рф у Вишгородському районі: наразі відомо про 2 загиблих, ще 4 людини, серед яких дитина, постраждали, — ДСНС. Рятувальники розшукують 11 людей, зокрема 2 дітей, які не виходять на зв’язок. 🇺🇦 Київ ІНФО | Надіслати новину",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108483",
-      "publishedAt": "2026-11-22T12:53:00+00:00",
-      "importance": "orange"
     }
   ]
 }

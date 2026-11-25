@@ -1,9 +1,209 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-25T17:21:04.484045+00:00",
+  "fetchedAt": "2026-11-25T18:06:13.165009+00:00",
   "retentionDays": 3,
-  "count": 364,
+  "count": 383,
   "items": [
+    {
+      "id": "kyivnebo-b7ccb63d9580",
+      "title": "Вишеньки",
+      "text": "Вишеньки",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34374",
+      "publishedAt": "2026-11-25T18:03:59+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-e8cb20ff1799",
+      "title": "Біля Борисполя маневрує",
+      "text": "Біля Борисполя маневрує",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34373",
+      "publishedAt": "2026-11-25T17:59:34+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-d4368bfcde13",
+      "title": "😵‍💫",
+      "text": "😵‍💫 ✈️ Літає кругами Лівий, Княжичі, Бровари, Требухів… висота 1500-2000 м. ✈️ ✈️ Детальний рух ШАХЕДІВ описується на нашому спеціалізованому каналі – @kievinform_ua1 @kievinform_ua1 @kievinform_ua1 🇺🇦 Київ ІНФО | Надіслати новину",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108836",
+      "publishedAt": "2026-11-25T17:54:26+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivnebo-46bae3accde5",
+      "title": "На Бровари знову",
+      "text": "На Бровари знову",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34372",
+      "publishedAt": "2026-11-25T17:51:55+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-663bb75c8963",
+      "title": "І знову ДВРЗ, Лісовий",
+      "text": "І знову ДВРЗ, Лісовий ✈️",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108835",
+      "publishedAt": "2026-11-25T17:51:54+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-4024e3d801af",
+      "title": "Осокорки, Дарниця",
+      "text": "Осокорки, Дарниця",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34371",
+      "publishedAt": "2026-11-25T17:50:58+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-e1bf08193fc7",
+      "title": "Розворот на ПОХ - укриття!",
+      "text": "Розворот на ПОХ - укриття!",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108834",
+      "publishedAt": "2026-11-25T17:50:51+00:00",
+      "importance": "orange"
+    },
+    {
+      "id": "kyivinfo-14e6ff3d0d6b",
+      "title": "Пішов в сектон Гнідин - Вишеньки",
+      "text": "Пішов в сектон Гнідин - Вишеньки",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108833",
+      "publishedAt": "2026-11-25T17:49:39+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-907078ca8f9b",
+      "title": "«Опять 25»",
+      "text": "«Опять 25» 🙆🏻‍♂️ Биківня, ДВРЗ, Лісовий ✈️",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108832",
+      "publishedAt": "2026-11-25T17:47:54+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-0b48a56f0e65",
+      "title": "👀",
+      "text": "👀 ✈️ Зробив круг навколо Броварів і йде на Зазимʼя ✈️ ✈️ Детальний рух ШАХЕДІВ описується на нашому спеціалізованому каналі – @kievinform_ua1 @kievinform_ua1 @kievinform_ua1 🇺🇦 Київ ІНФО | Надіслати новину",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108831",
+      "publishedAt": "2026-11-25T17:46:13+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivnebo-830702fd55e8",
+      "title": "Кружляє біля Броварів",
+      "text": "Кружляє біля Броварів",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34370",
+      "publishedAt": "2026-11-25T17:45:59+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-9f707400a27c",
+      "title": "Бровари",
+      "text": "Бровари",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34369",
+      "publishedAt": "2026-11-25T17:44:24+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-b6c765439481",
+      "title": "Маневр на Княжичі",
+      "text": "Маневр на Княжичі ✈️ ❗️",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108830",
+      "publishedAt": "2026-11-25T17:43:41+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-af5e970f0037",
+      "title": "Рембаза",
+      "text": "Рембаза",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34368",
+      "publishedAt": "2026-11-25T17:43:14+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-ceb7e62d580c",
+      "title": "Лісовий масив",
+      "text": "Лісовий масив",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34367",
+      "publishedAt": "2026-11-25T17:42:24+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-59c2cc9ce439",
+      "title": "Биківня, ДВРЗ, Лісовий",
+      "text": "Биківня, ДВРЗ, Лісовий ✈️",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108829",
+      "publishedAt": "2026-11-25T17:42:13+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-1d2ec32af0f7",
+      "title": "Ще один на Бровари",
+      "text": "Ще один на Бровари",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34366",
+      "publishedAt": "2026-11-25T17:41:01+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-17c56e574a40",
+      "title": "Знову РБПЛА на Бровари, Трою",
+      "text": "Знову РБПЛА на Бровари, Трою",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108828",
+      "publishedAt": "2026-11-25T17:38:53+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivnebo-45254da3d711",
+      "title": "Був біля Димера, вже немає",
+      "text": "Був біля Димера, вже немає",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34365",
+      "publishedAt": "2026-11-25T17:38:21+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-e7301f4946b9",
+      "title": "🟡",
+      "text": "🟡 м. Київ — повітряна тривога, жовтий рівень: Дронова загроза (жовтий рівень)",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108827",
+      "publishedAt": "2026-11-25T17:38:16+00:00",
+      "importance": "red"
+    },
     {
       "id": "kyivinfo-9d430526fc7c",
       "title": "❄️",
@@ -3633,16 +3833,6 @@
       "url": "https://t.me/kievinfo_kyiv/108514",
       "publishedAt": "2026-11-22T18:38:15+00:00",
       "importance": "orange"
-    },
-    {
-      "id": "kyivinfo-1fde6bdefb8d",
-      "title": "❗️",
-      "text": "❗️ Ворог забрав життя людини у Вишневому. Ще троє людей поранені, – ОВА. ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108510",
-      "publishedAt": "2026-11-22T17:44:07+00:00",
-      "importance": "normal"
     }
   ]
 }

@@ -1,9 +1,69 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-25T18:06:13.165009+00:00",
+  "fetchedAt": "2026-11-25T18:57:04.200220+00:00",
   "retentionDays": 3,
-  "count": 383,
+  "count": 388,
   "items": [
+    {
+      "id": "kyivinfo-32d29670f208",
+      "title": "ПЗДЦ",
+      "text": "ПЗДЦ 😱 🤯 момент влучання Герань-5 в Малині Здається, чоловік який проходив повз навіть не замітив 😳 Стежити за обстановкою на Житомирщині можна тут - https://t.me/+JcrDtGY76AZiZTIy ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108839",
+      "publishedAt": "2026-11-25T18:32:44+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-81773d0e9527",
+      "title": "Відбій",
+      "text": "Відбій",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34377",
+      "publishedAt": "2026-11-25T18:31:11+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-a4cc85f04122",
+      "title": "✅",
+      "text": "✅ ВІДБІЙ ПОВІТРЯНОЇ ТРИВОГИ ✅",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108838",
+      "publishedAt": "2026-11-25T18:30:45+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivnebo-4a1cf0e6232a",
+      "title": "Так і кружляє біля Борисполя",
+      "text": "Так і кружляє біля Борисполя",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34376",
+      "publishedAt": "2026-11-25T18:16:11+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-c1bb12238252",
+      "title": "🚒",
+      "text": "🚒 🔥 Тим часом ГОРИТЬ квартира на Березняках , вул. Березняківська ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108837",
+      "publishedAt": "2026-11-25T18:09:50+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-49294ff90fd4",
+      "title": "Бориспіль, кружляє",
+      "text": "Бориспіль, кружляє",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34375",
+      "publishedAt": "2026-11-25T18:05:13+00:00",
+      "importance": "normal"
+    },
     {
       "id": "kyivnebo-b7ccb63d9580",
       "title": "Вишеньки",
@@ -3823,16 +3883,6 @@
       "url": "https://t.me/kievinfo_kyiv/108515",
       "publishedAt": "2026-11-22T19:48:41+00:00",
       "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-1b00fd0cc0c6",
-      "title": "Під час пошуково-рятувальних робіт в Димері рятувальники дістали живу дитину, — Ткаченко",
-      "text": "Під час пошуково-рятувальних робіт в Димері рятувальники дістали живу дитину, — Ткаченко",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108514",
-      "publishedAt": "2026-11-22T18:38:15+00:00",
-      "importance": "orange"
     }
   ]
 }

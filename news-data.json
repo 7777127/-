@@ -1,9 +1,49 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-25T02:50:10.604286+00:00",
+  "fetchedAt": "2026-11-25T03:47:19.815523+00:00",
   "retentionDays": 3,
-  "count": 376,
+  "count": 377,
   "items": [
+    {
+      "id": "kyivinfo-b23abf4b43c7",
+      "title": "🟡",
+      "text": "🟡 Броварський /Вишгородський район — повітряна тривога, жовтий рівень Реактивні з Чернігівщини Детальний радар 👉🏽 @kievinform_ua1",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108762",
+      "publishedAt": "2026-11-25T03:39:45+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-2f089514b9c3",
+      "title": "✅",
+      "text": "✅ ВІДБІЙ ПОВІТРЯНОЇ ТРИВОГИ ✅",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108761",
+      "publishedAt": "2026-11-25T03:14:51+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-6864a2af039f",
+      "title": "1",
+      "text": "1 загиблий внаслідок атаки на Білу Церкву , – місцева влада. Ворог атакував інфраструктуру. Пошкоджено «Епіцентр», «Нову пошту» та інші об'єкти цивільного бізнесу. ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108760",
+      "publishedAt": "2026-11-25T03:14:12+00:00",
+      "importance": "orange"
+    },
+    {
+      "id": "kyivinfo-c516cbec1415",
+      "title": "✈️",
+      "text": "✈️ Ще 1х РБпЛА курсом до Білої Церкви. Уважно",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108759",
+      "publishedAt": "2026-11-25T03:11:00+00:00",
+      "importance": "red"
+    },
     {
       "id": "kyivinfo-b733117c33d6",
       "title": "✈️",
@@ -3733,36 +3773,6 @@
       "url": "https://t.me/kievinfo_kyiv/108450",
       "publishedAt": "2026-11-22T05:20:12+00:00",
       "importance": "orange"
-    },
-    {
-      "id": "kyivinfo-baac0d6ccb2d",
-      "title": "✅",
-      "text": "✅ ВІДБІЙ ПОВІТРЯНОЇ ТРИВОГИ ✅",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108449",
-      "publishedAt": "2026-11-22T03:04:31+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-46efe5337680",
-      "title": "1х Реактивний БпЛА на Димер",
-      "text": "1х Реактивний БпЛА на Димер",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108448",
-      "publishedAt": "2026-11-22T02:59:35+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-b7152b01865d",
-      "title": "1х Реактивний БпЛА на Димер",
-      "text": "1х Реактивний БпЛА на Димер",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108447",
-      "publishedAt": "2026-11-22T02:56:40+00:00",
-      "importance": "red"
     }
   ]
 }

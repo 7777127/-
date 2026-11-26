@@ -1,9 +1,19 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-26T11:29:48.597106+00:00",
+  "fetchedAt": "2026-11-26T12:35:08.980254+00:00",
   "retentionDays": 3,
-  "count": 421,
+  "count": 415,
   "items": [
+    {
+      "id": "kyivinfo-5bb88dc4119a",
+      "title": "‼️",
+      "text": "‼️ Безкоштовно спробуйте AI-професію за 3 дні! Перейти в нову сферу складно: багато інформації, незрозуміло з чого почати, важко оцінити свої сили. 🤖 AI-напрям зараз один із найперспективніших — і водночас доступний навіть без технічного бекграунду. Тому ми запрошуємо вас на 3х денний інтенсив \"АІ-автоматизація без програмування\" ⏺ День1: Розберешся, хто такий AI-автоматизатор і за що йому платять. Почнеш створювати власного AI-асистента в n8n. ⏺ День2: Завершиш налаштування AI-асистента та протестуєш його в реальних сценаріях. ⏺ День3: Навчитесь монетизувати та розвивати отриманні навички 🎁 Бонус за реєстрацію: Гайд \"Як інтегрувати АІ у своє життя\" Скоріш реєструйся та безкоштовно спробуй себе у ролі АІ-фахівця https://i.goit.global/4aMfz #реклама",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108905",
+      "publishedAt": "2026-11-26T12:09:05+00:00",
+      "importance": "normal"
+    },
     {
       "id": "kyivinfo-ef78dbfe1211",
       "title": "😆",
@@ -4143,76 +4153,6 @@
       "url": "https://t.me/kyiv_nebo/34239",
       "publishedAt": "2026-11-23T12:35:33+00:00",
       "importance": "normal"
-    },
-    {
-      "id": "kyivnebo-69299da9724e",
-      "title": "Дуже низько",
-      "text": "Дуже низько",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34238",
-      "publishedAt": "2026-11-23T12:33:27+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivnebo-27dfd25f566b",
-      "title": "Осокорки",
-      "text": "Осокорки",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34237",
-      "publishedAt": "2026-11-23T12:33:16+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivnebo-8f050cd7262e",
-      "title": "Бортничі",
-      "text": "Бортничі",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34236",
-      "publishedAt": "2026-11-23T12:32:33+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivnebo-5eec5f008314",
-      "title": "Перший мінус, ще один летить туди",
-      "text": "Перший мінус, ще один летить туди",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34235",
-      "publishedAt": "2026-11-23T12:27:52+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-5d5883af6eb8",
-      "title": "РБПЛА курс Бориспіль",
-      "text": "РБПЛА курс Бориспіль ✈️",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108584",
-      "publishedAt": "2026-11-23T12:27:47+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-6d1be2a18fdf",
-      "title": "🟡",
-      "text": "🟡 м. Київ — повітряна тривога, жовтий рівень: Дронова загроза (жовтий рівень)",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108583",
-      "publishedAt": "2026-11-23T12:26:41+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-cbdd35683caa",
-      "title": "РБПЛА курс Бориспіль",
-      "text": "РБПЛА курс Бориспіль ✈️",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108582",
-      "publishedAt": "2026-11-23T12:25:11+00:00",
-      "importance": "red"
     }
   ]
 }

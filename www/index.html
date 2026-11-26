@@ -4267,8 +4267,17 @@ document.addEventListener("DOMContentLoaded", async () => {
         maxZoom: 8
     });
 
-    const geoUrl = "https://cdn.jsdelivr.net/gh/darmat1/ukraine-geo-data@main/geodata/Ukraine.geojson";
+    window.airUkraineMapInstance = map;
+
+    const geoUrl = "https://raw.githubusercontent.com/romansverdan/Ukraine-Map/main/ukraine-adm-regions.json";
     const statusUrl = "./air-alerts.json";
+
+    // Базовий шар карти — він залишається видимим навіть коли статуси тривог
+    // тимчасово недоступні.
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        maxZoom: 19,
+        attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
 
     const stateLabel = {
         N: "Немає тривоги",
@@ -4312,19 +4321,49 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     try {
-        const [geoResponse, statusResponse] = await Promise.all([
-            fetch(geoUrl + "?ts=" + Date.now(), {cache:"no-store"}),
-            fetch(statusUrl + "?ts=" + Date.now(), {cache:"no-store"})
-        ]);
+        const geoResponse = await fetch(
+            geoUrl + "?ts=" + Date.now(),
+            {cache:"no-store"}
+        );
 
-        if (!geoResponse.ok) throw new Error("Не вдалося завантажити геометрію карти");
-        if (!statusResponse.ok) throw new Error("Не вдалося отримати статуси тривог");
+        if (!geoResponse.ok) {
+            throw new Error("Не вдалося завантажити геометрію карти");
+        }
 
         const geo = await geoResponse.json();
-        const data = await statusResponse.json();
+
+        // Статуси — окремо: якщо air-alerts.json ще не створений,
+        // сама інтерактивна карта все одно повинна показуватися.
+        let data = {};
+        try {
+            const statusResponse = await fetch(
+                statusUrl + "?ts=" + Date.now(),
+                {cache:"no-store"}
+            );
+            if (statusResponse.ok) {
+                data = await statusResponse.json();
+            }
+        } catch (statusError) {
+            console.warn("Статуси тривог поки недоступні:", statusError);
+        }
+
         const regions = data.regions || {};
 
-        const layer = L.geoJSON(geo, {
+        // Деякі GeoJSON-файли містять FeatureCollection, де геометрія
+        // вже знаходиться безпосередньо у features.
+        const featureCollection =
+            geo.type === "FeatureCollection"
+                ? geo
+                : (geo.features ? {
+                    type: "FeatureCollection",
+                    features: geo.features
+                  } : null);
+
+        if (!featureCollection || !Array.isArray(featureCollection.features)) {
+            throw new Error("Неправильний формат GeoJSON карти");
+        }
+
+        const layer = L.geoJSON(featureCollection, {
             style: feature => {
                 const state = stateForFeature(getName(feature), regions);
                 return {
@@ -4358,8 +4397,12 @@ document.addEventListener("DOMContentLoaded", async () => {
         }).addTo(map);
 
         map.fitBounds(layer.getBounds(), {padding:[8,8]});
-        const stamp = data.updatedAt ? new Date(data.updatedAt).toLocaleTimeString("uk-UA",{hour:"2-digit",minute:"2-digit"}) : "";
-        statusEl.textContent = stamp ? "Оновлено " + stamp : "Актуальні дані";
+        const stamp = data.updatedAt
+            ? new Date(data.updatedAt).toLocaleTimeString("uk-UA",{hour:"2-digit",minute:"2-digit"})
+            : "";
+        statusEl.textContent = stamp
+            ? "Оновлено " + stamp
+            : "Карта готова · статуси оновлюються";
     } catch (error) {
         console.error("Карта тривог:", error);
         statusEl.textContent = "Дані тимчасово недоступні";
@@ -4472,6 +4515,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 if (airPanel) {
                     airPanel.classList.add("open");
+                    setTimeout(() => {
+                        if (window.airUkraineMapInstance) {
+                            window.airUkraineMapInstance.invalidateSize();
+                        }
+                    }, 350);
                 }
 
                 return;

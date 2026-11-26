@@ -1,9 +1,109 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-26T21:30:22.798879+00:00",
+  "fetchedAt": "2026-11-26T22:29:34.904308+00:00",
   "retentionDays": 3,
-  "count": 360,
+  "count": 369,
   "items": [
+    {
+      "id": "kyivinfo-d55f221dc282",
+      "title": "❗️",
+      "text": "❗️ Дорогі читачі, дуже прошу « підзарядити » наш канал 🇺🇦 . Для цього, потрібно перейти за цим посиланням, натиснути зарядити канал ( boost channel ). Це відкриває додаткові функції для каналу. https://t.me/boost/kievinfo_kyiv",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108945",
+      "publishedAt": "2026-11-26T22:16:10+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-fa53ec3fa175",
+      "title": "✅",
+      "text": "✅ ВІДБІЙ ПОВІТРЯНОЇ ТРИВОГИ ✅",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108944",
+      "publishedAt": "2026-11-26T22:13:29+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivnebo-2d508619b8a1",
+      "title": "Все, відбій",
+      "text": "Все, відбій",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34424",
+      "publishedAt": "2026-11-26T22:13:17+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-14428175699a",
+      "title": "Очікуємо на відбої у найближчі 15 хвилин",
+      "text": "Очікуємо на відбої у найближчі 15 хвилин",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34423",
+      "publishedAt": "2026-11-26T22:11:00+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-04825ea26ecc",
+      "title": "✈️",
+      "text": "✈️ Наразі без цілей. До відбою обережно!",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108943",
+      "publishedAt": "2026-11-26T22:08:59+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-481e24c15363",
+      "title": "Попередньо, робота ворожого ППО",
+      "text": "Попередньо, робота ворожого ППО",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34422",
+      "publishedAt": "2026-11-26T22:07:32+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-77415efb79b8",
+      "title": "Брянськ, реагуємо",
+      "text": "Брянськ, реагуємо",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34421",
+      "publishedAt": "2026-11-26T22:06:11+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-2b6fadbd115e",
+      "title": "БРЯНСЬК! Реагуємо",
+      "text": "БРЯНСЬК! Реагуємо ⚠️ ⚠️",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108942",
+      "publishedAt": "2026-11-26T22:06:00+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-9c8fbdf6557d",
+      "title": "Загроза балістики",
+      "text": "Загроза балістики",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34420",
+      "publishedAt": "2026-11-26T22:05:34+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-daed35e42cb6",
+      "title": "🔴",
+      "text": "🔴 🔴 🔴 ТРИВОГА! ⚠️ Загроза балістики 🚀 через активність ОТРК 💥 ворога В укриття! ➡️ Попередьте рідних! 📢 Відправляйте друзям, багато хто не знає де переглянути інформацію про загрози! ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108941",
+      "publishedAt": "2026-11-26T22:04:55+00:00",
+      "importance": "red"
+    },
     {
       "id": "kyivinfo-34f45ad6da8c",
       "title": "🤯",
@@ -3592,16 +3692,6 @@
       "region": "kyiv",
       "url": "https://t.me/kievinfo_kyiv/108638",
       "publishedAt": "2026-11-23T23:31:42+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-312e5d5988a6",
-      "title": "😳",
-      "text": "😳 Щойно дрон рф залетів у Польщу та летить на місто Хелм. Над Люблінським воєводством дрон зробив коло: ▪️ Дорогуськ → Турка → Бусенець ▪️ далі на Лещани та Хелм ▪️ потім Бжезно й Людвінув Найглибше він зайшов до околиць Хелма, це близько 25 км від українського кордону. Над територією Польщі БпЛА перебував близько 8 хвилин. О 23:58 він розвернувся, повернувся через район КПП «Ягодин» і полетів далі Волинню, курсом на Замлиння. Ситуація з Польщі тут - t.me/Poland ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108636",
-      "publishedAt": "2026-11-23T22:14:55+00:00",
       "importance": "red"
     }
   ]

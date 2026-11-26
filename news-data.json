@@ -1,9 +1,19 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-26T15:47:52.099627+00:00",
+  "fetchedAt": "2026-11-26T16:51:58.982732+00:00",
   "retentionDays": 3,
-  "count": 387,
+  "count": 377,
   "items": [
+    {
+      "id": "kyivinfo-7a85d48267d9",
+      "title": "🔴",
+      "text": "🔴 Будівництво метро на Виноградар у Києві знову відклали — тепер до 2035 року Також перенесли терміни: ▪️ Метро на Троєщину — з 2033 на 2037 рік; ▪️ Станція «Львівська брама» — з 2029 на 2033 рік; ▪️ Другий вихід зі станції «Вокзальна» — з 2029 на 2032 рік. Ну який тунель, якщо метро ніяк не добудують… ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108931",
+      "publishedAt": "2026-11-26T16:01:28+00:00",
+      "importance": "orange"
+    },
     {
       "id": "kyivinfo-064e8733ab33",
       "title": "⏺",
@@ -3763,116 +3773,6 @@
       "url": "https://t.me/kyiv_nebo/34278",
       "publishedAt": "2026-11-23T16:52:16+00:00",
       "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-9381b97faaa9",
-      "title": "Далі на Дарницю, ДВРЗ",
-      "text": "Далі на Дарницю, ДВРЗ",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108613",
-      "publishedAt": "2026-11-23T16:51:49+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivnebo-398b771d0109",
-      "title": "На Лівий берег",
-      "text": "На Лівий берег",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34277",
-      "publishedAt": "2026-11-23T16:51:43+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-9664fb8a9b05",
-      "title": "Через Виноградар курс на Центр",
-      "text": "Через Виноградар курс на Центр",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108612",
-      "publishedAt": "2026-11-23T16:51:18+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivnebo-635172024d8d",
-      "title": "Центр",
-      "text": "Центр",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34276",
-      "publishedAt": "2026-11-23T16:51:08+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivnebo-676527f116fd",
-      "title": "Пролітає над Правим берегом",
-      "text": "Пролітає над Правим берегом",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34275",
-      "publishedAt": "2026-11-23T16:50:37+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivnebo-c29aa47e349d",
-      "title": "Поки летить дуже високо",
-      "text": "Поки летить дуже високо",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34274",
-      "publishedAt": "2026-11-23T16:49:44+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivnebo-e65254e11aec",
-      "title": "На Виноградар",
-      "text": "На Виноградар",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34273",
-      "publishedAt": "2026-11-23T16:49:40+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-baf3db7c825d",
-      "title": "Реактивний на Петрівці, Вишгород",
-      "text": "Реактивний на Петрівці, Вишгород ❗️ ✈️",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108611",
-      "publishedAt": "2026-11-23T16:47:49+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivnebo-dd7057d6d5bd",
-      "title": "Реактивний на Петрівці, Вишгород",
-      "text": "Реактивний на Петрівці, Вишгород",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34272",
-      "publishedAt": "2026-11-23T16:47:30+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-cf84f0a0b94e",
-      "title": "🟡",
-      "text": "🟡 м. Київ — повітряна тривога, жовтий рівень: Дронова загроза (жовтий рівень)",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108610",
-      "publishedAt": "2026-11-23T16:47:20+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-8f5c3dbf5c50",
-      "title": "‼️",
-      "text": "‼️ У Києві внаслідок російської атаки постраждали шестеро людей , — Нацполіція Пошкодження та руйнування зафіксовано у Голосіївському, Печерському, Подільському та Святошинському районах. 🇺🇦 Київ ІНФО | Надіслати новину",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108605",
-      "publishedAt": "2026-11-23T16:09:57+00:00",
-      "importance": "orange"
     }
   ]
 }

@@ -1,9 +1,19 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-26T05:44:37.786981+00:00",
+  "fetchedAt": "2026-11-26T06:45:34.406304+00:00",
   "retentionDays": 3,
-  "count": 422,
+  "count": 421,
   "items": [
+    {
+      "id": "kyivinfo-538f2143f185",
+      "title": "🤯",
+      "text": "🤯 На Дарницькому вокзалі людина впала у проміжок між платформою та вагоном потяга. ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108897",
+      "publishedAt": "2026-11-26T05:55:38+00:00",
+      "importance": "normal"
+    },
     {
       "id": "kyivinfo-3960d6d66101",
       "title": "✅",
@@ -4203,26 +4213,6 @@
       "url": "https://t.me/kievinfo_kyiv/108568",
       "publishedAt": "2026-11-23T08:38:21+00:00",
       "importance": "orange"
-    },
-    {
-      "id": "kyivinfo-5f4c35065724",
-      "title": "👀",
-      "text": "👀 Великого рататуя помітили на Тараса Шевченка в Києві. ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108563",
-      "publishedAt": "2026-11-23T06:40:07+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-b1e74fcb9933",
-      "title": "🟡",
-      "text": "🟡 Бориспільський, Обухівський район (Київська обл.) Жовтий рівень тривоги. Детальний радар 👉🏽 @kievinform_ua1",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108562",
-      "publishedAt": "2026-11-23T06:31:46+00:00",
-      "importance": "red"
     }
   ]
 }

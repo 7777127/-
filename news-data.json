@@ -1,9 +1,69 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-26T04:48:22.349084+00:00",
+  "fetchedAt": "2026-11-26T05:44:37.786981+00:00",
   "retentionDays": 3,
-  "count": 427,
+  "count": 422,
   "items": [
+    {
+      "id": "kyivinfo-3960d6d66101",
+      "title": "✅",
+      "text": "✅ ВІДБІЙ ПОВІТРЯНОЇ ТРИВОГИ ✅",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108896",
+      "publishedAt": "2026-11-26T05:39:29+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-63774f4cd2fe",
+      "title": "7 постраждалих внаслідок нічної атаки на",
+      "text": "7 постраждалих внаслідок нічної атаки на Київ, – ДСНС. Уночі ворог атакував Деснянський район столиці. За однією з адрес унаслідок влучання виникли пожежі та сталися руйнування в нежитлових будівлях. ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108887",
+      "publishedAt": "2026-11-26T05:11:08+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-5944396ede84",
+      "title": "Димер/Вишгород-увага 1x наразі йде високо",
+      "text": "Димер/Вишгород-увага 1x наразі йде високо 🇺🇦 : маневрує в області",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108886",
+      "publishedAt": "2026-11-26T05:08:02+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-ad881d709950",
+      "title": "РБПЛА 600 метрів, йде у бік Вишгорода",
+      "text": "РБПЛА 600 метрів, йде у бік Вишгорода",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108885",
+      "publishedAt": "2026-11-26T05:00:41+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-31f6a1cf7836",
+      "title": "РБПЛА 600 метрів, йде у бік Вишгорода",
+      "text": "РБПЛА 600 метрів, йде у бік Вишгорода",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108884",
+      "publishedAt": "2026-11-26T04:55:58+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-c6def89609cd",
+      "title": "🟡",
+      "text": "🟡 м. Київ — повітряна тривога, жовтий рівень: Дронова загроза (жовтий рівень)",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108883",
+      "publishedAt": "2026-11-26T04:55:27+00:00",
+      "importance": "red"
+    },
     {
       "id": "kyivinfo-ec09adb71598",
       "title": "🟡",
@@ -4162,116 +4222,6 @@
       "region": "kyiv",
       "url": "https://t.me/kievinfo_kyiv/108562",
       "publishedAt": "2026-11-23T06:31:46+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-5f41a5503d31",
-      "title": "Був Вибух",
-      "text": "Був Вибух 💥 🚀 Дорозвідка ✈️ 👀 🇺🇦 : є падіння уламків, видно пожежу ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108561",
-      "publishedAt": "2026-11-23T05:36:27+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-ca790d3753e8",
-      "title": "💥",
-      "text": "💥 Внаслідок атаки пошкоджено житловий будинок у Вишгородському районі, – КОДА. Зруйновано квартири з 1 по 5 поверх. Окрім того, пошкоджено приміщення магазину. Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108560",
-      "publishedAt": "2026-11-23T05:25:17+00:00",
-      "importance": "orange"
-    },
-    {
-      "id": "kyivinfo-2b06b53f0d0e",
-      "title": "✅",
-      "text": "✅ ВІДБІЙ ПОВІТРЯНОЇ ТРИВОГИ ✅",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108559",
-      "publishedAt": "2026-11-23T05:23:47+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-ef419bba340e",
-      "title": "Був Вибух",
-      "text": "Був Вибух 💥 🚀 Дорозвідка ✈️ 👀 🇺🇦 : є падіння уламків, видно пожежу ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108558",
-      "publishedAt": "2026-11-23T05:17:20+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-70e62d60aa48",
-      "title": "Борщагівка падає",
-      "text": "Борщагівка падає ⚠️ ⚠️",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108557",
-      "publishedAt": "2026-11-23T05:16:44+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-40b509a2a8e2",
-      "title": "Святошин ЖД",
-      "text": "Святошин ЖД",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108556",
-      "publishedAt": "2026-11-23T05:15:36+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-aaacee126305",
-      "title": "Оболонь/Троя",
-      "text": "Оболонь/Троя ✈️ ❗️",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108555",
-      "publishedAt": "2026-11-23T05:13:28+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-8be7b41f5792",
-      "title": "Крутиться в районі Мощун",
-      "text": "Крутиться в районі Мощун ✈️",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108554",
-      "publishedAt": "2026-11-23T05:09:32+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-5f6c090b103e",
-      "title": "Реактивний БпЛА курсом на Київ повз Вишгород Реактивний БпЛА курсом на Київ повз Гребінки",
-      "text": "Реактивний БпЛА курсом на Київ повз Вишгород Реактивний БпЛА курсом на Київ повз Гребінки",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108553",
-      "publishedAt": "2026-11-23T05:05:32+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-f15be263f8d8",
-      "title": "Реактивний БпЛА курсом на Київ повз Вишгород",
-      "text": "Реактивний БпЛА курсом на Київ повз Вишгород Реактивний БпЛА курсом на Київ повз Гребінки",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108552",
-      "publishedAt": "2026-11-23T05:02:25+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-e18207256f04",
-      "title": "🟡",
-      "text": "🟡 м. Київ — повітряна тривога, жовтий рівень: Дронова загроза (жовтий рівень) Детальний радар 👉🏽 @kievinform_ua1",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108551",
-      "publishedAt": "2026-11-23T04:52:24+00:00",
       "importance": "red"
     }
   ]

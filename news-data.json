@@ -1,9 +1,49 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-26T18:37:25.361317+00:00",
+  "fetchedAt": "2026-11-26T19:44:20.214568+00:00",
   "retentionDays": 3,
-  "count": 368,
+  "count": 371,
   "items": [
+    {
+      "id": "kyivinfo-c091e2c886cf",
+      "title": "Взимку вода в Києві, у кращому випадку, буде подаватися за суворим графіком: 3 години є, 8 годин немає,",
+      "text": "Взимку вода в Києві, у кращому випадку, буде подаватися за суворим графіком: 3 години є, 8 годин немає,",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108938",
+      "publishedAt": "2026-11-26T19:41:20+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-9fd71987859c",
+      "title": "Протягом ночі все ще уважно до можливих тривог",
+      "text": "Протягом ночі все ще уважно до можливих тривог",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34419",
+      "publishedAt": "2026-11-26T19:21:15+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-3c3cd30b2614",
+      "title": "РБПЛА курс Біла церква - в укриття!",
+      "text": "РБПЛА курс Біла церква - в укриття! ❗️ ✈️",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108936",
+      "publishedAt": "2026-11-26T19:19:53+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-352c39f9337b",
+      "title": "РБПЛА курс Біла церква - в укриття!",
+      "text": "РБПЛА курс Біла церква - в укриття! ❗️ ✈️",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108935",
+      "publishedAt": "2026-11-26T19:13:06+00:00",
+      "importance": "red"
+    },
     {
       "id": "kyivinfo-58c606ddb682",
       "title": "✅",
@@ -3673,16 +3713,6 @@
       "url": "https://t.me/kievinfo_kyiv/108625",
       "publishedAt": "2026-11-23T19:53:49+00:00",
       "importance": "red"
-    },
-    {
-      "id": "kyivinfo-46d5f26a2f2a",
-      "title": "🤯",
-      "text": "🤯 🚑 Швидка перевернулась. На теремках. Є постраждалі… ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108624",
-      "publishedAt": "2026-11-23T19:38:07+00:00",
-      "importance": "normal"
     }
   ]
 }

@@ -1,9 +1,19 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-26T08:14:51.281762+00:00",
+  "fetchedAt": "2026-11-26T09:30:46.389459+00:00",
   "retentionDays": 3,
-  "count": 422,
+  "count": 421,
   "items": [
+    {
+      "id": "kyivinfo-ef580a02c0a7",
+      "title": "🍔",
+      "text": "🍔 📆 День боротьби з ожирінням відзначають сьогодні. ➡️ Ти знаєш, кого потрібно привітати репостом ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108901",
+      "publishedAt": "2026-11-26T08:23:21+00:00",
+      "importance": "normal"
+    },
     {
       "id": "kyivinfo-41fa7bd790c2",
       "title": "❗️",
@@ -4203,26 +4213,6 @@
       "url": "https://t.me/kievinfo_kyiv/108576",
       "publishedAt": "2026-11-23T09:50:11+00:00",
       "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-2ab754d3f057",
-      "title": "☠️",
-      "text": "☠️ 🚘 Смертельна ДТП сталася на Либідській. Автівка влетіла в стовп. Через аварію утворився сильний затор. ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108570",
-      "publishedAt": "2026-11-23T09:03:41+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-152ceff0dd72",
-      "title": "❤️",
-      "text": "❤️ 🙏🏻 Справжнє диво… Під час пошуково-рятувальних робіт в Димері рятувальники дістали живу дитину, — Ткаченко ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108568",
-      "publishedAt": "2026-11-23T08:38:21+00:00",
-      "importance": "orange"
     }
   ]
 }

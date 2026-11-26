@@ -1,8 +1,8 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-26T16:51:58.982732+00:00",
+  "fetchedAt": "2026-11-26T17:43:59.205708+00:00",
   "retentionDays": 3,
-  "count": 377,
+  "count": 368,
   "items": [
     {
       "id": "kyivinfo-7a85d48267d9",
@@ -3683,96 +3683,6 @@
       "url": "https://t.me/kievinfo_kyiv/108622",
       "publishedAt": "2026-11-23T18:33:30+00:00",
       "importance": "red"
-    },
-    {
-      "id": "kyivinfo-7a13df546a14",
-      "title": "❗️",
-      "text": "❗️ Унаслідок російської атаки на Київ 23 листопада двох людей врятували, ще п’ятеро постраждали У Печерському районі загорілися два автомобілі, вогонь перекинувся на балкон п’ятиповерхівки. Також зруйновано балкони з другого по четвертий поверхи. Двох людей врятували, четверо отримали поранення. Пожежу ліквідували на площі 50 кв. м. У Голосіївському районі виникла пожежа на парковці біля нежитлової будівлі, постраждала одна людина. У Подільському районі БпЛА влучив у дах п’ятиповерхівки. Пожежу на мансардному поверсі площею 400 кв. м ліквідували. Інформації про постраждалих немає. 🇺🇦 Київ ІНФО | Надіслати новину",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108617",
-      "publishedAt": "2026-11-23T17:09:14+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivnebo-3ffaa4d9b927",
-      "title": "Відбій",
-      "text": "Відбій",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34282",
-      "publishedAt": "2026-11-23T17:00:53+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-d5d28940a16f",
-      "title": "✅",
-      "text": "✅ ВІДБІЙ ПОВІТРЯНОЇ ТРИВОГИ ✅",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108616",
-      "publishedAt": "2026-11-23T17:00:26+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivnebo-92731141fc43",
-      "title": "На північ області поки",
-      "text": "На північ області поки",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34281",
-      "publishedAt": "2026-11-23T16:59:01+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-4a14ad720430",
-      "title": "Курс на Димер",
-      "text": "Курс на Димер",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108615",
-      "publishedAt": "2026-11-23T16:56:36+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivnebo-59803f9a090f",
-      "title": "Димер",
-      "text": "Димер",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34280",
-      "publishedAt": "2026-11-23T16:56:17+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivnebo-ab282d8be000",
-      "title": "Вишгород",
-      "text": "Вишгород",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34279",
-      "publishedAt": "2026-11-23T16:54:20+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-b491ba3313b1",
-      "title": "Далі на Дарницю, ДВРЗ",
-      "text": "Далі на Дарницю, ДВРЗ",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108614",
-      "publishedAt": "2026-11-23T16:53:01+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivnebo-7b496faabd2b",
-      "title": "Далі в бік Броварів",
-      "text": "Далі в бік Броварів",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34278",
-      "publishedAt": "2026-11-23T16:52:16+00:00",
-      "importance": "normal"
     }
   ]
 }

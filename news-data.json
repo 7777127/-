@@ -1,9 +1,19 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-26T19:44:20.214568+00:00",
+  "fetchedAt": "2026-11-26T20:36:34.715270+00:00",
   "retentionDays": 3,
-  "count": 371,
+  "count": 360,
   "items": [
+    {
+      "id": "kyivinfo-34f45ad6da8c",
+      "title": "🤯",
+      "text": "🤯 У Києві невідомі підкинули у ветеринарну клініку двох левенят 🇺🇦 Київ ІНФО | Надіслати новину",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108939",
+      "publishedAt": "2026-11-26T20:22:20+00:00",
+      "importance": "normal"
+    },
     {
       "id": "kyivinfo-c091e2c886cf",
       "title": "Взимку вода в Києві, у кращому випадку, буде подаватися за суворим графіком: 3 години є, 8 годин немає,",
@@ -3592,126 +3602,6 @@
       "region": "kyiv",
       "url": "https://t.me/kievinfo_kyiv/108636",
       "publishedAt": "2026-11-23T22:14:55+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-647b256b2eb8",
-      "title": "🤯",
-      "text": "🤯 🚑 Швидка перевернулась. На теремках. Є постраждалі… ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108633",
-      "publishedAt": "2026-11-23T20:23:49+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-4553da6cc90c",
-      "title": "✅",
-      "text": "✅ ВІДБІЙ ПОВІТРЯНОЇ ТРИВОГИ ✅",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108632",
-      "publishedAt": "2026-11-23T20:19:51+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-0d11fb8dce5e",
-      "title": "👀",
-      "text": "👀 ✈️ Чорт навів шороху у Києві і полетів через ЧЗВ на Житомирщину Ситуація з Житомирщини 👉🏽 СТЕЖИТИ",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108631",
-      "publishedAt": "2026-11-23T20:14:31+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivnebo-6464f82e38f4",
-      "title": "Полетів на північ області",
-      "text": "Полетів на північ області",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34285",
-      "publishedAt": "2026-11-23T20:07:21+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-ce2c804a472a",
-      "title": "🤔",
-      "text": "🤔 ✈️ Зробив коло навколо Києва, знову йде на Вишгород зі сторони Зазимʼя… висота 4900 м ✈️ ✈️ Детальний рух ШАХЕДІВ описується на нашому спеціалізованому каналі – @kievinform_ua1 🇺🇦 Київ ІНФО | Надіслати новину",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108630",
-      "publishedAt": "2026-11-23T20:06:07+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivnebo-fbb21f75e674",
-      "title": "Кружляє на висоті 5 км, зараз біля Вишгорода",
-      "text": "Кружляє на висоті 5 км, зараз біля Вишгорода",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34284",
-      "publishedAt": "2026-11-23T20:04:53+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-8ad7ce3d0202",
-      "title": "✈️",
-      "text": "✈️ ❗️ Чабани, Хотів, Лісники, Гнідин",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108629",
-      "publishedAt": "2026-11-23T20:01:26+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-4ef226817bd9",
-      "title": "Через Мінський на Нивки, Академ",
-      "text": "Через Мінський на Нивки, Академ",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108628",
-      "publishedAt": "2026-11-23T19:58:44+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-6f9d9fd905c6",
-      "title": "✈️",
-      "text": "✈️ На Петрівці, Вишгород",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108627",
-      "publishedAt": "2026-11-23T19:56:45+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-311b2739117e",
-      "title": "✈️",
-      "text": "✈️ ❗️ РБПЛА через Катюжанку курс Буча , Ірпінь",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108626",
-      "publishedAt": "2026-11-23T19:55:07+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivnebo-6c3f5fdedeeb",
-      "title": "Реактивний біля Димера",
-      "text": "Реактивний біля Димера",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34283",
-      "publishedAt": "2026-11-23T19:54:00+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-137a23f0edd4",
-      "title": "🟡",
-      "text": "🟡 м. Київ — повітряна тривога, жовтий рівень: Дронова загроза (жовтий рівень)",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108625",
-      "publishedAt": "2026-11-23T19:53:49+00:00",
       "importance": "red"
     }
   ]

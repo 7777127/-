@@ -4267,9 +4267,15 @@ document.addEventListener("DOMContentLoaded", async () => {
         maxZoom: 8
     });
 
+    // Початковий центр — карта має бути видима навіть до завантаження областей.
+    map.setView([48.8, 31.2], 6);
+
     window.airUkraineMapInstance = map;
 
-    const geoUrl = "https://raw.githubusercontent.com/romansverdan/Ukraine-Map/main/ukraine-adm-regions.json";
+    const geoUrls = [
+        "https://cdn.jsdelivr.net/gh/darmat1/ukraine-geo-data@main/geodata/Ukraine.geojson",
+        "https://raw.githubusercontent.com/romansverdan/Ukraine-Map/main/ukraine-adm-regions.json"
+    ];
     const statusUrl = "./air-alerts.json";
 
     // Базовий шар карти — він залишається видимим навіть коли статуси тривог
@@ -4321,16 +4327,45 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     try {
-        const geoResponse = await fetch(
-            geoUrl + "?ts=" + Date.now(),
-            {cache:"no-store"}
-        );
+        let geo = null;
+        let lastGeoError = null;
 
-        if (!geoResponse.ok) {
-            throw new Error("Не вдалося завантажити геометрію карти");
+        for (const geoUrl of geoUrls) {
+            try {
+                const geoResponse = await fetch(
+                    geoUrl + "?ts=" + Date.now(),
+                    {cache:"no-store"}
+                );
+
+                if (!geoResponse.ok) {
+                    throw new Error("HTTP " + geoResponse.status);
+                }
+
+                const candidate = await geoResponse.json();
+
+                if (
+                    candidate &&
+                    (
+                        candidate.type === "FeatureCollection" ||
+                        Array.isArray(candidate.features)
+                    )
+                ) {
+                    geo = candidate;
+                    break;
+                }
+
+                throw new Error("Неправильний формат GeoJSON");
+            } catch (geoError) {
+                lastGeoError = geoError;
+            }
         }
 
-        const geo = await geoResponse.json();
+        if (!geo) {
+            throw new Error(
+                "Не вдалося завантажити геометрію карти: " +
+                (lastGeoError ? lastGeoError.message : "невідома помилка")
+            );
+        }
 
         // Статуси — окремо: якщо air-alerts.json ще не створений,
         // сама інтерактивна карта все одно повинна показуватися.

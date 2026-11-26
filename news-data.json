@@ -1,9 +1,19 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-26T03:42:07.398302+00:00",
+  "fetchedAt": "2026-11-26T04:48:22.349084+00:00",
   "retentionDays": 3,
-  "count": 428,
+  "count": 427,
   "items": [
+    {
+      "id": "kyivinfo-ec09adb71598",
+      "title": "🟡",
+      "text": "🟡 Вишгородський район — повітряна тривога, жовтий рівень Детальний радар 👉🏽 @kievinform_ua1",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108882",
+      "publishedAt": "2026-11-26T04:37:00+00:00",
+      "importance": "red"
+    },
     {
       "id": "kyivinfo-04a6c9994e0e",
       "title": "✅",
@@ -4263,26 +4273,6 @@
       "url": "https://t.me/kievinfo_kyiv/108551",
       "publishedAt": "2026-11-23T04:52:24+00:00",
       "importance": "red"
-    },
-    {
-      "id": "kyivinfo-213848d1c521",
-      "title": "✅",
-      "text": "✅ ВІДБІЙ ПОВІТРЯНОЇ ТРИВОГИ ✅",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108550",
-      "publishedAt": "2026-11-23T04:31:42+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-1ff52c7aaa53",
-      "title": "На жаль, кількість жертв у Димері зросла.",
-      "text": "На жаль, кількість жертв у Димері зросла. Рятувальники деблокували тіло ще однієї жінки. Кількість загиблих становить десять осіб. Щирі співчуття рідним і близьким усіх, чиє життя забрали російські терористи. Пошуково-рятувальна операція триває - КМВА ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108548",
-      "publishedAt": "2026-11-23T03:51:34+00:00",
-      "importance": "orange"
     }
   ]
 }

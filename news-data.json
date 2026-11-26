@@ -1,9 +1,49 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-26T22:29:34.904308+00:00",
+  "fetchedAt": "2026-11-26T23:28:13.904985+00:00",
   "retentionDays": 3,
-  "count": 369,
+  "count": 373,
   "items": [
+    {
+      "id": "kyivinfo-91f3ceaf985b",
+      "title": "✅",
+      "text": "✅ ВІДБІЙ ПОВІТРЯНОЇ ТРИВОГИ ✅",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108949",
+      "publishedAt": "2026-11-26T23:07:51+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-78a4b2349f53",
+      "title": "Реактивний БпЛА курсом на Іванків",
+      "text": "Реактивний БпЛА курсом на Іванків",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108948",
+      "publishedAt": "2026-11-26T23:05:51+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-6db4eabede91",
+      "title": "Реактивний БпЛА курсом на Іванків",
+      "text": "Реактивний БпЛА курсом на Іванків",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108947",
+      "publishedAt": "2026-11-26T23:03:59+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-c8ed34551acd",
+      "title": "🟡",
+      "text": "🟡 Броварський/Вишгородський район — повітряна тривога, жовтий рівень Загроза по реактивних БпЛА Детальний радар 👉🏽 @kievinform_ua1",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108946",
+      "publishedAt": "2026-11-26T22:56:24+00:00",
+      "importance": "red"
+    },
     {
       "id": "kyivinfo-d55f221dc282",
       "title": "❗️",

@@ -1,9 +1,29 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-26T01:50:53.453031+00:00",
+  "fetchedAt": "2026-11-26T02:44:16.786492+00:00",
   "retentionDays": 3,
-  "count": 438,
+  "count": 427,
   "items": [
+    {
+      "id": "kyivinfo-c134b47d43a6",
+      "title": "🟡",
+      "text": "🟡 Вишгородський район — повітряна тривога, жовтий рівень Загроза по реактивному з Чернігівщини Детальний радар 👉🏽 @kievinform_ua1",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108880",
+      "publishedAt": "2026-11-26T02:17:02+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-11a2a03edf3f",
+      "title": "✅",
+      "text": "✅ ВІДБІЙ ПОВІТРЯНОЇ ТРИВОГИ ✅",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108879",
+      "publishedAt": "2026-11-26T02:02:14+00:00",
+      "importance": "red"
+    },
     {
       "id": "kyivinfo-66d62978657e",
       "title": "🟡",
@@ -4253,136 +4273,6 @@
       "url": "https://t.me/kievinfo_kyiv/108548",
       "publishedAt": "2026-11-23T03:51:34+00:00",
       "importance": "orange"
-    },
-    {
-      "id": "kyivinfo-62cf8b45755e",
-      "title": "✅",
-      "text": "✅ ВІДБІЙ ПОВІТРЯНОЇ ТРИВОГИ ✅",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108547",
-      "publishedAt": "2026-11-23T02:27:03+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-06782280b8de",
-      "title": "Ясногородка 1х залишився",
-      "text": "Ясногородка 1х залишився ✈️",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108546",
-      "publishedAt": "2026-11-23T02:24:19+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-500afc1a5165",
-      "title": "Ясногородка 1х залишився",
-      "text": "Ясногородка 1х залишився ✈️",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108545",
-      "publishedAt": "2026-11-23T02:13:51+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivnebo-89b943d364bd",
-      "title": "Більше не летить",
-      "text": "Більше не летить",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34232",
-      "publishedAt": "2026-11-23T02:10:54+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-c8b78f43feec",
-      "title": "✈️",
-      "text": "✈️ реактивний БпЛА на Глеваху.",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108544",
-      "publishedAt": "2026-11-23T02:10:07+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-6169ecf9362c",
-      "title": "Чутно вибухи. Робота по БпЛА",
-      "text": "Чутно вибухи. Робота по БпЛА 💥",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108543",
-      "publishedAt": "2026-11-23T02:09:10+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivnebo-947415e30d72",
-      "title": "Кружляє, знову біля Троєщини",
-      "text": "Кружляє, знову біля Троєщини",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34231",
-      "publishedAt": "2026-11-23T02:04:11+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivnebo-2773ce9c10f0",
-      "title": "Петрівці, Вишгород",
-      "text": "Петрівці, Вишгород",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34230",
-      "publishedAt": "2026-11-23T02:01:07+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-442864a58df7",
-      "title": "На зараз:",
-      "text": "На зараз: ✈️ Реактивний БпЛА курсом на Київ Реактивний БпЛА курсом на Білу Церкву Реактивний БпЛА курсом на Ржищів",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108542",
-      "publishedAt": "2026-11-23T02:00:36+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-0b8ff092a657",
-      "title": "Погреб/Троя уважно",
-      "text": "Погреб/Троя уважно ✈️ Загалом 3х в області ✈️",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108541",
-      "publishedAt": "2026-11-23T01:59:19+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-6b2de9c11a25",
-      "title": "🟡",
-      "text": "🟡 м. Київ — повітряна тривога, жовтий рівень: Дронова загроза (жовтий рівень)",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108540",
-      "publishedAt": "2026-11-23T01:58:29+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivnebo-125eb960c6cf",
-      "title": "Реактивний на Троєщину",
-      "text": "Реактивний на Троєщину",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34229",
-      "publishedAt": "2026-11-23T01:58:17+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-d7fba851a6c4",
-      "title": "1х Реактивний БпЛА курсом на Вишгород/Київ.",
-      "text": "1х Реактивний БпЛА курсом на Вишгород/Київ.",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108539",
-      "publishedAt": "2026-11-23T01:54:39+00:00",
-      "importance": "red"
     }
   ]
 }

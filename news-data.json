@@ -1,9 +1,39 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-27T17:42:39.551790+00:00",
+  "fetchedAt": "2026-11-27T18:35:16.762649+00:00",
   "retentionDays": 3,
-  "count": 311,
+  "count": 308,
   "items": [
+    {
+      "id": "kyivnebo-50d2f87b5830",
+      "title": "Знову відкрито збір на дрони-перехоплювачі. Долучіться, будь ласка, це для нашої з вами ж безпеки",
+      "text": "Знову відкрито збір на дрони-перехоплювачі. Долучіться, будь ласка, це для нашої з вами ж безпеки 👇 https://send.monobank.ua/jar/8mYjydzumw",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34439",
+      "publishedAt": "2026-11-27T18:18:04+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-ccc30fab15b3",
+      "title": "❄",
+      "text": "❄ ⛸️ Біля ТРЦ River Mall вже відкрили сезонну ковзанку. ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108990",
+      "publishedAt": "2026-11-27T18:16:58+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-735f45f7f28d",
+      "title": "Знову відкрито збір на дрони-перехоплювачі. Долучіться, будь ласка, це для нашої з вами ж безпеки",
+      "text": "Знову відкрито збір на дрони-перехоплювачі. Долучіться, будь ласка, це для нашої з вами ж безпеки 👇 https://send.monobank.ua/jar/8mYjydzumw",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34438",
+      "publishedAt": "2026-11-27T17:58:00+00:00",
+      "importance": "red"
+    },
     {
       "id": "kyivinfo-de95da19d374",
       "title": "✅",
@@ -3053,66 +3083,6 @@
       "url": "https://t.me/kievinfo_kyiv/108726",
       "publishedAt": "2026-11-24T19:16:40+00:00",
       "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-b471ce1d4ff8",
-      "title": "😵",
-      "text": "😵 Коротко про те, як зараз виглядає 1000 грн в столичному супермаркеті.. 📩 Засняли або побачили щось цікаве чи важливе – одразу надсилайте нам в бот, опублікуємо – @novosty_kiev_bot 🇺🇦 Київ ІНФО | Надіслати новину",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108725",
-      "publishedAt": "2026-11-24T18:24:20+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivnebo-cc254e983816",
-      "title": "Більше не летить, тому оперативний відбій",
-      "text": "Більше не летить, тому оперативний відбій",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34322",
-      "publishedAt": "2026-11-24T18:03:19+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-44b340dca0b8",
-      "title": "Хтось на кнопку просто сів…",
-      "text": "Хтось на кнопку просто сів… 👀",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108724",
-      "publishedAt": "2026-11-24T18:03:18+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-4b0f37c04636",
-      "title": "✅",
-      "text": "✅ ВІДБІЙ ПОВІТРЯНОЇ ТРИВОГИ ✅",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108723",
-      "publishedAt": "2026-11-24T18:02:31+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivnebo-a86f6ce5bbe1",
-      "title": "Реактивний біля Димера",
-      "text": "Реактивний біля Димера",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34321",
-      "publishedAt": "2026-11-24T18:02:17+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-088674d11b70",
-      "title": "🟡",
-      "text": "🟡 м. Київ — повітряна тривога, жовтий рівень: Дронова загроза (жовтий рівень)",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108722",
-      "publishedAt": "2026-11-24T18:02:00+00:00",
-      "importance": "red"
     }
   ]
 }

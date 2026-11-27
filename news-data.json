@@ -1,9 +1,279 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-27T00:26:08.764217+00:00",
+  "fetchedAt": "2026-11-27T01:53:24.727701+00:00",
   "retentionDays": 3,
-  "count": 345,
+  "count": 366,
   "items": [
+    {
+      "id": "kyivinfo-6cf16c0601d3",
+      "title": "✅",
+      "text": "✅ ВІДБІЙ ПОВІТРЯНОЇ ТРИВОГИ ✅",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108963",
+      "publishedAt": "2026-11-27T01:47:06+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-fe98ffa308cd",
+      "title": "1х Реактивний БпЛА курсом на Димер  1х Реактивний БпЛА курсом на Жукин",
+      "text": "1х Реактивний БпЛА курсом на Димер 1х Реактивний БпЛА курсом на Жукин",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108962",
+      "publishedAt": "2026-11-27T01:38:47+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivnebo-34fb70f530f7",
+      "title": "Більше не фіксується",
+      "text": "Більше не фіксується",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34437",
+      "publishedAt": "2026-11-27T01:37:27+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-07097d46109d",
+      "title": "Гостомель знову",
+      "text": "Гостомель знову",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34436",
+      "publishedAt": "2026-11-27T01:35:34+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-fa9e1d2a007d",
+      "title": "1х Реактивний БпЛА курсом на Димер",
+      "text": "1х Реактивний БпЛА курсом на Димер 1х Реактивний БпЛА курсом на Жукин",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108961",
+      "publishedAt": "2026-11-27T01:34:00+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivnebo-46bce9b474cb",
+      "title": "Полетів на Димер",
+      "text": "Полетів на Димер",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34435",
+      "publishedAt": "2026-11-27T01:28:36+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-999fcabc0ea7",
+      "title": "Реактивний БпЛА курсом на Боярку",
+      "text": "Реактивний БпЛА курсом на Боярку",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108960",
+      "publishedAt": "2026-11-27T01:26:55+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivnebo-24c4a63988b1",
+      "title": "Ірпінь, Буча",
+      "text": "Ірпінь, Буча",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34434",
+      "publishedAt": "2026-11-27T01:26:47+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-231c17944a94",
+      "title": "Коцюбинське",
+      "text": "Коцюбинське",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34433",
+      "publishedAt": "2026-11-27T01:26:06+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-3f2c1ae2f166",
+      "title": "Розвернувся, знову на Чайки",
+      "text": "Розвернувся, знову на Чайки",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34432",
+      "publishedAt": "2026-11-27T01:25:07+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-90d4ed197ae3",
+      "title": "✈️",
+      "text": "✈️ Реактивний БпЛА курсом на Чайки",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108959",
+      "publishedAt": "2026-11-27T01:22:22+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivnebo-4a082a4fc17a",
+      "title": "Київ наразі без загроз",
+      "text": "Київ наразі без загроз",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34431",
+      "publishedAt": "2026-11-27T01:22:17+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-e3aa53b851be",
+      "title": "На Фастів",
+      "text": "На Фастів",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34430",
+      "publishedAt": "2026-11-27T01:22:12+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-e867679b484c",
+      "title": "Глеваха, Васильків",
+      "text": "Глеваха, Васильків",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34429",
+      "publishedAt": "2026-11-27T01:20:36+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-d9362665b1ca",
+      "title": "✈️",
+      "text": "✈️ Реактивний БпЛА курсом на Чайки",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108958",
+      "publishedAt": "2026-11-27T01:19:53+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivnebo-0aac68bb82b1",
+      "title": "Боярка",
+      "text": "Боярка",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34428",
+      "publishedAt": "2026-11-27T01:19:29+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-00ee9e884755",
+      "title": "Чайки",
+      "text": "Чайки",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34427",
+      "publishedAt": "2026-11-27T01:18:49+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-66d85386b343",
+      "title": "Ірпінь, Буча",
+      "text": "Ірпінь, Буча",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34426",
+      "publishedAt": "2026-11-27T01:17:34+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-0300ccd0264c",
+      "title": "Реактивний БпЛА на Гостомель/Ірпінь",
+      "text": "Реактивний БпЛА на Гостомель/Ірпінь",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108957",
+      "publishedAt": "2026-11-27T01:16:55+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-c5aa2ab06c94",
+      "title": "🟡",
+      "text": "🟡 м. Київ — повітряна тривога, жовтий рівень: Дронова загроза (жовтий рівень)",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108956",
+      "publishedAt": "2026-11-27T01:16:06+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivnebo-dcdfe17ad756",
+      "title": "Реактивний на Гостомель",
+      "text": "Реактивний на Гостомель",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34425",
+      "publishedAt": "2026-11-27T01:16:05+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-e16279707d92",
+      "title": "⚠️",
+      "text": "⚠️ ✈️ Реактив на Вишгород. Уважно",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108955",
+      "publishedAt": "2026-11-27T01:15:37+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-736bd98dfe61",
+      "title": "1х Реактивний БпЛА курсом на Білу Церкву",
+      "text": "1х Реактивний БпЛА курсом на Білу Церкву 1х Реактивний БпЛА курсом на Страхолісся",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108954",
+      "publishedAt": "2026-11-27T01:09:43+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-fca2d25a7ebb",
+      "title": "⚠️",
+      "text": "⚠️ ✈️ Біла Церква уважно по реактивному. укриття",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108953",
+      "publishedAt": "2026-11-27T01:03:33+00:00",
+      "importance": "orange"
+    },
+    {
+      "id": "kyivinfo-943750e7645c",
+      "title": "Реактивний БпЛА курсом на Кагарлик",
+      "text": "Реактивний БпЛА курсом на Кагарлик",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108952",
+      "publishedAt": "2026-11-27T00:56:40+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-a0a8744071be",
+      "title": "Реактивний на Яготин/Переяслав",
+      "text": "Реактивний на Яготин/Переяслав",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108951",
+      "publishedAt": "2026-11-27T00:50:30+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-c9455ae42108",
+      "title": "🟡",
+      "text": "🟡 Бориспільський /Броварський район — повітряна тривога, жовтий рівень Загроза по БпЛА з Чернігівщини Детальний радар 👉🏽 @kievinform_ua1",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108950",
+      "publishedAt": "2026-11-27T00:31:35+00:00",
+      "importance": "red"
+    },
     {
       "id": "kyivinfo-91f3ceaf985b",
       "title": "✅",
@@ -3392,66 +3662,6 @@
       "region": "kyiv",
       "url": "https://t.me/kievinfo_kyiv/108659",
       "publishedAt": "2026-11-24T02:26:14+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-f73105274ee5",
-      "title": "🟡",
-      "text": "🟡 Вишгородський район — повітряна тривога, жовтий рівень Реактив з Чернігівщини ✈️ Детальний радар 👉🏽 @kievinform_ua1",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108658",
-      "publishedAt": "2026-11-24T01:52:46+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-d62107119328",
-      "title": "✅",
-      "text": "✅ ВІДБІЙ ПОВІТРЯНОЇ ТРИВОГИ ✅",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108657",
-      "publishedAt": "2026-11-24T01:06:45+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-c6e674b3435f",
-      "title": "Реактивний БпЛА курсом на Білу Церкву",
-      "text": "Реактивний БпЛА курсом на Білу Церкву",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108656",
-      "publishedAt": "2026-11-24T01:02:06+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-fe6d5d6b7a7f",
-      "title": "Реактивний БпЛА курсом на Кагарлик",
-      "text": "Реактивний БпЛА курсом на Кагарлик",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108655",
-      "publishedAt": "2026-11-24T00:55:22+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-ebbdef2ed764",
-      "title": "1х Реактивний БпЛА курсом на Переяслав",
-      "text": "1х Реактивний БпЛА курсом на Переяслав",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108654",
-      "publishedAt": "2026-11-24T00:44:51+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-4740e702c54a",
-      "title": "Реактивний БпЛА на Лютіж",
-      "text": "Реактивний БпЛА на Лютіж ✈️",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108653",
-      "publishedAt": "2026-11-24T00:26:18+00:00",
       "importance": "red"
     }
   ]

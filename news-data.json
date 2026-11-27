@@ -1,9 +1,19 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-27T03:44:42.051418+00:00",
+  "fetchedAt": "2026-11-27T04:50:24.741852+00:00",
   "retentionDays": 3,
-  "count": 362,
+  "count": 363,
   "items": [
+    {
+      "id": "kyivinfo-5d307b69fb14",
+      "title": "🟡",
+      "text": "🟡 Вишгородський район (Київська обл.) Жовтий рівень тривоги. Прямуйте в укриття! Детальний радар 👉🏽 @kievinform_ua1",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108964",
+      "publishedAt": "2026-11-27T04:41:37+00:00",
+      "importance": "red"
+    },
     {
       "id": "kyivinfo-6cf16c0601d3",
       "title": "✅",

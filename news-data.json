@@ -1,8 +1,8 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-27T01:53:24.727701+00:00",
+  "fetchedAt": "2026-11-27T02:47:28.572923+00:00",
   "retentionDays": 3,
-  "count": 366,
+  "count": 364,
   "items": [
     {
       "id": "kyivinfo-6cf16c0601d3",
@@ -3642,26 +3642,6 @@
       "region": "kyiv",
       "url": "https://t.me/kievinfo_kyiv/108661",
       "publishedAt": "2026-11-24T03:16:49+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-d31ade7b262d",
-      "title": "🟡",
-      "text": "🟡 Білоцерківський район — повітряна тривога, жовтий рівень Загроза БпЛА з Черкащини Детальний радар 👉🏽 @kievinform_ua1",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108660",
-      "publishedAt": "2026-11-24T02:44:38+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-b7321e7a5643",
-      "title": "✅",
-      "text": "✅ ВІДБІЙ ПОВІТРЯНОЇ ТРИВОГИ ✅",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108659",
-      "publishedAt": "2026-11-24T02:26:14+00:00",
       "importance": "red"
     }
   ]

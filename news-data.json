@@ -1,9 +1,19 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-27T16:50:12.114815+00:00",
+  "fetchedAt": "2026-11-27T17:42:39.551790+00:00",
   "retentionDays": 3,
-  "count": 318,
+  "count": 311,
   "items": [
+    {
+      "id": "kyivinfo-de95da19d374",
+      "title": "✅",
+      "text": "✅ ВІДБІЙ ПОВІТРЯНОЇ ТРИВОГИ ✅",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108988",
+      "publishedAt": "2026-11-27T17:35:18+00:00",
+      "importance": "red"
+    },
     {
       "id": "kyivinfo-acd428e06134",
       "title": "👀",
@@ -3102,86 +3112,6 @@
       "region": "kyiv",
       "url": "https://t.me/kievinfo_kyiv/108722",
       "publishedAt": "2026-11-24T18:02:00+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-d1b2540100f6",
-      "title": "🎄",
-      "text": "🎄 Вже з 5 грудня в Києві відкриються ялинкові ярмарки — понад 140 локацій працюватимуть у всіх районах до 31 грудня 🇺🇦 Київ ІНФО | Надіслати новину",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108718",
-      "publishedAt": "2026-11-24T17:25:27+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-28e5fdaee069",
-      "title": "✅",
-      "text": "✅ ВІДБІЙ ПОВІТРЯНОЇ ТРИВОГИ ✅",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108717",
-      "publishedAt": "2026-11-24T17:23:26+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-ad136727898f",
-      "title": "Не долетів. Київщина - дорозвідка по БпЛА",
-      "text": "Не долетів. Київщина - дорозвідка по БпЛА ✈️",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108716",
-      "publishedAt": "2026-11-24T17:12:35+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivnebo-1dc8a2a42a24",
-      "title": "Більше не фіксується",
-      "text": "Більше не фіксується",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34320",
-      "publishedAt": "2026-11-24T17:11:45+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivnebo-5d3becda149c",
-      "title": "Лебедівка",
-      "text": "Лебедівка",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34319",
-      "publishedAt": "2026-11-24T17:06:03+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivnebo-9f21634be945",
-      "title": "Реактивний на Петрівці, Вишгород",
-      "text": "Реактивний на Петрівці, Вишгород",
-      "source": "Київ Небо",
-      "region": "kyiv",
-      "url": "https://t.me/kyiv_nebo/34318",
-      "publishedAt": "2026-11-24T17:04:42+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-82b4026c44d0",
-      "title": "Повз вдсх рБПЛА курс Лебедівка",
-      "text": "Повз вдсх рБПЛА курс Лебедівка",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108715",
-      "publishedAt": "2026-11-24T17:04:27+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-f1577b5b8c18",
-      "title": "🟡",
-      "text": "🟡 м. Київ — повітряна тривога, жовтий рівень: Дронова загроза (жовтий рівень)",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108714",
-      "publishedAt": "2026-11-24T17:03:38+00:00",
       "importance": "red"
     }
   ]

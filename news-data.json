@@ -1,9 +1,39 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-27T04:50:24.741852+00:00",
+  "fetchedAt": "2026-11-27T05:48:00.741402+00:00",
   "retentionDays": 3,
-  "count": 363,
+  "count": 365,
   "items": [
+    {
+      "id": "kyivinfo-97b09595a4a6",
+      "title": "✅",
+      "text": "✅ ВІДБІЙ ПОВІТРЯНОЇ ТРИВОГИ ✅",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108967",
+      "publishedAt": "2026-11-27T05:42:59+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-37b941bae0b1",
+      "title": "🟡",
+      "text": "🟡 Вишгородський район (Київська обл.) Жовтий рівень тривоги. Прямуйте в укриття! Детальний радар 👉🏽 @kievinform_ua1",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108966",
+      "publishedAt": "2026-11-27T05:25:35+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-458724649581",
+      "title": "✅",
+      "text": "✅ ВІДБІЙ ПОВІТРЯНОЇ ТРИВОГИ ✅",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108965",
+      "publishedAt": "2026-11-27T05:00:19+00:00",
+      "importance": "red"
+    },
     {
       "id": "kyivinfo-5d307b69fb14",
       "title": "🟡",
@@ -3623,16 +3653,6 @@
       "url": "https://t.me/kievinfo_kyiv/108664",
       "publishedAt": "2026-11-24T06:03:25+00:00",
       "importance": "red"
-    },
-    {
-      "id": "kyivinfo-06d30c1b0f20",
-      "title": "💡",
-      "text": "💡 Змінили ГРАФІКИ відключень на Київщині Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108663",
-      "publishedAt": "2026-11-24T05:32:03+00:00",
-      "importance": "normal"
     }
   ]
 }

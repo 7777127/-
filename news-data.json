@@ -1,9 +1,19 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-27T15:43:25.660318+00:00",
+  "fetchedAt": "2026-11-27T16:50:12.114815+00:00",
   "retentionDays": 3,
-  "count": 317,
+  "count": 318,
   "items": [
+    {
+      "id": "kyivinfo-acd428e06134",
+      "title": "👀",
+      "text": "👀 Розбірки з ТЦК на вул. Бориспільській 7 (Велмарт) ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/108987",
+      "publishedAt": "2026-11-27T16:15:53+00:00",
+      "importance": "normal"
+    },
     {
       "id": "kyivinfo-c35014e0fbad",
       "title": "🤯",

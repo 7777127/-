@@ -1,9 +1,79 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-28T09:37:50.794612+00:00",
+  "fetchedAt": "2026-11-28T10:33:23.272331+00:00",
   "retentionDays": 3,
-  "count": 276,
+  "count": 282,
   "items": [
+    {
+      "id": "kyivinfo-60d566bd7783",
+      "title": "🤣",
+      "text": "🤣 Під Києвом продають розкішний маєток ексчиновника «Газпрому» Він займає 70 соток землі та має два басейни, бібліотеку, збройову кімнату, винну дегустаційну, більярдну й сауну. Ціна — $4 млн. ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/109054",
+      "publishedAt": "2026-11-28T10:25:53+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-19ded7e02ae2",
+      "title": "Щоб менше реактивних додітало до нас, треба ваші пару гривень",
+      "text": "Щоб менше реактивних додітало до нас, треба ваші пару гривень 👇 https://send.monobank.ua/jar/8mYjydzumw",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34461",
+      "publishedAt": "2026-11-28T10:25:10+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-86e8a1b93b98",
+      "title": "❗️",
+      "text": "❗️ Дорогі читачі, дуже прошу « підзарядити » наш канал 🇺🇦 . Для цього, потрібно перейти за цим посиланням, натиснути зарядити канал ( boost channel ). Це відкриває додаткові функції для каналу. https://t.me/boost/kievinfo_kyiv",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/109053",
+      "publishedAt": "2026-11-28T10:08:40+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-31db359f3257",
+      "title": "✅",
+      "text": "✅ ВІДБІЙ ПОВІТРЯНОЇ ТРИВОГИ ✅",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/109052",
+      "publishedAt": "2026-11-28T10:03:13+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivnebo-b381a4aa12e5",
+      "title": "Біля Києва наразі все чисто",
+      "text": "Біля Києва наразі все чисто",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34460",
+      "publishedAt": "2026-11-28T10:01:14+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-dfc73689834c",
+      "title": "Реактивний на Демидів",
+      "text": "Реактивний на Демидів",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/109051",
+      "publishedAt": "2026-11-28T09:59:57+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-1f09831f918d",
+      "title": "🟡",
+      "text": "🟡 м. Київ — повітряна тривога, жовтий рівень: Дронова загроза (жовтий рівень)",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/109050",
+      "publishedAt": "2026-11-28T09:59:11+00:00",
+      "importance": "red"
+    },
     {
       "id": "kyivinfo-bc898376979b",
       "title": "❗️",
@@ -2753,16 +2823,6 @@
       "url": "https://t.me/kievinfo_kyiv/108807",
       "publishedAt": "2026-11-25T10:46:45+00:00",
       "importance": "red"
-    },
-    {
-      "id": "kyivinfo-ca2775d864ba",
-      "title": "❗️",
-      "text": "❗️ Рада ухвалила закон про легалізацію ринку криптовалют в Україні Як буде тепер це регулюватися, яка буде ставка податку, та що далі буде з криптою читайте на каналі 👉 КРИПТОСВІТ все про інвестиції",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108805",
-      "publishedAt": "2026-11-25T09:42:23+00:00",
-      "importance": "normal"
     }
   ]
 }

@@ -1,9 +1,249 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-28T05:37:44.050823+00:00",
+  "fetchedAt": "2026-11-28T06:37:53.995207+00:00",
   "retentionDays": 3,
-  "count": 252,
+  "count": 275,
   "items": [
+    {
+      "id": "kyivinfo-c4eee83314e7",
+      "title": "✈️",
+      "text": "✈️ ‼️ 2х Герань-5 через Узин на Білу Церкву Той що біля Вишгорода був, вже не фіксується ✈️ ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/109033",
+      "publishedAt": "2026-11-28T06:35:33+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-a35f352cb37d",
+      "title": "Не фіксується",
+      "text": "Не фіксується",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34458",
+      "publishedAt": "2026-11-28T06:29:26+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-a9079dac8b08",
+      "title": "Прямим курсом на Білу Церкву",
+      "text": "Прямим курсом на Білу Церкву",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/109032",
+      "publishedAt": "2026-11-28T06:28:29+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-08b3fbb8ca45",
+      "title": "✈️",
+      "text": "✈️ Реактив з водосховища на Вишгород, Київ. 800 м",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/109031",
+      "publishedAt": "2026-11-28T06:26:21+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-3131166a7d9e",
+      "title": "Знову 1 на Вишгород",
+      "text": "Знову 1 на Вишгород",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34457",
+      "publishedAt": "2026-11-28T06:25:26+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-e22c3308c708",
+      "title": "1х на Ржищів йде, ймовірно піде на Кагарлик-Узин ( як попередні )",
+      "text": "1х на Ржищів йде, ймовірно піде на Кагарлик-Узин ( як попередні ) 1х в ЧЗВ ✈️ ✈️ Детальний рух ШАХЕДІВ описується на нашому спеціалізованому каналі – @kievinform_ua1 @kievinform_ua1 @kievinform_ua1 🇺🇦 Київ ІНФО | Надіслати новину",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/109030",
+      "publishedAt": "2026-11-28T06:19:41+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivnebo-9cd264ecee97",
+      "title": "Від Броварів на Чернігівщину поки",
+      "text": "Від Броварів на Чернігівщину поки",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34456",
+      "publishedAt": "2026-11-28T06:14:46+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-3649cb2312f2",
+      "title": "✈️",
+      "text": "✈️ ✈️ 2х маневрують в передмісті Києва, висота +4 км",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/109029",
+      "publishedAt": "2026-11-28T06:13:08+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-4a75e7ac3a9e",
+      "title": "На Бровари",
+      "text": "На Бровари",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34455",
+      "publishedAt": "2026-11-28T06:10:39+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-2a7b915b27c1",
+      "title": "Так йдуть 3х шт",
+      "text": "Так йдуть 3х шт",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/109028",
+      "publishedAt": "2026-11-28T06:10:01+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-8622d6b51c9a",
+      "title": "Троєщина",
+      "text": "Троєщина",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34454",
+      "publishedAt": "2026-11-28T06:09:50+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-bd1dccd357ac",
+      "title": "Оболонь",
+      "text": "Оболонь",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34453",
+      "publishedAt": "2026-11-28T06:09:02+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-f4b1cce8f125",
+      "title": "✈️",
+      "text": "✈️ Через Вишгород на Київ перший",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/109027",
+      "publishedAt": "2026-11-28T06:08:31+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-778c5984a4ca",
+      "title": "Вишгород - уважно",
+      "text": "Вишгород - уважно",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34452",
+      "publishedAt": "2026-11-28T06:07:44+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-1c28e300a4d4",
+      "title": "Ще 1 в бік Броварів",
+      "text": "Ще 1 в бік Броварів",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34451",
+      "publishedAt": "2026-11-28T06:07:27+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-91d7961e5a3d",
+      "title": "✈️",
+      "text": "✈️ ❗️ 2х рБПЛА на Лютіж Нлві Петрівці",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/109026",
+      "publishedAt": "2026-11-28T06:07:13+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivnebo-7601f3eca75f",
+      "title": "Реактивний на Димер",
+      "text": "Реактивний на Димер",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34450",
+      "publishedAt": "2026-11-28T06:05:38+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-902ae8e8f383",
+      "title": "Біля Києва наразі чисто, на Чернігівщині ще декілька є",
+      "text": "Біля Києва наразі чисто, на Чернігівщині ще декілька є",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34449",
+      "publishedAt": "2026-11-28T05:51:42+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-00d857f10f46",
+      "title": "Вже в районі Бровари, Требухів",
+      "text": "Вже в районі Бровари, Требухів ✈️",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/109025",
+      "publishedAt": "2026-11-28T05:49:26+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-deac84d0f793",
+      "title": "В бік Борисполя",
+      "text": "В бік Борисполя",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34448",
+      "publishedAt": "2026-11-28T05:46:31+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-5f824d0ece36",
+      "title": "Вже в районі Бровари, Требухів",
+      "text": "Вже в районі Бровари, Требухів ✈️",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/109024",
+      "publishedAt": "2026-11-28T05:44:22+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-ff0c728c8b74",
+      "title": "Реактивний біля Броварів",
+      "text": "Реактивний біля Броварів",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34447",
+      "publishedAt": "2026-11-28T05:43:38+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-126623088cd2",
+      "title": "1х рБПЛА курс Бровари, висота 200 м",
+      "text": "1х рБПЛА курс Бровари, висота 200 м",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/109023",
+      "publishedAt": "2026-11-28T05:41:23+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-bf33c920521c",
+      "title": "🟡",
+      "text": "🟡 м. Київ — повітряна тривога, жовтий рівень: Дронова загроза (жовтий рівень)",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/109022",
+      "publishedAt": "2026-11-28T05:39:30+00:00",
+      "importance": "red"
+    },
     {
       "id": "kyivinfo-e7e84295628f",
       "title": "🎡",
@@ -2512,16 +2752,6 @@
       "region": "kyiv",
       "url": "https://t.me/kievinfo_kyiv/108791",
       "publishedAt": "2026-11-25T07:11:25+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-7568b1c89e73",
-      "title": "рф уночі атакувала область — є загиблий",
-      "text": "рф уночі атакувала область — є загиблий Цієї ночі ворог завдав ударів по Білоцерківському району. Унаслідок влучань виникли пожежі на території підприємства та гіпермаркету. Також загорілися два вантажні автомобілі. На жаль, одна людина загинула — її особу встановлюють фахівці.",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108782",
-      "publishedAt": "2026-11-25T06:22:08+00:00",
       "importance": "red"
     }
   ]

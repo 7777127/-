@@ -1,9 +1,29 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-28T01:43:24.035209+00:00",
+  "fetchedAt": "2026-11-28T02:38:25.357963+00:00",
   "retentionDays": 3,
-  "count": 288,
+  "count": 289,
   "items": [
+    {
+      "id": "kyivinfo-69ec2cc0ba01",
+      "title": "✅",
+      "text": "✅ ВІДБІЙ ПОВІТРЯНОЇ ТРИВОГИ ✅",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/109013",
+      "publishedAt": "2026-11-28T02:01:16+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-65a601b543e8",
+      "title": "🟡",
+      "text": "🟡 Вишгородський район — повітряна тривога, жовтий рівень Загроза по реактивному з Чернігівщини Детальний радар 👉🏽 @kievinform_ua1",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/109012",
+      "publishedAt": "2026-11-28T01:49:19+00:00",
+      "importance": "red"
+    },
     {
       "id": "kyivinfo-e8b5c0b5c3d4",
       "title": "✅",
@@ -2872,16 +2892,6 @@
       "region": "kyiv",
       "url": "https://t.me/kievinfo_kyiv/108756",
       "publishedAt": "2026-11-25T02:44:30+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-26c53ad599a3",
-      "title": "✈️",
-      "text": "✈️ новий реактив в напрямку Білої Церкви",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108755",
-      "publishedAt": "2026-11-25T02:36:47+00:00",
       "importance": "normal"
     }
   ]

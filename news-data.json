@@ -1,9 +1,89 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-27T23:25:37.606033+00:00",
+  "fetchedAt": "2026-11-28T00:18:15.126681+00:00",
   "retentionDays": 3,
-  "count": 287,
+  "count": 294,
   "items": [
+    {
+      "id": "kyivinfo-e8b5c0b5c3d4",
+      "title": "✅",
+      "text": "✅ ВІДБІЙ ПОВІТРЯНОЇ ТРИВОГИ ✅",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/109011",
+      "publishedAt": "2026-11-27T23:43:32+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-a7d1b0312a75",
+      "title": "Реактивний БпЛА курсом на Вишгород",
+      "text": "Реактивний БпЛА курсом на Вишгород",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/109010",
+      "publishedAt": "2026-11-27T23:40:08+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-5bbf173aaf85",
+      "title": "Реактивний БпЛА курсом на Вишгород",
+      "text": "Реактивний БпЛА курсом на Вишгород",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/109009",
+      "publishedAt": "2026-11-27T23:39:28+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivnebo-86adf44b7dbe",
+      "title": "Очікуємо на відбої",
+      "text": "Очікуємо на відбої",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34446",
+      "publishedAt": "2026-11-27T23:38:49+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-7e5f1c8c4c02",
+      "title": "Все, більше не летить",
+      "text": "Все, більше не летить",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34445",
+      "publishedAt": "2026-11-27T23:38:37+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-1670d795316e",
+      "title": "Зробив коло через Чернігівщину і знову йде до Вишгорода",
+      "text": "Зробив коло через Чернігівщину і знову йде до Вишгорода",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34444",
+      "publishedAt": "2026-11-27T23:34:24+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-2c2caccf324e",
+      "title": "✈️",
+      "text": "✈️ Реактивний курсом на Сувид",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/109008",
+      "publishedAt": "2026-11-27T23:29:44+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-7902775dd233",
+      "title": "✈️",
+      "text": "✈️ Реактивний курсом на Сувид",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/109007",
+      "publishedAt": "2026-11-27T23:26:38+00:00",
+      "importance": "normal"
+    },
     {
       "id": "kyivnebo-6d35a70e0155",
       "title": "Взяв курс на Чернігівщину, може ще повернутися",
@@ -2863,16 +2943,6 @@
       "url": "https://t.me/kievinfo_kyiv/108749",
       "publishedAt": "2026-11-25T00:23:40+00:00",
       "importance": "red"
-    },
-    {
-      "id": "kyivinfo-de70d136e13f",
-      "title": "⚡️",
-      "text": "⚡️ зміни до графіків відключень для Київщини станом на 01:33 – ДТЕК ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108748",
-      "publishedAt": "2026-11-24T23:37:13+00:00",
-      "importance": "normal"
     }
   ]
 }

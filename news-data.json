@@ -1,8 +1,8 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-28T00:18:15.126681+00:00",
+  "fetchedAt": "2026-11-28T01:43:24.035209+00:00",
   "retentionDays": 3,
-  "count": 294,
+  "count": 288,
   "items": [
     {
       "id": "kyivinfo-e8b5c0b5c3d4",
@@ -2883,66 +2883,6 @@
       "url": "https://t.me/kievinfo_kyiv/108755",
       "publishedAt": "2026-11-25T02:36:47+00:00",
       "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-1fb1f37cd414",
-      "title": "✈️",
-      "text": "✈️ Ще 1х РБпЛА реактив напрямку Білої Церкви повз Ріжки",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108754",
-      "publishedAt": "2026-11-25T01:31:22+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-fcb00a9a0c6c",
-      "title": "✈️",
-      "text": "✈️ Ще 1х РБпЛА реактив напрямку Білої Церкви повз Ріжки",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108753",
-      "publishedAt": "2026-11-25T01:24:35+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-26f027ec22ff",
-      "title": "⚡️",
-      "text": "⚡️ зміни до графіків відключень для Київщини станом на 03:10 , – ДТЕК. ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108752",
-      "publishedAt": "2026-11-25T01:18:35+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-d81c63de1f75",
-      "title": "Реактивний БпЛА на Білу Церкву.",
-      "text": "Реактивний БпЛА на Білу Церкву.",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108751",
-      "publishedAt": "2026-11-25T00:43:54+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-148dc73b1e49",
-      "title": "Реактивний БпЛА на Білу Церкву.",
-      "text": "Реактивний БпЛА на Білу Церкву.",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108750",
-      "publishedAt": "2026-11-25T00:32:15+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-260d297f2dfd",
-      "title": "🟡",
-      "text": "🟡 Білоцерківський район — повітряна тривога, жовтий рівень Загроза по БпЛА з Черкащини Детальний радар 👉🏽 @kievinform_ua1",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108749",
-      "publishedAt": "2026-11-25T00:23:40+00:00",
-      "importance": "red"
     }
   ]
 }

@@ -1,9 +1,299 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-28T13:20:04.990746+00:00",
+  "fetchedAt": "2026-11-28T14:18:55.603657+00:00",
   "retentionDays": 3,
-  "count": 294,
+  "count": 322,
   "items": [
+    {
+      "id": "kyivnebo-bb4ce104be53",
+      "title": "Борщагівки",
+      "text": "Борщагівки",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34488",
+      "publishedAt": "2026-11-28T14:18:51+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-ca1bfb1399af",
+      "title": "Вишневе - уважно",
+      "text": "Вишневе - уважно",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34487",
+      "publishedAt": "2026-11-28T14:18:32+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-92bd04696f28",
+      "title": "Ще одна гнида летить на Святопетрівське",
+      "text": "Ще одна гнида летить на Святопетрівське",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34486",
+      "publishedAt": "2026-11-28T14:18:06+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-76e0d77b5c18",
+      "title": "Ще 1х на Фастів, висота 200 м! В укриття!",
+      "text": "Ще 1х на Фастів, висота 200 м! В укриття!",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/109083",
+      "publishedAt": "2026-11-28T14:13:00+00:00",
+      "importance": "orange"
+    },
+    {
+      "id": "kyivnebo-bbcc84a71b46",
+      "title": "Щоб менше таких гнид до нас долітали, треба ваші 20 гривень на збір",
+      "text": "Щоб менше таких гнид до нас долітали, треба ваші 20 гривень на збір 👇 https://send.monobank.ua/jar/8mYjydzumw",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34485",
+      "publishedAt": "2026-11-28T14:02:11+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-992d723c0f00",
+      "title": "Боярка 400 м",
+      "text": "Боярка 400 м ⚠️ ховайтеся",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/109082",
+      "publishedAt": "2026-11-28T14:01:47+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-c69c9af9bb3b",
+      "title": "Біля Києва наразі чисто",
+      "text": "Біля Києва наразі чисто",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34484",
+      "publishedAt": "2026-11-28T14:01:15+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-7953b05bdc5e",
+      "title": "Боярка 400 м",
+      "text": "Боярка 400 м ⚠️ ховайтеся",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/109081",
+      "publishedAt": "2026-11-28T14:00:57+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-403eb77f9c0d",
+      "title": "Все",
+      "text": "Все",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34483",
+      "publishedAt": "2026-11-28T14:00:38+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-4034c07debc7",
+      "title": "Боярка",
+      "text": "Боярка",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34482",
+      "publishedAt": "2026-11-28T14:00:18+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-527261c61a00",
+      "title": "Білогородка зниження",
+      "text": "Білогородка зниження ⚠️ ✈️",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/109080",
+      "publishedAt": "2026-11-28T14:00:03+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-febf2e03e8db",
+      "title": "Білогородка",
+      "text": "Білогородка",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34481",
+      "publishedAt": "2026-11-28T13:59:56+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-37f5a410ec95",
+      "title": "Падає",
+      "text": "Падає",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34480",
+      "publishedAt": "2026-11-28T13:59:50+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-3c1aaa327e42",
+      "title": "Святопетрівське",
+      "text": "Святопетрівське",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34479",
+      "publishedAt": "2026-11-28T13:59:24+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-167861105ef9",
+      "title": "Маневрує, на Чайки",
+      "text": "Маневрує, на Чайки",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34478",
+      "publishedAt": "2026-11-28T13:58:31+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-1b3cd09a5e98",
+      "title": "Борщагівка - в укриття!",
+      "text": "Борщагівка - в укриття! ⚠️ ✈️",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/109079",
+      "publishedAt": "2026-11-28T13:57:47+00:00",
+      "importance": "orange"
+    },
+    {
+      "id": "kyivnebo-a533488d7b06",
+      "title": "Вишневе, потрохи знижується",
+      "text": "Вишневе, потрохи знижується",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34477",
+      "publishedAt": "2026-11-28T13:57:46+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-0e4f603a3925",
+      "title": "На Борщагівки",
+      "text": "На Борщагівки",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34476",
+      "publishedAt": "2026-11-28T13:57:31+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-3969f7c053b8",
+      "title": "Солома, Шулявка",
+      "text": "Солома, Шулявка",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/109078",
+      "publishedAt": "2026-11-28T13:56:54+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-d0f2ea67aefd",
+      "title": "Солома",
+      "text": "Солома",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34475",
+      "publishedAt": "2026-11-28T13:56:45+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-902e823dc23e",
+      "title": "Лукʼянівка",
+      "text": "Лукʼянівка",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34474",
+      "publishedAt": "2026-11-28T13:56:07+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-0ec50253ae0c",
+      "title": "Куренівка",
+      "text": "Куренівка",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34473",
+      "publishedAt": "2026-11-28T13:55:26+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-2512d389b711",
+      "title": "Курс Виноградар, Нивки",
+      "text": "Курс Виноградар, Нивки ⚠️ ✈️",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/109077",
+      "publishedAt": "2026-11-28T13:55:15+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-3c1c9e89e667",
+      "title": "Летить на Виноградар, Нивки",
+      "text": "Летить на Виноградар, Нивки",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34472",
+      "publishedAt": "2026-11-28T13:55:04+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-f972a063f5b5",
+      "title": "Вишгород - увага",
+      "text": "Вишгород - увага",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34471",
+      "publishedAt": "2026-11-28T13:54:31+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-f148e0f5cf07",
+      "title": "Фіксація біля Петрівців",
+      "text": "Фіксація біля Петрівців",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34470",
+      "publishedAt": "2026-11-28T13:54:19+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-78b3dafe9ca1",
+      "title": "реактивний БпЛА повз Вишгород",
+      "text": "реактивний БпЛА повз Вишгород",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/109076",
+      "publishedAt": "2026-11-28T13:53:40+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivnebo-c2f324bdf726",
+      "title": "Очікуємо на відбої",
+      "text": "Очікуємо на відбої",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34469",
+      "publishedAt": "2026-11-28T13:53:26+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-be60e275cb7c",
+      "title": "🟡",
+      "text": "🟡 м. Київ — повітряна тривога, жовтий рівень: Дронова загроза (жовтий рівень)",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/109075",
+      "publishedAt": "2026-11-28T13:53:09+00:00",
+      "importance": "red"
+    },
     {
       "id": "kyivnebo-7cc44b1bbd56",
       "title": "Більше не летить",
@@ -2932,16 +3222,6 @@
       "region": "kyiv",
       "url": "https://t.me/kievinfo_kyiv/108813",
       "publishedAt": "2026-11-25T14:25:26+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-ae5b215da4a2",
-      "title": "🥶",
-      "text": "🥶 Завтра Київ і регіон накриє НЕГОДА — пориви вітру сягнуть 7-12 м/с, температура повітря вночі опуститься до -6°С морозу, а вдень від -2°С. Також очікується ожеледь на дорогах , особливо вночі, ввечері та зранку. ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108812",
-      "publishedAt": "2026-11-25T14:17:50+00:00",
       "importance": "normal"
     }
   ]

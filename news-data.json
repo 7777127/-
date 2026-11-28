@@ -1,9 +1,119 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-28T11:25:07.300089+00:00",
+  "fetchedAt": "2026-11-28T12:14:03.296646+00:00",
   "retentionDays": 3,
-  "count": 282,
+  "count": 293,
   "items": [
+    {
+      "id": "kyivinfo-039b987dbd28",
+      "title": "😰",
+      "text": "😰 Перші кадри наслідків удару по Білій Церкві: 3 людини постраждали Під ударом опинилися житлова забудова, гаражний кооператив та інфраструктурні об’єкти. У гаражному кооперативі виникла пожежа, горіли 6 гаражів — займання вже ліквідовано. Вибуховою хвилею…",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/109066",
+      "publishedAt": "2026-11-28T11:57:32+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-30f81888b70a",
+      "title": "✅",
+      "text": "✅ ВІДБІЙ ТРИВОГИ у м. Києві",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/109065",
+      "publishedAt": "2026-11-28T11:52:58+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-e05702e2f665",
+      "title": "Перший мінус",
+      "text": "Перший мінус 🚀 Наступний курс в район Борисполя 🇺🇦 : другий теж збили ✈️ ✈️ Детальний рух ШАХЕДІВ описується на нашому спеціалізованому каналі – @kievinform_ua1 @kievinform_ua1 @kievinform_ua1 🇺🇦 Київ ІНФО | Надіслати новину",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/109064",
+      "publishedAt": "2026-11-28T11:49:05+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivnebo-0cfebc435264",
+      "title": "Поки ви всі тут, дуже треба ваші пару гривень на збір",
+      "text": "Поки ви всі тут, дуже треба ваші пару гривень на збір https://send.monobank.ua/jar/8mYjydzumw Хто скільки може 🙏",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34465",
+      "publishedAt": "2026-11-28T11:46:41+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-2908d4d8b260",
+      "title": "Більше не летить",
+      "text": "Більше не летить",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34464",
+      "publishedAt": "2026-11-28T11:45:46+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-0796909fd6ee",
+      "title": "Через Погреби курс Троя, ТЕЦ-6",
+      "text": "Через Погреби курс Троя, ТЕЦ-6",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/109063",
+      "publishedAt": "2026-11-28T11:44:33+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-16b93c41b65f",
+      "title": "Далі на ТЕЦ-6, Троєщину",
+      "text": "Далі на ТЕЦ-6, Троєщину",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34463",
+      "publishedAt": "2026-11-28T11:44:20+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-479afc827b66",
+      "title": "Бровари увага! Біля вас завели рБПЛА, висота до 200 и",
+      "text": "Бровари увага! Біля вас завели рБПЛА, висота до 200 и",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/109062",
+      "publishedAt": "2026-11-28T11:44:02+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivnebo-626978f43c10",
+      "title": "Реактивний на Бровари",
+      "text": "Реактивний на Бровари",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34462",
+      "publishedAt": "2026-11-28T11:43:27+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-989682eb7a7d",
+      "title": "🟡",
+      "text": "🟡 м. Київ — повітряна тривога, жовтий рівень: Дронова загроза (жовтий рівень)",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/109061",
+      "publishedAt": "2026-11-28T11:43:06+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-f5601fdf01a8",
+      "title": "🟡",
+      "text": "🟡 Жовтий рівень тривоги • Бориспільський район (Київська обл.) • Броварський район (Київська обл.) 1х рБПЛА через Згурівку на Березань Детальний радар 👉🏽 @kievinform_ua1",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/109060",
+      "publishedAt": "2026-11-28T11:39:24+00:00",
+      "importance": "red"
+    },
     {
       "id": "kyivinfo-9c9b38760517",
       "title": "🚒",

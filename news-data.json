@@ -1,9 +1,69 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-28T15:08:53.701396+00:00",
+  "fetchedAt": "2026-11-28T15:54:46.130123+00:00",
   "retentionDays": 3,
-  "count": 357,
+  "count": 362,
   "items": [
+    {
+      "id": "kyivinfo-5dca38d30886",
+      "title": "😱",
+      "text": "😱 💥 Читач випадково засняв момент ВЛУЧАННЯ дрону 🚀 в двір його будинку, Нивки 🔞 Жахливі кадри з місця удару дивіться у нас в ІНСТАГРАМ 🕊 ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/109109",
+      "publishedAt": "2026-11-28T15:25:59+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-645a0c9658ca",
+      "title": "🤯",
+      "text": "🤯 ❗️ Кадри наслідків падіння рБПЛА в двір будинку на Нивках ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/109107",
+      "publishedAt": "2026-11-28T15:13:28+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivnebo-f4a49b7979dc",
+      "title": "Поки у наш бік більше нічого не летить, очікуємо на відбої",
+      "text": "Поки у наш бік більше нічого не летить, очікуємо на відбої",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34525",
+      "publishedAt": "2026-11-28T15:09:52+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-0cad982c8c64",
+      "title": "Від Василькова на Чабани, Хотів, Теремки",
+      "text": "Від Василькова на Чабани, Хотів, Теремки",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/109106",
+      "publishedAt": "2026-11-28T15:09:43+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-06b5e51854f1",
+      "title": "Схоже все",
+      "text": "Схоже все",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34524",
+      "publishedAt": "2026-11-28T15:09:11+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-5aa5d962b7f9",
+      "title": "Йде не дуже високо, також скоро гепне",
+      "text": "Йде не дуже високо, також скоро гепне",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34523",
+      "publishedAt": "2026-11-28T15:08:54+00:00",
+      "importance": "normal"
+    },
     {
       "id": "kyivnebo-02415ee014ee",
       "title": "Теремки",
@@ -3563,16 +3623,6 @@
       "url": "https://t.me/kievinfo_kyiv/108815",
       "publishedAt": "2026-11-25T16:03:39+00:00",
       "importance": "red"
-    },
-    {
-      "id": "kyivinfo-65e0b5e6a2a2",
-      "title": "‼️",
-      "text": "‼️ НАБУ когось приймають на Чикаленко 👀 Хто знає деталі, пишіть нам у бот 👇 ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108814",
-      "publishedAt": "2026-11-25T15:15:15+00:00",
-      "importance": "normal"
     }
   ]
 }

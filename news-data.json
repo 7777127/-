@@ -1,8 +1,8 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-28T02:38:25.357963+00:00",
+  "fetchedAt": "2026-11-28T03:35:41.316949+00:00",
   "retentionDays": 3,
-  "count": 289,
+  "count": 283,
   "items": [
     {
       "id": "kyivinfo-69ec2cc0ba01",
@@ -2833,66 +2833,6 @@
       "url": "https://t.me/kievinfo_kyiv/108762",
       "publishedAt": "2026-11-25T03:39:45+00:00",
       "importance": "red"
-    },
-    {
-      "id": "kyivinfo-2f089514b9c3",
-      "title": "✅",
-      "text": "✅ ВІДБІЙ ПОВІТРЯНОЇ ТРИВОГИ ✅",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108761",
-      "publishedAt": "2026-11-25T03:14:51+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-6864a2af039f",
-      "title": "1",
-      "text": "1 загиблий внаслідок атаки на Білу Церкву , – місцева влада. Ворог атакував інфраструктуру. Пошкоджено «Епіцентр», «Нову пошту» та інші об'єкти цивільного бізнесу. ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108760",
-      "publishedAt": "2026-11-25T03:14:12+00:00",
-      "importance": "orange"
-    },
-    {
-      "id": "kyivinfo-c516cbec1415",
-      "title": "✈️",
-      "text": "✈️ Ще 1х РБпЛА курсом до Білої Церкви. Уважно",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108759",
-      "publishedAt": "2026-11-25T03:11:00+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-b733117c33d6",
-      "title": "✈️",
-      "text": "✈️ Ще 1х РБпЛА курсом до Білої Церкви. Уважно",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108758",
-      "publishedAt": "2026-11-25T02:49:05+00:00",
-      "importance": "red"
-    },
-    {
-      "id": "kyivinfo-45a66ba83720",
-      "title": "ТЕЦ, уважно",
-      "text": "ТЕЦ, уважно ✈️ ⚠️",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108757",
-      "publishedAt": "2026-11-25T02:46:47+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-16788382fb21",
-      "title": "✈️",
-      "text": "✈️ новий реактив в напрямку Білої Церкви",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108756",
-      "publishedAt": "2026-11-25T02:44:30+00:00",
-      "importance": "normal"
     }
   ]
 }

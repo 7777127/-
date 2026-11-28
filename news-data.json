@@ -1,9 +1,369 @@
 {
   "ok": true,
-  "fetchedAt": "2026-11-28T14:18:55.603657+00:00",
+  "fetchedAt": "2026-11-28T15:08:53.701396+00:00",
   "retentionDays": 3,
-  "count": 322,
+  "count": 357,
   "items": [
+    {
+      "id": "kyivnebo-02415ee014ee",
+      "title": "Теремки",
+      "text": "Теремки",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34522",
+      "publishedAt": "2026-11-28T15:08:41+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-7dff365ef68c",
+      "title": "Від Василькова на Чабани, Хотів, Теремки",
+      "text": "Від Василькова на Чабани, Хотів, Теремки",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/109105",
+      "publishedAt": "2026-11-28T15:08:32+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-15a505e708dd",
+      "title": "В області один на Васильків",
+      "text": "В області один на Васильків",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34521",
+      "publishedAt": "2026-11-28T15:07:32+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-4299ef60e7a4",
+      "title": "Реактивний БпЛА курсом на Васильків",
+      "text": "Реактивний БпЛА курсом на Васильків",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/109104",
+      "publishedAt": "2026-11-28T15:05:14+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivnebo-689acf536888",
+      "title": "Слабенько йдемо, хто ще не закинув, прошу долучитися до збору на перехоплення реактивних",
+      "text": "Слабенько йдемо, хто ще не закинув, прошу долучитися до збору на перехоплення реактивних https://send.monobank.ua/jar/8mYjydzumw",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34520",
+      "publishedAt": "2026-11-28T15:03:48+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-8ac7d86fc8aa",
+      "title": "Біля Києва наразі чисто",
+      "text": "Біля Києва наразі чисто",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34519",
+      "publishedAt": "2026-11-28T15:03:07+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-befb130c0d22",
+      "title": "В області один на Васильків",
+      "text": "В області один на Васильків",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34518",
+      "publishedAt": "2026-11-28T15:01:49+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-ffb775b6ecc1",
+      "title": "Реактивний БпЛА курсом на Святошин",
+      "text": "Реактивний БпЛА курсом на Святошин Реактивний БпЛА курсом на Васильків",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/109103",
+      "publishedAt": "2026-11-28T15:01:20+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivnebo-38a1b65cbb33",
+      "title": "Впав",
+      "text": "Впав",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34517",
+      "publishedAt": "2026-11-28T15:01:19+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-3d03e7245c2b",
+      "title": "Святошин",
+      "text": "Святошин",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34516",
+      "publishedAt": "2026-11-28T15:00:51+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-78c1cc733b95",
+      "title": "🗣",
+      "text": "🗣 У Солом’янському районі внаслідок ворожої атаки пошкоджено адміністративну будівлю За попередньою інформацією є постраждалі 🔴 У Шевченківському районі, внаслідок паління уламків, сталося загоряння автівок на парковці. 🇺🇦 Київ ІНФО | Надіслати новину",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/109102",
+      "publishedAt": "2026-11-28T15:00:36+00:00",
+      "importance": "orange"
+    },
+    {
+      "id": "kyivnebo-cd0ef5a5dfe5",
+      "title": "Сирець, Нивки, Лук'янівка",
+      "text": "Сирець, Нивки, Лук'янівка",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34515",
+      "publishedAt": "2026-11-28T15:00:02+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-763a7de5a004",
+      "title": "Почайна",
+      "text": "Почайна",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34514",
+      "publishedAt": "2026-11-28T14:59:39+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-fc2b77a90c3d",
+      "title": "Оболонь ще є",
+      "text": "Оболонь ще є",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34513",
+      "publishedAt": "2026-11-28T14:59:33+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-f5f9d5e24266",
+      "title": "ВИБУХИ",
+      "text": "ВИБУХИ 💥 Залишилися Реактивний БпЛА курсом на Оболонь Реактивний БпЛА курсом на Трипілля ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/109101",
+      "publishedAt": "2026-11-28T14:59:31+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivnebo-9f63c78de12f",
+      "title": "Наче все біля Києва",
+      "text": "Наче все біля Києва",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34512",
+      "publishedAt": "2026-11-28T14:58:53+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-bb4019833023",
+      "title": "Реактивний БпЛА курсом на Троєщину",
+      "text": "Реактивний БпЛА курсом на Троєщину Реактивний БпЛА курсом на Вишгород Реактивний БпЛА курсом на Українку",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/109100",
+      "publishedAt": "2026-11-28T14:57:27+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivnebo-4f0d4ec677fc",
+      "title": "1 Троєщина, 1 Вишгород, 1 Українка",
+      "text": "1 Троєщина, 1 Вишгород, 1 Українка",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34511",
+      "publishedAt": "2026-11-28T14:57:17+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-d977af106ff2",
+      "title": "Перший біля Козина вже",
+      "text": "Перший біля Козина вже",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34510",
+      "publishedAt": "2026-11-28T14:56:14+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-092e6eb6188e",
+      "title": "1х Вишеньки",
+      "text": "1х Вишеньки 2х Погреби",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/109099",
+      "publishedAt": "2026-11-28T14:55:56+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-ce517211e987",
+      "title": "2 біля Троєщини низько",
+      "text": "2 біля Троєщини низько",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34509",
+      "publishedAt": "2026-11-28T14:55:40+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-698b67b399c1",
+      "title": "Перший вилетів на Вишеньки",
+      "text": "Перший вилетів на Вишеньки",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34508",
+      "publishedAt": "2026-11-28T14:55:05+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-75ee6dcb043c",
+      "title": "3 біля Києва",
+      "text": "3 біля Києва",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34507",
+      "publishedAt": "2026-11-28T14:54:53+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-ec3a7ff8fd99",
+      "title": "🔴",
+      "text": "🔴 🔴 🔴 Реактивний БпЛА курсом на Вишеньки 2х Реактивні БпЛА курсом на Троєщину",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/109098",
+      "publishedAt": "2026-11-28T14:54:29+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivnebo-c175900706c9",
+      "title": "2 підлітають до Троєщини",
+      "text": "2 підлітають до Троєщини",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34506",
+      "publishedAt": "2026-11-28T14:53:57+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-24e39f3c7573",
+      "title": "Бортничі",
+      "text": "Бортничі",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34505",
+      "publishedAt": "2026-11-28T14:53:49+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-086bb627ea79",
+      "title": "Осокорки",
+      "text": "Осокорки",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34504",
+      "publishedAt": "2026-11-28T14:53:19+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivnebo-68b2ceaeb361",
+      "title": "Позняки",
+      "text": "Позняки",
+      "source": "Київ Небо",
+      "region": "kyiv",
+      "url": "https://t.me/kyiv_nebo/34503",
+      "publishedAt": "2026-11-28T14:53:11+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-886a4e35dff2",
+      "title": "Через Виноградар курс Почайна",
+      "text": "Через Виноградар курс Почайна ⚠️ ✈️",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/109097",
+      "publishedAt": "2026-11-28T14:51:51+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-bcb711310f51",
+      "title": "3х нових йде до нас",
+      "text": "3х нових йде до нас ⚠️ ✈️",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/109096",
+      "publishedAt": "2026-11-28T14:49:56+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-2b8215dd76e8",
+      "title": "😱",
+      "text": "😱 💥 Читач випадково засняв момент ВЛУЧАННЯ дрону 🚀 в двір його будинку, Нивки",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/109091",
+      "publishedAt": "2026-11-28T14:47:32+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-cfbe20081392",
+      "title": "Вибух",
+      "text": "Вибух 💥 👀 Дорозвідка ✈️ ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/109089",
+      "publishedAt": "2026-11-28T14:32:53+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-7e1482c58e1a",
+      "title": "✅",
+      "text": "✅ ВІДБІЙ ПОВІТРЯНОЇ ТРИВОГИ ✅",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/109088",
+      "publishedAt": "2026-11-28T14:25:55+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-4129cee15e52",
+      "title": "Вибух",
+      "text": "Вибух 💥 👀 Дорозвідка ✈️ ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/109087",
+      "publishedAt": "2026-11-28T14:22:54+00:00",
+      "importance": "red"
+    },
+    {
+      "id": "kyivinfo-2bb3d68651b5",
+      "title": "Оболонь",
+      "text": "Оболонь",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/109086",
+      "publishedAt": "2026-11-28T14:21:51+00:00",
+      "importance": "normal"
+    },
+    {
+      "id": "kyivinfo-6ba9a629aa3a",
+      "title": "Святошин, Академ, Нивки - укриття!",
+      "text": "Святошин, Академ, Нивки - укриття!",
+      "source": "Київ ІНФО",
+      "region": "kyiv",
+      "url": "https://t.me/kievinfo_kyiv/109085",
+      "publishedAt": "2026-11-28T14:20:51+00:00",
+      "importance": "orange"
+    },
     {
       "id": "kyivnebo-bb4ce104be53",
       "title": "Борщагівки",
@@ -3212,16 +3572,6 @@
       "region": "kyiv",
       "url": "https://t.me/kievinfo_kyiv/108814",
       "publishedAt": "2026-11-25T15:15:15+00:00",
-      "importance": "normal"
-    },
-    {
-      "id": "kyivinfo-3dbaa0df2a04",
-      "title": "🚂",
-      "text": "🚂 Час у дорозі усього до 6 годин — УЗ запускає найшвидший поїзд між Києвом та Львовом Йдеться про новий поїзд Інтерсіті № 777/778 Київ — Львів. Він курсуватиме без зупинок на проміжних станціях. Перший рейс — 4 грудня ㅤ Надсилайте новини в анонімний бот ➡️ @novosty_kiev_bot 🇺🇦 ➡️ ПІДПИСАТИСЬ ⤵️ LIVE",
-      "source": "Київ ІНФО",
-      "region": "kyiv",
-      "url": "https://t.me/kievinfo_kyiv/108813",
-      "publishedAt": "2026-11-25T14:25:26+00:00",
       "importance": "normal"
     }
   ]
